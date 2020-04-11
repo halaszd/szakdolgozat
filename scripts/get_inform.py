@@ -27,10 +27,11 @@ import os
 # TODO: eldönteni, hogy kell-e vala-volt argumentum.
 
 
-def write(outp):
-    with open('chars_with_unicode_name.txt', 'w', encoding='utf-8') as f:
-        for key, value in outp.items():
-            print(key + '\t', value, file=f)
+def write(outp, odir, ofname):
+    os.makedirs(odir, exist_ok=True)
+    with open(os.path.join(odir, ofname), 'w', encoding='utf-8') as f:
+        for item in outp:
+            print('{}\t{}\t{}'.format(item[0], item[1], ','.join(item[2])), file=f)
 
 
 def read(inp):
@@ -135,9 +136,8 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/')
-    parser.add_argument('-f', '--ofname', help='Output filename')
+    parser.add_argument('-f', '--ofname', help='Output filename', default='freq_inf_output.txt')
     parser.add_argument('-v', '--vala_volt')
-    parser.add_argument('-s', '--inform_form')
 
     args = parser.parse_args()
     files = []
@@ -147,15 +147,14 @@ def get_args():
         poss_files = [os.path.abspath(x) for x in poss_files]
         files += poss_files
 
-    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname,
-            'vala_volt': args.vala_volt, 'inform_form': args.inform_form}
+    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname, 'vala_volt': args.vala_volt}
 
 
 def main():
     args = get_args()
     inp = read(args['files'])
     outp = process(inp, args['vala_volt'])
-    write(outp)
+    write(outp, args['outdir'], args['ofname'])
 
 
 if __name__ == '__main__':
