@@ -23,7 +23,7 @@ import os
 # TODO: -->  C~^(?!.*\.(?:Past|Subj|Cond|Ipf|Fut|Inf))^(VPfx\.)*V.*[123][^.]*.* ?[wuv][oó]l*t+h?\b  72 találat
 # TODO: A inputs/inform/all.txt -t használni az arányok kiszámolásához informálisnál (minden szó számához viszonyítás).
 
-# TODO: a sorted_chars_in_words.txt-t használni a karakterek normalizálásához ()
+# TODO: a char_map.txt-t használni a karakterek normalizálásához ()
 # TODO: eldönteni, hogy kell-e vala-volt argumentum.
 
 

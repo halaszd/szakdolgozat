@@ -23,7 +23,7 @@ import os
 # TODO: -->  C~^(?!.*\.(?:Past|Subj|Cond|Ipf|Fut|Inf))^(VPfx\.)*V.*[123][^.]*.* ?[wuv][oó]l*t+h?\b  72 találat
 # TODO: A inputs/inform/all.txt -t használni az arányok kiszámolásához informálisnál (minden szó számához viszonyítás).
 
-# TODO: a sorted_chars_in_words.txt-t használni a karakterek normalizálásához ()
+# TODO: a char_map.txt-t használni a karakterek normalizálásához ()
 # TODO: eldönteni, hogy kell-e vala-volt argumentum.
 
 
@@ -34,13 +34,13 @@ def write(outp, odir, ofname):
             print('{}\t{}\t{}\t{}'.format(item[0], item[1], item[2], ','.join(item[3])), file=f)
 
 
-def read_fpath(inp):
+def read_v1(inp):
     for fl in inp:
         with open(fl, 'r', encoding='utf-8') as f:
             yield f.read()
 
 
-def read_ref(inp):
+def read_v2(inp):
     with open(inp, 'r', encoding='utf-8') as f:
         return f.read()
 
@@ -57,13 +57,11 @@ def get_char_map(inp):
 
 
 def gen_empty_years(years, pps):
-    print(pps)
     start = int(years[0])
     end = int(years[-1])
     for i in range(start, end+1):
         if str(i) not in pps.keys():
             pps[str(i)] = [0, [], 0]
-    print('\n\n', pps)
 
 
 def get_all_words(inp):
@@ -140,9 +138,11 @@ def inform_past_perf(inp, vala_volt, pps):
     # [(év, elemszám, [elemek])]
 
 
-def process(inp_1, inp_2, vala_volt):
+def process(inp_1, inp_2, chars, vala_volt):
     pps = defaultdict(lambda: [0, []])
     for txt in inp_1:
+        for char in get_char_map(chars):
+            txt = txt.replace(char[0], char[1])
         txt = txt.replace('\xa0', '')
         inform_past_perf(txt, vala_volt, pps)
 
@@ -163,6 +163,7 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
     parser.add_argument('-r', '--reference', help='Path of reference file')
+    parser.add_argument('-c', '--charmap', help='Path to charmap tsv', default='../inputs/init/char_map.txt')
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/')
     parser.add_argument('-f', '--ofname', help='Output filename', default='freq_inf_output.txt')
     parser.add_argument('-v', '--vala_volt')
@@ -176,16 +177,15 @@ def get_args():
         files += poss_files
 
     return {'outdir': args.directory, 'files': files, 'ofname': args.ofname,
-            'vala_volt': args.vala_volt, 'reference': args.reference}
+            'vala_volt': args.vala_volt, 'reference': args.reference, 'charmap': args.charmap}
 
 
 def main():
     args = get_args()
-    inp_1 = read_fpath(args['files'])
-    inp_2 = read_ref(args['reference'])
-    outp = process(inp_1, inp_2, args['vala_volt'])
-    for out in outp:
-        print(out)
+    inp_1 = read_v1(args['files'])
+    inp_2 = read_v2(args['reference'])
+    chars = read_v2(args['charmap'])
+    outp = process(inp_1, inp_2, chars, args['vala_volt'])
     write(outp, args['outdir'], args['ofname'])
 
 
