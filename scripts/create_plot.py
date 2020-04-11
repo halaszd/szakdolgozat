@@ -1,4 +1,5 @@
 import numpy as np
+from random import randint
 import matplotlib.pyplot as plt
 from glob import glob
 import argparse
@@ -12,13 +13,17 @@ def read(inp):
 
 
 def process(inp=None):
+    colors = ['red', 'yellow', 'green', 'brown']
+    # TODO: az impf és a pf esetében is egyszerre kell beolvasni a 4 gyak_dokumentumot
+    # TODO: --> és for ciklussal legenerálni a plot-ot
     years = [elem[0] for elem in inp]
-    freq = [elem[1] for elem in inp]
-    plt.plot(years, freq, label='vonalak címe')
-    plt.plot(years, freq, label='vonalak címe 2')
+    # freq = [elem[1] for elem in inp]
+    for i in range(3):
+        freq = [randint(1, 20) for elem in inp]
+        plt.plot(years, freq, label='vonalak címe', color=colors[i])
 
-    plt.xlabel('x tengely címe')
-    plt.ylabel('y tengely címe')
+    plt.xlabel('Évek')
+    plt.ylabel('Százalékos arány')
     plt.title('A diagram címe')
     plt.legend()
     plt.show()
