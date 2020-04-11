@@ -59,6 +59,16 @@ def gen_empty_years(years, pps):
             pps[str(i)] = []
 
 
+def get_all_words(inp):
+    all_words = defaultdict(lambda: [])
+    for line in inp:
+        line = line.rstrip()
+        if line.strip() == '':
+            continue
+        line = line.split('\t')
+
+
+
 def inform_past_perf(inp, vala_volt, pps):
     """
     :param inp: szöveges bemenet
@@ -84,7 +94,6 @@ def inform_past_perf(inp, vala_volt, pps):
     Rendezi a szótárban lévő kúlcs-érték párokat évszámok szerint növekvő sorrendben, majd feltölti a szótár üres
     éveit egy üres listával, hogy könyebb legyen a normalizálás diagramhoz
     """
-    #
 
     pat_ptype = re.compile(r'[vuw]al+a\b', re.I) if vala_volt == 'vala' else re.compile(r'[vuwú][aoó]l*t+h?\b', re.I)
     pat_sqr_bracket = re.compile(r'\[\[(.+?)]')
@@ -121,20 +130,22 @@ def inform_past_perf(inp, vala_volt, pps):
     # [(év, elemszám, [elemek])]
 
 
-def process(inp, vala_volt):
+def process(inp_1, inp_2, vala_volt):
     pps = defaultdict(lambda: [])
-    for txt in inp:
+    for txt in inp_1:
         txt = txt.replace('\xa0', '')
         inform_past_perf(txt, vala_volt, pps)
         # for elem in outp:
         #     print(elem)
     gen_empty_years(sorted(pps.keys(), key=lambda key: key), pps)
+    # TODO: ezután a dict-hez hozzáadni a kinyert összes szó számot / év dict[év].append(össz szószám)
     return [(elem[0], len(elem[1]), elem[1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
 
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
+    parser.add_argument('-r', '--reference', help='Path of reference file')
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/')
     parser.add_argument('-f', '--ofname', help='Output filename', default='freq_inf_output.txt')
     parser.add_argument('-v', '--vala_volt')
@@ -147,14 +158,18 @@ def get_args():
         poss_files = [os.path.abspath(x) for x in poss_files]
         files += poss_files
 
-    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname, 'vala_volt': args.vala_volt}
+    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname,
+            'vala_volt': args.vala_volt, 'reference': args.reference}
 
 
 def main():
     args = get_args()
-    inp = read(args['files'])
-    outp = process(inp, args['vala_volt'])
-    write(outp, args['outdir'], args['ofname'])
+    inp_1 = read(args['files'])
+    inp_2 = read(args['reference'])
+    outp = process(inp_1, inp_2, args['vala_volt'])
+    for out in outp:
+        print(out)
+    # write(outp, args['outdir'], args['ofname'])
 
 
 if __name__ == '__main__':

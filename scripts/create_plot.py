@@ -35,8 +35,6 @@ def split_years(freq_ls, c=1):
             count = 0
         if i == len(freq_ls)-1 and count > 0:
             new_freq_ls.append((year, sum_freq))
-    for year, freq in new_freq_ls:
-        print(year, freq)
     return new_freq_ls
 
 
@@ -50,7 +48,7 @@ def process(inp):
                 continue
             line = line.split('\t')
             freq_ls.append((line[0], line[1]))
-        freq_ls = split_years(freq_ls, 10)
+        freq_ls = split_years(freq_ls, 1)
         get_plot(freq_ls, colors[i])
     get_title_label('Cím', 'x leírás', 'y leírás')
     plt.legend()
