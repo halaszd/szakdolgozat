@@ -1,43 +1,44 @@
-1485	0	1
-1486	0	1
-1487	0	1
-1488	0	1
-1489	0	1
-1490	0	1
-1491	0	1
-1492	1	114	iwth  vala|
-1493	0	1
-1494	0	1
-1495	0	1
-1496	0	1
-1497	0	1
-1498	0	1
-1499	0	1
-1500	0	1
-1501	0	1
-1502	0	1
-1503	0	1
-1504	0	1
-1505	0	1
-1506	0	1
-1507	0	1
-1508	0	1
-1509	0	1
-1510	0	1
-1511	0	1
-1512	4	1029	 irtham  wala ,yrthal  wala ,kőltel  wala  ||,kőldőte  wala
-1513	0	1
-1514	0	1
-1515	2	661	elmentem  wala ,fokata|  wala
-1516	0	1
-1517	0	1
-1518	0	1
-1519	0	1
-1520	0	1
-1521	0	1
-1522	0	1
+# befejezett + vala
+1485	0	1	
+1486	0	1	
+1487	0	1	
+1488	0	1	
+1489	0	1	
+1490	0	1	
+1491	0	1	
+1492	1	114	iwth  vala| 
+1493	0	1	
+1494	0	1	
+1495	0	1	
+1496	0	1	
+1497	0	1	
+1498	0	1	
+1499	0	1	
+1500	0	1	
+1501	0	1	
+1502	0	1	
+1503	0	1	
+1504	0	1	
+1505	0	1	
+1506	0	1	
+1507	0	1	
+1508	0	1	
+1509	0	1	
+1510	0	1	
+1511	0	1	
+1512	4	1029	 irtham  wala ,yrthal  wala ,kőltel  wala  ||,kőldőte  wala 
+1513	0	1	
+1514	0	1	
+1515	2	661	elmentem  wala ,fokata|  wala 
+1516	0	1	
+1517	0	1	
+1518	0	1	
+1519	0	1	
+1520	0	1	
+1521	0	1	
+1522	0	1	
 1523	3	224	erthethem  wala,  ||,keniergewthem wala. ,atthak wala.,  ||
-1524	2	1330	hathad  wala  ||,solth  wala
+1524	2	1330	hathad  wala  ||,solth  wala 
 1525	0	1	
 1526	5	2154	wetthe@  wala ,eerthetthem  wala  ||,kezerithetthem wala ,megh|Tistesseitheth  vala  ||, kertem  wala 
 1527	0	1	

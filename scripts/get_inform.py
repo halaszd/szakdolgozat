@@ -9,9 +9,10 @@ import os
 # TODO --> egyenlő a tokenizálással, mert a szavak le vannak választva a központozásról
 
 
-def write(outp, odir, ofname):
+def write(outp, odir, ofname, past_type):
     os.makedirs(odir, exist_ok=True)
     with open(os.path.join(odir, ofname), 'w', encoding='utf-8') as f:
+        print('# {}'.format(past_type), file=f)
         for item in outp:
             print('{}\t{}\t{}\t{}'.format(item[0], item[1], item[2], ','.join(item[3])), file=f)
 
@@ -39,6 +40,15 @@ def get_char_map(inp):
 
 
 def gen_empty_years(years, pps):
+    """
+    :param years: lista évekkel sorrendben
+    :param pps: egy múlt fajta és annak gyakorisági szótára
+
+    Az üres éveket teszi bele a szótárba, hogy könyebb legyen belőle létrehozni később egy diagramot a matpotlibbel.
+    Amelyik év nem szerepel a szótárban azt létrehozza: kulcs = év, value = 0 gyakoriság üres szótárral,
+    a végén pedig 1, mint összes szó száma. Azért kell ide 1-es, hogy ne fordulhasson elő 0-val való osztás a
+    gyakoriságok arányainak kiszámolásakor.
+    """
     start = int(years[0])
     end = int(years[-1])
     for i in range(start, end+1):
@@ -149,6 +159,7 @@ def get_args():
     parser.add_argument('-c', '--charmap', help='Path to charmap tsv', default='../inputs/init/char_map.txt')
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/inform')
     parser.add_argument('-f', '--ofname', help='Output filename', default='freq_inf_output.txt')
+    parser.add_argument('-t', '--past_type', help='Metadata for output:which past type it is', default='# past type')
     parser.add_argument('-v', '--vala_volt')
 
     args = parser.parse_args()
@@ -159,8 +170,8 @@ def get_args():
         poss_files = [os.path.abspath(x) for x in poss_files]
         files += poss_files
 
-    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname,
-            'vala_volt': args.vala_volt, 'reference': args.reference, 'charmap': args.charmap}
+    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname, 'vala_volt': args.vala_volt,
+            'reference': args.reference, 'charmap': args.charmap, 'past_type': args.past_type}
 
 
 def main():
@@ -169,7 +180,7 @@ def main():
     inp_2 = read_v2(args['reference'])
     chars = read_v2(args['charmap'])
     outp = process(inp_1, inp_2, chars, args['vala_volt'])
-    write(outp, args['outdir'], args['ofname'])
+    write(outp, args['outdir'], args['ofname'], args['past_type'])
 
 
 if __name__ == '__main__':

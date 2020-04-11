@@ -34,24 +34,26 @@ def split_years(freq_ls, c=1):
     return new_freq_ls
 
 
-def get_plot(freq_ls, clr):
+def get_plot(freq_ls, clr, line_name):
     years = [item[0] for item in freq_ls]
     freq = [(int(item[1])/int(item[2]))*100 for item in freq_ls]
-    plt.plot(years, freq, label='vonalak címe', color=clr)
+    plt.plot(years, freq, label=line_name, color=clr)
 
 
 def process(inp):
     colors = ['red', 'yellow', 'green', 'brown']
     for i, fl in enumerate(inp):
         freq_ls = []
-        for line in fl.split('\n'):
+        fl = fl.split('\n')
+        plt_line_name = ' '.join(fl.pop(0).split()[1:])
+        for line in fl:
             line = line.strip()
             if line == '':
                 continue
             line = line.split('\t')
             freq_ls.append((line[0], line[1], line[2]))
         freq_ls = split_years(freq_ls, 40)
-        get_plot(freq_ls, colors[i])
+        get_plot(freq_ls, colors[i], plt_line_name)
     plt.title('Cím')
     plt.legend()
     plt.show()
