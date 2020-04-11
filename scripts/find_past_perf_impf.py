@@ -24,6 +24,7 @@ import os
 # TODO: A inputs/inform/all.txt -t használni az arányok kiszámolásához informálisnál (minden szó számához viszonyítás).
 
 # TODO: a sorted_chars_in_words.txt-t használni a karakterek normalizálásához ()
+# TODO: eldönteni, hogy kell-e vala-volt argumentum.
 
 # def write(outp):
 #     with open('chars_with_unicode_name.txt', 'w', encoding='utf-8') as f:
@@ -37,7 +38,7 @@ def read(inp):
             yield f.read()
 
 
-def get_norm_tup(inp):
+def get_char_map(inp):
     """
 
     :param inp: tsv: min két oszlop: 1 oszlop: normalizálandó karakter, 2.oszlop: amire át kell alakítani
@@ -81,6 +82,7 @@ def find_form_past_perf(inp):
 def inform_past_perf(inp, vala_volt):
     """
     :param inp: szöveges bemenet
+        A TMK-ról letöltött 4 féle txt: tmk_perf_vala.txt, tmk_perf_volt.txt, tmk_impf_vala.txt, tmk_impf_volt.txt
     :param vala_volt: -tt + valá-t vagy -tt + volt-ot keressen a függvény
     :return: évszámok szerint növekvően rendezet gyakorisági lista [('évszám', gyakoriság), ...]
 
@@ -145,10 +147,10 @@ def process(inp, vala_volt, inform_form=None):
     for txt in inp:
         txt = txt.replace('\xa0', '')
         outp = inform_past_perf(txt, vala_volt)
+        yield outp
         for elem in outp:
             print(elem)
     # else:
-    return 0
 
 
 def get_args():

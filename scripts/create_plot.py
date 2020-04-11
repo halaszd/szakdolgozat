@@ -1,60 +1,107 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from glob import glob
+import argparse
+import os
 
-def example_one():
-    # Create data
-    N = 500
-    x = np.random.rand(N)
-    y = np.random.rand(N)
-    colors = (0,0,0)
-    area = np.pi*3
 
-    # Plot
-    # plt.scatter(x, y)  # , s=area, c=colors, alpha=0.5)
-    plt.scatter(100, 200)  # , s=area, c=colors, alpha=0.5)
-    plt.title('Scatter plot pythonspot.com')
-    plt.plot(x,y, '-o')
-    plt.plot(x+30,y +20, '-o')
-    # plt.xlabel('x')
-    # plt.ylabel('y')
+def read(inp):
+    for fl in inp:
+        with open(fl, 'r', encoding='utf-8') as f:
+            yield f.read()
+
+
+def process(inp=None):
+    years = [elem[0] for elem in inp]
+    freq = [elem[1] for elem in inp]
+    fig, ax = plt.subplots()  # figure containing létrehozása
+    ax.plot(years, freq)
     plt.show()
+    return 0
 
 
-def example_two():
-    import numpy as np
-    import matplotlib.pyplot as plt
+def get_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('filepath', help='Path to file', nargs='+')
+    parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/')
+    parser.add_argument('-f', '--ofname', help='Output filename')
 
-    x, y = np.random.random(size=(2, 10))
+    args = parser.parse_args()
+    files = []
 
-    for i in range(0, len(x), 2):
-        plt.plot(x[i:i + 2], y[i:i + 2], 'ro-')
+    for p in args.filepath:
+        poss_files = glob(p)
+        poss_files = [os.path.abspath(x) for x in poss_files]
+        files += poss_files
 
-    plt.show()
-
-
-def example_three():
-    # scatter plot with groups --> ez is kelleni fog
-    # Create data
-    N = 60
-    g1 = (0.6 + 0.6 * np.random.rand(N), np.random.rand(N))
-    g2 = (0.4 + 0.3 * np.random.rand(N), 0.5 * np.random.rand(N))
-    g3 = (0.3 * np.random.rand(N), 0.3 * np.random.rand(N))
-
-    data = (g1, g2, g3)
-    colors = ("red", "green", "blue")
-    groups = ("coffee", "tea", "water")
-
-    # Create plot
-    fig = plt.figure()
-    ax = fig.add_subplot(1, 1, 1, axisbg="1.0")
-
-    for data, color, group in zip(data, colors, groups):
-        x, y = data
-        ax.scatter(x, y, alpha=0.8, c=color, edgecolors='none', s=30, label=group)
-
-    plt.title('Matplot scatter plot')
-    plt.legend(loc=2)
-    plt.show()
+    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname}
 
 
-example_three()
+def main():
+    # args = get_args()
+    # inp = read(args['files'])
+    inp = [('1550-1575', 5), ('1575-1600', 7), ('1600-1625', 10), ('1625-1650', 7), ('1650-1675', 3)]
+    outp = process(inp)
+
+
+if __name__ == '__main__':
+    main()
+
+
+# def example_one():
+#     # Create data
+#     N = 500
+#     x = np.random.rand(N)
+#     y = np.random.rand(N)
+#     colors = (0,0,0)
+#     area = np.pi*3
+#
+#     # Plot
+#     # plt.scatter(x, y)  # , s=area, c=colors, alpha=0.5)
+#     plt.scatter(100, 200)  # , s=area, c=colors, alpha=0.5)
+#     plt.title('Scatter plot pythonspot.com')
+#     plt.plot(x,y, '-o')
+#     plt.plot(x+30,y +20, '-o')
+#     # plt.xlabel('x')
+#     # plt.ylabel('y')
+#     plt.show()
+#
+#
+# def example_two():
+#     import numpy as np
+#     import matplotlib.pyplot as plt
+#
+#     x, y = np.random.random(size=(2, 10))
+#
+#     for i in range(0, len(x), 2):
+#         plt.plot(x[i:i + 2], y[i:i + 2], 'ro-')
+#
+#     plt.show()
+#
+#
+# def example_three():
+#     # scatter plot with groups --> ez is kelleni fog
+#     # Create data
+#     N = 60
+#     g1 = (0.6 + 0.6 * np.random.rand(N), np.random.rand(N))
+#     g2 = (0.4 + 0.3 * np.random.rand(N), 0.5 * np.random.rand(N))
+#     g3 = (0.3 * np.random.rand(N), 0.3 * np.random.rand(N))
+#
+#     data = (g1, g2, g3)
+#     colors = ("red", "green", "blue")
+#     groups = ("coffee", "tea", "water")
+#
+#     # Create plot
+#     fig = plt.figure()
+#     ax = fig.add_subplot(1, 1, 1, axisbg="1.0")
+#
+#     for data, color, group in zip(data, colors, groups):
+#         x, y = data
+#         ax.scatter(x, y, alpha=0.8, c=color, edgecolors='none', s=30, label=group)
+#
+#     plt.title('Matplot scatter plot')
+#     plt.legend(loc=2)
+#     plt.show()
+#
+#
+# example_three()
