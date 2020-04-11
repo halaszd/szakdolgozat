@@ -26,10 +26,11 @@ import os
 # TODO: a sorted_chars_in_words.txt-t használni a karakterek normalizálásához ()
 # TODO: eldönteni, hogy kell-e vala-volt argumentum.
 
-# def write(outp):
-#     with open('chars_with_unicode_name.txt', 'w', encoding='utf-8') as f:
-#         for key, value in outp.items():
-#             print(key + '\t', value, file=f)
+
+def write(outp):
+    with open('chars_with_unicode_name.txt', 'w', encoding='utf-8') as f:
+        for key, value in outp.items():
+            print(key + '\t', value, file=f)
 
 
 def read(inp):
@@ -79,69 +80,7 @@ def find_form_past_perf(inp):
         print(elem)
 
 
-def inform_past_perf(inp, vala_volt, pps):
-    """
-    :param inp: szöveges bemenet
-        A TMK-ról letöltött 4 féle txt: tmk_perf_vala.txt, tmk_perf_volt.txt, tmk_impf_vala.txt, tmk_impf_volt.txt
-    :param vala_volt: -tt + valá-t vagy -tt + volt-ot keressen a függvény
-    :return: évszámok szerint növekvően rendezet gyakorisági lista [('évszám', gyakoriság), ...]
-
-    pps: szótár a -tt + vala vagy a -tt + volt alakok számának rögzítésére évszámok szerint
-        {'anydate_1':[past_perf_1, past_perf_2... past_perf_n], 'anydate_n': [...], ...}
-    pat_ptype: valá-t vagy volt-ot keressen az potenciális keresett összetett múlt időkben (regex)
-    pat_sqr_bracket: szögletes zárójelen belüli részt nézi
-    pat_crl_bracke: kapcsos zárójelen belüli részt nézi
-
-    Működés
-
-    A TMK táblázatbe betölthető keresési eredményét várja inputként.
-    Végigmegy a fájl tsv sorain: txtid-->date-->year-->settlement-->county-->from-->to-->soc.stat-->hit
-    a létrehozott szótárban a year a kulcs, az érték egy lista, amiben az square és curly bracket-ek közötti részek
-    (a sent változóban) potenciális múlt idők, lesznek a lista elemei.
-    Egy sent összes zárójeles részében lévő elemet listába teszi (findall) csak akkor lehet használni egy talált
-    múlt időt, ha el lehet helyezni az időben végigmegy az összes zárójelből kiszedett elemeken, amik egyenként
-    potenciális múlt idők ha a zárójeles részből kiszedett stringben benne van a volt/vala, elmenti évszám szerint.
-    Rendezi a szótárban lévő kúlcs-érték párokat évszámok szerint növekvő sorrendben, majd feltölti a szótár üres
-    éveit egy üres listával, hogy könyebb legyen a normalizálás diagramhoz
-    """
-    #
-
-    pat_ptype = re.compile(r'[vuw]al+a\b', re.I) if vala_volt == 'vala' else re.compile(r'[vuwú][aoó]l*t+h?\b', re.I)
-    pat_sqr_bracket = re.compile(r'\[\[(.+?)]')
-    pat_crl_bracket = re.compile(r'{(.+?)}')
-    inp = inp.split('\n')
-
-    # TESZTELÉSHEZ
-    # nomatches = []  # hibák kiszűrése, ha esetlen nem talál keresett múlt időt
-    # matches = []  # a megtalált alakokhoz számlálásra egy lista
-
-    for line in inp:
-        line = line.rstrip().split('\t')
-        if len(line) == 9:
-            year = line[2]
-            sent = line[-1]
-            pot_hits = pat_sqr_bracket.findall(sent) + pat_crl_bracket.findall(sent)
-            if year != '':
-                for pot_hit in pot_hits:
-                    if pat_ptype.search(pot_hit):
-                        pps[year].append(pot_hit)
-
-    # TESZTELÉSHEZ
-    #                     matches.append(pot_hit)
-    #                 else:  # mikor nem találta a keresett múlt időt
-    #                     nomatches.append(pot_hit)
-    #         else:  # mikor nincs év
-    #             print(line)
-    # for item in sorted(pps.items(), key=lambda item: item[0]):
-    #     print(item[0] + ':', len(item[1]), item[1])
-    # print(len(matches))
-    # print('\nNOMATCHES LISTA TARTALMA\n' + '\n'.join(nomatches))
-
-    # üres évek generálása
-    # [(év, elemszám, [elemek])]
-
-
-def process(inp, vala_volt, inform_form=None):
+def process(inp, vala_volt):
     pps = defaultdict(lambda: [])
     for txt in inp:
         txt = txt.replace('\xa0', '')
@@ -168,17 +107,14 @@ def get_args():
         poss_files = [os.path.abspath(x) for x in poss_files]
         files += poss_files
 
-    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname,
-            'vala_volt': args.vala_volt, 'inform_form': args.inform_form}
+    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname}
 
 
 def main():
     args = get_args()
     inp = read(args['files'])
     outp = process(inp, args['vala_volt'])
-    for out in outp:
-        print(out)
-    # write(outp)
+    write(outp)
 
 
 if __name__ == '__main__':
