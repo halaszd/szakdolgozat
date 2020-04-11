@@ -13,37 +13,36 @@ def read(inp):
             yield f.read()
 
 
-def get_plot(freq_matrix):
-    colors = ['red', 'yellow', 'green', 'brown']
+def get_title_label(xlabel, ylabel, title):
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.title(title)
+
+
+def get_plot(freq_ls, clr):
     # TODO: az impf és a pf esetében is egyszerre kell beolvasni a 4 gyak_dokumentumot
     # TODO: --> és for ciklussal legenerálni a plot-ot
-    for i, freq_ls in enumerate(freq_matrix):
-        print(freq_ls)
-        years = [item[0] for item in freq_ls]
-        freq = [int(item[1]) for item in freq_ls]
-        plt.plot(years, freq, label='vonalak címe', color=colors[i])
-        # plt.plot(years, poly_y, color=colors[i])
-        plt.xlabel('Évek')
-        plt.ylabel('Százalékos arány')
-        plt.title('A diagram címe')
-        plt.legend()
-    plt.show()
+    years = [item[0] for item in freq_ls]
+    freq = [int(item[1]) for item in freq_ls]
+    print(freq)
+    plt.plot(years, freq, label='vonalak címe', color=clr)
+    # plt.plot(years, poly_y, color=colors[i])
 
 
 def process(inp):
-    freq_lss = []
-    for fl in inp:
+    colors = ['red', 'yellow', 'green', 'brown']
+    for i, fl in enumerate(inp):
         freq_ls = []
         for line in fl.split('\n'):
             line = line.strip()
             if line == '':
                 continue
             line = line.split('\t')
-            if line:
-                freq_ls.append((line[0], line[1]))
-        freq_lss.append(freq_ls)
-    get_plot(freq_lss)
-    return 0
+            freq_ls.append((line[0], line[1]))
+        get_plot(freq_ls, colors[i])
+    get_title_label('Cím', 'x leírás', 'y leírás')
+    plt.legend()
+    plt.show()
 
 
 def get_args():
