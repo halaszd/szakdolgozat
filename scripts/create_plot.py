@@ -4,12 +4,17 @@ import argparse
 import os
 
 
-COLORS = {'PERF. + VALA': 'red',
-          'PERF. + VOLT': 'yellow',
-          'IMP. + VALA': 'green',
-          'IMP. + VOLT': 'brown'}
+LINES = {'INFORM':
+             {'PERF. + VALA': ('red', '-'),
+              'PERF. + VOLT': ('yellow', '-'),
+              'IMP. + VALA': ('green', '-'),
+              'IMP. + VOLT': ('brown', '-')},
+         'FORM':
+             {'PERF. + VALA': ('red', '--'),
+              'PERF. + VOLT': ('yellow', '--'),
+              'IMP. + VALA': ('green', '--'),
+              'IMP. + VOLT': ('brown', '--')}}
 
-TITLES = {}
 
 def read(inp):
     for fl in inp:
@@ -41,17 +46,19 @@ def split_years(freq_ls, c=1):
     return new_freq_ls
 
 
-def get_plot(freq_ls, line_name):
+def get_plot(freq_ls, txt_type, line_name):
     years = [item[0] for item in freq_ls]
     freq = [(int(item[1])/int(item[2]))*100 for item in freq_ls]
-    plt.plot(years, freq, label=line_name, color=COLORS[line_name.upper()])
+    line_type = LINES[txt_type][line_name.upper()]
+    plt.plot(years, freq, label=line_name, color=line_type[0], linestyle=line_type[1])
 
 
 def process(inp):
     for i, fl in enumerate(inp):
         freq_ls = []
         fl = fl.split('\n')
-        plt_line_name = ' '.join(fl.pop(0).split()[1:])
+        past_type = fl.pop(0).replace('# ', '').split(',')
+        print(past_type)
         for line in fl:
             line = line.strip()
             if line == '':
@@ -59,8 +66,7 @@ def process(inp):
             line = line.split('\t')
             freq_ls.append((line[0], line[1], line[2]))
         freq_ls = split_years(freq_ls, 40)
-        get_plot(freq_ls, plt_line_name)
-    plt.title('Cím')
+        get_plot(freq_ls, past_type[0], past_type[1])
     plt.legend()
     plt.show()
 

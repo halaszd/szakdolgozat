@@ -159,7 +159,8 @@ def get_args():
     parser.add_argument('-c', '--charmap', help='Path to charmap tsv', default='../inputs/init/char_map.txt')
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/inform')
     parser.add_argument('-f', '--ofname', help='Output filename', default='freq_inf_output.txt')
-    parser.add_argument('-t', '--past_type', help='Metadata for output:which past type it is', default='# past type')
+    parser.add_argument('-t', '--past_type', help='Metadata for output:which text and past type it is',
+                        default='# FORM/INFORM,PAST')
     parser.add_argument('-v', '--vala_volt')
 
     args = parser.parse_args()
