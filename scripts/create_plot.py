@@ -20,14 +20,13 @@ def get_plot(freq_matrix):
     for i, freq_ls in enumerate(freq_matrix):
         print(freq_ls)
         years = [item[0] for item in freq_ls]
-        freq = [randint(1, 20) for elem in inp]
-        for tup in freq_ls:
-            plt.plot(years, freq, label='vonalak címe', color=colors[i])
-            # plt.plot(years, poly_y, color=colors[i])
-            plt.xlabel('Évek')
-            plt.ylabel('Százalékos arány')
-            plt.title('A diagram címe')
-            plt.legend()
+        freq = [int(item[1]) for item in freq_ls]
+        plt.plot(years, freq, label='vonalak címe', color=colors[i])
+        # plt.plot(years, poly_y, color=colors[i])
+        plt.xlabel('Évek')
+        plt.ylabel('Százalékos arány')
+        plt.title('A diagram címe')
+        plt.legend()
     plt.show()
 
 
