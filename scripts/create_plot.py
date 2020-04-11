@@ -4,6 +4,13 @@ import argparse
 import os
 
 
+COLORS = {'PERF. + VALA': 'red',
+          'PERF. + VOLT': 'yellow',
+          'IMP. + VALA': 'green',
+          'IMP. + VOLT': 'brown'}
+
+TITLES = {}
+
 def read(inp):
     for fl in inp:
         with open(fl, 'r', encoding='utf-8') as f:
@@ -34,14 +41,13 @@ def split_years(freq_ls, c=1):
     return new_freq_ls
 
 
-def get_plot(freq_ls, clr, line_name):
+def get_plot(freq_ls, line_name):
     years = [item[0] for item in freq_ls]
     freq = [(int(item[1])/int(item[2]))*100 for item in freq_ls]
-    plt.plot(years, freq, label=line_name, color=clr)
+    plt.plot(years, freq, label=line_name, color=COLORS[line_name.upper()])
 
 
 def process(inp):
-    colors = ['red', 'yellow', 'green', 'brown']
     for i, fl in enumerate(inp):
         freq_ls = []
         fl = fl.split('\n')
@@ -53,7 +59,7 @@ def process(inp):
             line = line.split('\t')
             freq_ls.append((line[0], line[1], line[2]))
         freq_ls = split_years(freq_ls, 40)
-        get_plot(freq_ls, colors[i], plt_line_name)
+        get_plot(freq_ls, plt_line_name)
     plt.title('Cím')
     plt.legend()
     plt.show()
