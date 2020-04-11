@@ -1,6 +1,3 @@
-from scipy.interpolate import make_interp_spline, BSpline
-import numpy as np
-from random import randint
 import matplotlib.pyplot as plt
 from glob import glob
 import argparse
@@ -13,20 +10,34 @@ def read(inp):
             yield f.read()
 
 
-def get_title_label(xlabel, ylabel, title):
+def get_title_label(xlabel='', ylabel='', title=''):
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.title(title)
 
 
 def get_plot(freq_ls, clr):
-    # TODO: az impf és a pf esetében is egyszerre kell beolvasni a 4 gyak_dokumentumot
-    # TODO: --> és for ciklussal legenerálni a plot-ot
     years = [item[0] for item in freq_ls]
     freq = [int(item[1]) for item in freq_ls]
-    print(freq)
     plt.plot(years, freq, label='vonalak címe', color=clr)
-    # plt.plot(years, poly_y, color=colors[i])
+
+
+def split_years(freq_ls, c=1):
+    count = 0
+    sum_freq = 0
+    new_freq_ls = [freq_ls.pop(0)]
+    for i, (year, freq) in enumerate(freq_ls):
+        sum_freq += int(freq)
+        count += 1
+        if count == c:
+            new_freq_ls.append((year, sum_freq))
+            sum_freq = 0
+            count = 0
+        if i == len(freq_ls)-1 and count > 0:
+            new_freq_ls.append((year, sum_freq))
+    for year, freq in new_freq_ls:
+        print(year, freq)
+    return new_freq_ls
 
 
 def process(inp):
@@ -39,6 +50,7 @@ def process(inp):
                 continue
             line = line.split('\t')
             freq_ls.append((line[0], line[1]))
+        freq_ls = split_years(freq_ls, 10)
         get_plot(freq_ls, colors[i])
     get_title_label('Cím', 'x leírás', 'y leírás')
     plt.legend()
@@ -48,8 +60,6 @@ def process(inp):
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
-    parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/')
-    parser.add_argument('-f', '--ofname', help='Output filename')
 
     args = parser.parse_args()
     files = []
@@ -59,11 +69,10 @@ def get_args():
         poss_files = [os.path.abspath(x) for x in poss_files]
         files += poss_files
 
-    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname}
+    return {'files': files}
 
 
 def main():
-    # inp = [('1550', 5), ('1575', 7), ('1600', 10), ('1625', 7), ('1650', 3), ('1675', 3)]
     args = get_args()
     inp = read(args['files'])
     process(inp)
