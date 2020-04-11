@@ -79,7 +79,7 @@ def find_form_past_perf(inp):
         print(elem)
 
 
-def inform_past_perf(inp, vala_volt):
+def inform_past_perf(inp, vala_volt, pps):
     """
     :param inp: szöveges bemenet
         A TMK-ról letöltött 4 féle txt: tmk_perf_vala.txt, tmk_perf_volt.txt, tmk_impf_vala.txt, tmk_impf_volt.txt
@@ -94,6 +94,7 @@ def inform_past_perf(inp, vala_volt):
 
     Működés
 
+    A TMK táblázatbe betölthető keresési eredményét várja inputként.
     Végigmegy a fájl tsv sorain: txtid-->date-->year-->settlement-->county-->from-->to-->soc.stat-->hit
     a létrehozott szótárban a year a kulcs, az érték egy lista, amiben az square és curly bracket-ek közötti részek
     (a sent változóban) potenciális múlt idők, lesznek a lista elemei.
@@ -104,7 +105,7 @@ def inform_past_perf(inp, vala_volt):
     éveit egy üres listával, hogy könyebb legyen a normalizálás diagramhoz
     """
     #
-    pps = defaultdict(lambda: [])
+
     pat_ptype = re.compile(r'[vuw]al+a\b', re.I) if vala_volt == 'vala' else re.compile(r'[vuwú][aoó]l*t+h?\b', re.I)
     pat_sqr_bracket = re.compile(r'\[\[(.+?)]')
     pat_crl_bracket = re.compile(r'{(.+?)}')
@@ -137,20 +138,18 @@ def inform_past_perf(inp, vala_volt):
     # print('\nNOMATCHES LISTA TARTALMA\n' + '\n'.join(nomatches))
 
     # üres évek generálása
-    gen_empty_years(sorted(pps.keys(), key=lambda key: key), pps)
     # [(év, elemszám, [elemek])]
-    return [(elem[0], len(elem[1]), elem[1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
 
 def process(inp, vala_volt, inform_form=None):
-    # if inform_form == 'inform':
+    pps = defaultdict(lambda: [])
     for txt in inp:
         txt = txt.replace('\xa0', '')
-        outp = inform_past_perf(txt, vala_volt)
-        yield outp
-        for elem in outp:
-            print(elem)
-    # else:
+        inform_past_perf(txt, vala_volt, pps)
+        # for elem in outp:
+        #     print(elem)
+    gen_empty_years(sorted(pps.keys(), key=lambda key: key), pps)
+    return [(elem[0], len(elem[1]), elem[1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
 
 def get_args():
@@ -176,7 +175,9 @@ def get_args():
 def main():
     args = get_args()
     inp = read(args['files'])
-    outp = process(inp, args['vala_volt'], inform_form=None)
+    outp = process(inp, args['vala_volt'])
+    for out in outp:
+        print(out)
     # write(outp)
 
 
