@@ -58,7 +58,6 @@ def process(inp):
         freq_ls = []
         fl = fl.split('\n')
         past_type = fl.pop(0).replace('# ', '').split(',')
-        print(past_type)
         for line in fl:
             line = line.strip()
             if line == '':

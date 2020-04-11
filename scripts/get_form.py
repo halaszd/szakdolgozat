@@ -1,42 +1,31 @@
-import unicodedata
 from glob import glob
 import re
 from collections import defaultdict
 import argparse
 import os
 
-# TODO: a find_combchars.py-al megkeresni az összes kombinált unikód karaktert a nem normalizált szövegekben
-# TODO: --> ezeket átalakítani/normalizálni (chars_to_convert-ben vannak a karakterek betűhű, név, normalizált alakjai)
-# TODO: szükség van rájuk az informális szövegeknél is, mert ott sem minden normalizált
-
 # TODO: letölteni az Ómagyar korpusz-t, feldarabolni szóközök mentén -->
 # TODO --> egyenlő a tokenizálással, mert a szavak le vannak választva a központozásról
-
-# TODO: TMK-ból külön letölteni a perf/impf + vala és külön a perf/impf + volt eredményeket (tehát 4 doksi) -->
-# TODO: --> tmk keresés perf + vala/volt: C~^(VPfx\.)*V.*\.Past.* ?(([wuv]al+a)|([wuv][oó]l*t+h?))\b
-# TODO: --> C~^(VPfx\.)*V.*\.Past.* ?[wuv][oó]l*t+h?\b  1268 találat - csak gyakorisági találat opció
-# 1268 találatból 1194 marad, mert kiesnek azok a múlt idők, amiket nem lehet időben elhelyezni
-# TODO: --> C~^(VPfx\.)*V.*\.Past.* ?[wuv]al+a\b    622 találat - csak gyakorisági találat opció
-# 622 találatból 546 marad az évszámok hiányában
-# TODO: --> impf
-# TODO: --> C~^(?!.*\.(?:Past|Subj|Cond|Ipf|Fut|Inf))^(VPfx\.)*V.*[123][^.]*.* ?[wuv]al+a\b 309 találat
-# TODO: -->  C~^(?!.*\.(?:Past|Subj|Cond|Ipf|Fut|Inf))^(VPfx\.)*V.*[123][^.]*.* ?[wuv][oó]l*t+h?\b  72 találat
-# TODO: A inputs/inform/all.txt -t használni az arányok kiszámolásához informálisnál (minden szó számához viszonyítás).
-
-# TODO: a char_map.txt-t használni a karakterek normalizálásához ()
-# TODO: eldönteni, hogy kell-e vala-volt argumentum.
+# TODO csak a volt és csak a valát is létre kell hozni
 
 
-def write(outp):
-    with open('chars_with_unicode_name.txt', 'w', encoding='utf-8') as f:
-        for key, value in outp.items():
-            print(key + '\t', value, file=f)
+def write(outp, odir, ofname, past_type):
+    os.makedirs(odir, exist_ok=True)
+    with open(os.path.join(odir, ofname), 'w', encoding='utf-8') as f:
+        print('# {}'.format(past_type), file=f)
+        for item in outp:
+            print('{}\t{}\t{}\t{}'.format(item[0], item[1], item[2], ','.join(item[3])), file=f)
 
 
-def read(inp):
+def read_v1(inp):
     for fl in inp:
         with open(fl, 'r', encoding='utf-8') as f:
             yield f.read()
+
+
+def read_v2(inp):
+    with open(inp, 'r', encoding='utf-8') as f:
+        return f.read()
 
 
 def get_char_map(inp):
@@ -51,11 +40,37 @@ def get_char_map(inp):
 
 
 def gen_empty_years(years, pps):
+    """
+    :param years: lista évekkel sorrendben
+    :param pps: egy múlt fajta és annak gyakorisági szótára
+
+    Az üres éveket teszi bele a szótárba, hogy könyebb legyen belőle létrehozni később egy diagramot a matpotlibbel.
+    Amelyik év nem szerepel a szótárban azt létrehozza: kulcs = év, value = 0 gyakoriság üres szótárral,
+    a végén pedig 1, mint összes szó száma. Azért kell ide 1-es, hogy ne fordulhasson elő 0-val való osztás a
+    gyakoriságok arányainak kiszámolásakor.
+    """
     start = int(years[0])
     end = int(years[-1])
     for i in range(start, end+1):
-        if str(i) not in years:
-            pps[str(i)] = []
+        if str(i) not in pps.keys():
+            pps[str(i)] = [0, [], 1]
+
+
+def get_all_words(inp):
+    pat_annot = re.compile(r'[[\]|{}]')
+    all_words = defaultdict(lambda: 0)
+    for line in inp.split('\n')[1:]:
+        line = line.rstrip()
+        if line.strip() == '':
+            continue
+        line = line.split('\t')
+        if len(line) == 9:
+            year = line[2]
+            if not year.isdigit():
+                continue
+            sent = pat_annot.sub('', line[-1])
+            all_words[year] += len([seq for seq in sent.split() if seq != ''])
+    return all_words
 
 
 def find_form_past_perf(inp):
@@ -80,24 +95,36 @@ def find_form_past_perf(inp):
         print(elem)
 
 
-def process(inp, vala_volt):
-    pps = defaultdict(lambda: [])
-    for txt in inp:
+def process(inp_1, inp_2, chars, vala_volt):
+    pps = defaultdict(lambda: [0, []])
+    for txt in inp_1:
+        for char in get_char_map(chars):
+            txt = txt.replace(char[0], char[1])
         txt = txt.replace('\xa0', '')
         inform_past_perf(txt, vala_volt, pps)
-        # for elem in outp:
-        #     print(elem)
-    gen_empty_years(sorted(pps.keys(), key=lambda key: key), pps)
-    return [(elem[0], len(elem[1]), elem[1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
+
+    all_words = get_all_words(inp_2)
+    for key in all_words.keys():
+        if key in pps.keys():
+            pps[key].append(all_words[key])
+    gen_empty_years(sorted(all_words.keys(), key=lambda year: year), pps)
+
+    # TODO: ezután a dict-hez hozzáadni a kinyert összes szó számot / év dict[év].append(össz szószám)
+    # for item, value in pps.items():
+    #     print(item, value)
+    return [(elem[0], elem[1][0], elem[1][2], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
 
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
-    parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/')
-    parser.add_argument('-f', '--ofname', help='Output filename')
+    parser.add_argument('-r', '--reference', help='Path of reference file', default='../inputs/inform/tmk_all.txt')
+    parser.add_argument('-c', '--charmap', help='Path to charmap tsv', default='../inputs/init/char_map.txt')
+    parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/inform')
+    parser.add_argument('-f', '--ofname', help='Output filename', default='freq_inf_output.txt')
+    parser.add_argument('-t', '--past_type', help='Metadata for output:which text and past type it is',
+                        default='# FORM/INFORM,PAST')
     parser.add_argument('-v', '--vala_volt')
-    parser.add_argument('-s', '--inform_form')
 
     args = parser.parse_args()
     files = []
@@ -107,15 +134,19 @@ def get_args():
         poss_files = [os.path.abspath(x) for x in poss_files]
         files += poss_files
 
-    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname}
+    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname, 'vala_volt': args.vala_volt,
+            'reference': args.reference, 'charmap': args.charmap, 'past_type': args.past_type}
 
 
 def main():
     args = get_args()
-    inp = read(args['files'])
-    outp = process(inp, args['vala_volt'])
-    write(outp)
+    inp_1 = read_v1(args['files'])
+    inp_2 = read_v2(args['reference'])
+    chars = read_v2(args['charmap'])
+    outp = process(inp_1, inp_2, chars, args['vala_volt'])
+    write(outp, args['outdir'], args['ofname'], args['past_type'])
 
 
 if __name__ == '__main__':
     main()
+

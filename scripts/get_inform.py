@@ -1,4 +1,3 @@
-import unicodedata
 from glob import glob
 import re
 from collections import defaultdict
@@ -7,6 +6,7 @@ import os
 
 # TODO: letölteni az Ómagyar korpusz-t, feldarabolni szóközök mentén -->
 # TODO --> egyenlő a tokenizálással, mert a szavak le vannak választva a központozásról
+# TODO csak a volt és csak a valát is létre kell hozni
 
 
 def write(outp, odir, ofname, past_type):
