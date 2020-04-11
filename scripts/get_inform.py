@@ -5,26 +5,8 @@ from collections import defaultdict
 import argparse
 import os
 
-# TODO: a find_combchars.py-al megkeresni az összes kombinált unikód karaktert a nem normalizált szövegekben
-# TODO: --> ezeket átalakítani/normalizálni (chars_to_convert-ben vannak a karakterek betűhű, név, normalizált alakjai)
-# TODO: szükség van rájuk az informális szövegeknél is, mert ott sem minden normalizált
-
 # TODO: letölteni az Ómagyar korpusz-t, feldarabolni szóközök mentén -->
 # TODO --> egyenlő a tokenizálással, mert a szavak le vannak választva a központozásról
-
-# TODO: TMK-ból külön letölteni a perf/impf + vala és külön a perf/impf + volt eredményeket (tehát 4 doksi) -->
-# TODO: --> tmk keresés perf + vala/volt: C~^(VPfx\.)*V.*\.Past.* ?(([wuv]al+a)|([wuv][oó]l*t+h?))\b
-# TODO: --> C~^(VPfx\.)*V.*\.Past.* ?[wuv][oó]l*t+h?\b  1268 találat - csak gyakorisági találat opció
-# 1268 találatból 1194 marad, mert kiesnek azok a múlt idők, amiket nem lehet időben elhelyezni
-# TODO: --> C~^(VPfx\.)*V.*\.Past.* ?[wuv]al+a\b    622 találat - csak gyakorisági találat opció
-# 622 találatból 546 marad az évszámok hiányában
-# TODO: --> impf
-# TODO: --> C~^(?!.*\.(?:Past|Subj|Cond|Ipf|Fut|Inf))^(VPfx\.)*V.*[123][^.]*.* ?[wuv]al+a\b 309 találat
-# TODO: -->  C~^(?!.*\.(?:Past|Subj|Cond|Ipf|Fut|Inf))^(VPfx\.)*V.*[123][^.]*.* ?[wuv][oó]l*t+h?\b  72 találat
-# TODO: A inputs/inform/all.txt -t használni az arányok kiszámolásához informálisnál (minden szó számához viszonyítás).
-
-# TODO: a char_map.txt-t használni a karakterek normalizálásához ()
-# TODO: eldönteni, hogy kell-e vala-volt argumentum.
 
 
 def write(outp, odir, ofname):
@@ -61,19 +43,21 @@ def gen_empty_years(years, pps):
     end = int(years[-1])
     for i in range(start, end+1):
         if str(i) not in pps.keys():
-            pps[str(i)] = [0, [], 0]
+            pps[str(i)] = [0, [], 1]
 
 
 def get_all_words(inp):
     pat_annot = re.compile(r'[[\]|{}]')
     all_words = defaultdict(lambda: 0)
-    for line in inp.split('\n'):
+    for line in inp.split('\n')[1:]:
         line = line.rstrip()
         if line.strip() == '':
             continue
         line = line.split('\t')
         if len(line) == 9:
             year = line[2]
+            if not year.isdigit():
+                continue
             sent = pat_annot.sub('', line[-1])
             all_words[year] += len([seq for seq in sent.split() if seq != ''])
     return all_words
@@ -150,8 +134,7 @@ def process(inp_1, inp_2, chars, vala_volt):
     for key in all_words.keys():
         if key in pps.keys():
             pps[key].append(all_words[key])
-
-    gen_empty_years(sorted(pps.keys(), key=lambda year: year), pps)
+    gen_empty_years(sorted(all_words.keys(), key=lambda year: year), pps)
 
     # TODO: ezután a dict-hez hozzáadni a kinyert összes szó számot / év dict[év].append(össz szószám)
     # for item, value in pps.items():
@@ -162,9 +145,9 @@ def process(inp_1, inp_2, chars, vala_volt):
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
-    parser.add_argument('-r', '--reference', help='Path of reference file')
+    parser.add_argument('-r', '--reference', help='Path of reference file', default='../inputs/inform/tmk_all.txt')
     parser.add_argument('-c', '--charmap', help='Path to charmap tsv', default='../inputs/init/char_map.txt')
-    parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/')
+    parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/inform')
     parser.add_argument('-f', '--ofname', help='Output filename', default='freq_inf_output.txt')
     parser.add_argument('-v', '--vala_volt')
 
