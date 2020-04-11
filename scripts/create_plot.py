@@ -14,8 +14,13 @@ def read(inp):
 def process(inp=None):
     years = [elem[0] for elem in inp]
     freq = [elem[1] for elem in inp]
-    fig, ax = plt.subplots()  # figure containing létrehozása
-    ax.plot(years, freq)
+    plt.plot(years, freq, label='vonalak címe')
+    plt.plot(years, freq, label='vonalak címe 2')
+
+    plt.xlabel('x tengely címe')
+    plt.ylabel('y tengely címe')
+    plt.title('A diagram címe')
+    plt.legend()
     plt.show()
     return 0
 
