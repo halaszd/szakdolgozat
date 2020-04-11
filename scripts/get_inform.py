@@ -31,13 +31,18 @@ def write(outp, odir, ofname):
     os.makedirs(odir, exist_ok=True)
     with open(os.path.join(odir, ofname), 'w', encoding='utf-8') as f:
         for item in outp:
-            print('{}\t{}\t{}'.format(item[0], item[1], ','.join(item[2])), file=f)
+            print('{}\t{}\t{}\t{}'.format(item[0], item[1], item[2], ','.join(item[3])), file=f)
 
 
-def read(inp):
+def read_fpath(inp):
     for fl in inp:
         with open(fl, 'r', encoding='utf-8') as f:
             yield f.read()
+
+
+def read_ref(inp):
+    with open(inp, 'r', encoding='utf-8') as f:
+        return f.read()
 
 
 def get_char_map(inp):
@@ -52,21 +57,28 @@ def get_char_map(inp):
 
 
 def gen_empty_years(years, pps):
+    print(pps)
     start = int(years[0])
     end = int(years[-1])
     for i in range(start, end+1):
-        if str(i) not in years:
-            pps[str(i)] = []
+        if str(i) not in pps.keys():
+            pps[str(i)] = [0, [], 0]
+    print('\n\n', pps)
 
 
 def get_all_words(inp):
-    all_words = defaultdict(lambda: [])
-    for line in inp:
+    pat_annot = re.compile(r'[[\]|{}]')
+    all_words = defaultdict(lambda: 0)
+    for line in inp.split('\n'):
         line = line.rstrip()
         if line.strip() == '':
             continue
         line = line.split('\t')
-
+        if len(line) == 9:
+            year = line[2]
+            sent = pat_annot.sub('', line[-1])
+            all_words[year] += len([seq for seq in sent.split() if seq != ''])
+    return all_words
 
 
 def inform_past_perf(inp, vala_volt, pps):
@@ -102,7 +114,6 @@ def inform_past_perf(inp, vala_volt, pps):
 
     # TESZTELÉSHEZ
     # nomatches = []  # hibák kiszűrése, ha esetlen nem talál keresett múlt időt
-    # matches = []  # a megtalált alakokhoz számlálásra egy lista
 
     for line in inp:
         line = line.rstrip().split('\t')
@@ -113,17 +124,16 @@ def inform_past_perf(inp, vala_volt, pps):
             if year != '':
                 for pot_hit in pot_hits:
                     if pat_ptype.search(pot_hit):
-                        pps[year].append(pot_hit)
+                        pps[year][1].append(pot_hit)
+                        pps[year][0] += 1
 
     # TESZTELÉSHEZ
-    #                     matches.append(pot_hit)
     #                 else:  # mikor nem találta a keresett múlt időt
     #                     nomatches.append(pot_hit)
     #         else:  # mikor nincs év
     #             print(line)
     # for item in sorted(pps.items(), key=lambda item: item[0]):
     #     print(item[0] + ':', len(item[1]), item[1])
-    # print(len(matches))
     # print('\nNOMATCHES LISTA TARTALMA\n' + '\n'.join(nomatches))
 
     # üres évek generálása
@@ -131,15 +141,22 @@ def inform_past_perf(inp, vala_volt, pps):
 
 
 def process(inp_1, inp_2, vala_volt):
-    pps = defaultdict(lambda: [])
+    pps = defaultdict(lambda: [0, []])
     for txt in inp_1:
         txt = txt.replace('\xa0', '')
         inform_past_perf(txt, vala_volt, pps)
-        # for elem in outp:
-        #     print(elem)
-    gen_empty_years(sorted(pps.keys(), key=lambda key: key), pps)
+
+    all_words = get_all_words(inp_2)
+    for key in all_words.keys():
+        if key in pps.keys():
+            pps[key].append(all_words[key])
+
+    gen_empty_years(sorted(pps.keys(), key=lambda year: year), pps)
+
     # TODO: ezután a dict-hez hozzáadni a kinyert összes szó számot / év dict[év].append(össz szószám)
-    return [(elem[0], len(elem[1]), elem[1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
+    # for item, value in pps.items():
+    #     print(item, value)
+    return [(elem[0], elem[1][0], elem[1][2], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
 
 def get_args():
@@ -164,12 +181,12 @@ def get_args():
 
 def main():
     args = get_args()
-    inp_1 = read(args['files'])
-    inp_2 = read(args['reference'])
+    inp_1 = read_fpath(args['files'])
+    inp_2 = read_ref(args['reference'])
     outp = process(inp_1, inp_2, args['vala_volt'])
     for out in outp:
         print(out)
-    # write(outp, args['outdir'], args['ofname'])
+    write(outp, args['outdir'], args['ofname'])
 
 
 if __name__ == '__main__':
