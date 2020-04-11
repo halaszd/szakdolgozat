@@ -1,24 +1,4 @@
-1492	1	114	iwth  vala| 
-1493	0	0	
-1494	0	0	
-1495	0	0	
-1496	0	0	
-1497	0	0	
-1498	0	0	
-1499	0	0	
-1500	0	0	
-1501	0	0	
-1502	0	0	
-1503	0	0	
-1504	0	0	
-1505	0	0	
-1506	0	0	
-1507	0	0	
-1508	0	0	
-1509	0	0	
-1510	0	0	
-1511	0	0	
-1512	4	1029	 ýrtham  wala ,yrthal  wala ,ko̗ltel  wala  ||,ko̗ldo̗te  wala 
+1512	4	1029	 ýrtham  wala ,yrthal  wala ,ko̗ltel  wala  ||,ko̗ldo̗te  wala
 1513	0	0	
 1514	0	0	
 1515	2	661	elmentem  wala ,fokata|  wala 

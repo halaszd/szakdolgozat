@@ -51,7 +51,7 @@ def process(inp):
                 continue
             line = line.split('\t')
             freq_ls.append((line[0], line[1], line[2]))
-        freq_ls = split_years(freq_ls, 25)
+        freq_ls = split_years(freq_ls, 40)
         get_plot(freq_ls, colors[i])
     get_title_label('Cím', 'x leírás', 'y leírás')
     plt.legend()
