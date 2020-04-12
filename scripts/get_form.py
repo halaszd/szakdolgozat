@@ -1,9 +1,13 @@
+#! /usr/bin/env python3
+
 from glob import glob
 import re
 from collections import defaultdict
 import argparse
 import os
-from scripts import common as c
+import sys
+sys.path.append('../')
+import scripts.common as c
 
 # TODO: letölteni az Ómagyar korpusz-t, feldarabolni szóközök mentén -->
 # TODO --> egyenlő a tokenizálással, mert a szavak le vannak választva a központozásról
@@ -41,37 +45,39 @@ def form_past_perf(inp, vala_volt, pps):
         (?:([vuw]al+a\b)|
         ([vuwú][aoó]l*t+h?\b)))
         """, re.VERBOSE | re.IGNORECASE)
-    print(len(pat_past_perf.findall(inp)))
+
+    # print(len(pat_past_perf.findall(inp)))
     for elem in pat_past_perf.findall((inp)):
-        print(elem)
+        pps[elem[0]][0] += 1
 
 
 def preprocess(txt, chars):
     # TODO: replace: r'\n-+' --> "", '-@@' --> '', '@@-' --> '', '== ==' -> ' '
-    pat_splitted = re.compile(r'\n-+', re.MULTILINE)
+    pat_splitted = re.compile(r'-\n-|-\n|\n', re.MULTILINE)
     for char in c.get_char_map(chars):
         txt = txt.replace(char[0], char[1])
     txt = pat_splitted.sub('', txt).replace('-@@', '').replace('@@-', '').replace('== ==', '')
-    print(txt)
+    # print(txt)
     return txt
 
 
 def process(inp, chars, vala_volt):
-    pps = defaultdict(lambda: [0, []])
+    # pps = defaultdict(lambda: [0, []])
+    pps = defaultdict(lambda: [0])
     for txt in inp:
         txt = preprocess(txt, chars)
         form_past_perf(txt, vala_volt, pps)
 
-    all_words = get_all_words(inp)
-    for key in all_words.keys():
-        if key in pps.keys():
-            pps[key].append(all_words[key])
-        c.gen_empty_years(sorted(all_words.keys(), key=lambda year: year), pps)
+    # teszthez
+    for elem in sorted(pps.items(), key=lambda item: item[1][0], reverse=True):
+        print(elem, end="  ### ")
 
-    # TODO: ezután a dict-hez hozzáadni a kinyert összes szó számot / év dict[év].append(össz szószám)
-    # for item, value in pps.items():
-    #     print(item, value)
-    return [(elem[0], elem[1][0], elem[1][2], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
+    # all_words = get_all_words(inp)
+    # for key in all_words.keys():
+    #     if key in pps.keys():
+    #         pps[key].append(all_words[key])
+    #     c.gen_empty_years(sorted(all_words.keys(), key=lambda year: year), pps)
+    # return [(elem[0], elem[1][0], elem[1][2], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
 
 def get_args():
