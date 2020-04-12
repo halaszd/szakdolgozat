@@ -74,7 +74,7 @@ def get_all_words(inp):
 
 
 def find_form_past_perf(inp):
-    # TODO: replace: \n-+ --> "", -@@ --> ""
+    # TODO: replace: r'\n-+' --> "", '-@@' --> '', '@@-' --> '', '== ==' -> ' '
 
     # \[\[.*?\]\]|{.*?} között vannak a találatok
     # k --> c
