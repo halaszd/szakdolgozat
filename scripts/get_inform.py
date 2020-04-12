@@ -3,57 +3,11 @@ import re
 from collections import defaultdict
 import argparse
 import os
+from scripts import common as c
 
 # TODO: letölteni az Ómagyar korpusz-t, feldarabolni szóközök mentén -->
 # TODO --> egyenlő a tokenizálással, mert a szavak le vannak választva a központozásról
 # TODO csak a volt és csak a valát is létre kell hozni
-
-
-def write(outp, odir, ofname, past_type):
-    os.makedirs(odir, exist_ok=True)
-    with open(os.path.join(odir, ofname), 'w', encoding='utf-8') as f:
-        print('# {}'.format(past_type), file=f)
-        for item in outp:
-            print('{}\t{}\t{}\t{}'.format(item[0], item[1], item[2], ','.join(item[3])), file=f)
-
-
-def read_v1(inp):
-    for fl in inp:
-        with open(fl, 'r', encoding='utf-8') as f:
-            yield f.read()
-
-
-def read_v2(inp):
-    with open(inp, 'r', encoding='utf-8') as f:
-        return f.read()
-
-
-def get_char_map(inp):
-    """
-
-    :param inp: tsv: min két oszlop: 1 oszlop: normalizálandó karakter, 2.oszlop: amire át kell alakítani
-    :return: lista tuple-ökkel, egy tuple: tup[0]=betűhű, 1=normalizált
-    """
-    # rendezés, a legtöbb karakterből álló betű legfelül
-    lines = sorted([elem for elem in inp.split('\n')], key=lambda elem: len(elem.split('\t')[0]), reverse=True)
-    return [(elem.split('\t')[0], elem.split('\t')[1]) for elem in lines if elem.strip() != '']
-
-
-def gen_empty_years(years, pps):
-    """
-    :param years: lista évekkel sorrendben
-    :param pps: egy múlt fajta és annak gyakorisági szótára
-
-    Az üres éveket teszi bele a szótárba, hogy könyebb legyen belőle létrehozni később egy diagramot a matpotlibbel.
-    Amelyik év nem szerepel a szótárban azt létrehozza: kulcs = év, value = 0 gyakoriság üres szótárral,
-    a végén pedig 1, mint összes szó száma. Azért kell ide 1-es, hogy ne fordulhasson elő 0-val való osztás a
-    gyakoriságok arányainak kiszámolásakor.
-    """
-    start = int(years[0])
-    end = int(years[-1])
-    for i in range(start, end+1):
-        if str(i) not in pps.keys():
-            pps[str(i)] = [0, [], 1]
 
 
 def get_all_words(inp):
@@ -71,30 +25,6 @@ def get_all_words(inp):
             sent = pat_annot.sub('', line[-1])
             all_words[year] += len([seq for seq in sent.split() if seq != ''])
     return all_words
-
-
-def find_form_past_perf(inp):
-    # TODO: replace: r'\n-+' --> "", '-@@' --> '', '@@-' --> '', '== ==' -> ' '
-
-    # \[\[.*?\]\]|{.*?} között vannak a találatok
-    # k --> c
-    # == == jelet ''-re változtatni
-    pat_past_perf = re.compile(
-        r"""
-        ([a-záöőüűóúéí]+?(?:t+h?
-        (?:[ea]m|elek|alak|
-        él|[ea]d|[áa]l|
-        a|e|
-        [üu]n?k|
-        [eé]tek|[aá]tok|
-        [eéáa]k)?)
-        \s*
-        (?:([vuw]al+a\b)|
-        ([vuwú][aoó]l*t+h?\b)))
-        """, re.VERBOSE | re.IGNORECASE)
-    print(len(pat_past_perf.findall(inp)))
-    for elem in pat_past_perf.findall((inp)):
-        print(elem)
 
 
 def inform_past_perf(inp, vala_volt, pps):
@@ -159,7 +89,7 @@ def inform_past_perf(inp, vala_volt, pps):
 def process(inp_1, inp_2, chars, vala_volt):
     pps = defaultdict(lambda: [0, []])
     for txt in inp_1:
-        for char in get_char_map(chars):
+        for char in c.get_char_map(chars):
             txt = txt.replace(char[0], char[1])
         txt = txt.replace('\xa0', '')
         inform_past_perf(txt, vala_volt, pps)
@@ -168,7 +98,7 @@ def process(inp_1, inp_2, chars, vala_volt):
     for key in all_words.keys():
         if key in pps.keys():
             pps[key].append(all_words[key])
-    gen_empty_years(sorted(all_words.keys(), key=lambda year: year), pps)
+    c.gen_empty_years(sorted(all_words.keys(), key=lambda year: year), pps)
 
     # TODO: ezután a dict-hez hozzáadni a kinyert összes szó számot / év dict[év].append(össz szószám)
     # for item, value in pps.items():
@@ -201,11 +131,11 @@ def get_args():
 
 def main():
     args = get_args()
-    inp_1 = read_v1(args['files'])
-    inp_2 = read_v2(args['reference'])
-    chars = read_v2(args['charmap'])
+    inp_1 = c.read_v1(args['files'])
+    inp_2 = c.read_v2(args['reference'])
+    chars = c.read_v2(args['charmap'])
     outp = process(inp_1, inp_2, chars, args['vala_volt'])
-    write(outp, args['outdir'], args['ofname'], args['past_type'])
+    c.write(outp, args['outdir'], args['ofname'], args['past_type'])
 
 
 if __name__ == '__main__':
