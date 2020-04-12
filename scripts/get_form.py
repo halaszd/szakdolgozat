@@ -73,26 +73,7 @@ def get_all_words(inp):
     return all_words
 
 
-def find_form_past_perf(inp):
-    # \[\[.*?\]\]|{.*?} között vannak a találatok
-    # k --> c
-    # == == jelet ''-re változtatni
-    pat_past_perf = re.compile(
-        r"""
-        ([a-záöőüűóúéí]+?(?:t+h?
-        (?:[ea]m|elek|alak|
-        él|[ea]d|[áa]l|
-        a|e|
-        [üu]n?k|
-        [eé]tek|[aá]tok|
-        [eéáa]k)?)
-        \s*
-        (?:([vuw]al+a\b)|
-        ([vuwú][aoó]l*t+h?\b)))
-        """, re.VERBOSE | re.IGNORECASE)
-    print(len(pat_past_perf.findall(inp)))
-    for elem in pat_past_perf.findall((inp)):
-        print(elem)
+
 
 
 def process(inp_1, inp_2, chars, vala_volt):
