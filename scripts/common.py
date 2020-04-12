@@ -46,3 +46,7 @@ def gen_empty_years(years, pps):
     for i in range(start, end+1):
         if str(i) not in pps.keys():
             pps[str(i)] = [0, [], 1]
+
+
+if __name__ == '__main__':
+    pass

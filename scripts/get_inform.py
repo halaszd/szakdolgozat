@@ -3,10 +3,8 @@ import re
 from collections import defaultdict
 import argparse
 import os
-from scripts import common as c
 
-# TODO: letölteni az Ómagyar korpusz-t, feldarabolni szóközök mentén -->
-# TODO --> egyenlő a tokenizálással, mert a szavak le vannak választva a központozásról
+
 # TODO csak a volt és csak a valát is létre kell hozni
 
 
@@ -86,12 +84,17 @@ def inform_past_perf(inp, vala_volt, pps):
     # [(év, elemszám, [elemek])]
 
 
+def preprocess(txt, chars):
+    for char in c.get_char_map(chars):
+        txt = txt.replace(char[0], char[1])
+    txt = txt.replace('\xa0', '')
+    return txt
+
+
 def process(inp_1, inp_2, chars, vala_volt):
     pps = defaultdict(lambda: [0, []])
     for txt in inp_1:
-        for char in c.get_char_map(chars):
-            txt = txt.replace(char[0], char[1])
-        txt = txt.replace('\xa0', '')
+        txt = preprocess(txt, chars)
         inform_past_perf(txt, vala_volt, pps)
 
     all_words = get_all_words(inp_2)
@@ -100,7 +103,6 @@ def process(inp_1, inp_2, chars, vala_volt):
             pps[key].append(all_words[key])
     c.gen_empty_years(sorted(all_words.keys(), key=lambda year: year), pps)
 
-    # TODO: ezután a dict-hez hozzáadni a kinyert összes szó számot / év dict[év].append(össz szószám)
     # for item, value in pps.items():
     #     print(item, value)
     return [(elem[0], elem[1][0], elem[1][2], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
@@ -115,7 +117,7 @@ def get_args():
     parser.add_argument('-f', '--ofname', help='Output filename', default='freq_inf_output.txt')
     parser.add_argument('-t', '--past_type', help='Metadata for output:which text and past type it is',
                         default='# FORM/INFORM,PAST')
-    parser.add_argument('-v', '--vala_volt')
+    parser.add_argument('-v', '--vala_volt', help='Vala or volt type past to search', default='vala')
 
     args = parser.parse_args()
     files = []

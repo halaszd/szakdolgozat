@@ -28,11 +28,6 @@ def get_all_words(inp):
 
 
 def form_past_perf(inp, vala_volt, pps):
-    # TODO: replace: r'\n-+' --> "", '-@@' --> '', '@@-' --> '', '== ==' -> ' '
-
-    # \[\[.*?\]\]|{.*?} között vannak a találatok
-    # k --> c
-    # == == jelet ''-re változtatni
     pat_past_perf = re.compile(
         r"""
         ([a-záöőüűóúéí]+?(?:t+h?
@@ -51,12 +46,20 @@ def form_past_perf(inp, vala_volt, pps):
         print(elem)
 
 
+def preprocess(txt, chars):
+    # TODO: replace: r'\n-+' --> "", '-@@' --> '', '@@-' --> '', '== ==' -> ' '
+    pat_splitted = re.compile(r'\n-+', re.MULTILINE)
+    for char in c.get_char_map(chars):
+        txt = txt.replace(char[0], char[1])
+    txt = pat_splitted.sub('', txt).replace('-@@', '').replace('@@-', '').replace('== ==', '')
+    print(txt)
+    return txt
+
+
 def process(inp, chars, vala_volt):
     pps = defaultdict(lambda: [0, []])
     for txt in inp:
-        for char in c.get_char_map(chars):
-            txt = txt.replace(char[0], char[1])
-        txt = txt.replace('\xa0', '')
+        txt = preprocess(txt, chars)
         form_past_perf(txt, vala_volt, pps)
 
     all_words = get_all_words(inp)
@@ -79,7 +82,7 @@ def get_args():
     parser.add_argument('-f', '--ofname', help='Output filename', default='freq_inf_output.txt')
     parser.add_argument('-t', '--past_type', help='Metadata for output:which text and past type it is',
                         default='# FORM/INFORM,PAST')
-    parser.add_argument('-v', '--vala_volt')
+    parser.add_argument('-v', '--vala_volt', help='Vala or volt type past to search', default='vala')
 
     args = parser.parse_args()
     files = []
@@ -98,7 +101,7 @@ def main():
     inp = c.read_v1(args['files'])
     chars = c.read_v2(args['charmap'])
     outp = process(inp, chars, args['vala_volt'])
-    c.write(outp, args['outdir'], args['ofname'], args['past_type'])
+    # c.write(outp, args['outdir'], args['ofname'], args['past_type'])
 
 
 if __name__ == '__main__':
