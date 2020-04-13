@@ -29,7 +29,7 @@ def get_all_words(inp):
     return all_words
 
 
-def inform_past_perf(inp, vala_volt, pps):
+def inform_past_perf(txt, vala_volt, pps):
     """
     :param inp: szöveges bemenet
         A TMK-ról letöltött 4 féle txt: tmk_perf_vala.txt, tmk_perf_volt.txt, tmk_impf_vala.txt, tmk_impf_volt.txt
@@ -58,12 +58,12 @@ def inform_past_perf(inp, vala_volt, pps):
     pat_ptype = re.compile(r'[vuw]al+a\b', re.I) if vala_volt == 'vala' else re.compile(r'[vuwú][aoó]l*t+h?\b', re.I)
     pat_sqr_bracket = re.compile(r'\[\[(.+?)]')
     pat_crl_bracket = re.compile(r'{(.+?)}')
-    inp = inp.split('\n')
+    txt = txt.split('\n')
 
     # TESZTELÉSHEZ
     # nomatches = []  # hibák kiszűrése, ha esetlen nem talál keresett múlt időt
 
-    for line in inp:
+    for line in txt:
         line = line.rstrip().split('\t')
         if len(line) == 9:
             year = line[2]

@@ -31,7 +31,20 @@ def get_all_words(inp):
     return all_words
 
 
-def form_past_perf(inp, vala_volt, pps):
+def get_freq_types(seq_ls, pps=None):
+    if pps is None:
+        pps = defaultdict(lambda : 0)
+    for elem in seq_ls:
+        pps[elem.lower()] += 1
+    return pps
+
+
+def get_freq_past(seq_ls, pps=None):
+    if pps is None:
+        pps = defaultdict(lambda: [0, []])
+
+
+def form_past_perf(txt, vala_volt, pps, first_step):
     vala_volt = r'[vuw]al+a\b' if vala_volt == "vala" else r'[vuwú][aoó]l*t+h?\b'
     pat_past_perf = re.compile(
         r"""
@@ -45,18 +58,16 @@ def form_past_perf(inp, vala_volt, pps):
         \s*"""+vala_volt, re.VERBOSE | re.IGNORECASE)
 
     # print(len(pat_past_perf.findall(inp)))
-    for elem in pat_past_perf.findall((inp)):
-        pps[elem[0].lower()] += 1
-        # print(elem)
+    if first_step:
+        get_freq_types(pat_past_perf.findall(txt), pps)
 
 
 def preprocess(txt, chars):
-    # TODO: replace: r'\n-+' --> "", '-@@' --> '', '@@-' --> '', '== ==' -> ' '
     pat_splitted = re.compile(r'-\n-|-\n|\n', re.MULTILINE)
     for char in c.get_char_map(chars):
         txt = txt.replace(char[0], char[1])
     txt = pat_splitted.sub('', txt).replace('-@@', '').replace('@@-', '').replace('== ==', '')
-    # print(txt)
+    print(txt)
     return txt.lower()
 
 
@@ -67,8 +78,10 @@ def process(inp, chars, vala_volt, first_step):
         pps = defaultdict(lambda: [0, []])
 
     for txt in inp:
+        year = txt.split('\n').pop(0).strip().replace('# ', '')
+        print(year)
         txt = preprocess(txt, chars)
-        form_past_perf(txt, vala_volt, pps)
+        form_past_perf(txt, vala_volt, pps, first_step)
 
     # teszthez
     # for elem in sorted(pps.items(), key=lambda item: item[1][0], reverse=True):
