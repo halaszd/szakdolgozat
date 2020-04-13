@@ -31,15 +31,17 @@ def get_all_words(inp):
     return all_words
 
 
-def get_freq_types(seq_ls, pps=None):
+def get_freq_types(hits, pps=None):
     if pps is None:
-        pps = defaultdict(lambda : 0)
-    for elem in seq_ls:
-        pps[elem.lower()] += 1
+        pps = defaultdict(lambda: [0, []])
+    for hit, examp in hits:
+        pps[hit][0] += 1
+        if len(pps[hit][1]) < 11:
+            pps[hit][1].append(examp)
     return pps
 
 
-def get_freq_past(seq_ls, pps=None):
+def get_freq_past(seq_ls, year, pps=None):
     if pps is None:
         pps = defaultdict(lambda: [0, []])
 
@@ -48,20 +50,24 @@ def form_past_perf(txt, vala_volt, pps, first_step, year):
     vala_volt = r'[vuw]al+a\b' if vala_volt == "vala" else r'[vuwú][aoó]l*t+h?\b'
     pat_past_perf = re.compile(
         r"""
-        [a-záöőüűóúéí]+?(?:t+h?
+        ([a-záöőüűóúéí]+?(?:t+h?
         (?:[ea]m|elek|alak|
         él|[ea]d|[áa]l|
         a|e|
         [üu]n?k|
         [eé]tek|[aá]tok|
         [eéáa]k)?)
-        \s*"""+vala_volt, re.VERBOSE | re.IGNORECASE)
+        \s*""" + vala_volt + ')(.+?[.:·])', re.VERBOSE | re.IGNORECASE)
 
     # print(len(pat_past_perf.findall(inp)))
+    hits = []
+    for hit, examp in pat_past_perf.findall(txt):
+        hits.append((hit, examp))
+
     if first_step:
-        get_freq_types(pat_past_perf.findall(txt), pps)
+        get_freq_types(hits, pps)
     else:
-        get_freq_past(pat_past_perf.findall(txt), pps, year)
+        get_freq_past(hits, year, pps)
 
 
 def preprocess(txt, chars):
@@ -88,18 +94,20 @@ def preprocess(txt, chars):
 
 
 def process(inp, chars, vala_volt, first_step):
+    pps = defaultdict(lambda: [0, []])
     if first_step:
-        pps = defaultdict(lambda: 0)
-    else:
-        pps = defaultdict(lambda: [0, []])
+        for txt in inp:
+            txt, year = preprocess(txt, chars)
+            form_past_perf(txt, vala_volt, pps, first_step, year)
+        # return sorted(pps.items(), key=lambda item: item[1], reverse=True)
+        return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
+    # else
     for txt in inp:
         txt, year = preprocess(txt, chars)
         form_past_perf(txt, vala_volt, pps, first_step, year)
 
     # teszthez
-    # for elem in sorted(pps.items(), key=lambda item: item[1][0], reverse=True):
-    #     print(elem, end="  ### ")
 
     # all_words = get_all_words(inp)
     # for key in all_words.keys():
@@ -149,7 +157,7 @@ def main():
     inp = c.read_v1(args['files'])
     chars = c.read_v2(args['charmap'])
     outp = process(inp, chars, args['vala_volt'], args['first_step'])
-    # c.write(outp, args['outdir'], args['ofname'], args['past_type'])
+    c.write(outp, args['outdir'], args['ofname'], args['past_type'], True)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,33 @@
+
+# informális szövegek
+python get_inform.py ../inputs/inform/tmk_perf_volt.txt -v volt -f freq_tmk_perf_volt.txt -t "befejezett + volt"
+python get_inform.py ../inputs/inform/tmk_impf_volt.txt -v volt -f freq_tmk_impf_volt.txt -t "befejezetlen + volt"
+
+python get_inform.py ../inputs/inform/tmk_perf_vala.txt -v vala -f freq_tmk_perf_vala.txt -t "befejezett + vala"
+python get_inform.py ../inputs/inform/tmk_impf_vala.txt -v vala -f freq_tmk_impf_vala.txt -t "befejezetlen + vala"
+
+#formális szövegek
+**vala alakok kigyüjtése példákkal:** python get_form.py ../inputs/form/orig/*.txt ../inputs/form/norm/*.txt -x -v vala -t "FORM,PERF./IMP. + VALA" -f vala_set.txt -d ../outputs/form
+**volt alakok kigyüjtése példákkal:** python get_form.py ../inputs/form/orig/*.txt ../inputs/form/norm/*.txt -x -v volt -t "FORM,PERF./IMP. + VOLT" -f volt_set.txt -d ../outputs/form
+
+#plot készítése informális szövegekre
+python create_plot.py ../outputs/inform/*.txt
+
+
+
+
+
+# Készen vannak:
+# a find_combchars.py-al megkeresni az összes kombinált unikód karaktert a nem normalizált szövegekben
+# ezeket átalakítani/normalizálni (chars_to_convert-ben vannak a karakterek betűhű, név, normalizált alakjai)
+# szükség van rájuk az informális szövegeknél is, mert ott sem minden normalizált
+# TMK-ból külön letölteni a perf/impf + vala és külön a perf/impf + volt eredményeket (tehát 4 doksi) -->
+# --> tmk keresés perf + vala/volt: C~^(VPfx\.)*V.*\.Past.* ?(([wuv]al+a)|([wuv][oó]l*t+h?))\b
+# --> C~^(VPfx\.)*V.*\.Past.* ?[wuv][oó]l*t+h?\b  1268 találat - csak gyakorisági találat opció
+# 1268 találatból 1194 marad, mert kiesnek azok a múlt idők, amiket nem lehet időben elhelyezni
+# --> C~^(VPfx\.)*V.*\.Past.* ?[wuv]al+a\b    622 találat - csak gyakorisági találat opció
+# 622 találatból 546 marad az évszámok hiányában
+# impf --> C~^(?!.*\.(?:Past|Subj|Cond|Ipf|Fut|Inf))^(VPfx\.)*V.*[123][^.]*.* ?[wuv]al+a\b 309 találat
+# -->  C~^(?!.*\.(?:Past|Subj|Cond|Ipf|Fut|Inf))^(VPfx\.)*V.*[123][^.]*.* ?[wuv][oó]l*t+h?\b  72 találat
+# A inputs/inform/all.txt -t használni az arányok kiszámolásához informálisnál (minden szó számához viszonyítás).
+# a char_map.txt-t használni a karakterek normalizálásához ()

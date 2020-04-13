@@ -1,0 +1,3176 @@
+# FORM,PERF./IMP. + VALA
+aadatot wala	1
+abrazot vala	1
+accoroníőt vala	1
+adatatot vala	1
+adatot uala	1
+adatot vala	4
+adatot wala	3
+adatott vala	10
+adatotvala	2
+adattakvala	1
+adattamvala	1
+adattatott vala	5
+adattavala	1
+addoth wala	1
+adot uala	5
+adot vala	16
+adot wala	1
+adoth vala	2
+adoth wala	1
+adothvala	1
+adothwala	1
+adott  vala	1
+adott vala	27
+adotvala	3
+adotwala	1
+adta vala	16
+adtak vala	6
+adtál vala	3
+agibanmaradot vala	1
+ahonnatiőt vala	1
+aiandekozta vala	1
+aiandokozot vala	1
+aianlotta wala	1
+aianlottavala	1
+ajándékozott vala	2
+ajánlotta vala	1
+ajánlották vala	1
+akadotvala	1
+akarattiabolhvettetőt uala	1
+akart vala	1
+akarta vala	3
+akarták vala	1
+akaztota vala	1
+akaztotta vala	1
+akaztotta wala	1
+aldatot vala	1
+aldot vala	2
+aldotta vala	3
+aldottavala	1
+aldozot vala	1
+aleegzolhat vala	1	IMP
+alegleheth vala	1	IMP
+alegwegezte wala	1
+aleyt vala	1
+alhat vala	3	IMP
+alhatwala	1	IMP
+aligiwtot vala	1
+alit valla	1
+alit wala	1
+alkotott vala	4
+alkottak vala	2
+alkottatott vala	1
+allot vala	4
+alloth vala	1
+allottak vala	1
+allotvala	2
+aloit vala	1
+alot vala	1
+altalvitte vala	1
+alutvala	1
+alvttak vala	1
+alájöttek vala	3
+alámentek vala	2
+alázott vala	1
+alíták vala	2
+ameeltotta vala	1
+amint vala	1
+ammíthhalottavala	1
+anaddavalaztottad vala	1
+angaltartvala	1
+annaot vala	1
+apadot vala	1
+apastal wala	1
+apatparancolt vala	1
+aprított vala	1
+apuztabanzolgalt vala	1
+aradot vala	1
+aranyaswlth vala	1
+arolta vala	1
+aroltavala	1
+arradot vala	1
+arratvala	1
+arth vala	1
+aruloiaelkőzelítvala	1
+arulta uala	1
+arulta vala	1
+arultak vala	1
+arultawala	1
+arwlta wala	1
+arwltakwala	1
+arwltawala	1
+atal vala	1
+atiaatvala	1
+atiajvt vala	1
+atkot vala	1
+atkozta vala	1
+atta uala	1
+atta vala	10
+atta wala	3
+attak uala	1
+attak vala	3
+attal vala	2
+attauala	3
+attavala	2
+attawala	1
+atyankatta vala	1
+atyat vala	1
+azeert vala	1
+azert vala	7
+azerthvala	1
+azertiwttek wala	1
+azertvala	3
+azot vala	7
+azothwala	1
+azt valla	1
+aztak vala	1
+azth valla	1
+azthallotta vala	1
+azzoniallat wala	1
+azzonyallat vala	1
+azzonyallath vala	1
+azzonyallatothoztak vala	1
+bagiadoth vala	1
+bamlot vala	1
+bant vala	1
+bant wala	1
+bantotta vala	1
+baranaat vala	2
+baranttőtvala	1
+barat vala	1
+barattiaat vala	1
+barrabast vala	1
+batoreyt vala	1
+batoreytha vala	1
+batorituala	1
+bebocsátottam vala	1
+beborultavala	1
+beboríttatott vala	1
+beeresztették vala	2
+beewltvala	1
+beeült vala	1
+befagiotvala	1
+befedezte vala	1
+befedeztetett vala	1
+befete vala	1
+befogadtál vala	1
+behítta vala	1
+beiratott vala	1
+bejöttek vala	1
+bekeltevala	1
+bekerítette vala	1
+bekesegettart wala	1
+bekörnyékeztetett vala	1
+bekötötték vala	2
+beleeholt vala	1
+bement vala	1
+bementek vala	1
+bementvala	1
+beplántált vala	1
+bernát vala	1
+beszállottak vala	1
+beszámláltatott vala	1
+beszélget vala	1
+beszélgettek vala	1
+beszélt vala	3
+besötétült vala	1
+betakartatott vala	1
+betakarták vala	1
+betegwlth vala	1
+betegúltvala	1
+betegült vala	1
+beteljesedtek vala	1
+betelt vala	1
+beteltek vala	1
+bethakartam wala	1
+betétetett vala	1
+betölt vala	1
+betöltött vala	1
+betőltevala	1
+bevágattatta vala	1
+bezeellet vala	1
+bezellet wala	1
+beövedezett vala	1
+beövedzette vala	1
+beövezett vala	1
+beövezte vala	1
+beőuezzetőt vala	1
+binbeessőt uala	1
+birhatta vala	1
+bizodalmat valla	1
+bizonyít vala	1
+bizonít vala	1
+biztat vala	1
+biztathvala	1
+bocat uala	1
+bocatot vala	1
+bocattalak vala	1
+bocattatot vala	1
+bocattauala	2
+bocatvala	1
+bochaat vala	1
+bochatoth wala	1
+bochatvala	1
+bocsát vala	1
+bocsátattak vala	1
+bocsátott vala	7
+bocsáttatott vala	4
+bocsáttattak vala	3
+boczat uala	1
+boczat wala	1
+boczath wala	1
+boczatta vala	1
+boczattak wala	1
+boczattalak wala	1
+boczatthatoth wala	1
+bolcat vala	1
+bosszanták vala	1
+bullazot vala	1
+bwt vala	1
+bwtthvala	1
+byneimet vala	1
+byrta vala	1
+byünttőtuala	1
+bántam vala	2
+béétőttek wala	1
+bírták vala	1
+bízta vala	1
+bízták vala	1
+bújt vala	1
+búsult vala	1
+búsíták vala	1
+bűnhet vala	1
+celekődőt vala	1
+chalattatot vala	1
+chenaltavala	1
+chokoltavala	1
+cinaltatot uala	2
+cokolgatvala	2
+constantinapolbanvolt vala	1
+corlath vala	1
+cselekedett vala	16
+cselekedte vala	1
+cselekedtek vala	2
+csinált vala	2
+csinálta vala	2
+csináltak vala	1
+csörget vala	1
+ctwala	1
+czazaarrakattatot vala	1
+czinaltak vala	1
+czuffolta vala	1
+dagadozot vala	1
+demiert vala	1
+det vala	1
+dicsekedtek vala	1
+dicsőittetett vala	1
+dicsőíttetett vala	3
+dicsőítteték vala	1
+dicsőült vala	1
+dicsőültetett vala	1
+disputal vala	1
+doeth vala	1
+dolgaytlatta vala	1
+dolhat vala	1
+dothvala	1
+dychyrt vala	1
+dyczóültetóth vala	1
+eeggiesewlt vala	1
+eekesewltetót vala	1
+eelet vala	2
+eelet wala	2
+eeleth vala	1
+eelethvala	1
+eelhet vala	1
+eelmwlth wala	1
+eelt vala	4
+eeltetvala	1
+eelth vala	1
+eerdemlethvala	1
+eerdemlót vala	1
+eerhetetvala	1
+eertekeztekwala	1
+eertőttewala	1
+eeth vala	2
+egerentvala	1
+egesőtetőt uala	1
+eget vala	1
+egetwala	1
+eggieseitettevala	1
+eggieswlteteth wala	1
+egibenragattak wala	1
+egieleitem vala	1
+egieleitem wala	1
+egielwlth wala	1
+egmassalbezellettek vala	1
+egybefoglalták vala	1
+egybegyülekeztek vala	2
+egybegyűltek vala	9
+egybegyűltünk vala	2
+egybetanakodtak vala	1
+egyesült vala	1
+egyezett vala	1
+együtt vala	1
+ehőztettek vala	1
+ekessytetet wala	1
+ektelensegevttevt vala	1
+ekősitőtuala	1
+ekősítőt vala	1
+eladta vala	1
+elaludtak vala	4
+elarulta vala	2
+elarultavala	1
+elbaggadotvala	1
+elbocatandoulígertvala	1
+elbocsát vala	1
+elbocsátott vala	1
+elbocsáttattak vala	1
+elbocsátták vala	1
+elborulvankealtvala	1
+elbágyadtak vala	1
+eleegódót vala	1
+elegeitem vala	1
+elegeyt vala	1
+elegit wala	1
+elegithwala	1
+elegittetthewala	1
+elegyitette vala	1
+elegyítette vala	1
+elegóitótte vala	1
+eleibeiőt vala	1
+eleneztetőtvala	1
+eleniezthet vala	1
+elenyésztett vala	1
+elenízőt vala	1
+elet vala	4
+elete vala	1
+elete wala	1
+eletevala	1
+elette vala	3
+eleuenenvette vala	1
+elfedeztetett vala	1
+elfelejtettek vala	2
+elfelejtették vala	1
+elfelejték vala	1
+elfeletkózót vala	1
+elfoglalt vala	1
+elfoglaltak vala	1
+elfogta vala	3
+elfogyott vala	1
+elfut vala	1
+elhagatot vala	1
+elhagattamvala	1
+elhagattatot vala	2
+elhagot vala	1
+elhagytuk vala	1
+elhagyták vala	3
+elhalgat vala	1
+elhattavala	3
+elhet vala	1
+elhethwala	1
+elhewth vala	1
+elhimlettek vala	2
+elhintették vala	1
+elhitték vala	2
+elholt vala	1
+elhozott vala	1
+elhírhedett vala	1
+elidegenültetek vala	2
+elindultak vala	1
+eljevt vala	1
+eljut vala	1
+eljött vala	2
+eljöttek vala	1
+elkarhozot vala	1
+elkezdet vala	1
+elkezdett vala	4
+elkezdettetek vala	1
+elkezdettük vala	1
+elkezdte vala	1
+elkészítettem vala	1
+elkészíttetett vala	1
+elköltötte vala	7
+elközelgett vala	5
+elközelít vala	1
+elküldettek vala	1
+elküldött vala	1
+elkőltőtte vala	1
+ellettek vala	2
+ellettekvala	1
+elmaradtak vala	1
+elment vala	1
+elmentek vala	3
+elmerwlt vala	1
+elmerültetett vala	1
+elmulatták vala	1
+elmúlat vala	1
+elmúlt vala	2
+elnemrepevlhet vala	1
+elnyugodt vala	1
+eloszlottak vala	5
+elpecsételtettek vala	1
+elragadtatott vala	2
+elragadtattam vala	3
+elragattakvala	1
+elrejtetett vala	2
+elrejtettek vala	1
+elrendelt vala	2
+elreytem vala	1
+elromlottak vala	1
+elrontotta vala	1
+elsokasult vala	1
+elszaggatta vala	1
+elszaggattattál vala	1
+elszakadtak vala	1
+elt vala	1
+eltauozotvala	1
+eltauoztat vala	2
+elterjedtek vala	1
+eltertvala	1
+elterítette vala	1
+eltet vala	1
+eltetetwala	1
+eltethem wala	1
+eltezet vala	1
+elteztette vala	1
+eltikkadott vala	1
+eltávozott vala	1
+eltért vala	1
+eltértek vala	1
+eltévelyedett vala	1
+eltökélette vala	1
+eltördelt vala	1
+eluegezteuala	1
+eluegezthe uala	1
+eluekeztheuala	1
+eluesteglőtte vala	1
+elueztőttem vala	1
+elueztőttevala	1
+eluytuala	1
+elvakarta vala	1
+elvaltvala	1
+elvegeitemvala	1
+elvegyítette vala	1
+elveszett vala	28
+elveszitek vala	1
+elvesztett vala	2
+elvesztette vala	1
+elvesztetted vala	1
+elvesztettem vala	5
+elvetettem vala	1
+elvetetőtvala	1
+elvett vala	3
+elvette vala	1
+elvettetett vala	2
+elvezet vala	1
+elvitettetek vala	1
+elvitt vala	2
+elvitte vala	2
+elvágta vala	4
+elválasztatott vala	1
+elválasztott vala	1
+elvégezett vala	4
+elvégezte vala	6
+elvégeztek vala	1
+elvégeztem vala	1
+elvégezték vala	2
+elvégeztük vala	2
+elvégzett vala	1
+elvétetett vala	2
+elweztetted wala	1
+elzakadozotvala	1
+elámította vala	2
+elárulta vala	8
+elígítettek vala	1
+elót vala	1
+elótteeesemlekózet vala	1
+előt vala	1
+előtt vala	4
+előtte vala	4
+előttevala	1
+előtuala	1
+előtzokot vala	1
+embereket vala	1
+emelt vala	1
+emelteteth wala	1
+emeltetetvala	1
+emeltevala	1
+emelth vala	1
+emezhet vala	1
+enczelkedesweelzerzet wala	1
+engedett vala	3
+engedtek vala	2
+engemetvígaztal vala	1
+engesztelte vala	1
+engettekvala	1
+engettetekvala	1
+engettetőt vala	1
+engezteltevala	1
+enghedet vala	1
+enghedót vala	1
+engőmetmegmőuethvala	1
+enieztetót vala	1
+enieztót vala	1
+enyezeth wala	1
+enyhíthette vala	1
+epedót vala	1
+epeyt vala	1
+erdemlet vala	1
+erdemlette vala	1
+erdemlótvala	1
+erdőmlőtteuala	1
+erdőmőt uala	1
+erdőmőt ualla	1
+eredetőt ualla	1
+ereibenmaradot vala	1
+eresswltetótvala	1
+ereszt vala	2
+eresztetett vala	5
+eresztett vala	1
+eresztette vala	1
+eresztettek vala	4
+eretted walla	1
+erevsevdevt vala	1
+erewtelenwltwala	1
+erezt vala	1
+ereztettek vala	1
+erhet vala	1
+ertek vala	2
+ertette vala	3
+erthe vala	1
+erthem wala	1
+erthhetem wala	1
+ertőtte vala	2
+erzet vala	2
+erzeth wala	1
+erzettem vala	1
+erzetthvala	1
+erzsébet vala	4
+erzót vala	1
+erzóthvala	1
+erósseeggelmwkalkodot vala	1
+erőssődőt vala	1
+erőszegett vala	1
+esallot vala	1
+eserdőmőt uala	1
+eset vala	4
+eseth vala	2
+esett vala	4
+esevt vala	1
+eshallotta wala	1
+esinth vala	1
+esküthvala	1
+esmerhet vala	1
+esmert vala	3
+esmerte vala	7
+esmertem wala	2
+esmerteuala	2
+esmertvala	1
+essót vala	1
+est vala	1
+este vala	3
+estekvala	1
+estem vala	1
+estünk vala	2
+esueniuőltuala	1
+eszent vala	1
+esót vala	1
+esóth vala	1
+esőt vala	1
+et vala	2
+etketad vala	1
+ettek vala	10
+ették vala	5
+euangelistavala	1
+evfrosínalakozot vala	1
+evltette vala	1
+evltevzet vala	2
+evltevztette vala	1
+evnekikadot vala	1
+evrsebet vala	1
+evttevt vala	1
+evzette vala	1
+ewedzet vala	1
+ewedzeth wala	1
+ewlteztette wala	1
+ewnekykywtot vala	1
+ewt wala	1
+ewtet vala	1
+ewtethzokta wala	1
+ewttetőt wala	1
+ewztewwerittete wala	1
+fahozkewteztek wala	1
+fakultakvala	1
+falta vala	1
+fanakeleütte valla	1
+faractatothvala	1
+faradoth vala	1
+faragtatot vala	1
+faragtattak vala	1
+faraktatot wala	1
+farattakwala	1
+farradotvala	2
+feddett vala	1
+feddhet vala	1
+fedettek vala	1
+fedezeth wala	1
+fedeztekwala	1
+fedeztetetwala	1
+fedeztetót vala	1
+feeledeth wala	1
+feelelmót vala	1
+feelhalgat wala	1
+feelmentek vala	1
+feeltek vala	1
+feerkózót vala	1
+feiedelmekzewrzettek wala	1
+feiedelmethalotta vala	1
+feketitette wala	1
+feketődőthvala	1
+fekevt vala	3
+fekewt vala	1
+fekit uala	1
+feküdt vala	14
+feleitőtte uala	1
+felelhet vala	6
+felelheth vala	1
+felelhetvala	1
+felellett vala	1
+felelt vala	1
+felelth vala	1
+felemelt vala	1
+felenthőrtenendőketh wala	1
+felette vala	9
+felette wala	2
+felettetót vala	1
+felettevala	1
+felfaragtak vala	1
+felfeszíttetett vala	1
+felfeszíttettek vala	1
+felfogadta vala	1
+felfúggeztőtvala	1
+felfüggesztettek vala	1
+felgiwlekezthek wala	1
+felgyűlt vala	1
+felháborodott vala	1
+felhágtak vala	1
+felindíttatott vala	1
+felindíták vala	1
+felkeltett vala	2
+felkiált vala	1
+felkészült vala	1
+felmagasztat vala	1
+felmagasztatták vala	2
+felment vala	1
+felmentek vala	6
+felmentem vala	1
+felneveltetett vala	1
+feltamaztotta vala	1
+feltamaztottavala	1
+feltamaztvala	1
+feltartatott vala	4
+feltelt vala	1
+feltámasztott vala	6
+felvették vala	1
+felvitetett vala	1
+felépíted vala	2
+felépítették vala	1
+felíratta vala	2
+felöltöztetett vala	2
+felöltöztettek vala	1
+felöltözött vala	4
+felövezted vala	1
+feneget vala	1
+fenelkedett vala	1
+fenerősseit vala	1
+fenyeget vala	3
+fenyeghet vala	1
+fenőshkerezt vala	1
+ferhet uala	1
+fernekhadoth wala	1
+feszíttetett vala	2
+fevttek vala	1
+fezeitettek vala	1
+fezeitőttekvala	1
+fezíttőttekvala	1
+fezőlt vala	2
+fezőltek vala	1
+fizetem vala	1
+fizetemvala	1
+fogadot vala	7
+fogadot wala	2
+fogadott vala	3
+fogadotvala	2
+fogantamvala	1
+fogatatoth wala	1
+fogatta uala	1
+fogatta vala	4
+fogattakvala	1
+fogattal vala	1
+fogattalvala	1
+fogattata vala	1
+fogattatott vala	3
+fogattauala	2
+fogattham wala	1
+fogatthawala	1
+fogdostak vala	1
+foghadot wala	1
+foghat vala	1
+foghatvala	1
+foghatwala	1
+foghlalta vala	1
+foghwazolgalta vala	1
+fogiatkozot vala	1
+fogiatkozoth wala	1
+fogiatkozothwala	1
+foglalt vala	1
+foglalta vala	4
+foglaltak wala	1
+foglaltam vala	1
+foglaltatot vala	1
+foglaltavala	1
+foglalták vala	1
+foglat vala	1
+fogoth vala	1
+fogotvala	2
+fogtak vala	5
+fogtakuala	1
+fogtatot vala	1
+foguamunkalkodot vala	1
+fogyatkozoth wala	1
+foktha wala	1
+folyta vala	1
+fontmérték vala	1
+fordeitot vala	1
+fordoit vala	1
+fordoitot vala	1
+fordulhat vala	1
+fordult vala	2
+fordultak vala	1
+fordultatok vala	1
+fordította vala	1
+forgatuala	1
+fozlot vala	1
+foztatot vala	1
+foztatot wala	1
+fut vala	6
+futh vala	1
+futhat vala	1
+futot vala	1
+fwt vala	1
+fwt wala	2
+fwth vala	3
+fwthawala	1
+fwtot vala	1
+fwzeteth wala	1
+fyzetem vala	1
+fért vala	1
+fóldetkyldet vala	1
+fölött vala	1
+függesztettek vala	1
+főlőttartvala	1
+főzeth vala	1
+főzettetvala	1
+főzött vala	1
+generkettethvala	1
+gerjeszt vala	1
+gevtretetvala	1
+gevtretevt vala	1
+giakorta vala	2
+gianant vala	1
+gieiteth vala	1
+gieitetvala	1
+gieith vala	1
+gienyerkevdevt vala	2
+giewzet wala	1
+gieytet vala	1
+giezte wala	1
+gilekeztek wala	1
+giogittvala	1
+giogivltvala	1
+gioitta vala	1
+gioropottattotvala	1
+giorssemberth vala	1
+giut vala	1
+giwitetwala	1
+giwladotvala	1
+giwlekeztek wala	1
+giwlt wala	1
+giwltek vala	1
+giőzte vala	1
+golgata vala	1
+golgota vala	1
+gondolhat vala	1
+gondolhat wala	1
+gondolt vala	9
+gondolta vala	1
+gondoltamvala	1
+gondoltatok vala	1
+gondoltvala	2
+gondolták vala	1
+gonossagbanfogilalta vala	1
+gonozthvala	1
+gutaütött vala	1
+gyakorlotta vala	1
+gyakorlottak vala	1
+gyakorta vala	1
+gyeyth vala	1
+gyogehtotta vala	1
+gyogylth vala	1
+gyogywlt vala	1
+gyogyüth vala	2
+gyont vala	1
+gyontvala	1
+gyászolat vala	1
+gyógyit vala	1
+gyógyult vala	1
+gyógyíthatta vala	1
+gyógyíthatták vala	1
+gyógyított vala	3
+gyógyíttathatott vala	2
+gyóntam vala	1
+gyózót vala	1
+gyötret vala	1
+gyötretett vala	2
+gyötrettetett vala	1
+gyötrötte vala	1
+gyötrődött vala	1
+gyötörtem vala	1
+gyújtattak vala	1
+gyújtattatott vala	1
+gyülekezet vala	1
+gyülekezett vala	2
+gyült vala	1
+gyülth vala	1
+gyűjtőzött vala	1
+gyűlt vala	7
+gyűlölték vala	1
+gíoget vala	1
+gíogít uala	1
+gíogíttotta uala	1
+gúrezőtvala	1
+gülekeztek vala	1
+gültekvala	1
+gülőltek vala	1
+gőltek vala	1
+gőttrettetőt uala	1
+gőzthe uala	1
+haath wala	1
+haath walla	1
+haazert vala	1
+haborgatvala	1
+haborultvala	1
+haborwsaghert vala	1
+hadakozotvala	1
+hagiatot vala	2
+hagiot vala	7
+hagiot wala	2
+hagioth wala	1
+hagot uala	1
+hagot vala	1
+hagyokezethvala	1
+hagyoth vala	1
+hagyott vala	5
+hagyta vala	7
+hagytak vala	1
+hagíot uala	1
+hagüoth vala	1
+hailot vala	2
+hait vala	1
+haitot vala	1
+haitvala	1
+hajlott vala	2
+hajlottak vala	2
+hajt vala	1
+hajtott vala	1
+hajtotta vala	3
+hajít vala	1
+halaalziletet vala	1
+haladt vala	1
+haladta vala	1
+halakatad wala	1
+halalthyrdet vala	1
+halatta uala	1
+halgat vala	2
+halgat wala	1
+halgatad vala	1
+halgath vala	1
+halgathwala	1
+halgatot vala	1
+halgatta vala	1
+halgatvala	3
+hallgat vala	10
+hallgatták vala	3
+hallgaták vala	1
+hallhatta vala	1
+hallot vala	7
+hallott vala	7
+hallotta vala	28
+hallotta wala	2
+hallottak vala	11
+hallottak wala	3
+hallottakuala	1
+hallottam vala	3
+hallottatok vala	2
+hallottatot vala	1
+hallottauala	1
+hallottavala	1
+hallották vala	30
+hallotuala	1
+hallotvala	2
+halotak vala	1
+halottak uala	1
+halottak vala	1
+halt vala	2
+hanta wala	1
+haragudott vala	1
+haraguthvala	1
+haragvt vala	1
+haragvtvala	1
+haromzortagattawala	1
+hasonlot vala	1
+hastart vala	1
+használt vala	3
+használtak vala	1
+hatalmazot vala	4
+hatha wala	1
+hatott vala	1
+hatta vala	11
+hatta wala	2
+hattak vala	1
+hattavala	2
+hazanaltartotta vala	1
+haznalt vala	1
+haznotwalla	1
+hazta wala	1
+haította vala	1
+heerwadot vala	1
+heeth vala	1
+hegadatatot vala	1
+helheztetót vala	2
+helyhettetett vala	2
+helyheztetett vala	9
+helyheztettek vala	1
+helyheztettevala	1
+helyheztették vala	2
+helyhezteték vala	1
+hempőlődőt vala	1
+heted vala	1
+heth wala	1
+hetíglenbírta vala	1
+heveht vala	1
+hewsaghokathteheth vala	1
+hidegevlt vala	1
+himtetvala	1
+hirdet vala	2
+hirdetek vala	1
+hirdetem vala	2
+hirdeteth wala	1
+hirhedót vala	1
+hirhet vala	1
+hisztek vala	1
+hit uala	1
+hit vala	2
+hite vala	3
+hith uala	1
+hitt vala	3
+hittak vala	1
+hittavala	1
+hittek vala	8
+hittekvala	1
+hittha vala	1
+hittünk vala	1
+hitvala	1
+hiwath wala	1
+hiülette vala	1
+hiülót vala	1
+hogkilatta vala	1
+hognemzolhat vala	1
+holot vala	2
+holot wala	1
+holoth vala	1
+holoth wala	2
+holothvala	1
+holott vala	8
+holotzokot vala	1
+holt vala	26
+holt wala	1
+holtal vala	2
+holtam vala	2
+holth vala	2
+holth wala	3
+holthwala	1
+holtuala	1
+holtvala	3
+homaliosotak vala	1
+homalioswltak vala	1
+honnét vala	2
+hotunk uala	1
+hozatot vala	1
+hozot vala	7
+hozot wala	2
+hozoth vala	1
+hozothvala	1
+hozta uala	1
+hozta vala	3
+hozta wala	1
+hoztak vala	2
+hoztakvala	1
+hoztam vala	1
+hoztam wala	1
+hoztavala	1
+hoztta vala	1
+hozták vala	1
+hozzaiazoríttotta vala	1
+hozzaiazorítvala	1
+hozót vala	1
+hullat vala	1
+hullatvala	1
+hustsút vala	1
+hwllath uala	1
+hwllatoth wala	1
+hydegedet vala	1
+hyrdetem vala	1
+hyrdetevt vala	1
+hyrhet vala	1
+hyt vala	1
+hytta vala	1
+hyttalak vala	1
+hyvttavala	1
+hywtta vala	1
+hzettem vala	1
+háborgat vala	3
+háborgatta vala	1
+hírvadot vala	1
+hítta vala	1
+hívatta vala	1
+hívattatott vala	2
+hívott vala	2
+hívta vala	7
+húsvét vala	1
+hütet vala	1
+hüveereeth vala	1
+iarth vala	1
+iarwltvala	1
+idvőzeitettevala	1
+iedet vala	1
+iegeztetőth wala	1
+ielenghette vala	1
+ielent vala	1
+ielentet vala	1
+ielentette wala	1
+ielenthet vala	1
+ielentóttevala	1
+ielétheth wala	1
+iesusth vala	1
+iet wala	2
+ieth wala	1
+iettekvala	1
+iettünk vala	1
+ievt vala	1
+iewendónekbizonsagat vala	1
+iewendótmondat vala	1
+iewhet vala	1
+iewt vala	5
+iewtvala	1
+igazulhat vala	1
+igeerte vala	1
+igeerte wala	1
+igenvtal vala	1
+igert vala	1
+igerte uala	1
+igerte vala	1
+igerth wala	1
+igerthe uala	1
+igieert vala	2
+igieertem vala	1
+igieerttem vala	1
+ihesusmondottavala	1
+ilet vala	1
+illet vala	4
+illete wala	1
+illette vala	1
+illettetett vala	1
+illették vala	1
+ilthvala	1
+imadoth vala	1
+imaranfogantatot vala	1
+imareltuala	1
+imádtak vala	1
+inaszakadt vala	1
+indoitotta vala	1
+indult vala	1
+indwlth wala	1
+indíthatunk vala	1
+indított vala	1
+int vala	6
+intek vala	1
+intette vala	1
+inth vala	2
+inth wala	1
+intótte vala	1
+ioolmondotta vala	1
+ioth uala	1
+iottvala	1
+iozagotkővetek vala	1
+irattattak vala	2
+irattawala	2
+irattha wala	1
+iregsegmiaaroltakvala	1
+irgalmadsegeit vala	1
+irt vala	1
+irtak vala	2
+irtakwala	1
+irthvala	1
+irthwala	1
+ismert vala	2
+ismerte vala	3
+ismerth vala	2
+ismerth wala	1
+ismerthe wala	1
+ismertte vala	2
+ismerték vala	4
+istengeryeztet vala	1
+istenneczolgalt vala	1
+istenneekwalaztoth wala	1
+ital wala	1
+itat vala	1
+itette vala	1
+ittakvala	1
+itótte vala	1
+itőtthe wala	1
+iudit vala	1
+iut vala	1
+iuthat vala	1
+iutwala	1
+iuőltuala	1
+ivott vala	3
+ivtot vala	1
+iwt vala	1
+iwt wala	3
+iwth wala	1
+iwtot vala	3
+iwtotak wala	1
+iwtotakwala	1
+iwtoth vala	1
+iwttek wala	1
+iwwtot vala	1
+izent vala	1
+izetót vala	1
+izót vala	1
+iőheth vala	1
+iőt uala	1
+iőt vala	6
+iőtekuala	1
+iőthwala	1
+iőttek vala	3
+iőttekvala	2
+iőttem uala	2
+iőtvala	2
+jarta vala	1
+jdeyglevt vala	1
+jegyeztetett vala	2
+jegyzettek vala	2
+jelent vala	4
+jelentek vala	1
+jelentette vala	5
+jelentették vala	1
+jeut vala	1
+jevt vala	2
+jevttekvala	1
+jgenzeret vala	1
+jndeht vala	1
+jndultatot vala	1
+jnt vala	2
+jolent vala	1
+jut vala	7
+jutott vala	11
+jutottak vala	2
+jutvala	1
+jvtvala	1
+jwt vala	1
+járt vala	3
+játszottak vala	1
+jött vala	43
+jöttek vala	36
+jövelt vala	1
+kaialthwala	1
+kaphat vala	1
+karhoztatot vala	1
+karomlat vala	1
+kayalt vala	1
+kealtatta vala	1
+kealthwala	1
+kebzőttevala	1
+kedeghozta vala	1
+kedvelt vala	1
+keebzettevala	1
+keenoztatta vala	1
+keereghet vala	1
+keert vala	3
+keerth vala	1
+kegietlenseeggelindwlt vala	1
+kelhet vala	2
+kelheth wala	1
+kelt vala	2
+keltette vala	1
+kemenyeytette vala	1
+kenet vala	3
+kenette vala	1
+kenierületesseegzallotta vala	1
+kenniaraakewzelit wala	1
+kenocbanlatvala	1
+kenokat walla	1
+kente vala	1
+kente wala	1
+kenthevala	1
+kenthewala	1
+kepefelfaraktatot uala	1
+keppenzolt wala	1
+kerdette vala	2
+kerdezkóttek vala	1
+kereset vala	2
+keresethvala	1
+keresghet vala	1
+kereste uala	1
+kerestek vala	3
+kereszt vala	1
+keresztelkedtek vala	1
+kerezt uala	1
+kereztelkettekvala	1
+kereztethvala	1
+kereztjennelőt vala	1
+kerezttienekeertatta vala	1
+kereztólt vala	3
+kereztőlkődőt vala	1
+kergedazerth wala	1
+kert vala	7
+kerte vala	1
+kertevala	1
+kerth vala	1
+kerth wala	2
+kerthe wala	1
+kescerítőthvala	1
+keseertek vala	1
+keserettek wala	1
+kesseredeth vala	1
+kesserüsegeertvala	1
+kesőt vala	1
+keteztetet wala	1
+kettőztetőt vala	1
+keuant vala	1
+kevert vala	1
+kevldettelekvala	1
+kevnyerevletteljndultatot vala	1
+kevtevtte vala	2
+kevuet vala	1
+kevzevt vala	1
+kewanthwala	1
+kewekbolrokatatot wala	1
+keweltettek vala	1
+kewereitette vala	1
+keweródót vala	1
+keweródótvala	1
+kewet wala	1
+kewetwala	1
+kewltette wala	1
+kewtelezte wala	1
+kewtete wala	1
+kewzelith wala	1
+kewzewthwala	1
+kezdet vala	1
+kezdeth vala	1
+kezdett vala	8
+kezdettek vala	2
+kezdte vala	1
+kezdtek vala	1
+kezdót vala	2
+kezdótte vala	3
+kezepethe wala	1
+kezereytette vala	1
+kezereytőtvala	1
+kezet vala	3
+kezet wala	1
+kezeth wala	1
+kezethwala	1
+kezettevala	1
+kezeütvala	1
+kezte wala	1
+keztek wala	1
+kiaithvala	1
+kialt vala	1
+kialth wala	1
+kifaragtatott vala	2
+kifut vala	1
+kifutot uala	1
+kihozot vala	1
+kihozott vala	2
+kihozta vala	1
+kihírhedett vala	1
+kihívta vala	1
+kijöttem vala	1
+kikbézokot wala	1
+kikethlat wala	1
+kikiwttek wala	1
+kikjuttek vala	1
+kikmentek wala	1
+kiktewrtentek wala	1
+kikötött vala	1
+kikőttek vala	1
+kildettek uala	1
+kildetvala	1
+kildezet vala	1
+kildóttelekvala	1
+kilzent vala	1
+kiment vala	5
+kimentek vala	6
+kimlőttek uala	1
+kimult vala	1
+kinekastaroth vala	1
+kinekzolgalt vala	1
+kineret vala	1
+kisebbedtek vala	1
+kiszállottak vala	2
+kiszármazott vala	2
+kiszökdöstek vala	1
+kit vala	1
+kit valla	6
+kitarth vala	1
+kiterjesztette vala	1
+kith wala	1
+kithadoth vala	1
+kithekesit wala	1
+kithvett vala	1
+kithvigaztal vala	1
+kiuetkőzőt uala	1
+kivanta vala	1
+kivet vala	1
+kivetett vala	1
+kivetette vala	1
+kivette vala	1
+kivettetett vala	1
+kivágatott vala	3
+kiválasztott vala	1
+kiwanta vala	1
+kiwólmaradot vala	1
+kizentarth wala	1
+kiált vala	34
+kiálták vala	2
+kiűzte vala	2
+kopaztattak wala	1
+koronaztak wala	1
+korsagtart vala	1
+korwlth vala	1
+kostolta vala	2
+ktal vala	1
+kwldewtek wala	1
+kwtwala	1
+kwtwztek vala	1
+kyalt vala	3
+kyalt wala	1
+kyayth vala	3
+kyfaragothwala	1
+kyjevt vala	1
+kyket vala	1
+kykethmondoth vala	1
+kykethvalaztot vala	1
+kyldettek vala	1
+kynyouitottam uala	1
+kyt valla	2
+kyth walla	1
+kythzyltem vala	1
+kytvalla	1
+kényszerítem vala	1
+kényszerítették vala	1
+kérdett vala	1
+kérdezkedett vala	1
+kért vala	1
+kérte vala	1
+kértek vala	1
+készített vala	6
+készítettek vala	2
+készíttetett vala	2
+készítteték vala	1
+készület vala	3
+készülete vala	1
+készült vala	1
+kétségbeestünk vala	1
+kíket valla	1
+kíthbocattakvala	1
+kíthhallot vala	1
+kíuettek vala	1
+kívánta vala	1
+kívántatok vala	1
+kótót vala	1
+kótóttek vala	1
+kótótvala	1
+kótóztette vala	1
+kózót vala	3
+kózótvala	1
+költötte vala	5
+könyököltem vala	1
+könyörültem vala	1
+környékezte vala	2
+körülkötötte vala	1
+körülvette vala	1
+körülvették vala	1
+körülvétetett vala	2
+követ vala	2
+követe vala	1
+követem vala	2
+követtek vala	1
+követték vala	19
+követtük vala	1
+követék vala	3
+közelgett vala	1
+közelít vala	1
+közelített vala	1
+közepett vala	4
+közepette vala	2
+közt vala	1
+között vala	16
+közötte vala	2
+közöttük vala	1
+kúldetemuala	1
+küldettek vala	2
+küldött vala	4
+küldötte vala	3
+küldöttelek vala	1
+küldöttetek vala	1
+küldötték vala	1
+küldőt vala	2
+külte vala	1
+kőlth vala	1
+kőltőttevala	1
+kőttetőt vala	1
+kőtőth vala	1
+kőtőtt vala	1
+kőtőztekvala	1
+kőtőzőtt uala	1
+kőuetvala	1
+kővettek vala	1
+kővettekvala	1
+kőzeleit vala	1
+kőzelítőt uala	1
+kőzenhet uala	1
+kőztek wala	1
+kőzzotvala	1
+kőzzwliőttek wala	1
+kőzőt vala	5
+kőzőtvala	1
+laat vala	1
+laat wala	1
+laathvala	1
+lacozoremőte vala	1
+lakot vala	5
+lakott vala	2
+lakotvala	2
+lakozhatott vala	1
+lakozot vala	6
+lakozotvala	1
+lanczoztakvala	1
+lappagotvala	1
+lassanzokot vala	1
+lat uala	1
+lat vala	4
+lat wala	1
+lath vala	2
+lathat vala	2
+lathathvala	1
+lathhat vala	1
+lathvala	1
+latniiőttek wala	1
+latogatta vala	1
+latogatvala	1
+latot vala	11
+latot wala	2
+latoth vala	2
+latothwala	1
+latotta vala	1
+latotuala	1
+latotvala	3
+latotwala	1
+latta vala	9
+latta wala	2
+lattak uala	1
+lattak vala	9
+lattak wala	2
+lattakvala	3
+lattatok vala	1
+lattavala	3
+latuala	1
+laztattak vala	1
+leanfelelt vala	1
+leelekzerent vala	1
+leesett vala	1
+leestek vala	1
+leett vala	1
+lehajták vala	1
+lehet uala	1
+lehet vala	13
+lehet wala	1
+leheth wala	1
+lehethvala	1
+lehethwala	1
+lehetvala	2
+leianitart wala	1
+leleknekmikent vala	1
+lelettetett vala	1
+lelhet vala	2
+lelkeerth vala	1
+lelkeketad vala	1
+lelket vala	1
+lelt vala	4
+lelt wala	2
+lelte vala	3
+lelth vala	1
+lerakták vala	1
+leszakadoztak vala	1
+leszállottak vala	1
+let vala	4
+letelepedett vala	4
+letelepedtek vala	4
+leth wala	1
+lett vala	46
+lettek vala	17
+lettek wala	1
+lettem wala	1
+levita vala	1
+levt vala	3
+lewthwala	1
+lewtted vala	1
+lewtwala	1
+leültek vala	4
+lágyíták vala	1
+lát vala	9
+látattak vala	1
+látott vala	12
+látta vala	8
+láttak vala	19
+láttam vala	6
+láttattak vala	1
+látták vala	35
+láták vala	1
+lőt vala	1
+lőth vala	2
+lőttek vala	1
+lőtvala	1
+magacenaltatot vala	1
+magadot vala	1
+maganacvalaztotvala	1
+maganakhüőth wala	1
+maganakzerzette vala	1
+magatayanlotta vala	1
+magaztalt vala	1
+magaztatthamwala	1
+magokathimtót vala	2
+magokot vala	1
+magyarazot vala	1
+malaszt vala	1
+malazt vala	1
+malaztotadot uala	1
+maradhat vala	3
+maradhatvala	1
+maradot vala	8
+maradothvala	1
+maradothwala	1
+maradott vala	2
+maradotvala	2
+maradtak vala	1
+marattak vala	2
+marattam vala	1
+margareta vala	1
+margit vala	1
+martiribusmert vala	1
+meent vala	5
+meertek vala	1
+megadatott vala	3
+megalvadt vala	1
+megaranyaztatott vala	1
+megaranyoztatott vala	1
+megaszott vala	8
+megbetegült vala	2
+megbolondította vala	1
+megbántatott vala	1
+megbátoríták vala	1
+megbűvölte vala	1
+megcsalatott vala	1
+megcsalta vala	2
+megegyenesedtek vala	1
+megekősitőtte uala	1
+megelevenedett vala	1
+megelégedett vala	1
+megemeztetevt vala	1
+megemlített vala	1
+megerőssőlth wala	1
+megerősítette vala	1
+megesküdt vala	3
+megesküdött vala	4
+megesmerte vala	1
+megesmertevala	1
+megfarradot vala	1
+megfarraztottakvala	1
+megfeddette vala	1
+megfeniőgette vala	1
+megfenyít vala	1
+megfertőztették vala	1
+megfeszíttetett vala	12
+megfeszíttettek vala	8
+megfogatkozot vala	1
+megfogatoth vala	1
+megfogatott vala	1
+megfogatta vala	1
+megfogattatott vala	1
+megfoglalt vala	1
+megfogta vala	5
+megfogyatkozott vala	1
+megfogyatkoztak vala	1
+megfoszt vala	1
+megfozttatal vala	1
+megfőth vala	1
+meggeriedőtvala	1
+meggerjedett vala	1
+meggerjesztett vala	1
+meggyógyittatott vala	1
+meggyógyult vala	14
+meggyógyít vala	8
+meggyógyíttatott vala	2
+meggyógyíttattak vala	2
+meggyónt vala	1
+meggyőzte vala	1
+meggyőzték vala	1
+meggyűlölték vala	1
+meggörbedett vala	3
+meggörbedt vala	1
+meghagyta vala	9
+meghagytam vala	1
+meghallotta vala	1
+meghallották vala	1
+meghalt vala	41
+meghaltam vala	2
+meghaltatok vala	1
+megharagudtam vala	1
+meghasadothvala	1
+meghcokoltavala	1
+megheetekeródót vala	1
+megheruatvala	1
+meghesmerte vala	1
+meghewlet wala	1
+meghfogattatoth vala	1
+meghgőlekőztek vala	1
+meghgőzőth wala	1
+meghholthwala	1
+meghirhedt vala	1
+meghismerth wala	1
+meghlatogatuala	1
+meghnehezőltek vala	1
+megholt vala	6
+megholt wala	1
+megholtam vala	1
+megholtvala	3
+meghomalosottakvala	1
+meghorgadott vala	1
+meghorgadt vala	1
+meghparanczolta vala	1
+meghparanczoltam vala	1
+meghpeeldaztatoth wala	1
+meghsebhettekvala	1
+meghtanwlt vala	1
+meghzaraztotta vala	1
+meghzerzet wala	1
+megháborítottak vala	1
+meghírdettette vala	1
+megijedtek vala	1
+megiratott vala	1
+megismerte vala	2
+megismerted vala	1
+megismertetett vala	1
+megismerték vala	2
+megjelent vala	2
+megjelentetett vala	1
+megjelentette  vala	1
+megjelentette vala	1
+megjobbította vala	1
+megkeményedett vala	1
+megkenetett vala	1
+megkente vala	1
+megkentél vala	1
+megkeresztelkedtek vala	2
+megkereszteltettek vala	1
+megkerezteltetőtvala	1
+megkereztőlte vala	1
+megkeseredtek vala	2
+megkérdette vala	1
+megkértek vala	1
+megkóstolták vala	1
+megkörnyékezte vala	1
+megköteleztetett vala	3
+megkötöztetett vala	1
+megkötöztette vala	3
+megkötözték vala	2
+megkötözött vala	1
+megközött vala	1
+megkőtőztek wala	1
+meglatagat vala	1
+meglatta vala	1
+megleletezett vala	1
+meglátta vala	1
+megmaradott vala	6
+megmaradtak vala	6
+megmegverúsúltvala	1
+megmeuette vala	1
+megmezítelenítették vala	1
+megmodatott vala	1
+megmondatot wala	1
+megmondatott vala	11
+megmondota vala	1
+megmondott vala	2
+megmondotta vala	15
+megmondottuk vala	2
+megmondta vala	12
+megmondtuk vala	1
+megmutatta vala	4
+megnehezedett vala	4
+megnehezedtek vala	4
+megnehezítettünk vala	1
+megnehezíttettünk vala	1
+megnehezültek vala	3
+megnemgyonta vala	1
+megnyamvadt vala	1
+megnyitotta vala	1
+megnyomorodott vala	1
+megnyíltak vala	1
+megnyírta vala	1
+megoltotta vala	1
+megoltotta wala	1
+megorozta vala	1
+megparancsolta vala	5
+megparancsolták vala	2
+megpelypült vala	1
+megpiríták vala	2
+megpusztították vala	1
+megragadott vala	1
+megrettentek vala	2
+megrémült vala	1
+megsebesítették vala	1
+megsebesíttetett vala	1
+megsebhettették vala	1
+megszabadított vala	1
+megszakadott vala	1
+megszegetett vala	1
+megszegte vala	1
+megszenteltetett vala	2
+megszerette vala	1
+megszereztem vala	1
+megszerzette vala	1
+megszokta vala	2
+megszomorított vala	1
+megszorult vala	1
+megszoríttatott vala	1
+megszállott vala	3
+megszáradott vala	8
+megszólíták vala	1
+megsántult vala	1
+megsértetett vala	1
+megsértett vala	1
+megsértettetett vala	1
+megsömörközött vala	1
+megtagadott vala	1
+megtagadta vala	2
+megtagadtak vala	1
+megtanultam vala	1
+megtanították vala	2
+megtaníttatott vala	3
+megtaníttattak vala	1
+megtarthatta vala	1
+megtartották vala	1
+megtartvala	1
+megtarták vala	1
+megtartóztatták vala	1
+megterheltettünk vala	1
+megtevrtek vala	1
+megtiztoitotta vala	1
+megtutta vala	1
+megtért vala	1
+megtölt vala	1
+megtörlötte vala	2
+megtörölte vala	1
+megtúzesíltvala	1
+meguntam vala	1
+megvakult vala	1
+megvallott vala	1
+megverte vala	1
+megvették vala	1
+megvigaszott vala	4
+megvigaszt vala	1
+megvigasztattak vala	1
+megvilágosít vala	1
+megvirágozott vala	1
+megvndokvlt vala	1
+megvonta vala	1
+megvtal uala	1
+megvtalta vala	1
+megvtaluala	1
+megvádoltatott vala	1
+megvádolták vala	1
+megválasztott vala	1
+megvált vala	1
+megyrtak vala	1
+megzakadotvala	1
+megzakadoztak wala	1
+megzaradot vala	1
+megzegenlőtte vala	1
+megzegevttek vala	1
+megzerőztetőt vala	1
+megzokta vala	1
+megzomorodot vala	1
+megzöldült vala	1
+megékessíttetett vala	1
+megékesít vala	1
+megékesíttetett vala	3
+megékesíttettek vala	1
+megépítették vala	1
+megértekezett vala	1
+megértett vala	1
+megértette vala	1
+megértettem vala	1
+megérzett vala	1
+megígért vala	2
+megígérte vala	3
+megíratott vala	1
+megíratta vala	1
+megírattak vala	1
+megírt vala	1
+megírták vala	1
+megölettek vala	2
+megölettettek vala	2
+megövezetett vala	1
+megüzent vala	1
+mehet uala	1
+mehet vala	22
+mehetvala	4
+melegeht vala	1
+melet valla	3
+meletmondotvala	1
+melette wala	1
+meliet valla	2
+melietvalla	1
+mellet vala	1
+melletadot vala	1
+mellett vala	7
+mellette vala	2
+mellietmondot vala	1
+melmondatoth wala	1
+melyeketad vala	1
+mendeneket vala	1
+menete vala	1
+ment vala	45
+ment wala	3
+mentek vala	17
+mentek wala	1
+mentem vala	1
+mentete vala	1
+mentetek vala	1
+menth vala	1
+menth wala	2
+menthvala	1
+menttünk vala	1
+mentvala	2
+mentwala	1
+mereht vala	1
+merewltvala	1
+mereytetevt vala	1
+mert uala	2
+mert wala	2
+mertal vala	1
+merth vala	7
+merth wala	3
+merthwala	1
+mertiwtek wala	1
+mertvala	4
+mertzokot vala	1
+merwlt wala	1
+merwlth wala	1
+merytettek vala	1
+merítették vala	6
+merúlt vala	1
+merült vala	1
+mesterzokta wala	1
+met vala	1
+meuet vala	3
+miatt vala	1
+miatta vala	1
+miatta valla	1
+miazagattattal wala	1
+miert vala	1
+mikeenth vala	1
+mikeenth wala	2
+mikeenthvala	2
+mikent vala	2
+mikenth vala	2
+mikenth wala	4
+mikentzokta vala	1
+mikort wala	1
+mikétzolhat wala	1
+minddent wala	1
+mindenekeethwigazth wala	1
+mint vala	1
+mint wala	1
+mintvala	1
+miterdemlót vala	1
+mitzolhatwala	1
+modonrendólte vala	1
+modotta vala	1
+mondatott vala	15
+mondatotwala	1
+mondatta vala	1
+mondattak vala	3
+mondattatott vala	1
+mondatuala	1
+mondhat vala	2
+mondot uala	1
+mondot vala	13
+mondota vala	1
+mondoth wala	3
+mondothwala	1
+mondott vala	36
+mondotta uala	1
+mondotta vala	59
+mondottad wala	1
+mondottak vala	3
+mondottavala	2
+mondottuk vala	1
+mondották vala	4
+mondottál vala	1
+mondotuala	1
+mondotvala	1
+mondta vala	11
+monta uala	1
+monta vala	6
+monta wala	1
+montakvala	1
+montha wala	1
+monthath wala	1
+monthatvala	1
+monthhatvala	1
+montta vala	1
+mosot vala	1
+mosoth wala	1
+mosta wala	2
+mostawala	1
+mozdulhat vala	1
+mulat vala	2
+mulatuala	1
+mulatvala	2
+mult vala	1
+multwala	1
+munckacbaincelkődőt vala	1
+munckalkottata vala	1
+munkálkodott vala	2
+mutat vala	6
+mutat valla	1
+mutath vala	1
+mutatta vala	3
+mvltak vala	1
+mvlthvala	1
+mwlath vala	2
+mwlatot vala	1
+mwlt vala	6
+mwlth vala	1
+mwltvala	1
+mwnkat wala	1
+mwtat wala	2
+mwtath wala	1
+mwtatot vala	1
+mwthattad wala	1
+mykeppenlatta vala	1
+myndent  vala	3
+myndent vala	2
+myndentvala	1
+myndenüthvala	1
+mynket vala	1
+mynt vala	1
+mynthvala	1
+myntvala	1
+márta vala	1
+mártíromságot valla	1
+mérték vala	4
+métvala	1
+míath vala	1
+míkentparancoltvala	1
+mögött vala	1
+múlat vala	1
+mőnth vala	1
+mőt ualla	2
+művelhet vala	1
+művelkedtek vala	2
+művelte vala	1
+műveltek vala	1
+nagimwnkakat walla	1
+napokonzokot vala	1
+ndotta uala	1
+neemkelhet wala	1
+neemlat wala	1
+neemwlt vala	1
+neepgiwlt wala	1
+neezhet vala	3
+neezót vala	1
+nehagyenyerkevttet vala	1
+nehesseghfoltawala	1
+nehezedet vala	1
+nehezedet wala	1
+nehezoltek vala	1
+nehezúltek vala	1
+nehezőlt vala	1
+nehezőltekvala	1
+nehezőlthvala	1
+nekicielent uala	1
+nekiketzerzőt vala	1
+nekthekarwltam wala	1
+nemalhat wala	1
+nemeeth vala	1
+nemfogyoth vala	1
+nemhaiolhat vala	1
+nemhallot vala	1
+nemjuhet vala	1
+nemkelhet vala	1
+nemlaat vala	1
+nemmehet vala	1
+nemmondhat vala	2
+nemtehet vala	1
+nemtuthatot vala	1
+nemtőtt vala	1
+nemveethkózót vala	1
+nemvetem vala	1
+nemzet vala	2
+nemzetsegzerenthzalotwala	1
+nemzettek vala	1
+nemzettetett vala	1
+nemzokot vala	1
+nemzolt vala	1
+nemígazwlhat vala	1
+nemült uala	1
+nert uala	1
+nethalanthal wala	1
+neuekevdevt vala	1
+neuezet vala	1
+neueztetevt vala	1
+neueztethethuala	1
+neueztetít vala	1
+neueztevala	1
+neveltetett vala	3
+neveztetett vala	2
+neveztettek vala	3
+neveztettet vala	1
+newekedeth vala	1
+newelt vala	1
+neweltetótvala	1
+newethek wala	1
+newezót vala	1
+niomorit wala	1
+niomorotthak wala	1
+niomotot vala	1
+niomta vala	1
+nitotta vala	1
+nittatotvala	1
+nittavala	1
+niwgot vala	1
+niwgot wala	1
+nomoritotvala	1
+nomorodot vala	1
+nyeltvala	1
+nyerhet vala	1
+nyert vala	2
+nyertek vala	1
+nyertetek vala	2
+nyittatott vala	1
+nyomorgatta vala	1
+nyomoroytottavala	1
+nyomotot vala	1
+nyomottatot vala	1
+nyomtatta vala	1
+nyugodt vala	1
+nywgot vala	1
+nywgottak vala	1
+néfoghat wala	1
+négvltót vala	1
+néhíuat vala	1
+néiwt wala	1
+nélehet vala	1
+némehet wala	1
+nézhet vala	5
+níerte uala	1
+nőth wala	1
+odagyűltek vala	1
+odahívta vala	2
+odajött vala	1
+odajöttek vala	1
+odament vala	1
+odavitték vala	1
+odozot uala	1
+ohayt vala	1
+ohaytuala	1
+okaert vala	2
+okaertvala	1
+okaiertvaltoztatta valla	1
+olt vala	1
+oltotta wala	1
+oltottawala	1
+oluadothvala	1
+oluasot vala	1
+oluastatvala	1
+oluaztotta uala	1
+olvashatta vala	1
+olvasta vala	2
+olvastauala	1
+olwasta vala	3
+olwwasta wala	1
+omlothvala	1
+onnét vala	1
+ordeht vala	1
+országlott vala	1
+orzagaat vala	1
+orzagabolniomotot vala	1
+orzagat vala	1
+orzagokathaitot vala	1
+ostorozot vala	1
+ostoroztattalwala	1
+oszlat vala	2
+osztogat vala	3
+ot uala	1
+ot vala	9
+oth vala	3
+othvala	1
+ott vala	21
+ottvala	1
+otvala	1
+ozlot vala	1
+ozlottak vala	1
+ozlottakvala	1
+ozt vala	1
+oztogat vala	4
+oztogatta vala	1
+oztvala	1
+palantalt vala	1
+palantaltatotvala	1
+palantalthvala	1
+panaszoltak vala	1
+paraczolt vala	1
+parancholta vala	2
+parancoita uala	1
+parancolt vala	2
+parancolta uala	1
+parancoltatotvala	1
+parancoltauala	2
+parancoltvala	2
+parancsolatunk vala	1
+parancsolt vala	22
+parancsolta vala	16
+parancsoltatott vala	1
+parancsoltál vala	2
+paranczolt vala	3
+paranczolta vala	25
+paranczoltam vala	1
+paranczolthvala	1
+paranczolthwala	1
+paranczoltta vala	1
+paranezoltvala	1
+parazt vala	1
+part vala	1
+pecsételtetett vala	1
+peldaatzolgaltat vala	1
+peldat vala	1
+peldaztatot vala	1
+peldaztatot wala	1
+peldaztatotvala	1
+penzta vala	1
+pevkdevstekvala	1
+plántált vala	1
+plántáltatott vala	1
+poklossitotak vala	1
+prdikallotwala	1
+predath vala	1
+predicallott vala	1
+predicallotta vala	1
+predicallotwala	1
+predicatorokat vala	1
+predícallottavala	1
+profetalt vala	2
+profetalta uala	1
+profetaltauala	1
+proffetaltvala	1
+prophetalta vala	1
+prophetalth wala	1
+prozelita vala	1
+prédikált vala	1
+próféta vala	2
+pusztít vala	1
+puzta uala	1
+puzta vala	1
+pénzért vala	1
+ragadot vala	1
+ragadozotvala	1
+ragadtattatok vala	1
+ragatta uala	1
+ragazkodot wala	1
+raiokmaradoth wala	1
+raitadvala	1
+raitta vala	1
+rakath wala	1
+rakatothvala	1
+rakatott vala	4
+rakatta vala	1
+rakattatot vala	6
+rakattatotuala	1
+rakott vala	1
+raktak vala	2
+rakták vala	1
+ranth vala	1
+ranthvala	1
+rayttavala	1
+reafelelhet vala	1
+reeghenproffetalt vala	1
+reekent wala	1
+regenmontal wala	1
+reiaíahbízot vala	1
+reit wala	1
+reitettek vala	1
+reitezet wala	1
+rekedőtvala	1
+rekesztetett vala	1
+rekesztette vala	2
+rekesztettünk vala	1
+rekeztet vala	1
+rekeztevttevala	1
+rekeztót vala	1
+rekeztóttek vala	1
+rekeztőtteuala	1
+rendelt vala	1
+rendelte vala	5
+rendeltek vala	1
+rendeltetett vala	1
+rendeltettek vala	1
+reszket vala	2
+rettent vala	1
+rettentek vala	1
+reytezet vala	1
+reytte vala	1
+rezket vala	1
+reítőzőt vala	1
+rkőuetvala	1
+rnonta vala	1
+romabaiwtek wala	1
+ront vala	1
+ruthuala	1
+rwhathkőthőt wala	1
+rátanították vala	1
+rémület vala	1
+sanargattatot vala	1
+santa vala	1
+santal vala	1
+sarolth vala	1
+sebeibőhnragadoztak wala	1
+sebesitete vala	1
+sebhettevala	1
+segedelmetad vala	1
+segeht vala	1
+segheit vala	1
+segíthetvala	1
+semhullot vala	1
+semniomoroit vala	1
+semwegezte wala	1
+semzolhat vala	1
+sepert vala	1
+seregevallotvala	1
+serkegettetem vala	1
+setet vala	2
+sewerosirt wala	1
+siet uala	1
+siet vala	6
+sieth vala	1
+sietuala	1
+sietvala	1
+sirath walla	1
+sirattak vala	1
+sogyatkozot vala	1
+sokakathait vala	1
+sokkent walla	1
+soltartrnondot vala	1
+sororevrsebet vala	1
+sororoktartottak vala	1
+swgorottak vala	1
+syeth vala	1
+sylleztette vala	1
+syteth vala	1
+szedett vala	1
+szedték vala	1
+szellet vala	5
+szellete vala	1
+szent vala	3
+szentelte vala	2
+szentszellet vala	1
+szenvedett vala	6
+szenvedhetitek vala	1
+szenvedte vala	2
+szenvedthetitek vala	1
+szeret vala	33
+szeretete vala	1
+szerezte vala	1
+szereztetett vala	2
+szerzet vala	1
+szerzett vala	12
+szerzette vala	3
+szerzettek vala	1
+szerzettetett vala	1
+szerzettettek vala	1
+szerzették vala	1
+szokott vala	20
+szokta vala	10
+szoktak vala	5
+szokták vala	4
+szoktál vala	1
+szolgált vala	1
+szolgáltak vala	2
+szolgáltat vala	1
+szolgáltuk vala	1
+szombat vala	4
+szállott vala	6
+számlálhat vala	2
+számláltatott vala	1
+szánt vala	2
+származott vala	2
+szólhat vala	6
+szólott vala	4
+szólt vala	4
+szóltat vala	2
+szózat vala	1
+szökött vala	1
+született vala	11
+szült vala	1
+szülte vala	1
+szülötte vala	1
+sánta vala	1
+sért vala	1
+sésegithet wala	1
+sídoknacfelelt vala	1
+sírata vala	1
+síratvala	1
+sötét vala	4
+taart vala	1
+tabita vala	1
+tagatta vala	1
+tagatthawala	1
+tahmadot vala	1
+takartak vala	2
+takarított vala	1
+talathvetót vala	1
+taltam vala	1
+találkozott vala	1
+talált vala	1
+találtak vala	2
+találtatok vala	1
+találtunk vala	1
+találták vala	1
+tamadot uala	2
+tamadot vala	10
+tamadotvala	1
+tamattak vala	1
+tamaztot vala	1
+tamaztotvala	1
+tamogattakvala	1
+tanacothadotvala	1
+taneit vala	1
+taneyt vala	2
+taneytotta vala	1
+tanit vala	2
+tanitwanianakaianlotta wala	1
+tanoith vala	1
+tanoitvala	1
+tanolhatot vala	1
+tanolt vala	1
+tanolta vala	1
+tanolta wala	1
+tanoltak vala	1
+tanoltwala	1
+tanot valla	1
+tanoyth vala	1
+tantoroitottavala	1
+tanulhat vala	1
+tanulta vala	3
+tanultam vala	1
+tanwlt vala	2
+tanwlta vala	2
+tanácskoztak vala	2
+tanít vala	38
+tanítot uala	1
+tanította vala	1
+tanítottak vala	2
+tanították vala	1
+tanítotvala	1
+taníttatott vala	2
+taníttattak vala	1
+taníttattál vala	1
+tanúltak vala	1
+tanúságot valla	3
+tapogatvala	1
+tapot wala	1
+tart uala	2
+tart vala	19
+tart wala	2
+tarta vala	1
+tartassarahaitottal vala	1
+tartathothwala	1
+tartatot wala	1
+tartatott vala	3
+tartatunk vala	2
+tarth vala	7
+tarth wala	3
+tarthat vala	1
+tarthotamwala	1
+tarthvala	2
+tartot vala	4
+tartoth wala	1
+tartott vala	1
+tartotta uala	2
+tartotta vala	6
+tartotta wala	1
+tartottak vala	3
+tartottam vala	1
+tartotthawala	1
+tartották vala	2
+tartoztattunk vala	1
+tartuala	1
+tartvala	3
+tartwala	3
+tarták vala	3
+tatot vala	1
+tauoztak vala	1
+tawoztatotvala	1
+teekozloth vala	1
+teertvala	1
+teetetet vala	1
+teetetót vala	1
+teetetőthwala	1
+teett vala	2
+teeweztet vala	1
+tegedet wala	1
+teghedet  vala	1
+tehet uala	2
+tehet vala	11
+tehet wala	1
+tehetedvala	1
+tehetem vala	1
+tehetem wala	1
+tehát vala	1
+tekentvala	1
+tekintete vala	1
+telelt vala	4
+telepedtek vala	1
+tellesőlt vala	1
+telliesittewala	1
+teltette vala	1
+temeteestvalaztot vala	1
+temetetót vala	1
+temettek vala	1
+temettek wala	1
+temettetőt vala	1
+temetteuala	1
+temleczeebentartotta vala	1
+temleczeztetót vala	1
+terehtettek vala	1
+teremt vala	4
+teremtet vala	1
+teremteth vala	2
+teremtett vala	2
+teremtette vala	2
+teremtetvala	1
+teremtótte vala	1
+termett vala	1
+tertenth vala	1
+tertenthekwala	1
+terth uala	1
+tertvala	1
+terőmtetőt uala	1
+terőmtetőt vala	1
+terőmtőtted uala	1
+terőmtőttemvala	1
+test vala	3
+teste vala	2
+testeltyzta vala	1
+testevala	2
+tesztek vala	1
+tet vala	3
+tet wala	2
+tetetevt vala	3
+tetett vala	1
+tetetőt vala	1
+tetetőt wala	1
+tetetőthvala	1
+teth vala	8
+tethvala	1
+tett vala	50
+tette vala	11
+tette wala	3
+tettek vala	9
+tettem vala	2
+tetthewala	1
+tették vala	4
+teuelgeet vala	1
+tevkellette vala	1
+tevltevtte vala	1
+tevredelmessegetvet vala	1
+tevretevt vala	1
+tevrettevt vala	1
+tevrteent vala	1
+tevrtentek vala	3
+tevt vala	4
+tevttek vala	1
+tevttem vala	1
+tevtvala	1
+tewlt wala	1
+tewt wala	1
+tewttek wala	1
+teérted valla	1
+teürettek vala	1
+teőmtőtte vala	1
+thanoltwala	1
+tharthuala	1
+thawozothwala	1
+themettem wala	1
+thobanallot wala	1
+thőrdelt wala	1
+thőt vala	1
+tikzokoronholt vala	1
+tinektek vala	1
+tinektekvala	1
+tiszta vala	1
+tisztítottam vala	1
+tithkolta vala	1
+titkolt wala	1
+titkolta vala	1
+titkoltauala	1
+titkonielentette wala	1
+titkólewt wala	1
+titóket vala	1
+tizesóitótte vala	1
+tizta uala	1
+tiztehtotta vala	1
+tizthauala	1
+totat uala	1
+totta vala	1
+tottek wala	1
+trombita vala	8
+trombitál vala	1
+tudomant valla	1
+tynektek vala	1
+tyzta vala	2
+tyztelt vala	1
+támadott vala	15
+támaszkodott vala	1
+támasztott vala	1
+tért vala	1
+tértek vala	1
+tésztek vala	1
+tétetett vala	12
+tétette vala	1
+tíztasagotfogadotvala	1
+tólt vala	2
+tórtenth vala	2
+töltötte vala	1
+töltöttetek vala	1
+törlejtetett vala	1
+történt vala	16
+történtek vala	4
+tőlte wala	1
+tőltekwala	1
+tőltem vala	1
+tőltwala	1
+tőltőltvala	1
+tőltőtte vala	1
+tőmlőczbenkereztőlt vala	1
+tőrtent vala	1
+tőrtentek vala	1
+tőt uala	1
+tőt vala	2
+tőth vala	1
+tőthvala	1
+tőthwala	1
+tőtte uala	1
+tőtte vala	2
+tőttek vala	2
+tőttekuala	1
+tőttem uala	1
+tőttevala	1
+tőtthvala	1
+tőttőtte uala	1
+tőtuala	1
+tőtvala	2
+uaiattatotvala	1
+ualaztatotuala	1
+ualaztot uala	1
+uekezőtuala	1
+uetette vala	1
+uetkőzőtuala	1
+uettetőth vala	1
+uettetőtuala	1
+ueztőt uala	1
+ugat vala	1
+ugmondot uala	1
+uigaztalast ualla	1
+uituala	1
+uralkodott vala	1
+utál vala	1
+uőt uala	1
+uőtte uala	1
+uőtuala	1
+vaczorat vala	1
+vaczorattette vala	1
+vadoltak uala	1
+vagatot vala	1
+vagta vala	2
+vagtak vala	1
+vagtta vala	2
+vakoit vala	1
+valamitlatot vala	1
+valamítkeset vala	1
+valaztot uala	1
+valaztot vala	4
+valaztotta vala	6
+valaztottad vala	1
+valaztottak uala	1
+valaztottam vala	1
+valaztottha vala	1
+valhat vala	3
+vallott vala	4
+vallotta vala	2
+vallották vala	1
+valot vala	1
+valt vala	1
+valtozot vala	1
+valtoztatot uala	1
+valtoztatta vala	3
+valtoztatta valla	1
+valtoztattak vala	1
+varrotvala	1
+veegezte vala	1
+veegezót vala	1
+veeghezte vala	1
+veegheztem vala	1
+veegheztevala	1
+veet vala	1
+veeth vala	1
+veethkeztek vala	1
+veetkózót vala	1
+veett vala	1
+veetvala	1
+vegezte uala	2
+vegezte vala	2
+vegeztem vala	1
+vegeztetőt vala	1
+vegietek vala	1
+vehetitek vala	1
+vehetvala	2
+vehtevt vala	1
+vekezthe uala	1
+vekeztheuala	1
+velagosodot vala	1
+veleneuekevdevt vala	1
+velomoztatotvala	1
+veltek uala	1
+venhőt vala	1
+verettetevt vala	1
+veretünk vala	1
+vert uala	1
+vert vala	2
+verte vala	2
+vertekuala	1
+verősylth vala	1
+veszt vala	1
+vesztette vala	2
+vet vala	15
+veted vala	2
+veted wala	1
+vetek vala	2
+vetekedtek vala	5
+vetekuala	1
+vetetevt vala	1
+vetett vala	2
+vetette uala	1
+vetette vala	10
+vetettek vala	2
+vetettetek vala	2
+vetettevala	1
+vetették vala	1
+vetettél vala	3
+vetetőth vala	1
+vetevt vala	1
+veth vala	2
+vetkezet vala	1
+vetkőzőt uala	1
+vett vala	43
+vette uala	1
+vette vala	30
+vettek uala	2
+vettek vala	7
+vettekvala	1
+vettem vala	3
+vettetek vala	2
+vettetet vala	1
+vettetett vala	19
+vettetevt vala	1
+vettette vala	1
+vettettek vala	1
+vettetót vala	1
+vettetótvala	2
+vettetőtvala	2
+vettevala	2
+vettvala	1
+vették vala	4
+vettél vala	1
+vettük vala	1
+vetélkedtek vala	2
+vetétek vala	1
+vetót vala	1
+vetóth vala	1
+vetőte vala	2
+vevt vala	5
+vevttevala	1
+vevtvala	1
+vezet vala	3
+vezeth vala	1
+vezetvala	1
+vezteghalgatvala	1
+veztek vala	2
+veztet vala	2
+veztete vala	1
+veztettem vala	4
+veztevt vala	1
+veztevttevala	1
+vezthet vala	1
+veztotte uala	1
+vezttet vala	1
+veztőtte uala	1
+veztőtte vala	2
+vezőt vala	1
+vigaszt vala	2
+vigasztalat vala	1
+vigasztalást valla	1
+vigasztott vala	1
+vigazot vala	2
+vigazothvala	1
+vigazotth vala	1
+vigazt vala	2
+vigaztal vala	1
+vigaztot vala	1
+vigaztotta vala	1
+vigaztvala	2
+vihet vala	1
+vilagosyttotta vala	1
+világosított vala	1
+viselte vala	1
+viseltetevt vala	1
+viseltetünk vala	1
+viseltvala	1
+vit uala	1
+vit wala	1
+vitetett vala	1
+vitette uala	1
+vitettettek vala	1
+vitettél vala	1
+vitetünk vala	3
+vitetőt uala	1
+vitetőtth vala	1
+vith vala	1
+vitt vala	2
+vitte vala	3
+vittek vala	5
+vittek wala	1
+vittekvala	2
+vittem vala	1
+vittetek vala	1
+vizbenmehet vala	1
+vndocatőttekvala	1
+vndokittotak vala	1
+vohat vala	1
+volnamert vala	1
+volt vala	6
+voltaatvala	1
+voltak vala	1
+volthvala	1
+vontakuala	1
+vontatvala	1
+vtalt vala	1
+vtalta vala	1
+vtaluala	1
+vtaniőttek vala	1
+vtannamartirumsagot valla	1
+vygazot vala	1
+vyragzot vala	1
+vytettetóth vala	1
+vágatott vala	2
+vágattatott vala	2
+vágott vala	2
+vájt vala	1
+választatott vala	1
+választott vala	9
+választotta vala	1
+választottak vala	1
+változott vala	2
+változtatta vala	3
+várta vala	1
+végezte vala	2
+végeztek vala	1
+végezték vala	1
+vétetett vala	2
+vétette vala	1
+vétkezett vala	2
+véttetett vala	1
+vígaztal vala	1
+vígaztalvala	1
+víseltekvala	1
+vítetetvala	1
+víth vala	1
+vízetuala	1
+vótt vala	1
+vőth vala	3
+vőtte vala	2
+vőttedvala	1
+vőtvala	3
+waghta wala	1
+walaztoth wala	1
+walaztottak wala	1
+wallottak wala	1
+wallotwala	1
+weeth vala	1
+wegezheth wala	1
+wegezte wala	1
+wereswltettek wala	1
+weseimvetem wala	1
+weseimvvetem vala	1
+wetek wala	1
+wetetem wala	1
+wetetet wala	1
+wetetewthwala	1
+weth vala	1
+weth wala	2
+wetkőzőt wala	1
+wette wala	2
+wetteteth wala	1
+wezet wala	1
+wezeth wala	1
+weztette wala	1
+weztettelek wala	1
+weztőttem wala	1
+wezőt wala	1
+wezőth wala	1
+wezőtuala	1
+wgewztewerittete wala	1
+wgitanwltam wala	1
+wgizewrzetted wala	1
+wigazot wala	2
+wigaztal wala	1
+witetethet wala	1
+wittek wala	1
+wiwlth wala	1
+wizesitőtthe wala	1
+wontattam wala	1
+wotot walla	1
+wrzotta vala	1
+wtal wala	1
+wtalth vala	1
+wtaneredót vala	1
+wtannaeremeet valla	1
+wtatmwtat wala	1
+wth vala	1
+wtőtte wala	1
+wőt wala	1
+yarth vala	1
+ydwezeyt vala	1
+ydwezeytet vala	1
+ydwezeyth vala	1
+ydwezeyth wala	1
+yelőnt vala	1
+yeth vala	2
+yett vala	5
+yewt vala	2
+yewth vala	2
+yeüt vala	1
+ymadkozoth vala	1
+ynth vala	1
+yrt vala	1
+yrth vala	1
+yrtta vala	1
+ysmerthvala	1
+ystenparanczolth vala	2
+yth wala	1
+ywtot vala	1
+yyoth vala	1
+zaalloth wala	1
+zaarrat uala	1
+zabadeithwala	1
+zabadult vala	1
+zaggat vala	1
+zaggath vala	1
+zaggattatal wala	1
+zahadwlt vala	1
+zakadozot vala	2
+zakaríasprofetalvala	1
+zaladot vala	1
+zalattakvala	1
+zalhat wala	1
+zallot uala	1
+zallot vala	2
+zalloth vala	1
+zallottak vala	3
+zamkívetőthwala	1
+zamlalhat uala	1
+zamlalhat vala	1
+zamlalhatvala	1
+zamlaltatot vala	2
+zandokoztak vala	1
+zandokoztam vala	1
+zantam vala	1
+zanth vala	1
+zaradothvala	1
+zaraztotta vala	1
+zaraztotta wala	1
+zarmazot vala	2
+zeerzetibenemeltetót vala	1
+zegeenieketeeltet vala	1
+zegenekadot wala	1
+zegeztetőtvala	1
+zegheenseegótielent vala	1
+zegheenteeltet vala	1
+zeghetót vala	1
+zellet vala	3
+zemermenkít valla	1
+zemethad vala	1
+zent vala	1
+zent wala	1
+zentelt vala	1
+zenteltetetvala	1
+zenthleleknekmikeenth wala	2
+zenthleleknekmykenth wala	1
+zentlelkót vala	1
+zentvala	1
+zentólt vala	1
+zenuedeth vala	1
+zenuedhet uala	1
+zenuedőt vala	1
+zenuedőtuala	1
+zenuette vala	1
+zenvedet vala	1
+zenvedhet vala	1
+zenwedet wala	1
+zeplevsittet vala	1
+zepppeldathvala	1
+zereethwala	1
+zerelőmnekwlzilt wala	1
+zerent uala	1
+zerent vala	2
+zerenth wala	1
+zerenthiratta wala	1
+zeret uala	1
+zeret vala	16
+zeretet uala	1
+zeretet vala	1
+zereth vala	3
+zereth wala	4
+zerethuala	1
+zerethvala	1
+zerette vala	3
+zerettevala	1
+zeretvala	4
+zeretőt vala	1
+zerezhet vala	1
+zereztetet vala	2
+zereztettem vala	2
+zereztetótvala	1
+zereztetőt vala	2
+zerkőzőt vala	1
+zerniüdót vala	1
+zerzet vala	10
+zerzetbejut vala	1
+zerzeth vala	1
+zerzetrement vala	1
+zerzett vala	1
+zerzette vala	7
+zerzettek vala	1
+zerzettem vala	1
+zerzetvala	3
+zerzót vala	1
+zerzőt uala	1
+zerzőt vala	4
+zerzőtte uala	2
+zerzőtvala	1
+zerét vala	1
+zerétvala	2
+zevntekvala	1
+zikkadot vala	1
+ziletemvala	1
+ziletót vala	2
+ziletőt vala	1
+ziletőtvala	1
+zilte uala	1
+ziltevala	1
+zinth walla	1
+zirt vala	1
+zocta vala	3
+zoctad vala	1
+zoctadvala	1
+zoknat vala	1
+zokot vala	19
+zokot wala	3
+zokothvala	2
+zokothwala	1
+zokotuala	1
+zokotvala	4
+zokotwala	2
+zokta vala	18
+zokta wala	5
+zoktadvala	1
+zoktak vala	8
+zoktakvala	1
+zoktal vala	2
+zoktamwala	1
+zoktatvala	1
+zoktauala	1
+zoktavala	1
+zoktawala	1
+zokthatok wala	1
+zolgalat wala	1
+zolgalt vala	3
+zolgaltat vala	4
+zolgaltathvala	1
+zolhat uala	1
+zolhat vala	6
+zolhat wala	1
+zolhathwala	2
+zolhatotvala	1
+zolhatvala	2
+zolloth wala	1
+zolt uala	1
+zolt vala	2
+zoltatokvala	1
+zoltuala	1
+zoltvala	1
+zomorodot vala	1
+zomorosagot vala	1
+zomorusagatkyt valla	1
+zomorusagot valla	1
+zopta vala	1
+zoroitta vala	1
+zoríttottadvala	1
+zoríttottam vala	1
+zsugorodott vala	1
+zte vala	1
+zwletet wala	1
+zwlt vala	1
+zyletet vala	1
+zylte vala	1
+zylth vala	1
+zylthvala	1
+zéntvala	1
+zíltvala	1
+zónt vala	1
+zónth vala	1
+zörget vala	2
+zületőt uala	1
+zültvala	1
+zőrzetthekwala	1
+zőrzőt uala	1
+zőrzőte vala	1
+zőrőztetőt uala	1
+ábrázata vala	1
+állat vala	6
+állít vala	1
+által vala	1
+általvitte vala	1
+ártott vala	1
+égett vala	1
+ékesít vala	1
+ékesíttetett vala	1
+éketlatot wala	1
+élemedett vala	1
+élet vala	9
+élt vala	5
+éltek vala	1
+éltem vala	1
+éltetett vala	2
+építették vala	1
+építtetett vala	3
+érhet vala	1
+érkezett vala	1
+értek vala	2
+értem vala	1
+értette vala	1
+értettek vala	1
+íegőseuevalaztotvala	1
+íelőntőtte uala	1
+ígért vala	2
+ígérte vala	5
+ígértem vala	1
+ígértetett vala	1
+ígértétek vala	1
+íiedőtvala	2
+íllatozot vala	1
+íntvala	1
+íoothtőth vala	1
+íozagoknacfeiedelemseget vala	1
+íratott vala	3
+íratta vala	1
+írt vala	4
+írta vala	1
+írtam vala	2
+írták vala	2
+ívőltvala	1
+íőt uala	1
+íőt vala	1
+íőtvala	3
+óleth vala	1
+óletot vala	1
+ólneekewtet vala	1
+ólte vala	1
+ótoztetóth vala	1
+ölt vala	1
+öltözete vala	1
+öltöztetett vala	2
+öltöztettek vala	1
+öltözött vala	7
+ördögöt valla	1
+összeelegyült vala	1
+összeesküdtek vala	1
+összegyűlt vala	2
+összegyűltek vala	2
+összeháborodtak vala	1
+összetanácskoztak vala	1
+övedeztek vala	1
+övedzett vala	1
+övedzettek vala	1
+övezett vala	1
+út vala	1
+ülelgetvala	1
+ütötte vala	1
+ütőtte vala	1
+üvölt vala	17
+üvöltött vala	1
+üvőlt vala	1
+üztem vala	1
+őközöttük vala	1
+őlet vala	1
+őlette uala	1
+őlte vala	2
+őlth vala	1
+őltte uala	1
+őntetőt uala	1
+őriztetünk vala	3
+őrúlhetvala	1
+őrőmet valla	2
+őrőmeth walla	1
+őtlőttek vala	1
+őttekvala	1
+őtőztetőt uala	1
+őzueglőt uala	1
+űzték vala	1
+űzött vala	4
