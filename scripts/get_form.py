@@ -32,23 +32,22 @@ def get_all_words(inp):
 
 
 def form_past_perf(inp, vala_volt, pps):
+    vala_volt = r'[vuw]al+a\b' if vala_volt == "vala" else r'[vuwú][aoó]l*t+h?\b'
     pat_past_perf = re.compile(
         r"""
-        ([a-záöőüűóúéí]+?(?:t+h?
+        [a-záöőüűóúéí]+?(?:t+h?
         (?:[ea]m|elek|alak|
         él|[ea]d|[áa]l|
         a|e|
         [üu]n?k|
         [eé]tek|[aá]tok|
         [eéáa]k)?)
-        \s*
-        (?:([vuw]al+a\b)|
-        ([vuwú][aoó]l*t+h?\b)))
-        """, re.VERBOSE | re.IGNORECASE)
+        \s*"""+vala_volt, re.VERBOSE | re.IGNORECASE)
 
     # print(len(pat_past_perf.findall(inp)))
     for elem in pat_past_perf.findall((inp)):
         pps[elem[0].lower()][0] += 1
+        print(elem)
 
 
 def preprocess(txt, chars):
@@ -58,7 +57,7 @@ def preprocess(txt, chars):
         txt = txt.replace(char[0], char[1])
     txt = pat_splitted.sub('', txt).replace('-@@', '').replace('@@-', '').replace('== ==', '')
     # print(txt)
-    return txt
+    return txt.lower()
 
 
 def process(inp, chars, vala_volt):
@@ -69,8 +68,8 @@ def process(inp, chars, vala_volt):
         form_past_perf(txt, vala_volt, pps)
 
     # teszthez
-    for elem in sorted(pps.items(), key=lambda item: item[1][0], reverse=True):
-        print(elem, end="  ### ")
+    # for elem in sorted(pps.items(), key=lambda item: item[1][0], reverse=True):
+    #     print(elem, end="  ### ")
 
     # all_words = get_all_words(inp)
     # for key in all_words.keys():

@@ -4,6 +4,9 @@ import re
 from collections import defaultdict
 import argparse
 import os
+import sys
+sys.path.append('../')
+import scripts.common as c
 
 
 # TODO csak a volt és csak a valát is létre kell hozni
