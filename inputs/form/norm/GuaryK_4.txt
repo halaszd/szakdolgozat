@@ -1,5 +1,5 @@
 # source=norm
-# 1507
+# year=1507
 {001}  gyalázata .
 ezekről szóla régente Jeremiás próféta mondván .
 igen meggyaláztassanak mindazok , kik meg nem ismerék az örökkévaló gyalázatot , ki soha el nem mosattatik .

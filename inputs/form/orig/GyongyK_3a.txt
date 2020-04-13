@@ -1,5 +1,5 @@
 # source=orig
-# 1500-1520
+# year=1500-1520
 {1r}
 <<[S]alue Benigne rex ladislae Vnice plebis dulcis
 patrone regis regum gemma preclara siderum celi pr[eful-]

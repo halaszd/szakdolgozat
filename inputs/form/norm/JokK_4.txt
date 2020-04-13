@@ -1,5 +1,5 @@
 # source=norm
-# 1440
+# year=1440
 {1} mi Urunknak , Jézus Krisztusnak dicséretére és dicsőségére és mi atyánknak , boldog Ferencnek írattanak meg ittegyel némi írások boldog Ferencről és társairól , őnekik csodálatos művelkedetükről .
 tudnimélt azért , hogy mi atyánk , boldog Ferenc minden művelkedetében Istenhez volt hasonlatos .
 mert miképpen áldott Krisztus ő prédikációja kezdetében vőn magának tizenkét apostolt mindent elhagyván , ekképpen boldog Szent Ferenc vallott tizenkét társat mélységes szegénységet választván .

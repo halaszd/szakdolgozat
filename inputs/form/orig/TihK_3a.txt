@@ -1,5 +1,5 @@
 # source=orig
-# 1530-1532
+# year=1530-1532
 {1}
 {1r}
 Vrnak neuebe kezdetik

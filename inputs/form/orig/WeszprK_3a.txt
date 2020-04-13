@@ -1,5 +1,5 @@
 # source=orig
-# 1500-1525
+# year=1500-1525
 {1}
 {1r}
 Kezdetik ith vronk kenniarol

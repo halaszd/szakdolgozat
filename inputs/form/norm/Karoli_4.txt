@@ -1,5 +1,5 @@
 # source=norm
-# 1590
+# year=1590
 {1r} az mi Urunk Jézus Krisztusnak új testamentuma .
 melynek első részében az evangelisták könyvei , az másikban az apostolok levelei vannak .
 Jeremiás xxxi .

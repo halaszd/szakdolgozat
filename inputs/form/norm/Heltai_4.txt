@@ -1,5 +1,5 @@
 # source=norm
-# 1565
+# year=1565
 {*1r} a Jézus Krisztusnak Újtestamentuma magyar nyelvre fordíttatott a régi , igaz és szent könyvekből az együgyű , jámbor keresztényeknek vigasztalásukra és épülésükre Kolozsvárott .
 {*2r} Heltai Gáspár , a kolozsvári szentegyháznak szolgája , a hű és istenes olvasóknak Istennek kegyelmességét és békességét , a Szentléleknek bőséges ajándékival egyetembe kívánja .
 ezt e könyvet , melybe az evangelistáknak és apostoloknak írása be vagyon foglalva , a keresztényi szent gyülekezetben Újtestamentumnak nevezik , azaz új kötésnek avagy az új frigynek könyvének .

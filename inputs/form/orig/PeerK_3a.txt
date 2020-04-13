@@ -1,5 +1,5 @@
 # source=orig
-# 1500-1525
+# year=1500-1525
 
 {1r}
 felelembe ethketth vescen

@@ -1,5 +1,5 @@
 # source=norm
-# 1626
+# year=1626
 {901} a Jézus Krisztus szent evangéliuma , Szent Máté által .
 I .
 rész .

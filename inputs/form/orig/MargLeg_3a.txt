@@ -1,5 +1,5 @@
 # source=orig
-# 1510
+# year=1510
 
 {1r}
 Ezenkeppen hagya evket az kyralne

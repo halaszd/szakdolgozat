@@ -1,5 +1,5 @@
 # source=norm
-# 1492-1494
+# year=1492-1494
 {1} itt kezdetnek Boldogasszony órái Atyának és Fiúnak és Szentléleknek nevében .
 ámen .
 Kyrie eleison .

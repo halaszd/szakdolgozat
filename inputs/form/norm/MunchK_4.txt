@@ -1,5 +1,5 @@
 # source=norm
-# 1466
+# year=1466
 {8ra} Jézus Krisztus Dávid fia Ábrahám fia születetének könyve .
 Ábrahám kedig szülé Izsákot , Izsák kedig szülé Jákobot , Jákob kedig szülé Júdát és ő atyjafiait .
 Júda kedig szülé Perect és Szerachot Támártól .

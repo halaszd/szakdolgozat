@@ -1,5 +1,5 @@
 # source=orig
-# 1539
+# year=1539
 
 {1r}
 Beatus vir qui non Abÿt in-

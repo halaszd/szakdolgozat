@@ -1,5 +1,5 @@
 # source=norm
-# 1536
+# year=1536
 {1r} Szent Máténak evangéliuma kezdetik .
 első kapitulum .
 Jézus Krisztusnak , Dávidnak Ábrahámnak fiának nemzetségéről való könyv .

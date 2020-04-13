@@ -1,5 +1,5 @@
 # source=orig
-# 1508
+# year=1508
 
 {1r}
 Domine Deus

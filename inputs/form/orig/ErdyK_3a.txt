@@ -1,5 +1,5 @@
 # source=orig
-# 1526
+# year=1526
 {1a}
 INcipit Prologus in
 sequentem wlgarem
