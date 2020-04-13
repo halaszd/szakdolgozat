@@ -48,7 +48,7 @@ def form_past_perf(inp, vala_volt, pps):
 
     # print(len(pat_past_perf.findall(inp)))
     for elem in pat_past_perf.findall((inp)):
-        pps[elem[0]][0] += 1
+        pps[elem[0].lower()][0] += 1
 
 
 def preprocess(txt, chars):
