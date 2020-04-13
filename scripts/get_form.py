@@ -44,7 +44,7 @@ def get_freq_past(seq_ls, pps=None):
         pps = defaultdict(lambda: [0, []])
 
 
-def form_past_perf(txt, vala_volt, pps, first_step):
+def form_past_perf(txt, vala_volt, pps, first_step, year):
     vala_volt = r'[vuw]al+a\b' if vala_volt == "vala" else r'[vuwú][aoó]l*t+h?\b'
     pat_past_perf = re.compile(
         r"""
@@ -60,15 +60,31 @@ def form_past_perf(txt, vala_volt, pps, first_step):
     # print(len(pat_past_perf.findall(inp)))
     if first_step:
         get_freq_types(pat_past_perf.findall(txt), pps)
+    else:
+        get_freq_past(pat_past_perf.findall(txt), pps, year)
 
 
 def preprocess(txt, chars):
     pat_splitted = re.compile(r'-\n-|-\n|\n', re.MULTILINE)
-    for char in c.get_char_map(chars):
-        txt = txt.replace(char[0], char[1])
-    txt = pat_splitted.sub('', txt).replace('-@@', '').replace('@@-', '').replace('== ==', '')
-    print(txt)
-    return txt.lower()
+    year = source = None
+
+    for line in txt.split('\n'):
+        if line.startswith('#'):
+            meta_type = line.split('# ')[1]
+            meta = line.split('=')[1]
+            if meta_type.startswith('year'):
+                year = meta
+            elif meta_type.startswith('source'):
+                source = meta
+        if year and source:
+            break
+
+    if source == 'orig':
+        for char in c.get_char_map(chars):
+            txt = txt.replace(char[0], char[1])
+        txt = pat_splitted.sub('', txt).replace('-@@', '').replace('@@-', '').replace('== ==', '')
+
+    return txt.lower(), year
 
 
 def process(inp, chars, vala_volt, first_step):
@@ -78,10 +94,8 @@ def process(inp, chars, vala_volt, first_step):
         pps = defaultdict(lambda: [0, []])
 
     for txt in inp:
-        year = txt.split('\n').pop(0).strip().replace('# ', '')
-        print(year)
-        txt = preprocess(txt, chars)
-        form_past_perf(txt, vala_volt, pps, first_step)
+        txt, year = preprocess(txt, chars)
+        form_past_perf(txt, vala_volt, pps, first_step, year)
 
     # teszthez
     # for elem in sorted(pps.items(), key=lambda item: item[1][0], reverse=True):
