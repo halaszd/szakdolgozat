@@ -115,12 +115,12 @@ def process(inp_1, inp_2, chars, vala_volt):
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
-    parser.add_argument('-r', '--reference', help='Path of reference file', default='../inputs/inform/tmk_all.txt')
-    parser.add_argument('-c', '--charmap', help='Path to charmap tsv', default='../inputs/init/char_map.txt')
+    parser.add_argument('-r', '--reference', help='Path of reference file', nargs='?', default='../inputs/inform/tmk_all.txt')
+    parser.add_argument('-c', '--charmap', help='Path to charmap tsv', nargs='?', default='../inputs/init/char_map.txt')
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/inform')
-    parser.add_argument('-f', '--ofname', help='Output filename', default='freq_inf_output.txt')
+    parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_inf_output.txt')
     parser.add_argument('-t', '--past_type', help='Metadata for output:which text and past type it is',
-                        default='# FORM/INFORM,PAST')
+                        default='# INFORM,PERF. + VALA')
     parser.add_argument('-v', '--vala_volt', help='Vala or volt type past to search', default='vala')
 
     args = parser.parse_args()

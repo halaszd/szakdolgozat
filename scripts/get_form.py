@@ -47,7 +47,7 @@ def form_past_perf(inp, vala_volt, pps):
     # print(len(pat_past_perf.findall(inp)))
     for elem in pat_past_perf.findall((inp)):
         pps[elem[0].lower()][0] += 1
-        print(elem)
+        # print(elem)
 
 
 def preprocess(txt, chars):
@@ -79,15 +79,28 @@ def process(inp, chars, vala_volt):
     # return [(elem[0], elem[1][0], elem[1][2], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
 
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
+
+
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
-    parser.add_argument('-c', '--charmap', help='Path to charmap tsv', default='../inputs/init/char_map.txt')
+    parser.add_argument('-c', '--charmap', help='Path to charmap tsv', nargs='?', default='../inputs/init/char_map.txt')
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/inform')
-    parser.add_argument('-f', '--ofname', help='Output filename', default='freq_inf_output.txt')
+    parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_inf_output.txt')
     parser.add_argument('-t', '--past_type', help='Metadata for output:which text and past type it is',
-                        default='# FORM/INFORM,PAST')
-    parser.add_argument('-v', '--vala_volt', help='Vala or volt type past to search', default='vala')
+                        default='# INFORM,PERF. + VALA')
+    parser.add_argument('-v', '--vala_volt', help='Vala or volt type past to search', nargs='?', default='vala')
+    parser.add_argument('-x', '--first_step', help='First step: collect the set of declared past', nargs='?',
+                        type=str2bool, const=True, default=False)
 
     args = parser.parse_args()
     files = []
@@ -97,8 +110,8 @@ def get_args():
         poss_files = [os.path.abspath(x) for x in poss_files]
         files += poss_files
 
-    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname,
-            'vala_volt': args.vala_volt, 'charmap': args.charmap, 'past_type': args.past_type}
+    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname, 'vala_volt': args.vala_volt,
+            'charmap': args.charmap, 'past_type': args.past_type, 'first_step': args.first_step}
 
 
 def main():
