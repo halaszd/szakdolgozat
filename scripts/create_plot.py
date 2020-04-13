@@ -36,9 +36,10 @@ def split_years(freq_ls, c=1):
         if count == c:
             if first:
                 # felételezem, hogy a használatanem volt kevesebb az első x évben, mint később
-                new_freq_ls.append((freq_ls[0][0], sum_pfreq, sum_all_freq))
+                new_freq_ls.append(('{}-{}'.format(freq_ls[0][0], year), sum_pfreq, sum_all_freq))
                 first = False
-            new_freq_ls.append((year, sum_pfreq, sum_all_freq))
+            else:
+                new_freq_ls.append((year, sum_pfreq, sum_all_freq))
             sum_pfreq = 0
             sum_all_freq = 0
             count = 0
@@ -54,7 +55,7 @@ def get_plot(freq_ls, txt_type, line_name):
     plt.plot(years, freq, label=line_name, color=line_type[0], linestyle=line_type[1])
 
 
-def process(inp):
+def process(inp, interval):
     for i, fl in enumerate(inp):
         freq_ls = []
         fl = fl.split('\n')
@@ -65,7 +66,7 @@ def process(inp):
                 continue
             line = line.split('\t')
             freq_ls.append((line[0], line[1], line[2]))
-        freq_ls = split_years(freq_ls, 40)
+        freq_ls = split_years(freq_ls, interval)
         get_plot(freq_ls, past_type[0], past_type[1])
     plt.legend()
     plt.show()
@@ -74,6 +75,7 @@ def process(inp):
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
+    parser.add_argument('-i', '--interval', help='Split timeline rate', nargs='?', default=40, type=int)
 
     args = parser.parse_args()
     files = []
@@ -83,13 +85,13 @@ def get_args():
         poss_files = [os.path.abspath(x) for x in poss_files]
         files += poss_files
 
-    return {'files': files}
+    return {'files': files, 'interval': args.interval}
 
 
 def main():
     args = get_args()
     inp = read(args['files'])
-    process(inp)
+    process(inp, args['interval'])
 
 
 if __name__ == '__main__':

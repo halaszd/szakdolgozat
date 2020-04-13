@@ -70,7 +70,7 @@ def form_past_perf(txt, vala_volt, pps, first_step, year):
 
 
 def preprocess(txt, chars):
-    pat_splitted = re.compile(r'-\n-|-\n|\n', re.MULTILINE)
+    pat_splitted = re.compile(r'-\n-|-\n', re.MULTILINE)
     year = source = None
 
     for line in txt.split('\n'):
@@ -87,7 +87,8 @@ def preprocess(txt, chars):
     if source == 'orig':
         for char in c.get_char_map(chars):
             txt = txt.replace(char[0], char[1])
-    txt = pat_splitted.sub('', txt).replace('-@@', '').replace('@@-', '').replace('== ==', '')
+    txt = txt.replace('-@@', '').replace('@@-', '').replace('== ==', '').\
+        replace('-\n-', '').replace('-\n', '').replace('\n', '')
 
     return txt.lower(), year
 
