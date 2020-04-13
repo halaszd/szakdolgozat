@@ -46,7 +46,7 @@ def form_past_perf(inp, vala_volt, pps):
 
     # print(len(pat_past_perf.findall(inp)))
     for elem in pat_past_perf.findall((inp)):
-        pps[elem[0].lower()][0] += 1
+        pps[elem[0].lower()] += 1
         # print(elem)
 
 
@@ -60,9 +60,12 @@ def preprocess(txt, chars):
     return txt.lower()
 
 
-def process(inp, chars, vala_volt):
-    # pps = defaultdict(lambda: [0, []])
-    pps = defaultdict(lambda: [0])
+def process(inp, chars, vala_volt, first_step):
+    if first_step:
+        pps = defaultdict(lambda: 0)
+    else:
+        pps = defaultdict(lambda: [0, []])
+
     for txt in inp:
         txt = preprocess(txt, chars)
         form_past_perf(txt, vala_volt, pps)
@@ -118,7 +121,7 @@ def main():
     args = get_args()
     inp = c.read_v1(args['files'])
     chars = c.read_v2(args['charmap'])
-    outp = process(inp, chars, args['vala_volt'])
+    outp = process(inp, chars, args['vala_volt'], args['first_step'])
     # c.write(outp, args['outdir'], args['ofname'], args['past_type'])
 
 
