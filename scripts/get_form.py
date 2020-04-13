@@ -50,19 +50,18 @@ def form_past_perf(txt, vala_volt, pps, first_step, year):
     vala_volt = r'[vuw]al+a\b' if vala_volt == "vala" else r'[vuwú][aoó]l*t+h?\b'
     pat_past_perf = re.compile(
         r"""
-        ([a-záöőüűóúéí]+?(?:t+h?
+        [a-záöőüűóúéí]+?(?:t+h?
         (?:[ea]m|elek|alak|
         él|[ea]d|[áa]l|
         a|e|
         [üu]n?k|
         [eé]tek|[aá]tok|
         [eéáa]k)?)
-        \s*""" + vala_volt + ')(.+?[.:·])', re.VERBOSE | re.IGNORECASE)
+        \s*""" + vala_volt, re.VERBOSE | re.IGNORECASE)
 
-    # print(len(pat_past_perf.findall(inp)))
     hits = []
-    for hit, examp in pat_past_perf.findall(txt):
-        hits.append((hit, examp))
+    for hit in pat_past_perf.finditer(txt):
+        hits.append((hit.group(), txt[hit.start()-40:hit.start()] + txt[hit.start():hit.end() + 40]))
 
     if first_step:
         get_freq_types(hits, pps)
@@ -88,7 +87,7 @@ def preprocess(txt, chars):
     if source == 'orig':
         for char in c.get_char_map(chars):
             txt = txt.replace(char[0], char[1])
-        txt = pat_splitted.sub('', txt).replace('-@@', '').replace('@@-', '').replace('== ==', '')
+    txt = pat_splitted.sub('', txt).replace('-@@', '').replace('@@-', '').replace('== ==', '')
 
     return txt.lower(), year
 
@@ -99,7 +98,6 @@ def process(inp, chars, vala_volt, first_step):
         for txt in inp:
             txt, year = preprocess(txt, chars)
             form_past_perf(txt, vala_volt, pps, first_step, year)
-        # return sorted(pps.items(), key=lambda item: item[1], reverse=True)
         return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
     # else
@@ -162,4 +160,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
