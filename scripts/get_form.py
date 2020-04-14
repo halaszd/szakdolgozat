@@ -15,7 +15,7 @@ import scripts.common as c
 
 
 def get_all_words(inp):
-    pat_annot = re.compile(r'[[\]|{}]')
+    pat_annot = re.compile(r'[[\]|{}/]')
     all_words = defaultdict(lambda: 0)
     for line in inp.split('\n')[1:]:
         line = line.rstrip()
@@ -72,7 +72,8 @@ def form_past_perf(txt, vala_volt, pps, first_step, year):
 
 
 def preprocess(txt, chars):
-    pat_bracket = re.compile(r'{.*?}|\[.*?]', re.MULTILINE)
+    pat_bracket = re.compile(r'({.*?})|(\[.*?])|/', re.MULTILINE)
+    repls = [('-@@', ''), ('@@-', ''), ('== ==', ''), ('-\n-', ''), ('-\n', ''),  ('\n-', ''), ('\n', ' ')]
     year = source = None
 
     for line in txt.split('\n'):
@@ -89,8 +90,9 @@ def preprocess(txt, chars):
     if source == 'orig':
         for char in c.get_char_map(chars):
             txt = txt.replace(char[0], char[1])
-    txt = pat_bracket.sub('', (txt.replace('-@@', '').replace('@@-', '').replace('== ==', '').
-                               replace('-\n-', '').replace('-\n', '').replace('\n', '')))
+    txt = pat_bracket.sub('', txt)
+    for seq, repl in repls:
+        txt = txt.replace(seq, repl)
 
     return txt.lower(), year
 

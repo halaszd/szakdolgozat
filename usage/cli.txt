@@ -7,8 +7,8 @@ python get_inform.py ../inputs/inform/tmk_perf_vala.txt -v vala -f freq_tmk_perf
 python get_inform.py ../inputs/inform/tmk_impf_vala.txt -v vala -f freq_tmk_impf_vala.txt -t "befejezetlen + vala"
 
 #formális szövegek
-**vala alakok kigyüjtése példákkal:** python get_form.py ../inputs/form/orig/*.txt ../inputs/form/norm/*.txt -x -v vala -t "FORM,PERF./IMP. + VALA" -f vala_set.txt -d ../outputs/form
-**volt alakok kigyüjtése példákkal:** python get_form.py ../inputs/form/orig/*.txt ../inputs/form/norm/*.txt -x -v volt -t "FORM,PERF./IMP. + VOLT" -f volt_set.txt -d ../outputs/form
+**vala alakok kigyüjtése példákkal:** python get_form.py ../inputs/form/orig/*.txt ../inputs/form/norm/*.txt -x -v vala -t "FORM,PERF./IMP. + VALA" -f prob_vala_set.txt -d ../outputs/form
+**volt alakok kigyüjtése példákkal:** python get_form.py ../inputs/form/orig/*.txt ../inputs/form/norm/*.txt -x -v volt -t "FORM,PERF./IMP. + VOLT" -f prob_volt_set.txt -d ../outputs/form
 
 #plot készítése informális szövegekre
 python create_plot.py ../outputs/inform/*.txt
