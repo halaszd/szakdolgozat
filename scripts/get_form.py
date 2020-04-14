@@ -73,7 +73,7 @@ def form_past_perf(txt, vala_volt, pps, first_step, year):
 
 def preprocess(txt, chars):
     pat_bracket = re.compile(r'({.*?})|(\[.*?])|/', re.MULTILINE)
-    repls = [('-@@', ''), ('@@-', ''), ('== ==', ''), ('-\n-', ''), ('-\n', ''),  ('\n-', ''), ('\n', ' ')]
+    repls = [('-@@', ''), ('@@-', ''), ('== ==', ''), ('-\n-', ''), ('-\n', ''),  ('\n-', ''), ('\n', '')]
     year = source = None
 
     for line in txt.split('\n'):
