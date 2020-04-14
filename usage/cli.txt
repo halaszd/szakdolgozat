@@ -1,4 +1,4 @@
-
+3014-nél tartok
 # informális szövegek
 python get_inform.py ../inputs/inform/tmk_perf_volt.txt -v volt -f freq_tmk_perf_volt.txt -t "befejezett + volt"
 python get_inform.py ../inputs/inform/tmk_impf_volt.txt -v volt -f freq_tmk_impf_volt.txt -t "befejezetlen + volt"

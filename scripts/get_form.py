@@ -47,6 +47,8 @@ def get_freq_past(seq_ls, year, pps=None):
 
 
 def form_past_perf(txt, vala_volt, pps, first_step, year):
+    # TODO: argok közé felvenni az imp_perf_et is, és aszerint összeállítani a regex első felét
+    # TODO befejezetlennél: a kersési eredméyn - tt + vala/volt szűrt lista
     vala_volt = r'[vuw]al+a\b' if vala_volt == "vala" else r'[vuwú][aoó]l*t+h?\b'
     pat_past_perf = re.compile(
         r"""
@@ -87,8 +89,8 @@ def preprocess(txt, chars):
     if source == 'orig':
         for char in c.get_char_map(chars):
             txt = txt.replace(char[0], char[1])
-    txt = pat_bracket.sub('', (txt.replace('-@@', '').replace('@@-', '').replace('== ==', '').\
-        replace('-\n-', '').replace('-\n', '').replace('\n', '')))
+    txt = pat_bracket.sub('', (txt.replace('-@@', '').replace('@@-', '').replace('== ==', '').
+                               replace('-\n-', '').replace('-\n', '').replace('\n', '')))
 
     return txt.lower(), year
 
