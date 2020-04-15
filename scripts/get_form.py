@@ -33,14 +33,14 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
         pps = {lambda: [0, 0, []]}
 
     years = year.split('-')
+    print(years, doc_length)
     if len(years) == 2:
         diff = int(years[1]) - int(years[0])
         for i in range(int(years[0]), int(years[1])+1):
-            pps[i][0] += len(hits) / diff
-            pps[i][1] += doc_length / diff
+            pps[str(i)][0] += len(hits) / diff
+            pps[str(i)][1] += doc_length / diff
             # pps[i][2] += hits
     else:
-        year = int(year)
         pps[year][0] += len(hits)
         pps[year][1] += doc_length
         # pps[year][2] += hits
@@ -76,6 +76,7 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
 
     if first_step:
         get_freq_types(hits, pps)
+    #     TODO: a központozásokat eltávolítani a bemenetből
     else:
         get_freq_past_by_year(hits, year, len(txt.split(' ')), pps)
 
@@ -115,7 +116,9 @@ def process(inp, char_map, perf_imp, vala_volt, lexicon, first_step):
     if first_step:
         return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
-    return [(elem[0], '{:.3f}'.format(elem[1][0]), '{:.3f}'.format(elem[1][1]), elem[1][2])
+    c.gen_empty_years(sorted(pps.keys(), key=lambda y: y), pps)
+
+    return [(elem[0], '{:.2f}'.format(elem[1][0]), '{:.2f}'.format(elem[1][1]), elem[1][2])
             for elem in sorted(pps.items(), key=lambda item: item[0])]
 
     # teszthez
@@ -172,7 +175,7 @@ def main():
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     lexicon = get_lexicon(c.read_v2(args['lexicon']))
     outp = process(inp, char_map, args['perf_imp'], args['vala_volt'], lexicon, args['first_step'])
-    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['first_step'])
+    # c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['first_step'])
 
 
 if __name__ == '__main__':
