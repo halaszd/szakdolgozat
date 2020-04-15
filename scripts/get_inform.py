@@ -88,17 +88,17 @@ def inform_past_perf(txt, vala_volt, pps):
     # [(év, elemszám, [elemek])]
 
 
-def preprocess(txt, chars):
-    for char in c.get_char_map(chars):
-        txt = txt.replace(char[0], char[1])
+def preprocess(txt, char_map):
+    for orig, norm in char_map:
+        txt = txt.replace(orig, norm)
     txt = txt.replace('\xa0', '')
     return txt
 
 
-def process(inp_1, inp_2, chars, vala_volt):
+def process(inp_1, inp_2, char_map, vala_volt):
     pps = defaultdict(lambda: [0, []])
     for txt in inp_1:
-        txt = preprocess(txt, chars)
+        txt = preprocess(txt, char_map)
         inform_past_perf(txt, vala_volt, pps)
 
     all_words = get_all_words(inp_2)
@@ -139,8 +139,8 @@ def main():
     args = get_args()
     inp_1 = c.read_v1(args['files'])
     inp_2 = c.read_v2(args['reference'])
-    chars = c.read_v2(args['charmap'])
-    outp = process(inp_1, inp_2, chars, args['vala_volt'])
+    char_map = c.get_char_map(c.read_v2(args['charmap']))
+    outp = process(inp_1, inp_2, char_map, args['vala_volt'])
     c.write(outp, args['outdir'], args['ofname'], args['past_type'])
 
 

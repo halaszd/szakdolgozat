@@ -14,21 +14,8 @@ import scripts.common as c
 # TODO csak a volt és csak a valát is létre kell hozni
 
 
-def get_all_words(inp):
-    pat_annot = re.compile(r'[[\]|{}/]')
-    all_words = defaultdict(lambda: 0)
-    for line in inp.split('\n')[1:]:
-        line = line.rstrip()
-        if line.strip() == '':
-            continue
-        line = line.split('\t')
-        if len(line) == 9:
-            year = line[2]
-            if not year.isdigit():
-                continue
-            sent = pat_annot.sub('', line[-1])
-            all_words[year] += len([seq for seq in sent.split() if seq != ''])
-    return all_words
+def get_lexicon(txt):
+    return [line.split('\t')[0].strip() for line in txt.split('\n')]
 
 
 def get_freq_types(hits, pps=None):
@@ -41,15 +28,19 @@ def get_freq_types(hits, pps=None):
     return pps
 
 
-def get_freq_past(seq_ls, year, pps=None):
+def get_freq_past_by_year(hits, year, doc_length, pps=None):
     if pps is None:
-        pps = defaultdict(lambda: [0, []])
+        pps = {lambda: [0, 0, []]}
+    pps[year][0] = len(hits)
+    pps[year][1] = doc_length
+    pps[year][2] = hits
 
 
-def form_past_perf(txt, vala_volt, pps, first_step, year):
+def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step=True):
     # TODO: argok közé felvenni az imp_perf_et is, és aszerint összeállítani a regex első felét
     # TODO befejezetlennél: a kersési eredméyn - tt + vala/volt szűrt lista
     vala_volt = r'[vuw]al+a\b' if vala_volt == "vala" else r'[vuwú][aoó]l*t+h?\b'
+    perf_imp = r''  #
     pat_past_perf = re.compile(
         r"""
         [a-záöőüűóúéí]+?(?:t+h?
@@ -63,15 +54,22 @@ def form_past_perf(txt, vala_volt, pps, first_step, year):
 
     hits = []
     for hit in pat_past_perf.finditer(txt):
-        hits.append((hit.group(), txt[hit.start()-40:hit.start()] + txt[hit.start():hit.end() + 40]))
+        context = txt[hit.start() - 40:hit.start()] + txt[hit.start():hit.end() + 40]
+        if not lexicon:
+            hits.append((hit.group(), context))
+        elif first_step:
+            if hit not in lexicon:
+                hits.append((hit.group(), context))
+        elif hit in lexicon:
+            hits.append((hit.group()))
 
     if first_step:
         get_freq_types(hits, pps)
     else:
-        get_freq_past(hits, year, pps)
+        get_freq_past_by_year(hits, year, len(txt.split(' ')), pps)
 
 
-def preprocess(txt, chars):
+def preprocess(txt, char_map):
     pat_bracket = re.compile(r'({.*?})|(\[.*?])|/', re.MULTILINE)
     repls = [('-@@', ''), ('@@-', ''), ('== ==', ''), ('-\n-', ''), ('-\n', ''),  ('\n-', ''), ('\n', '')]
     year = source = None
@@ -88,8 +86,8 @@ def preprocess(txt, chars):
             break
 
     if source == 'orig':
-        for char in c.get_char_map(chars):
-            txt = txt.replace(char[0], char[1])
+        for orig, norm in char_map:
+            txt = txt.replace(orig, norm)
     txt = pat_bracket.sub('', txt)
     for seq, repl in repls:
         txt = txt.replace(seq, repl)
@@ -97,18 +95,14 @@ def preprocess(txt, chars):
     return txt.lower(), year
 
 
-def process(inp, chars, vala_volt, first_step):
-    pps = defaultdict(lambda: [0, []])
-    if first_step:
-        for txt in inp:
-            txt, year = preprocess(txt, chars)
-            form_past_perf(txt, vala_volt, pps, first_step, year)
-        return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
-
-    # else
+def process(inp, char_map, perf_imp, vala_volt, lexicon, first_step):
+    pps = defaultdict(lambda: [0, []]) if first_step else defaultdict(lambda: [0, 0, []])
     for txt in inp:
-        txt, year = preprocess(txt, chars)
-        form_past_perf(txt, vala_volt, pps, first_step, year)
+        txt, year = preprocess(txt, char_map)
+        form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon, first_step)
+    if first_step:
+        return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
+    return [(elem[0], elem[1][0], elem[1][1], elem[1][2]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
     # teszthez
 
@@ -139,6 +133,9 @@ def get_args():
     parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_inf_output.txt')
     parser.add_argument('-t', '--past_type', help='Metadata for output:which text and past type it is',
                         default='# INFORM,PERF. + VALA')
+    parser.add_argument('-i', '--perf_imp', help='Selects the aspect of the past to find', default='perf')
+    parser.add_argument('-l', '--lexicon', help='Path to lexicon of to be searched pat',
+                        default='../inputs/init/form/init_perf_vala.txt')
     parser.add_argument('-v', '--vala_volt', help='Vala or volt type past to search', nargs='?', default='vala')
     parser.add_argument('-x', '--first_step', help='First step: collect the set of declared past', nargs='?',
                         type=str2bool, const=True, default=False)
@@ -152,15 +149,17 @@ def get_args():
         files += poss_files
 
     return {'outdir': args.directory, 'files': files, 'ofname': args.ofname, 'vala_volt': args.vala_volt,
-            'charmap': args.charmap, 'past_type': args.past_type, 'first_step': args.first_step}
+            'charmap': args.charmap, 'past_type': args.past_type, 'first_step': args.first_step,
+            'perf_imp': args.perf_imp, 'lexicon': args.lexicon}
 
 
 def main():
     args = get_args()
     inp = c.read_v1(args['files'])
-    chars = c.read_v2(args['charmap'])
-    outp = process(inp, chars, args['vala_volt'], args['first_step'])
-    c.write(outp, args['outdir'], args['ofname'], args['past_type'], True)
+    char_map = c.get_char_map(c.read_v2(args['charmap']))
+    lexicon = get_lexicon(c.read_v2(args['lexicon']))
+    outp = process(inp, char_map, args['perf_imp'], args['vala_volt'], lexicon, args['first_step'])
+    # c.write(outp, args['outdir'], args['ofname'], args['past_type'], True)
 
 
 if __name__ == '__main__':
