@@ -49,33 +49,33 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
 def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step=True):
     # TODO: argok közé felvenni az imp_perf_et is, és aszerint összeállítani a regex első felét
     # TODO befejezetlennél: a kersési eredméyn - tt + vala/volt szűrt lista
-    vala_volt = r'[vuw]al+a\b' if vala_volt == "vala" else r'[vuwú][aoó]l*t+h?\b'
-    perf_imp = r''  #
+    pat_vala_volt = r'([vuw]ala\b)' if vala_volt == "vala" else r'([vuwú][aoó]l*t+h?)\b'
 
     if perf_imp == 'perf':
         pat_past = re.compile(
             r"""
-            [a-záöőüűóúéí]+?(?:t+h?
+            ([a-záöőüűóúéí]+?(?:t+h?
             (?:[ea]m|elek|alak|
             él|[ea]d|[áa]l|
             a|e|
-            [üu]n?k|
+            [üuöő]n?k|
             [eé]tek|[aá]tok|
             [eéáa]k)?)
-            \s*""" + vala_volt, re.VERBOSE | re.IGNORECASE)
+            \s*)""" + pat_vala_volt, re.VERBOSE | re.IGNORECASE)
     else:
-        pat_past = re.compile(r'[a-záöőüűóúéí]+\s*' + vala_volt, re.VERBOSE | re.IGNORECASE)
+        pat_past = re.compile(r'([a-záöőüűóúéí]+\s*)' + pat_vala_volt, re.VERBOSE | re.IGNORECASE)
 
     hits = []
     for hit in pat_past.finditer(txt):
         context = txt[hit.start() - 40:hit.start()] + txt[hit.start():hit.end() + 40]
+        hit = hit.group(1).strip()
         if not lexicon:
-            hits.append((hit.group(), context))
+            hits.append((hit, context))
         elif first_step:
-            if hit.group() not in lexicon:
-                hits.append((hit.group(), context))
-        elif hit.group() in lexicon:
-            hits.append((hit.group()))
+            if hit not in lexicon:  # TODO: hit.group(1) not in lexicon --> csak az első szót nézze
+                hits.append((hit, context))
+        elif hit in lexicon:
+            hits.append(hit)
 
     if first_step:
         get_freq_types(hits, pps)
@@ -86,7 +86,7 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
 
 def preprocess(txt, char_map):
     pat_bracket = re.compile(r'({.*?})|(\[.*?])|/', re.MULTILINE)
-    repls = [('-@@', ''), ('@@-', ''), ('== ==', ''), ('-\n-', ''), ('-\n', ''),  ('\n-', ''), ('\n', '')]
+    repls = [('-@@', ''), ('@@-', ''), ('== ==', ''), ('-\n-', ''), ('-\n', ''),  ('\n-', ''), ('\n', ''), ('\'', '')]
     year = source = None
     i = 0
     txt = txt.split('\n')
@@ -151,16 +151,17 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
     parser.add_argument('-c', '--charmap', help='Path to charmap tsv', nargs='?', default='../inputs/init/char_map.txt')
-    parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/inform')
-    parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_inf_output.txt')
+    parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/form')
+    parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_form_output.txt')
     parser.add_argument('-t', '--past_type', help='Metadata for output:which text and past type it is',
                         default='# INFORM,PERF. + VALA')
     parser.add_argument('-i', '--perf_imp', help='Selects the aspect of the past to find', default='perf')
-    parser.add_argument('-l', '--lexicon', help='Path to lexicon of to be searched pat',
-                        default='../inputs/init/form/init_perf_vala.txt')
+    parser.add_argument('-l', '--lexicon', help='Path to lexicon of to be searched pat')
     parser.add_argument('-v', '--vala_volt', help='Vala or volt type past to search', nargs='?', default='vala')
     parser.add_argument('-x', '--first_step', help='First step: collect the set of declared past', nargs='?',
                         type=str2bool, const=True, default=False)
+
+    # '../inputs/init/form/init_perf_vala.txt  < lexikon helye
 
     args = parser.parse_args()
     files = []
@@ -179,7 +180,10 @@ def main():
     args = get_args()
     inp = c.read_v1(args['files'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
-    lexicon = get_lexicon(c.read_v2(args['lexicon']))
+    lexicon = args['lexicon']
+    if lexicon:
+        lexicon = get_lexicon(c.read_v2(args['lexicon']))
+
     outp = process(inp, char_map, args['perf_imp'], args['vala_volt'], lexicon, args['first_step'])
     c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['first_step'])
 

@@ -91,6 +91,7 @@ oͤˊ	ö	koͤˊltoͤzésben.[[12]]És,koͤˊltoͤ-zés-után;,kitoͤˊl,koͤˊlt
 p̄	p	Cap̄,Cap̄Ezeket,Cap̄,Cap̄,Cap̄,Cap̄,Cap̄,Cap̄,Cap̄,xp̄sez,xp̄us
 ṕ	p	ciṕanus,ciṕanus,ciṕanusſnaklattatyk,ciṕanusnak,ciṕanus,ciṕanuſtvl,ciṕanus,zentciṕanus
 P̄	P	P̄dicacōiaval
+p'	pj
 ꝓ	pro	ꝓpheta,ꝓpheta,Isaiasꝓpheta,ꝓpheta,ꝓphe--ta,zentꝓfetat,ꝓpfeta,ꝓfetathmÿkeppen,ꝓuincialisthog,ꝓuincialis,ꝓuincialisaz
 r̉	r	embo̗r̉eLennie,tenger̉e
 ʳ	r	embʳ,embʳ,embʳ,embʳnekennen,barbʳZyz,embʳkepek,doʳOh,volʳᵒˡharmad,doctoʳ
@@ -149,6 +150,7 @@ y̋̄	i	my̋̄daz,my̋̄dezeketh,my̋̄d,my̋̄delthere,my̋̄dAkory̋g
 ẏ	i	mẏhalc,ẏwan(a)b,har-mẏczeggh,Napẏae,kẏemlekozÿk,zẏveketh,Mẏnden,meghzẏwkseghÿnkbe,annẏaw<r>,expirauithelẏ,illet-neẏe
 Y̋	I	Y̋euendo̗,Y̋saí--as
 ź	z	hoźa,mihoźanc,hoźanc,źivek,emlekeźel,reźegsegben,źeǵelletekben,źem-eremsegben,vonźa,vźuen,vźo̗get
+z'	z
 z̄	z	keūāz̄
 ᶻ	z	magaztacᶻ,orcᶻaiarul,orcᶻaiat,ercᶻ,felecᶻ,ragacᶻ,magaztacᶻ,veccᶻ,kemencᶻe,orcᶻadnak,orcᶻaiokot
 ʒ	z	nyolcʒ,keʒ-detijk.Elſew,nēʒetſegerewl,nemʒe,nemʒe,nemʒe,aʒ,nemʒe,ʒaramot,nemʒe,nemʒe
