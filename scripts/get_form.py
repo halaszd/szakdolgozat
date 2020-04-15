@@ -36,7 +36,6 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
     years = year.split('-')
     if len(years) == 2:
         interval = int(years[1]) - int(years[0]) + 1
-        print(interval)
         for i in range(int(years[0]), int(years[1])+1):
             pps[str(i)][0] += len(hits) / interval
             pps[str(i)][1] += doc_length / interval
@@ -53,19 +52,22 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
     vala_volt = r'[vuw]al+a\b' if vala_volt == "vala" else r'[vuwú][aoó]l*t+h?\b'
     perf_imp = r''  #
 
-    pat_past_perf = re.compile(
-        r"""
-        [a-záöőüűóúéí]+?(?:t+h?
-        (?:[ea]m|elek|alak|
-        él|[ea]d|[áa]l|
-        a|e|
-        [üu]n?k|
-        [eé]tek|[aá]tok|
-        [eéáa]k)?)
-        \s*""" + vala_volt, re.VERBOSE | re.IGNORECASE)
+    if perf_imp == 'perf':
+        pat_past = re.compile(
+            r"""
+            [a-záöőüűóúéí]+?(?:t+h?
+            (?:[ea]m|elek|alak|
+            él|[ea]d|[áa]l|
+            a|e|
+            [üu]n?k|
+            [eé]tek|[aá]tok|
+            [eéáa]k)?)
+            \s*""" + vala_volt, re.VERBOSE | re.IGNORECASE)
+    else:
+        pat_past = re.compile(r'[a-záöőüűóúéí]+\s*' + vala_volt, re.VERBOSE | re.IGNORECASE)
 
     hits = []
-    for hit in pat_past_perf.finditer(txt):
+    for hit in pat_past.finditer(txt):
         context = txt[hit.start() - 40:hit.start()] + txt[hit.start():hit.end() + 40]
         if not lexicon:
             hits.append((hit.group(), context))
@@ -79,7 +81,6 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
         get_freq_types(hits, pps)
     #     TODO: a központozásokat eltávolítani a bemenetből
     else:
-        print([item for item in txt.split() if item not in puncts])
         get_freq_past_by_year(hits, year, len([item for item in txt.split() if item not in puncts]), pps)
 
 
@@ -90,7 +91,6 @@ def preprocess(txt, char_map):
     i = 0
     txt = txt.split('\n')
     while not (year and source) and i < len(txt)-1:
-        print(i)
         if txt[i].startswith('#'):
             line = txt.pop(i)
             meta_type = line.split('# ')[1]
