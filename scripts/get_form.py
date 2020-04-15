@@ -35,10 +35,11 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
 
     years = year.split('-')
     if len(years) == 2:
-        diff = int(years[1]) - int(years[0])
+        interval = int(years[1]) - int(years[0]) + 1
+        print(interval)
         for i in range(int(years[0]), int(years[1])+1):
-            pps[str(i)][0] += len(hits) / diff
-            pps[str(i)][1] += doc_length / diff
+            pps[str(i)][0] += len(hits) / interval
+            pps[str(i)][1] += doc_length / interval
             # pps[i][2] += hits
     else:
         pps[year][0] += len(hits)
@@ -78,6 +79,7 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
         get_freq_types(hits, pps)
     #     TODO: a központozásokat eltávolítani a bemenetből
     else:
+        print([item for item in txt.split() if item not in puncts])
         get_freq_past_by_year(hits, year, len([item for item in txt.split() if item not in puncts]), pps)
 
 
@@ -85,18 +87,22 @@ def preprocess(txt, char_map):
     pat_bracket = re.compile(r'({.*?})|(\[.*?])|/', re.MULTILINE)
     repls = [('-@@', ''), ('@@-', ''), ('== ==', ''), ('-\n-', ''), ('-\n', ''),  ('\n-', ''), ('\n', '')]
     year = source = None
-
-    for line in txt.split('\n'):
-        if line.startswith('#'):
+    i = 0
+    txt = txt.split('\n')
+    while not (year and source) and i < len(txt)-1:
+        print(i)
+        if txt[i].startswith('#'):
+            line = txt.pop(i)
             meta_type = line.split('# ')[1]
             meta = line.split('=')[1]
             if meta_type.startswith('year'):
                 year = meta
             elif meta_type.startswith('source'):
                 source = meta
-        if year and source:
-            break
+        else:
+            i += 1
 
+    txt = '\n'.join(txt)
     if source == 'orig':
         for orig, norm in char_map:
             txt = txt.replace(orig, norm)
