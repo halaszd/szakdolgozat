@@ -31,9 +31,19 @@ def get_freq_types(hits, pps=None):
 def get_freq_past_by_year(hits, year, doc_length, pps=None):
     if pps is None:
         pps = {lambda: [0, 0, []]}
-    pps[year][0] = len(hits)
-    pps[year][1] = doc_length
-    pps[year][2] = hits
+
+    years = year.split('-')
+    if len(years) == 2:
+        diff = int(years[1]) - int(years[0])
+        for i in range(int(years[0]), int(years[1])+1):
+            pps[i][0] += len(hits) / diff
+            pps[i][1] += doc_length / diff
+            # pps[i][2] += hits
+    else:
+        year = int(year)
+        pps[year][0] += len(hits)
+        pps[year][1] += doc_length
+        # pps[year][2] += hits
 
 
 def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step=True):
@@ -41,6 +51,7 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
     # TODO befejezetlennél: a kersési eredméyn - tt + vala/volt szűrt lista
     vala_volt = r'[vuw]al+a\b' if vala_volt == "vala" else r'[vuwú][aoó]l*t+h?\b'
     perf_imp = r''  #
+
     pat_past_perf = re.compile(
         r"""
         [a-záöőüűóúéí]+?(?:t+h?
@@ -58,9 +69,9 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
         if not lexicon:
             hits.append((hit.group(), context))
         elif first_step:
-            if hit not in lexicon:
+            if hit.group() not in lexicon:
                 hits.append((hit.group(), context))
-        elif hit in lexicon:
+        elif hit.group() in lexicon:
             hits.append((hit.group()))
 
     if first_step:
@@ -100,13 +111,15 @@ def process(inp, char_map, perf_imp, vala_volt, lexicon, first_step):
     for txt in inp:
         txt, year = preprocess(txt, char_map)
         form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon, first_step)
+
     if first_step:
         return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
-    return [(elem[0], elem[1][0], elem[1][1], elem[1][2]) for elem in sorted(pps.items(), key=lambda item: item[0])]
+
+    return [(elem[0], '{:.3f}'.format(elem[1][0]), '{:.3f}'.format(elem[1][1]), elem[1][2])
+            for elem in sorted(pps.items(), key=lambda item: item[0])]
 
     # teszthez
 
-    # all_words = get_all_words(inp)
     # for key in all_words.keys():
     #     if key in pps.keys():
     #         pps[key].append(all_words[key])
@@ -159,7 +172,7 @@ def main():
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     lexicon = get_lexicon(c.read_v2(args['lexicon']))
     outp = process(inp, char_map, args['perf_imp'], args['vala_volt'], lexicon, args['first_step'])
-    # c.write(outp, args['outdir'], args['ofname'], args['past_type'], True)
+    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['first_step'])
 
 
 if __name__ == '__main__':

@@ -30,8 +30,8 @@ def split_years(freq_ls, c=1):
     new_freq_ls = []
     first = True
     for i, (year, pfreq, all_freq) in enumerate(freq_ls):
-        sum_pfreq += int(pfreq)
-        sum_all_freq += int(all_freq)
+        sum_pfreq += float(pfreq)
+        sum_all_freq += float(all_freq)
         count += 1
         if count == c:
             if first:
@@ -50,7 +50,7 @@ def split_years(freq_ls, c=1):
 
 def get_plot(freq_ls, txt_type, line_name):
     years = [item[0] for item in freq_ls]
-    freq = [(int(item[1])/int(item[2]))*100 for item in freq_ls]
+    freq = [(float(item[1])/float(item[2]))*100 for item in freq_ls]
     line_type = LINES[txt_type][line_name.upper()]
     plt.plot(years, freq, label=line_name, color=line_type[0], linestyle=line_type[1])
 
