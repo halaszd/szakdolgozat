@@ -6,6 +6,7 @@ from collections import defaultdict
 import argparse
 import os
 import sys
+from string import punctuation as puncts
 sys.path.append('../')
 import scripts.common as c
 
@@ -33,7 +34,6 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
         pps = {lambda: [0, 0, []]}
 
     years = year.split('-')
-    print(years, doc_length)
     if len(years) == 2:
         diff = int(years[1]) - int(years[0])
         for i in range(int(years[0]), int(years[1])+1):
@@ -78,7 +78,7 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
         get_freq_types(hits, pps)
     #     TODO: a központozásokat eltávolítani a bemenetből
     else:
-        get_freq_past_by_year(hits, year, len(txt.split(' ')), pps)
+        get_freq_past_by_year(hits, year, len([item for item in txt.split() if item not in puncts]), pps)
 
 
 def preprocess(txt, char_map):
@@ -175,7 +175,7 @@ def main():
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     lexicon = get_lexicon(c.read_v2(args['lexicon']))
     outp = process(inp, char_map, args['perf_imp'], args['vala_volt'], lexicon, args['first_step'])
-    # c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['first_step'])
+    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['first_step'])
 
 
 if __name__ == '__main__':
