@@ -47,6 +47,16 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
 
 
 def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step=True):
+    # TODO: a first step-pet lehet ki lehet váltani not lexikonnal
+    # TODO: a ban-ben-ba-be-ket ki lehet venni mindenhonnan
+    # TODO: --> s[ae]+g\b
+    # TODO: --> [áéőöó]+s
+    # TODO: --> [ea]nd[óőo]
+    # TODO --> l[aeáé]+n  | \w+?b+\b  | a hoz-höz veszélyes
+    # todo: tól-től | ból-ből
+    # todo: wva-wve ka-ke
+    # todo: gas-ges
+    # todo: ttanak ttenek impnél
     # TODO: argok közé felvenni az imp_perf_et is, és aszerint összeállítani a regex első felét
     # TODO befejezetlennél: a kersési eredméyn - tt + vala/volt szűrt lista
     pat_vala_volt = r'([vuw]ala\b)' if vala_volt == "vala" else r'([vuwú][aoó]l*t+h?)\b'
@@ -72,21 +82,22 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
         if not lexicon:
             hits.append((hit, context))
         elif first_step:
-            if hit not in lexicon:  # TODO: hit.group(1) not in lexicon --> csak az első szót nézze
+            if hit not in lexicon:
                 hits.append((hit, context))
         elif hit in lexicon:
+            print(hit)
             hits.append(hit)
 
-    if first_step:
+    if first_step or not lexicon:
         get_freq_types(hits, pps)
-    #     TODO: a központozásokat eltávolítani a bemenetből
+
     else:
         get_freq_past_by_year(hits, year, len([item for item in txt.split() if item not in puncts]), pps)
 
 
 def preprocess(txt, char_map):
     pat_bracket = re.compile(r'({.*?})|(\[.*?])|/', re.MULTILINE)
-    repls = [('-@@', ''), ('@@-', ''), ('== ==', ''), ('-\n-', ''), ('-\n', ''),  ('\n-', ''), ('\n', ''), ('\'', '')]
+    repls = [('-@@', ''), ('@@-', ''), ('== ==', ' '), ('-\n-', ''), ('-\n', ''),  ('\n-', ''), ('\n', ''), ('\'', '')]
     year = source = None
     i = 0
     txt = txt.split('\n')
@@ -114,12 +125,12 @@ def preprocess(txt, char_map):
 
 
 def process(inp, char_map, perf_imp, vala_volt, lexicon, first_step):
-    pps = defaultdict(lambda: [0, []]) if first_step else defaultdict(lambda: [0, 0, []])
+    pps = defaultdict(lambda: [0, []]) if first_step or not lexicon else defaultdict(lambda: [0, 0, []])
     for txt in inp:
         txt, year = preprocess(txt, char_map)
         form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon, first_step)
 
-    if first_step:
+    if first_step or not lexicon:
         return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
     c.gen_empty_years(sorted(pps.keys(), key=lambda y: y), pps)
@@ -185,7 +196,7 @@ def main():
         lexicon = get_lexicon(c.read_v2(args['lexicon']))
 
     outp = process(inp, char_map, args['perf_imp'], args['vala_volt'], lexicon, args['first_step'])
-    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['first_step'])
+    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['first_step'], lexicon)
 
 
 if __name__ == '__main__':
