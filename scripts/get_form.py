@@ -15,6 +15,9 @@ import scripts.common as c
 # TODO csak a volt és csak a valát is létre kell hozni
 
 
+pth_lexicon = '../inputs/init'
+
+
 def get_lexicon(txt):
     return [line.split('\t')[0].strip() for line in txt.split('\n')]
 
@@ -74,6 +77,7 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
             \s*)""" + pat_vala_volt, re.VERBOSE | re.IGNORECASE)
     else:
         pat_past = re.compile(r'([a-záöőüűóúéí]+\s*)' + pat_vala_volt, re.VERBOSE | re.IGNORECASE)
+    pat_past = re.compile(r'([a-záöőüűóúéí]+)\s*' + pat_vala_volt, re.IGNORECASE)
 
     hits = []
     for hit in pat_past.finditer(txt):
