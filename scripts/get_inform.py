@@ -120,8 +120,8 @@ def get_args():
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/inform')
     parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_inf_output.txt')
     parser.add_argument('-t', '--past_type',
-                        help='Which text and past type it is. Separated by column, eg. INFORM.,PERF.,VALA',
-                        default='# INFORM.,PERF.,VALA')
+                        help='Which text and past type it is. Separated by column, eg. inform.,perf.,vala',
+                        default='# inform.,perf.,vala')
 
     args = parser.parse_args()
     files = []
@@ -142,9 +142,10 @@ def main():
     inp_1 = c.read_v1(args['files'])
     inp_2 = c.read_v2(args['reference'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
-    past_type = c.get_past_type(args['past_type'])
+    past_type = args['past_type']
+    print(past_type)
     outp = process(inp_1, inp_2, char_map, past_type[2])
-    c.write(outp, args['outdir'], args['ofname'], past_type)
+    # c.write(outp, args['outdir'], args['ofname'], past_type)
 
 
 if __name__ == '__main__':

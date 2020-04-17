@@ -3,23 +3,19 @@ import matplotlib.pyplot as plt
 from glob import glob
 import argparse
 import os
-import sys
-sys.path.append('../')
-import scripts.common as c
-
 
 LINES = {'inform.':
              {'perf.':
                   {'vala': ('red', '-'),
                    'volt': ('yellow', '-')},
-              'imp':
+              'imp.':
                   {'vala': ('green', '-'),
                    'volt': ('brown', '-')}},
          'form.':
              {'perf.':
                   {'vala': ('red', '--'),
                    'volt': ('yellow', '--')},
-              'imp':
+              'imp.':
                   {'vala': ('green', '--'),
                    'volt': ('brown', '--')}}}
 

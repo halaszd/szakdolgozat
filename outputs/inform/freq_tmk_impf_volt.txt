@@ -1,4 +1,4 @@
-# INFORM.,IMP. + VOLT
+# inform.,imp.,volt
 1485	0	1	
 1486	0	1	
 1487	0	1	
