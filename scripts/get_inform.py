@@ -72,7 +72,7 @@ def inform_past_perf(txt, vala_volt, pps):
             if year != '':
                 for pot_hit in pot_hits:
                     if pat_ptype.search(pot_hit):
-                        pps[year][1].append(pot_hit)
+                        pps[year][2].append(pot_hit)
                         pps[year][0] += 1
 
     # TESZTELÉSHEZ
@@ -96,7 +96,7 @@ def preprocess(txt, char_map):
 
 
 def process(inp_1, inp_2, char_map, vala_volt):
-    pps = defaultdict(lambda: [0, []])
+    pps = defaultdict(lambda: [0, 1, []])
     for txt in inp_1:
         txt = preprocess(txt, char_map)
         inform_past_perf(txt, vala_volt, pps)
@@ -104,12 +104,12 @@ def process(inp_1, inp_2, char_map, vala_volt):
     all_words = get_all_words(inp_2)
     for key in all_words.keys():
         if key in pps.keys():
-            pps[key].append(all_words[key])
+            pps[key][1] = all_words[key]
     c.gen_empty_years(sorted(all_words.keys(), key=lambda year: year), pps)
 
     # for item, value in pps.items():
     #     print(item, value)
-    return [(elem[0], elem[1][0], elem[1][2], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
+    return [(elem[0], elem[1][0], elem[1][1], elem[1][2]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
 
 def get_args():
@@ -145,7 +145,7 @@ def main():
     past_type = args['past_type']
     print(past_type)
     outp = process(inp_1, inp_2, char_map, past_type[2])
-    # c.write(outp, args['outdir'], args['ofname'], past_type)
+    c.write(outp, args['outdir'], args['ofname'], past_type)
 
 
 if __name__ == '__main__':
