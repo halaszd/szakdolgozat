@@ -85,7 +85,6 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
             if hit not in lexicon:
                 hits.append((hit, context))
         elif hit in lexicon:
-            print(hit)
             hits.append(hit)
 
     if first_step or not lexicon:

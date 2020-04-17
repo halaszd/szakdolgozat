@@ -5,12 +5,12 @@ import argparse
 import os
 
 
-LINES = {'INFORM':
+LINES = {'INFORM.':
              {'PERF. + VALA': ('red', '-'),
               'PERF. + VOLT': ('yellow', '-'),
               'IMP. + VALA': ('green', '-'),
               'IMP. + VOLT': ('brown', '-')},
-         'FORM':
+         'FORM.':
              {'PERF. + VALA': ('red', '--'),
               'PERF. + VOLT': ('yellow', '--'),
               'IMP. + VALA': ('green', '--'),
