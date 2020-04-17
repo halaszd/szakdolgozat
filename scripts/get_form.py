@@ -62,7 +62,7 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
                     'wa', 'we', 'va', 've', 'ka', 'ke',)
 
     # todo: ttanak ttenek impnél
-    pat_vala_volt = r'([vuw]ala\b)' if vala_volt == "vala" else r'([vuwú][aoó]l*t+h?)\b'
+    pat_vala_volt = r'([vuw]ala\b)' if vala_volt == "vala" else r'([vuwú][oó]l*t+h?)\b'
 
     if perf_imp.startswith('perf'):
         pat_past = re.compile(
@@ -87,8 +87,8 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
             if hit.endswith(affix):
                 bad_affix = True
                 break
-        # if bad_affix:
-        #     continue
+        if bad_affix:
+            continue
         if not lexicon:
             hits.append((hit, context))
         elif first_step:
@@ -206,7 +206,6 @@ def main():
     inp = c.read_v1(args['files'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     txt_type, perf_imp, vala_volt = args['past_type']
-    print(perf_imp, vala_volt)
     outp = process(inp, char_map, perf_imp, vala_volt, args['lexicon'], args['first_step'])
     c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['first_step'], args['lexicon'])
 
