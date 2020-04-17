@@ -10,7 +10,6 @@ def write(outp, odir, ofname, past_type, first_step=False, lexicon=None):
             if past_type[0] == 'form.' and (first_step or not lexicon):
                 print('{}\t{}\t{}'.format(item[0], item[1], " || ".join(item[2])), file=f)
             else:
-                print(item[0], item[1], item[2],item[3])
                 print('{}\t{}\t{}\t{}'.format(item[0], item[1], item[2], ','.join(item[3])), file=f)
 
 
