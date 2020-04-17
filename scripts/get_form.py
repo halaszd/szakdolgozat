@@ -15,10 +15,10 @@ import scripts.common as c
 # TODO csak a volt és csak a valát is létre kell hozni
 
 
-LEXICONS = {'PERF.': {'VALA': '../inputs/init/form/perf_vala.txt',
-                      'VOLT': '../inputs/init/form/perf_volt.txt'},
-            'IMP.': {'VALA': '../inputs/init/form/imp_vala.txt',
-                     'VOLT': '../inputs/init/form/imp_volt.txt'}}
+LEXICONS = {'perf.': {'vala': '../inputs/init/form/perf_vala.txt',
+                      'volt': '../inputs/init/form/perf_volt.txt'},
+            'imp.': {'vala': '../inputs/init/form/imp_vala.txt',
+                     'volt': '../inputs/init/form/imp_volt.txt'}}
 
 
 def get_path_lexicon(t, t2):
@@ -87,8 +87,8 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
             if hit.endswith(affix):
                 bad_affix = True
                 break
-        if bad_affix:
-            continue
+        # if bad_affix:
+        #     continue
         if not lexicon:
             hits.append((hit, context))
         elif first_step:
@@ -189,8 +189,7 @@ def get_args():
         poss_files = glob(p)
         poss_files = [os.path.abspath(x) for x in poss_files]
         files += poss_files
-
-    perf_imp, vala_volt = c.get_past_type(args['past-type'])
+    txt_type, perf_imp, vala_volt = c.get_past_type(args.past_type)
 
     lexicon = None
     if args.def_lexicon:
@@ -199,16 +198,17 @@ def get_args():
         lexicon = get_lexicon(c.read_v2(args.opt_lexicon))
 
     return {'outdir': args.directory, 'files': files, 'ofname': args.ofname, 'charmap': args.charmap,
-            'past_type': (perf_imp, vala_volt), 'first_step': args.first_step, 'lexicon': lexicon}
+            'past_type': (txt_type, perf_imp, vala_volt), 'first_step': args.first_step, 'lexicon': lexicon}
 
 
 def main():
     args = get_args()
     inp = c.read_v1(args['files'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
-    perf_imp, vala_volt = args['past_type']
-    outp = process(inp, char_map, perf_imp, vala_volt, args['lexicon'], args['first-step'])
-    c.write(outp, args['outdir'], args['ofname'], args['past-type'], args['first-step'], args['lexicon'])
+    txt_type, perf_imp, vala_volt = args['past_type']
+    print(perf_imp, vala_volt)
+    outp = process(inp, char_map, perf_imp, vala_volt, args['lexicon'], args['first_step'])
+    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['first_step'], args['lexicon'])
 
 
 if __name__ == '__main__':

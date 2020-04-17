@@ -131,8 +131,10 @@ def get_args():
         poss_files = [os.path.abspath(x) for x in poss_files]
         files += poss_files
 
+    txt_type, perf_imp, vala_volt = c.get_past_type(args.past_type)
+
     return {'outdir': args.directory, 'files': files, 'ofname': args.ofname,
-            'reference': args.reference, 'charmap': args.charmap, 'past_type': args.past_type}
+            'reference': args.reference, 'charmap': args.charmap, 'past_type': (txt_type, perf_imp, vala_volt)}
 
 
 def main():
@@ -141,8 +143,8 @@ def main():
     inp_2 = c.read_v2(args['reference'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     past_type = c.get_past_type(args['past_type'])
-    outp = process(inp_1, inp_2, char_map, past_type[1])
-    c.write(outp, args['outdir'], args['ofname'], args['past_type'])
+    outp = process(inp_1, inp_2, char_map, past_type[2])
+    c.write(outp, args['outdir'], args['ofname'], past_type)
 
 
 if __name__ == '__main__':

@@ -5,7 +5,7 @@ import os
 def write(outp, odir, ofname, past_type, first_step=False, lexicon=None):
     os.makedirs(odir, exist_ok=True)
     with open(os.path.join(odir, ofname), 'w', encoding='utf-8') as f:
-        print('# {}'.format(past_type), file=f)
+        print('# {},{},{}'.format(past_type[0], past_type[1], past_type[2]), file=f)
         for item in outp:
             if first_step or not lexicon:
                 print('{}\t{}\t{}'.format(item[0], item[1], " || ".join(item[2])), file=f)
@@ -54,7 +54,7 @@ def gen_empty_years(years, pps):
 
 def get_past_type(desc):
     desc = desc.lower().split(',')
-    return desc[1], desc[2]
+    return desc[0], desc[1], desc[2]
 
 
 if __name__ == '__main__':

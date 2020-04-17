@@ -3,18 +3,25 @@ import matplotlib.pyplot as plt
 from glob import glob
 import argparse
 import os
+import sys
+sys.path.append('../')
+import scripts.common as c
 
 
-LINES = {'INFORM.':
-             {'PERF. + VALA': ('red', '-'),
-              'PERF. + VOLT': ('yellow', '-'),
-              'IMP. + VALA': ('green', '-'),
-              'IMP. + VOLT': ('brown', '-')},
-         'FORM.':
-             {'PERF. + VALA': ('red', '--'),
-              'PERF. + VOLT': ('yellow', '--'),
-              'IMP. + VALA': ('green', '--'),
-              'IMP. + VOLT': ('brown', '--')}}
+LINES = {'inform.':
+             {'perf.':
+                  {'vala': ('red', '-'),
+                   'volt': ('yellow', '-')},
+              'imp':
+                  {'vala': ('green', '-'),
+                   'volt': ('brown', '-')}},
+         'form.':
+             {'perf.':
+                  {'vala': ('red', '--'),
+                   'volt': ('yellow', '--')},
+              'imp':
+                  {'vala': ('green', '--'),
+                   'volt': ('brown', '--')}}}
 
 
 def read(inp):
@@ -51,8 +58,8 @@ def split_years(freq_ls, c=1):
 def get_plot(freq_ls, txt_type, line_name):
     years = [item[0] for item in freq_ls]
     freq = [(float(item[1])/float(item[2]))*100 for item in freq_ls]
-    line_type = LINES[txt_type][line_name.upper()]
-    plt.plot(years, freq, label=line_name, color=line_type[0], linestyle=line_type[1])
+    line_type = LINES[txt_type[0]][txt_type[1]][txt_type[2]]
+    plt.plot(years, freq, label=line_name.upper(), color=line_type[0], linestyle=line_type[1])
 
 
 def process(inp, interval):
@@ -67,7 +74,7 @@ def process(inp, interval):
             line = line.split('\t')
             freq_ls.append((line[0], line[1], line[2]))
         freq_ls = split_years(freq_ls, interval)
-        get_plot(freq_ls, past_type[0], '{} + {}'.format(past_type[1], past_type[2]))
+        get_plot(freq_ls, past_type, '{} {} + {}'.format(past_type[0], past_type[1], past_type[2]))
     plt.legend()
     plt.show()
 
