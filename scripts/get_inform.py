@@ -119,9 +119,9 @@ def get_args():
     parser.add_argument('-c', '--charmap', help='Path to charmap tsv', nargs='?', default='../inputs/init/char_map.txt')
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/inform')
     parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_inf_output.txt')
-    parser.add_argument('-t', '--past_type', help='Metadata for output:which text and past type it is',
-                        default='# INFORM,PERF. + VALA')
-    parser.add_argument('-v', '--vala_volt', help='Vala or volt type past to search', default='vala')
+    parser.add_argument('-t', '--past_type',
+                        help='Which text and past type it is. Separated by column, eg. INFORM.,PERF.,VALA',
+                        default='# INFORM.,PERF.,VALA')
 
     args = parser.parse_args()
     files = []
@@ -131,7 +131,7 @@ def get_args():
         poss_files = [os.path.abspath(x) for x in poss_files]
         files += poss_files
 
-    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname, 'vala_volt': args.vala_volt,
+    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname,
             'reference': args.reference, 'charmap': args.charmap, 'past_type': args.past_type}
 
 
@@ -140,7 +140,8 @@ def main():
     inp_1 = c.read_v1(args['files'])
     inp_2 = c.read_v2(args['reference'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
-    outp = process(inp_1, inp_2, char_map, args['vala_volt'])
+    past_type = c.get_past_type(args['past_type'])
+    outp = process(inp_1, inp_2, char_map, past_type[1])
     c.write(outp, args['outdir'], args['ofname'], args['past_type'])
 
 

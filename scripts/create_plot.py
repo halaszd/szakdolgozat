@@ -67,7 +67,7 @@ def process(inp, interval):
             line = line.split('\t')
             freq_ls.append((line[0], line[1], line[2]))
         freq_ls = split_years(freq_ls, interval)
-        get_plot(freq_ls, past_type[0], past_type[1])
+        get_plot(freq_ls, past_type[0], '{} + {}'.format(past_type[1], past_type[2]))
     plt.legend()
     plt.show()
 

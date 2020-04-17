@@ -61,7 +61,7 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
     # TODO befejezetlennél: a kersési eredméyn - tt + vala/volt szűrt lista
     pat_vala_volt = r'([vuw]ala\b)' if vala_volt == "vala" else r'([vuwú][aoó]l*t+h?)\b'
 
-    if perf_imp == 'perf':
+    if perf_imp.startswith('perf'):
         pat_past = re.compile(
             r"""
             ([a-záöőüűóúéí]+?(?:t+h?
@@ -163,11 +163,10 @@ def get_args():
     parser.add_argument('-c', '--charmap', help='Path to charmap tsv', nargs='?', default='../inputs/init/char_map.txt')
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/form')
     parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_form_output.txt')
-    parser.add_argument('-t', '--past_type', help='Metadata for output:which text and past type it is',
-                        default='# INFORM,PERF. + VALA')
-    parser.add_argument('-i', '--perf_imp', help='Selects the aspect of the past to find', default='perf')
+    parser.add_argument('-t', '--past_type',
+                        help='Which text and past type it is. Separated by column, eg. INFORM.,PERF.,VALA',
+                        default='# INFORM.,PERF.,VALA')
     parser.add_argument('-l', '--lexicon', help='Path to lexicon of to be searched pat')
-    parser.add_argument('-v', '--vala_volt', help='Vala or volt type past to search', nargs='?', default='vala')
     parser.add_argument('-x', '--first_step', help='First step: collect the set of declared past', nargs='?',
                         type=str2bool, const=True, default=False)
 
@@ -181,9 +180,8 @@ def get_args():
         poss_files = [os.path.abspath(x) for x in poss_files]
         files += poss_files
 
-    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname, 'vala_volt': args.vala_volt,
-            'charmap': args.charmap, 'past_type': args.past_type, 'first_step': args.first_step,
-            'perf_imp': args.perf_imp, 'lexicon': args.lexicon}
+    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname, 'charmap': args.charmap,
+            'past_type': args.past_type, 'first_step': args.first_step, 'lexicon': args.lexicon}
 
 
 def main():
@@ -193,8 +191,9 @@ def main():
     lexicon = args['lexicon']
     if lexicon:
         lexicon = get_lexicon(c.read_v2(args['lexicon']))
+    perf_imp, vala_volt = c.get_past_type(args['past_type'])
 
-    outp = process(inp, char_map, args['perf_imp'], args['vala_volt'], lexicon, args['first_step'])
+    outp = process(inp, char_map, perf_imp, vala_volt, lexicon, args['first_step'])
     c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['first_step'], lexicon)
 
 

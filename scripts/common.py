@@ -52,5 +52,10 @@ def gen_empty_years(years, pps):
             pps[str(i)] = [0, 1, []]
 
 
+def get_past_type(desc):
+    desc = desc.lower().split(',')
+    return desc[1], desc[2]
+
+
 if __name__ == '__main__':
     pass
