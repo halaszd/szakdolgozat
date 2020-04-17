@@ -5415,23 +5415,18 @@ vezíh	1	ahozzaiok menuen · lduőssegnek peldaiat vezíhuala míndíníktől  s
 vezőt	1	hog en azert íőttem e velagra  hog azel vezőt vala  megkeressem · es íduezihemütet · díscí
 vfolj	1	zicrazo tőr · es a fílőkőn genjetseg 169vfolj vala kí  homlokocon zarvok vala  es a zaruoc
 vgihalgatia	1	t az beteg elevt · eiel fel kel vala es vgihalgatia vala ha vala mely sorornieg vala · es hozza
-vgiker	1	rgit azzonel megen vala az portara · es vgiker vala hust az betegevknek · estezy vala kys t
-vgimegien	1	anern le terdepelven jduezelven evket · vgimegien vala el · annak okaertaz sok terdeplesekert 
+vgimegien	1	anern le terdepelven jduezelven evket · vgimegien vala el · annak okaertaz sok terdeplesekert
 vgimond	4	kevuekben · zomorusagnekevl · vig zoual vgimond vala zenvedueen az faidalmat · ez az peniten || ak hituanok ·ezeket latuan az priorissa vgimond vala ez zent zvznek · te ezeketnem jol tezed || ok meg kerdyk vala ev syralmanak okat · vgimond vala zent margit azzon ·azert syrok hog kevn || vala . de magaazert nem ezik vala hanem vgimond vala ev zvueben . valamikeppen lehet , de me
 vgimondnak	1	z <k> zekrenre auagy koporsora felivl · vgimondnak vala az kevmives mesterek ·kiket hoztak vala
 vgivizi	1	sok liztet halat hatara vezen vala · es vgivizi vala cl oda houa kel vala ·:·)·tyzenegygiedy
 vgizol	1	seges es malaztos ember . hogi istennel vgizol vala mikepen io barat iobaratiaual . ez bern
 vgmond	14	megen vala olimpiadis azzonhoz es sirua vgmondvala en edes anyam · nagy tizteletlenseget r || omat ayakammal evzve ·az ev anyanak meg vgmond vala kyralneazzonnak · ez zent zvz · azt aka || evssegnek ruhaiat targiaes ozgya vala · vgmond vala neki ·azzonyom en teneked job palastota || ·azzonyom en teneked job palastotadok · vgmond vala zent margitazzon · nem vgy tegy zeretev || tmargit azzont · zent margitazzon kedeg vgmond vala ez sorornak · very ostorozi cngemet jge || iert tartanaiaezenkeppen az kezkenevt · vgmondvala zent margit azzon · azerttartom hogi jo || ekí  vram megemlekőztőnc  mert a hitető vgmondvala elvenes eleuen voltaba harmad 151rnapon ||  codakatteznecvala · es labaít bekelven vgmondvala nemdeezőkee a labac  kíket a sídocgiako ||  az ő kegősanjnja nem hagga vala  hanem vgmondvala  meegeg keuesse haggatoc ennekőmhog sír ||  eltemetven ímmaranjnja keze elterítven vgmondvala · aldot leg enzerető fíam · es aldot le || · es meglatom  az ő 292ríegőse kedíglen vgmondvala ő napanac enaddíglan mígh az enedessegő
 vgmondnak	2	y volna az kereztfa · az ev tarsi kedeg vgmondnak vala neki ·hog vronk ihs ez keppen evletevtm || tlenseget latnakvala egy mastvl · tahat vgmondnakvala · ez nynchen · az my azzonionknak zent 
-vgy	1	chyllagtvl · az istennek anyanak · mert vgy vala meg prophetaltatuámoises propheta myat 
-vgyan	1	y ,közepöth zarazon atal meeneenek , es vgyan vala az vyzhü nekyk mynt egy kewffal mynd yo
 vgymond	1	 1nek elsev predicacyoya zerent · holot vgymond vala · penitencyat tarchatok · mert elkevzel
 vgyzarmazyk	1	 ysten tyzbe , es mynt egy kemeenczeböl vgyzarmazyk vala az fysth hü rola . es az kyrthzozat es 
-vi	1	elesnek miatta ·az masyk cilicium kedyg vi vala ·es vala ev benne vasbol chinaltev kive
 viadalokotzerzenek	1	kbehamossagot gondolnak · mind napestig viadalokotzerzenek vala ünőn nelveket meg eleseitek : mikent ki
 viaskodik	3	lsseghes kiral . kierthzent wince vitez viaskodik vala . aznagi keent valtoztataa hertelen nag ||  kierth wgi mondpius papa az bullaban . viaskodikvala katherina giakorlatossaggal az erdeghek || ushoz , hogy az ő ellenségük , ki ővele viaskodik vala , neki személye szerint megjelentene .é
 viaskodnak	2	angial . esew hoziaa tartozo angialok . viaskodnak vala .az sarkannial az az . luciperrel es ew || y viaskodás .az mihály és az ő angyalai viaskodnak vala az sárkánnyal , és az sárkány is tusako
-videekre	1	kózben maxencius chazaarki niomoteek az videekre vala mi dolgaeert . eennen hazol kedeeg az <
 vigad	3	 keserüseeggel : es sem ezik vala . sem vigad vala . wi meeniewel . sem niaiaskodik vala i || kőzelyt valachristus rettegh vala judas vigadvala christus thaneitwany meghnehezőltek val || ak adák , és mind az nép örül vala , és vigad vala asszonyi állatokkal és szüzekkel és ifj
 vigadhatnak	1	ghiai ; ew vele nem lehethnekvala . nem vigadhatnak vala : kezereiteteek hogi . ennen magaat meg
 vigadnac	2	anusagotvallaz mikepen menden a scentőc vigadnac vala es diceretőt mondnac vala vrnac : mert  || ndnac vala : mend őruendnec vala : mend vigadnacvala : mend őrúlnec vala : mend enekőlnec va
@@ -5459,7 +5454,6 @@ vigaztalljak	1	ert sidok kik ü vele valanak a hazbanes vigaztalljak vala ütet 
 vigaztaltatik	1	hatodzor merthgiakortaa latogattatik es vigaztaltatikvala . ez nemes cristusnak iegióse mintazzon
 vigaztalya	2	atez zent zvz vele evzve siratya valaes vigaztalya vala evket monduan ·akarta volna az vr isten || myelkevdetyvel . az egieb sororokat meg vigaztalya vala . ezeknek vtanna ez egygyvgyv sororesee
 vigaztalyak	2	ozza zent pius papaual egyetevmben · es vigaztalyak vala evtet · ezen idevbenzent praxedis azzon || ianak az zent angeloktvl es · kyk evtet vigaztalyakvala es zolgalnak vala evneky · mert ha vala
-vigaztasaleezen	1	 nagi sok ielenetekkoroknak betegheknek vigaztasaleezen vala ott a helien az zentziznek erdeme miat 
 vigaztnak	1	kra beteghekreteezik vala . sokakat meg vigaztnak vala . wrwnk iesusnak ereiwel  egi napi napo
 vigazyk	1	 megyenvala az viznek indulasa vtanmegh vigazyk vala akarminemü korsaagban thartatotwolnaval
 vigiaz	1	knek . enghedelmeere haithatnaa . sokat vigiaz vala .es kewes almat veezen . vala .. mikoro
@@ -5469,19 +5463,10 @@ vigyáznak	4	 az pásztorok , kik az félben csordával vigyáznak vala krisztus
 vihet	1	ella eleeben le boczatanivala mit eenni vihet vala : azkótelnek kedeeg alsso vegheere kótó
 viheti	1	enzasokkal ihesus megh fogiatkozvan nem viheti vala towabba azkerezthfaath . ees az vitezők
 viia	1	bai viwovitez . wgian ostromlia vala es viia vala . aniazent egihazat  nekiketfenieghetee
-vilagnak	1	nekem ez vilaghmegh fezewlt . en ees ez vilagnakvala kik azert ez regulaat kówetendik . beke
-vilagon	2	az wtolsso iteelethnek napian  merth ez vilagon vala ki menee emberth meg fordoitawagi gonos || sen irgalmaz azokkal : kyknek eeth ezen vilagonvala mi keserewt haagi lathniok  es meelj ke
-vilagonkinek	1	confirmantes illeni paranczolta mind ez vilagonkinek vala ki ellene mond ottan atokban esikewtód 
 vilagosodyk	1	gyes megvaltasarol · mykoron az nap meg vilagosodyk vala · mynd napnak harmad jdeyeig · hierusal
-világ	1	hogy tanúságot vallana a világról .igaz világ vala , ki megvilágosít minden embert e világ
-világon	5	minden embert , valaki e világra jő .ez világon vala , és ez világ őáltala teremtetett , de  || lágosít minden e világra jövő embert .e világon vala , és a világ őáltala lett , és a világ  ||  minden ez világra született embert .ez világon vala , és ez világ őáltala teremtetett , de  || ít minden embert jövet ez világra .ezen világon vala , és ez világ őáltala teremteték , és e || ít minden embert , ki ez világra jő .ez világon vala , és ez világ őáltala lőn , és ez világ
-világos	2	kem élő víznek tiszta folyóvizét , mely világos vala , mint egy kristály , és mely kifoly va || tán élő víznek tiszta folyóvizét , mely világos vala , mint az kristály , mely kijő vala az 
-világosság	3	bizonyságot tenne a világosságról .igaz világosság vala , amely megvilágosít minden e világra j || nem lett .őbenne élet vala , és az élet világosság vala az embereknek , és az világosság az söt || denek hitre térnének őáltala .az nem az világosság vala , hanem azért bocsáttatott vala , hogy 
-világossága	1	igébe élet vala , és az élet embereknek világossága vala .és ez világosság a sötétségbe fénylik 
 virrad	2	ünnep készületinek napja , és szombatra virrad vala .követvén pedig az asszonyállatok , kik || és paraszkeué napja vala , és szombatra virrad vala .az asszonyi állatok kediglen odamenéne
 visel	27	 zvz marianak alazatossaganak iegye kyt visel vala zyvyben mentevl jnkab ielentetyk meg az || zerezuen : mert zent damácos atiank nem visel vala penzt : esmerven evmagat evnekik adosna || lanchotkedeg : kit zent damancos atiank visel vala derekan : ezt el veueek : esadak jordan || uan · es az ev kysded fyatky ev evleben visel vala · az fratereknekmntatnia · es mykoron a || mensegeert · nemikorontytkon ciliciomot visel vala · es nemialamysnakat es tezen vala · az || re eyte az zauarral · melyet ev kezeben visel vala · vgyhog mykoron felakar vala kelny · t || elette nagi gondot  zorgalmas vigiazast visel vala ; hogi el vezthetneeha zerelmes atiamff || eween . zent stanizlopispek nagi gondot visel vala az ewegihazarol es mindent inth vala ta || taa imatkozik valatitkon ciliciomot ees visel vala rwhaja alat  es ezenkeppen zoktattiaval || i sok ideiglen kedeegh titkonciliciomot visel vala az zerzethnek zokasa ellen . de mikoron || .az iambor confessor kedeeg nagi gondot visel vala . az zent azzonnak idwesseegeról . wgi 
 viselem	1	lanak vala .és én , efraimnak dajkája , viselem vala őket én karjaimon , és nem tudták , hog
-viselew	1	 . <hogy> vala eegi emberki felette zoo viselew vala eelteeben .halalanak wtanna ieleneek me
 viselhety	1	labfaat hozna : ky meeg evnen magat sem viselhety vala el : es micoron nemeli napon fekevueena
 viseli	15	 az eiet oliha mendenestevl alom nekevl viseli vala el : esaz isteni jgiknek magvaat jgieke || h aranbolmeg zereztette vona . kezeeben viseli vala . masth ees . zereztetee . aztzaztho ke || ha neky adnak jo es gyengevelomot · nem viseli vala meg ·hanem goromba velomot keervala es  ||  ·hanem goromba velomot keervala es azt viseli vala · az zolgaloleyanyoknak goromba fev fed || mba fev fedeleket kery vala cl · es azt viselivala · es az evuet az zolgaloknakagia vala · ||  testnek nivgodalmat el veuen · az eiet viselivala alom nekevl · kinek ev zentsegerevl byz || ola le nemveti vala · hanern azonkeppen viseli vala es azzonkeppen eiel es bennehal vala ·  || zenievala ees nekik mit adnakvala abban viseli vala azertihesus monda haddel őtet aznemes k || ejében nézvén elveszniük , jó akarattal viseli vala a reménységért , melyet istenben vall v || gcsókolván vállát , aholott az kenyeret viseli vala alamizsnával .és vevé ő válláról az ken || y felöltözteté őt szerzetnek ruhájába , viseli vala őt vele társaként .de vala az ezennyi a
 viselic	1	ac : istennec felelmebecelekődic vala : viselic vala : az ő eletőket : az őrőc mendenhato vr
@@ -5502,22 +5487,16 @@ viszen	2	al fogadást tett , és egyiptomba olajat viszen vala .azért úrnak í
 viszi	6	át mesterséges alkotással a város kívül viszi vala észfek felől , és parancsolá elvágatni  || el éltettetnek vala .valóbizony malazár viszi vala az étkeket és ő veneréküknek borát , és || t , ki fráter rufinusnak köntösét utána viszi vala .kit mikoron assisibeliek mezítelenülte || an őriz vala .őt gyakortább társul vele viszi vala , és ő titkaira gyakorta éjjel és nappa || utána az  angyaltól hozott eleséget úgy viszi vala hozzá .egy néminemű napon azért , mikor || kozni , és az éjet istennek imádságával viszi vala ki .és mikoron nappal lett volna , hozz
 viszik	14	gy előr a meghalván , azonképpen a mást viszik vala megkáromlatra , és ő fejének bőrét hajá || re vontatik vala .azok kedig , kik őtet viszik vala , és eleztébb kevéssé kegyesebbek valán || ának , különb-különb féle betegségűek , viszik vala őket hozzája .ő kedig mindenikre kezeit || valyákkal való betegi valának , hozzája viszik vala azokat .ő pedig mindenikre kezeit tevén ||  illeté a koporsót .( azok pedig , akik viszik vala , megállának , ) és mondá : ifjú , neke || ldre kimennének : és a többit deszkákon viszik vala ki : némelyeket pedig a hajóbeli szersz || ek különb-különb féle betegi volnának , viszik vala azokat őhozzá , ő pedig mindenikre keze || lleté az koporsót , azok pedig , az kik viszik vala , megállának , és mondá : ifjú , teneke || etegeket különb-különb leletezetekkel , viszik vala azokat őhozzá , és ő egymindenikre keze ||  és illeté a koporsót .ezek kedig , kik viszik vala , megállottak .hős , teneked mondom , k ||  ne sírj !és járulván illeté azt , kibe viszik vala , és akik viszik vala , megállának , és
 visznek	13	estveledék , és a nap elnyugodt volna , visznek vala őhozzája minden betegeket , és ördögtől || ra .és íme néminemű férfiak nyoszolyába visznek vala egy guttaütött embert , és azon igyekez || le .akkor mene őhozzá nagy sokaság , és visznek vala velük sok sántákat , vakokat , némákat  || elik , azon , ki megaszott , mi leszen ?visznek vala kedig ővele egyetembe  két gonosztevőt  || p elnyugodott volna , mindeneket őhozzá visznek vala , kik nehezen valának , és azokat is ,  || dét .és őhozzá menének , kik egy embert visznek vala , kinek az ő inai az ő helyeiről elindu || lomból azokat , az kik ott árulnak , és visznek vala , és az pénzváltóknak asztalait , és az || kapujához közelgetne , íme egy halottat visznek vala fenn vállukon , ki az ő anyjának egyetl || ki önmagát megalázza felmagasztaltatik .visznek vala kediglen őneki kisded gyermekeket is ,  || fán ezt teszik , az aszú fán mi leszen ?visznek vala kediglen két egyéb gonosztevő embert is || itézek is , őhozzá járulván , és ecetet visznek vala őneki , és ezt mondják vala .ha te vagy
-viteek	1	enthmathenak <ew> irth ewangeliomaat el viteek vala ew velókes mikoron az korokra beteghekr
-viteez	1	arom zaai eztendóben attianak patricius viteez vala newe . es pogan . vala . annianakkedeeg
 vitetic	1	 : es meg ekesyttetuen :diadalmas kepen vitetic vala menbe : es meg alda őket : monduan :alh
 vitetik	13	uan . legottan ime ezenkwzbe ezen idwbe vitetik vala egi wrdwngws ember . igen erwsem megkwt || hethne az varosnakkapwyahoz ime halotth vitetik vala ew annianak egetleneegh fya ees ez azzo || k kapujához közelgetne , íme egy halott vitetik vala ki , az ő anyjának egyettlen egy fia ,  || ik vala , és a kötözéseket elszaggatván vitetik vala az ördögtől a pusztákba . ( légió sereg || .és sok emberektől  szerkesztetett , ki vitetik vala szent ferenchez , hogy őt ördögtől megs || kapujához közelgetne , íme , egy halott vitetik vala ki , egyetlen egy fia az anyjának , és  || ket áldaná , elválék tőlük , és mennybe vitetik vala .és ők imádván visszatérének jeruzsálem ||  szentlélekkel , megfordulván jordántól vitetik vala szellettől a kietlenbe negyven napokban || n a kötelek megszaggatván az ördögtől , vitetik vala a kietlenbe .kérdé kedig őtet jézus mon || dotta volna azokat , elmene őtőlük , és vitetik vala mennybe .és ők imádkozván nagy örömmel  || nd az egész disznó sereg hanyatt-homlok vitetik vala az tengerbe , és elveszének az vizbe .a
 vitetnek	6	 az kesertetbely nouiciusok es ev hozya vitetnek vala · es ev tevle meg vigaztaltatuan teerne || e jevny azbyronak eleyben · es nemelyek vitetnekvala nyvgodalmra · nemelyek vontatnakvala az ||  ezeket művelik , a szárazon mi leszen ?vitetnek vala pedig más két gonosztevők is ővele , ho || dnának , lebocsátván az edényt ekképpen vitetnek vala .az erős szélvésztől hányattatván pedig || án ezt művelik , mi esik az száraz fán ?vitetnek vala pedig két egyéb gonosztevő emberek is , || n ezeket teszik , az aszúban mi leszen ?vitetnek vala kedig más két álnokot ővele , hogy megf
 vitettetik	2	ek minden földre .és íme , ónnak gírája vitettetik vala , és íme egy némber ülvén a korsónak kö ||  : marciálist és eminemet .az marciális vitettetik vala halva ki , kit mondám  urunk halottat f
 vitettetnek	2	vala ki , és innét a másod lakodalmakba vitettetnek vala , melyek saasgaz meddő keze alatt valán || zeket  művelik , mi leszen az aszú fán ?vitettetnek vala kedig két gonosztevők is , hogy ővele m
-vitez	2	ben tízenjegí · hadnagía  az erosh ioab vitez uala  a sadokot pispőke teue · ierusalemben  || rezttien zilektewl . attianak decelinos vitez vala newe annianakaaleth . ez iambor azzonia
-viteznek	1	ala <lara>az sebből veer ees vyz ees az viteznek vala vak zőme hogh meghőklelte volna ihesusn
-vittec	1	, meg tőrettetuen , mertnag syetsegel , vittec vala herodeshez , es meg hoztac vala pilatos
 vitézkedik	1	neve , ki az római császárnak seregében vitézkedik vala , és nékiket egyebeket .mikoron kedigle
 viulnak	2	 zóli ualaőkeeth az ieegőn . ot ők meeg viulnak uala esmegaz kenra : es az lelkők mind ferfi || en ragadozotvala sok heliőn es mynd meg viulnakvala esmeg a sebők ennek myatta kenniavala e
 viw	1	inket ymaran az hitóthirdeti : kit neha viw vala . esenbennem dicheryk vala az kegielmes
 vizbenmehet	1	 egi . valaki elezer az korok kózzól az vizbenmehet vala  mindden betegssegheeból meg vigazik va
 vizel	1	a hog mindenkoron az ő balkezebe keztet vizel vala hog az ő teneren valo kerecsegec meg ne
-vizen	3	la : frater benedeknekaz pwztaban eenni vizen vala .de miert az isten embereewel zemzembe  || aghnak okaerth .es kimind enni es innia vizenvala az pwztaban .. annak wtanna egi idóben  || eeiel elki meegien vala es ennen hataan vizen vala nialaab faakat az zegenieknek aitoiok e
 vizesenmaradnak	1	rsynakruhai kik az tevznel zarraztattak vizesenmaradnak vala meg : zent damancosatianknak ruhai kede
 vizesevdnek	1	 ev ruhay es ev tarsinakruhai jgeen meg vizesevdnek vala · esmykoron az ev tarsi vachoranak vtan
 vizesevl	1	vnveet siralmat el tevrii vala · annera vizesevl vala meg · hog annakvtanna ez zent zvz · az 
@@ -5533,23 +5512,15 @@ vizőn	1	 giútőttenek volnahő míndiniknel tőbbet vizőn uala | mikoron zül
 vkődíc	1	ad  de gorsonsíetni hattad ammít tőre 83vkődícvala  demaga ezta leúltec nem tuggacvala  mí
 vmelegíttik	1	 túznel  merthídek vala · es magokat 100vmelegíttik vala · es valazent petőr ő kőztőc · esmagat 
 vndoklonak	1	iznakvala · mikent igazak · es egebeket vndoklonakvala ez pelda rvla bezedet ket ember fel men
-vnec	1	salembelíkeralj leanjat hozzoia · ki 246vnec vala neue leonía · kítőlzúle zent apalín azz
-vnem	1	őn annera haznala  hog gőrőg orzagba 247vnem vala hozzaía hasonlatos  demaga ő ígekőzik v
 vnnjac	1	fele a 43vnag hidegsegbe  es mícoronmeg vnnjac vala a naghidegsegnec zenvedeset  mennek val
 vntagia	1	ueen · az ev enekleseuel az fratert meg vntagia vala · azertaz frater ezen meg jndultateek ·
 vntalanmegíen	1	 ímadsabanes alamísna oztogatasban : es vntalanmegíen vala az kalastromban es hot kerivala ímachag
 vohat	1	 akar valachak tekeentetiwel ees hoziaa vohat vala .annak okaert nem choda hogi az zent ap
 vohattyak	1	ltok .onnan veteek azert , es ymará nem vohattyak vala kywe az halot az halaknak soksagatwl .m
-vol	1	zentseges annja , ő főfődelet kit feyen voluala , keserősegel telljes , oda vete , es z
-volna	3	 ü nekik eg fogljat vala melljet kertek volnavala kedeg · ki mondatikvala barrabas · ki a || rását : mert ha istennek útjában jártál volna vala , bizony békességgel lakoztál volna a f || kevesebben .  .az is , kinek nyavalyája volna vala hova menni , ne azokkal menjen , kikkel
 volnachodalkozik	1	ieli hogi ew benne ennee emberseeg volt volnachodalkozik vala raitta az wr istennekpapia ees ki ewtet
 volnacodalnac	1	bodog zent vrsolazzonravtolzor íuttanac volnacodalnac vala nekí módhatatlan zepsegen · kemensegőke
 volnakiwannia	1	irwan volnamiko eegibe kózel iwtottanak volnakiwannia vala ziz lean catherina azziz maria<.>ffiana
-volnamert	1	eenekellene disputalni . hogi bizon nem volnamert vala mi dolog ez vilagonvagion es leezen min
 volnanak	2	lentnek vala myt · bator kellemetessevk volnanak vala mynemev tyztevsseggel ·:- mynden te mye || eztenek vala .my lattatyk ty nektek ,ha volnanak vala kynek zaz yohay , es egy hw kezzelek el
-voltaat	1	ornakzamtalan choda teetelyt es iozagos voltaatvala ki . es vala hol . az ew zent newehiüse
-voltvona	1	nia volthvona .. awagi erdeghnek leania voltvona vala mikoron . awagi erekistennek haraghiaba
-vona	1	czak azokaerth . hogi <.> mikoron latot vonavala meeli kereztienth keennak miatta el hai
 vonagik	2	ak kedig szerelmes szolgája beteg lévén vonagik vala , mikor kedig hallott volna a jézus fel || menne és meggyógyítaná az ő fiát , mert vonagik vala .mondá azért neki jézus : ha az jeleket
 vonaglik	1	dosnak szolgája kediglen nehezen  lévén vonaglik vala , kit igen szeret vala .mikoron kedigle
 vonagszik	1	 mely őneki szerelmes vala , beteg , és vonagszik vala .mikoron kedig hallott volna jézus felő
@@ -5573,8 +5544,7 @@ vontatnak	2	an vronkiesus ev zent aniaual : es feel vontatnak vala az laytoryak 
 vontatyk	4	elykev garadychon iduezeytenk iesus fel vontatyk vala pilatos eleyben meg kevtevztetuen · es  || agitwl · az vyonnan valo kesertetevkkel vontatyk vala · mykoron zent damancos atyank onneet m ||  az menyey es belsevvelagossagoktvl meg vontatyk vala ·esmeeg vala frater · ky sok jdeyg nagy || yetemben ez fraterrel ez veen frater es vontatykvala · de maga vegezetre sok erevkevdesnekvt
 vonya	1	ala varasokra es falukra · ev saruitfel vonya vala · es vgy megeen vala altal az varason a
 vonza	7	 predicacyora · de meeg az zerzetre es ·vonza vala moneta mester az nepeketaz predicaciora || teni · es ha valameli soror evmagat meg vonza vala az kevzenseges dologtvl kit az prissa p || euel nagi erevkevdessel az pagymentomon vonza vala ev magat · vgy hog mendenek kevnyerelne || la · ezenkeppen az evlefelen az fevlden vonza vala magat ·ezenkeppen levn ez zegen beteg h || fúgvala · es im az ő nehez voltaual ala vonzauala · es ebbőlaz en sebeim nagobba zakadozn || fratert ruhaianak peremenel sogva el ki vonzavala az jmadsagrol es carbol . tahatmóda zen ||  dauid kyral mend az eneclőkel ahegedüt vonza vala : es mend njayan yacodoznac vala vr elő
-vonzak	1	raterek latyak vala · hogaz egy fratert vonzak vala az egyhaz zerte · de azt nem latyak val
-vonzia	2	tatnecaz isteni dicheretőcbe ö magat el vonziavala emberecnek njaiassagatvl : valakiő neki || ewtwlaidon testeenek gienierewseghitmeg vonzia vala .. cristusnak zeretetieerth . gakortaa 
+vonzia	2	tatnecaz isteni dicheretőcbe ö magat el vonziavala emberecnek njaiassagatvl : valakiő neki || ewtwlaidon testeenek gienierewseghitmeg vonzia vala .. cristusnak zeretetieerth . gakortaa
 vonziaak	1	volna .. meg mewetik vala ewtet . es el vonziaak vala az zent akarattrol .. de geelerd newó v
 vonznak	1	apon masiktwl · myndennapon valamyt meg vonznak vala magoktwl · azokban kyk eleykben tetekne
 vonzon	2	yndeneket az ev tizteletyrees zerelmere vonzon vala · myndenkoron ez keges atia vygnak jele || ős voltaual : mendeneketaz ő zeretetire vonzon vala : ebből lőn : hog sokactul keuantatotvo
@@ -5582,17 +5552,10 @@ vonzya	1	yben heet korona .es ew farkawal wtanna vonzya vala az menyey cyllagokn
 vonzyak	1	lemelleneben : az laytoryakat kedegfeel vonzyak vala lassan lassan vronkiesus ev zent aniaua
 vonzza	2	és annak fejein hét korona : és a farka vonzza vala az ég csillagainak harmad részét , és a || való engedetre az leánynak üdvössége is vonzza vala .íme legottan folyamék az szent imádság
 vonzía	1	na  eh nőmős züzet a tőmlőczből  utanna vonzía uala kőtik az őrdőgőt | samaz kegíg ígen kőn
-vr	1	 in nobispsalmus .c.x.x.iij ~merth chak vr vala mivelewnk mondia ymarizdrael merth chak
 vralkodik	1	agok azkorongonozvl bulchuztatot elegge vralkodik vala · az az · hog az jdevbeli gonoz kerezti
 vralkodyk	2	dyay kyralne azzonnak off mesteree , ky vralkodyk vala mynden yozagan ,  yett vala jerwsalembe || anak myatta megh törnee , ky az halalon vralkodyk vala , azaz pokolbely erdeghet , es megh zab
-vramsegel	1	 en labam megindwla , the irgalmassagod vramsegel vala engemeth ,een ziwem beli serelmeknek so
-vriase	1	d kiral keg zile salamont az azzontolki vriase vala salamon keg zile roboamt : roboam kegzi
-vrik	1	a · es orczaíaban igőn ekős sokan ke 201vrik vala  de senkí a dolognac veget nem erhetíva
-vrnak	2	xencíus chiazar  es ez idebe hogez vala vrnak vala wronkyesusnak az ew ziletesenekvtanna h ||  nemmondhatia : oka ímez : mert ígennag vrnak vala egetlene : es ígenío elkelcző vala : to
 vroz	1	eppen egebnemü be íőuendőből tízedőthel vroz vala es a nőmős kenetőth kebzőttevala haromz
 vroznak	1	egh fyzetem vala , vala mithü bennök el vroznak vala en raittam mind meg vezedvala nappal es
-vrranizek	1	ddenecengem en agikim mindenkor előttem vrranizek vala · mert nekem iogom felől vagon hogmeg n
-vrü	1	m monga vala a zegenjőkről  demaga lopo vrü vala · es erzenjevala · es nekíc mít adnacva
 vtaatadnak	1	egik sem inditia vala . hanem czak neki vtaatadnak vala . es kwzwtwk meg ala es nekik zolni kez
 vtal	1	a meltatlanokat : eltauoztat vala : meg vtaluala :mikepen tobias kőnőuebe oluastatic sar
 vtalia	2	lelemeseket jrasokat chalardsagokat meg vtalia vala · byneseknek gyonasoknak halgatasokra k ||  zemelyvknek es ·az ev gonossagokat meg vtaliavala · sevt meeg ennek fevletteakar meli jge
@@ -5600,11 +5563,9 @@ vtalla	1	bonat meg nem ezy vala : akorsagert meg vtalla vala : ezegen azzon mend
 vtalnak	2	  oly mynth ygazak , es eegyebeket megh vtalnak vala , eellyen pelda bezedeth , mondvan :  k || aras es jgen veresvala · vg hog egyebek vtalnakvala ev vele banni · de zent margit azzon el
 vtalya	1	ozza vala · mykeppen az hev neseket nem vtalya vala · mely kegel mesen az penitencia tartok
 vtalíak	1	| nem kel vala deíncab mínt aganeet meg vtalíakvala | hog czak azent testet íllethetneíek :
-vtanna	2	yglan byryad es tarczad hütet ,ha annak vtanna vala meenee ydeyg len nalad maradand ,megh f || auanak első napían avecherníere mínd az vtanna vala napnak vecherníeíglen | az az | ameli n
 vtannaenekli	1	sagira · es vgianazon estue conpletanak vtannaenekli vala · jgen aitatosson · magas zoual · es si
 vtannaveríttőzíc	1	mad 91rkozní mongavala eliasimadcaganac vtannaveríttőzícvala  crístusímadcaga vtan kőtőztetícvala  h
 vtanocmegen	1	íesus míkepen az zeled artatlan baran ő vtanocmegen vala ¶ mikoron azert ezőket azzvnvnc maria m
-vtetördög	1	ön meg őrvlees nag kevansagal nezi vala vtetördög vala keig ez · monda azert azördög az azzonj
 vtezen	1	epnec írígsege  mert a soc codat  kít 72vtezenvala · es ielennen lazarnac feltamaztasaertt
 vtik	3	s raia hagapvan vezikvala az nadat · es vtik vala ü feie<hez>t es mi vtan ·meg mevettek v || istapert es terdre esuenő előtte nyakon vtik vala es orczel pőkuen mongiak vala iduezlegi || a kedig őtet mint egi elvetőt zőmelth : vtik vala feiet tengeri naddal hogi a tuuissek be
 vwtel	1	 . az kwueknek araba . melieket entwlem vwtel vala az kwueknek araba egihaznak epwletire .
@@ -5619,8 +5580,6 @@ vygaztathatyk	1	 keltettee vala , de senkytül megh  nem vygaztathatyk vala .aze
 vygazttya	1	kat kedegh , kyknek zyksegh vala , megh vygazttya vala .az nap kedegh ymaran el kezd vala nywg
 vygazyk	1	t vona , hü yndwlattyanak vtanna , megh vygazyk vala , akar mynemw korssaghban volt vona .va
 vyhety	1	 ne mongyak kyk ezfeldön lakoznak : nem vyhety vala , wgy mond ,be ewketh az ygyeerethnek f
-vylagon	1	oyth mynden embert yewen ez vylagra .ez vylagon vala , es ez vylagh hü myatta lett , es ez v
-vylagossagh	1	h kedeegh az yzrael ffyay lakoznak vala vylagossagh vala .es oda hyvataa ffaraho moysesth es aar
 vyonnantezen	1	vala az zerzetre · es olyha myndenykkel vyonnantezen vala professyot · be menuen kedeg evnen maga
 vyseii	1	 apro hegies vas zegeket ·es ezenkeppen vyseii vala ev labaiban az vr istent · nagy zerelme
 vysel	3	usnak zent zileieet ; essemi gondot nem vysel vala ez vilagra ; de mindden remensegeet vet ||  nagy sok ydethwl foghwa , es rwhat nem vysel vala , hazban sem lakozyk vala , de az hallo ||  dolgokat tezen vala : es zenth eleteth vysel vala :demaga soha soha : ez egy bynth nemmer
@@ -5644,43 +5603,32 @@ vádolnak	1	eki : asszony , hol vannak , akik téged vádolnak vala ?senki nem k
 vágnak	6	t az útra teríté , a többi kedig ágakat vágnak vala a fákról , és az útra hányják vala .a n || tra terítik vala .némelyek kedig ágakat vágnak vala a fákról , és az útra terítik vala .és  || ő ruháit az úton : egyebek pedig ágakat vágnak vala a fákról , és elterítik vala az úton :  || teríték az úton : némelyek pedig ágakat vágnak vala a fákról , és az útra hintik vala .és a || teríté .nékik kediglen az fákról ágakat vágnak vala , és elterítik vala az úton .az népekne ||  vala , nékik kediglen az fákról ágakat vágnak vala , és az úton eltérítik vala .és mindazo
 választanak	1	inden esztendőben új ismeretlen  embert választanak vala maguknak fejedelemül .az egy esztendőbe
 változtatja	1	 , mire az vigasságban a verset meg nem változtatja vala .ki felelé nagy vigassággal , hogy miko
-válván	1	 ,  ki annak drágalátos vala , gonoszul válván vala meghalandó , és mikor hallott volna jéz
 vár	1	 , ugyanazon ígéretnek örökösivel .mert vár vala oly várost , melynek fundamentuma volna
 várakozik	1	őnek , midőn egyszer az istennek tűrése várakozik vala noénak idejébe , mikoron a bárka készít
 várja	27	eleségét vizét kimenetét és bemenetét , várja vala azt , hogy viadal nélkül megadják maguk || sztességes tanácsbeli személy , ki ő is várja vala az istennek országát , és bátorságot ve ||  beteljesednek az ő idejükben .és a nép várja vala zakariást , és csodálják vala , hogy a  || ból , júdeának városából való , ki ő is várja vala az istennek országát , ez pilátushoz me ||  bemenének cezáreába , kornéliusz kedig várja vala őket begyűjtvén hozzája rokonságit és b || géretnek valának örökösi .mert a várost várja vala , melynek fundamentomi  vannak , melyne || ai józsef , egy nemes tizedes , ki ő is várja vala az isten országát , és bátran bemene pi || k beteljesednek az ő idejekor .és a nép várja vala zakariást , és csodálkoznak vala , hogy || eából júdeának városából való , ki ő is várja vala az isten országát .ez pilátushoz mene , || edig bemene cezáreába .kornéliusz pedig várja vala őket , egybehíván az ő rokonit és jóbar || kóbbal azon ígéretnek örököseivel .mert várja vala a fondamentumos várost , melynek mester
 várjuk	1	nk , és asszoszba menénk hajón , és ott várjuk vala az pált .mert akképpen végezte vala , ő
 várják	17	és szól vala őfelöle  mindeneknek , kik várják vala a váltságot jeruzsálemben .és midőn min ||  nép hozzáfogadá őtet : mert mindnyájan várják vala .és íme eljöve egy ember , kinek jairus ||  és megszáradtaknak nagy sokasága , kik várják vala a víznek megindítását .mert az angyal b || és szól vala őfelőle mindeneknek , akik várják vala izraelnek váltságát .és hogy elvégezéne || befogadá őtet a sereg , mert mindnyájan várják vala őtet .és íme , egy férfiú jöve , kinek  || t : akik valaha hitlenek voltak , mikor várják vala az istennek békességes tűrését noé napj || őfelőle mindeneknek , kik jeruzsálemben várják vala az váltságot .azok pedig , minekutána e || p örömmel fogadá őtet , mert mindnyájan várják vala őtet .és eljöve egy ember , kinek jairu || ntáknak , megszáradott embereknek , kik várják vala az víznek megmozdulását .mert az istenn || ől négy vasmacskát vetvén az tengerbe , várják vala az napnak felkeltét .az hajósok pedig a ||  semmi nyavalyája nem lőn .amazok pedig várják vala , hogy megdagadozna , vagy meghalván na
 várnak	2	l , és attól , amit az zsidók énfelőlem várnak vala .és  ez dologról gondolkodván , mene az || ndeneknek , kik jeruzsálemben váltságot várnak vala .és minek utána az úristennek törvénye 
-város	1	gésének füstjét , és ezt mondják : mely város vala hasonlatos e nagy városhoz ?és port hin
-városnál	1	mizsnáért menetet etc .újburgundia nevű városnál vala egynémi nemes nembeli mihály nevű fráte
-városuk	1	ivék őtet a hegy tetejére , melyen az ő városuk vala építve , hogy nyakra-főre vetnék alá őt
-vásárlanak	2	, kezdé kiverni azokat , kik árulnak és vásárlanak vala az templomba , és az pénzváltóknak aszt || iúzni azokat , kik ott benne árulnak és vásárlanak vala mondván nekik : írván vagyon , mert az 
+vásárlanak	2	, kezdé kiverni azokat , kik árulnak és vásárlanak vala az templomba , és az pénzváltóknak aszt || iúzni azokat , kik ott benne árulnak és vásárlanak vala mondván nekik : írván vagyon , mert az
 vásárolnak	2	ezdé azokat kiverni , az kik árulnak és vásárolnak vala az templomban , és az pénzváltóknak asz || pjaiba : esznek , isznak vala , árulnak vásárolnak vala , palántálnak , és építenek vala .amely
 vélek	1	 vala elő az dolgok felől , melyeket én vélek vala , hanem vala őnekik vetekedésük az elle
 vélekedik	1	t az jézus cselekedik vala , és magában vélekedik vala azért , hogy azt mondják vala nékik , h
 vélekednek	1	 rajta igen gondolkodnak vala , és igen vélekednek vala , kit látván józsef megkérdé őket , mit
 véli	1	az angyal által leszen vala , hanem azt véli vala , hogy látást látna .mikoron kedig elha
 vélik	8	özel vala jeruzsálemhez , és miért hogy vélik vala , hogy az istennek országa mindjárást m || égre mondotta volna neki .mert némelyek vélik vala , miérthogy júdásnál áll vala az erszén || dőn adriánál vitetnénk éjfélikort , azt vélik vala a hajósok , hogy valami tartományhoz kö ||  úgymint harminc esztendős lenni .amint vélik vala , józsef fia , ki volt élié , ki volt m || gháborodván pedig , és megrettenvén azt vélik vala , hogy lelket látnának .és mondá nekik  || vén mi az adriai-tengeren éjfélkorban , vélik vala a hajósok , hogy valami tartományt látn || énzét .előjövének az elsők is , kik azt vélik vala , hogy nekik többet adnának , de azokna ||  nevű tengeren volnánk éjfél felé , azt vélik vala az hajós mesterek , hogy valami tartomá
-vér	3	ányai is .és íme egy asszonyállat , kin vér vala tizenkét esztendeig , hátul illeté csak || rítanák őtet .és egy asszonyállat , kin vér vala tizenkét esztendőtől fogva , sok gyötre ||  vala őtet .és egy asszonyi állat , kin vér vala tizenkét esztendeig , mely az orvosokra
-vérhas	1	 őtet .és vala egy asszonyi állat , kin vérhas vala tizenkét esztendőtől fogva , mely minde
 vétetik	1	sznóba menének .és íme nagy sebességgel vétetik vala az tengerbe egész az nagy disznó , és a
-vétkeztenek	5	en esztendeig ?nemde nem azokra-e , kik vétkeztenek vala , kiknek testük leomlának a pusztában ? || a az mózesig , azok ellen is , akik nem vétkeztenek vala az ádám esetének hasonlatossága szerint ||  esztendőben ?avagy nem azokra-e , akik vétkeztenek vala , kiknek testek elhullának az pusztába  || sten nem kedvezett az angyaloknak , kik vétkeztenek vala , hanem az mélységben taszítván az söté || z isten nem engede az angyaloknak , kik vétkeztenek vala , hanem az éjnek láncira veté őket , és
 ví	1	ínak vala az sárkánnyal , az sárkány is ví vala , és az ő angyalai , és erőt nem veheté
 víadalhozkezúlnec	1	mertmast futamast ielőntnecvala  mastan víadalhozkezúlnecvala  neha oljmelj mínt veretőt hadfutast ze
 vígad	3	uloiaelkőzelítvala crístus felkeleiudas vígad vala crístus tanítvaní alom mía megh nehezúl || íelőnec elzunjadvan keuesse az ertelmem vígadvala · es ímenemínemú lelőc el íőue · kíez m || a öltözik vala , és minden napon nagyon vígad vala , és nagy jól lakik vala .vala kediglen
-vígan	1	ét tartom .ábrahám , az ti atyátok nagy vígan vala , hogy az én napomat látná , és meglátá
-vígasaga	1	ezőmvala tahat az en ziuemnec edősseges vígasaga vala · es az ü ístensegengondolcoduan az en 
 vígasztalják	1	azért , akik vele a házban valának , és vígasztalják vala őtet , midőn látták volna máriát , hogy
 vígaz	1	agra taneitha embőríallatnak ereí főlőt vígazvala  míndőn eiel njugomnekíl imadcozícvala 
 vígaztal	2	n edesseges zaiaual · es zauaualtegedet vígaztalvala o főldnec mennec vra íesus · lassad · e || lanak ídeien edesdedőnconsolalvala · es vígaztal vala · mertmícoron lelke ő zent testetől elz
 vígaztalia	3	etetőst meglatogattjavala · es ütet meg vígaztaliavala  míkent anjafiat · auag leanjat · ennec || zakaduan consolaliavala · es kenjergetí vígaztaliavala o ha ackoronoth lőttel volna  ezőket ne || n íambor aző meg corult tanjítvanjat íg vígaztaliauala  monduan · fíam meg nehaboroggal atte t
 vígaztalja	1	ent veen az ő meg corult tanitvanjat íg vígaztalja vala  mondvan · ffiam megnem zomoroggaia te 
-vígaztaloiaő	1	mzetsegnec zerzőie  ővala zomorultaknac vígaztaloiaő vala mvnkalcodoknacnjvgodalma · es fohazcodo
 vígaztalía	1	előnuen ő nekí  cudalatos edőssegőkuel  vígaztalía uala őket  kínek el budosasan  mínd a cazars
 vígaztatík	1	 mínket kímíat en lelkem ísten vtan meg vígaztatík vala : o enen vram ísten valíon kícoda vígaz
 vígazíc	1	ses affara felfúggeztőtvala legottanmeg vígazícvala · ezőnkeppen tegetőcthies puztanac zent
 víhetí	1	ríttassalmeg betegúltvala íesus ·es nem víhetíuala touabba a kereztfath  de a tőr 126rfeie
-vílagzerentes	1	vgi vagion zeretew aniam | mert meeg ez vílagzerentes  vala meli ember kedwesb egivrnak  hamarab me
 vínak	1	országban .az mihály , és az ő angyalai vínak vala az sárkánnyal , az sárkány is ví vala ,
 vísel	1	l valaztvan voltanac · es eresb eletőth vísel vala míndőn claustrombelíeknel · előzer ebbe
 víseli	1	aríanak kepe asegestieresnek akigongiat víseli vala az heghaznakvígíed be az vr ístennek er
@@ -5688,25 +5636,15 @@ víselí	3	gőn keserven síra · es az ő catríncaíat víselíuala kentesevia
 vítetet	1	edes zileiketmíkepen abodog zent kalara vítetetvala karachon napíara víradolanazent ferench
 vív	1	i megvívának a sárkánnyal .a sárkány is vív vala , és az ő angyali , és erőt nem vehetén
 vívnak	3	ban éjjel , és íme mennynek négy szelei vívnak vala nagy tengerben .és négy igen nagy vadak || valék .mikor szólok vala nekik , ingyen vívnak vala ellenem .dicsőség atyának és fiúnak és  || alék , mikor szólok vala nekik , ingyen vívnak vala ellenem .dicsőség atyának , és fiúnak ,
-víz	3	inonban , szalim mellett , mert ott sok víz vala , és mennek vala őhozzá , és megkereszt || ainonban , az szalim mellett , mert sok víz vala ott , és elmennek vala , és megkereszte || l kenyérnek háza .bethesda zsidóul .egy víz vala jeruzsálemhez közel , melynek egy részé
-vízet	1	mosodnak vala ozton  kih ő nekik gionas vízetuala  símagíak vala : ennek vtanna  az vríst
 vízi	1	a vala  vala meliket : leg ottanhazahoz vízi vala keruen ezen hog ímadkozniek az eufrosín
 vízih	1	i . smit <.> alitaz mínemüh edőssegősőn vízih uala zent iosef vronk iesust őleben . bízoni
 vízik	3	nníahvala e zent apostolt latnia  halua vízik uala ki  a varosbol  el temetníe nagisirua : ||  es az őzentseges kezeít hatra kőtőzven vízikvala pilatoshoz · es az aldot íesus míkepen  ||  enagczodakat annal nagíob aitatossagal vízik vala azent testet hogaz vr ístentől malaztot
-vízkórságos	1	, ők leselkednek vala utána .és íme egy vízkórságos vala előtte .akkoron felelvén jézus .szóla a
-vízí	1	ícoron va 203vlamelj baratot lel valabe vízíuala hazaba  kerven hog imadna a leanjert · 
-völgy	1	dnek magyarázhatták volna .kidron : egy völgy vala jeruzsálem mellett , melyet zsidóul ez 
-vőttel	1	amlalom mene edőssegős zeretetekkel elő vőttelvala  mícoron enneedőssegőkkel genjerketteth
-waak	1	o hitet nem twgia wala mert pogansagaal waakwala es ez egi gonoz eember miat ewrdeg giwi
+vízí	1	ícoron va 203vlamelj baratot lel valabe vízíuala hazaba  kerven hog imadna a leanjert ·
 waaria	1	lewn kedwe ewnekiwigasagra de czak aleg waaria wala iewtheeth es az eeinek setetwltet menne
 waaroltalmaztatik	1	lkohttatotsecundum matheumwala kitwl az waaroltalmaztatik wala imete kiraliod iw the hozyad egigiw kri
 wadolnak	1	ido nep kedegh erodeselőt alwan tegődet wadolnakwala es erodes sok bozzwsabezedődben kerdez 
 waghnak	1	s el kezdek az aldozatot neekik lelkest waghnakwala neekik kedig sirnak ualaneekik wigadozn
-wagi	1	og mine mester : es mine doctor leen :a wagi vala gheregh orzaghban :mind feljewlj mula e
-wak	2	ewríznie ket embernek | kik kezewl egik wak vala :| masik bénakik míkoron meg akarnaiak  || week őtet azirastudo sydookhoz eezth ki wakvala . vala kedeeglen ynnepmykoron ihesus az
 wal	1	iz maria hallia wala mel nagkeserwseget wal wala esmagat az főldhez iti walaes holt elew
-wala	2	as es tal mosasew kedig mind wegan tezi walawala es mind bekesegel es aittatossagwal tez || ziznek zokasa walaahogi egiedwl nem iar walawala hwzon <e> negi leaninial es meg anne we
-walaa	2	oknak kik ő wele lakoznak wala wgi mond walaawala mikoron az my ellensegwnkminket keserth || a tahat es akoronmykoron mindenek zabad walaavala be mennie es senki ke :zewt walami bant
 walawarywk	1	czodaltatia wala es ilibewlcznek mongia walawarywk wala hogi nagibewlczen nagi okoson esnagi ek
 walaztnak	1	:es azok kewzewl sok warosokpwspekeketh walaztnak wala esnemikor egi haloth martirnaknewewel t
 walia	1	 wolna ewnen magat zabadon kereztiennek walia wala kinek az biro monda hazwth mertcicerony
@@ -5714,43 +5652,29 @@ waliaak	1	gietrelmek el haggiak uala az hithet es waliaakwala az ewrdeget es kin
 waliak	1	belczeseghben twdokat es kik nilwan azt waliak wala hogheet zabad thwdomanbanminden nemw ta
 walik	1	eierth ew lelkek ew testektwl kewese el walik wala esewk legottan megh rettenwen zemeketh 
 wallaz	1	t oh alazatos ieswsmel nagi keserwseget wallaz wala mikoron az te zenthalalodat gondolod wa
-walo	1	k · azzonunk ziz maria kegek sidonemből walo wala : hat őes fekethe haiatwallot : de nem 
-walthozik	1	giwlattatik kereztienekkik walanak mert walthozik wala zinek eshailadozo wala ziwekaz poganok 
+walthozik	1	giwlattatik kereztienekkik walanak mert walthozik wala zinek eshailadozo wala ziwekaz poganok
 waltozik	1	ozattal mikepenzokas zerzeteseknek megh waltozikwala ew zwne es ielenik wala ew ororchaia mi
 waltoztattia	1	sew testi erzekensegegnekmwtatwan az az waltoztattiawala magath fenes angialnak zemelieben megh 
 waltozwantwdakozom	1	ed lakozni de en fenesseghnek angialawa waltozwantwdakozom wala te benned telelki zemeidet meg wakittam
 walyak	1	arnaakparanczolatiabol minden nemzeetek walyak wala ő magokath engedelmesnek : czazarnak ő 
 war	1	wl al wala es az wr istentwl segetseget war wala de mikortideie wolna hogi az dolog meg 
-warbaa	1	etteteek mert mindaz mestőrrel őzwe egi warbaawala nem mezze de az mesterzokta wala hogi ő
 waria	3	é el ki mene bethanianak wegheerees oth waria wala nag sirassal az edes ieswst es az miede || thaz zent egihazban thalala merth ő ees waria wala az oranak esetith hogi az baratokataz w || nem meg allaaz zent egihaz aittaian ees waria wala hogi el wegeeznek az zenteeieli zolosma
 wariaak	1	 zol bezeel valaew rola mindeneknek kik wariaak vala izraelnek megh valthssagaat . es hogi e
 wariak	1	egh eürülenek es naponked geriedethesen wariak wala ew eeliewetithezenkeppen erthegiük ez w
 warom	1	eknek  ees nemlezen nekik tewelgesekeen warom wala the idwezeitedeth wram ees the parancho
-warosabaan	1	zelsew peelda ekepen kezdetik elsenanak warosabaanwala nemeli betekazzoni allat ki neeweztetik
 waryak	1	 wakok santak ees azw korsagbeeliek kik waryak wala azwiznek indwlattiat de maga wrnak angi
-wazwl	1	ildeel budaat . hogi az ew siweet kinek wazwl vala neve az nitriai temleczból ki hozinaa .
-wbenne	3	mbort . ki istennek baratia vala . mert wbenne vala istennek nagi malaztia . ez velagi dolo || latokates . es mind ezeknel ki nagiob . wbenne vala nagmelseges alazatossag . kiuel wmagat  || karuan elreiteniaz isteni malaztot . ki wbenne vala . bernald vres azw agiara lefekuek . es
-wdwarabanhaagi	1	k felette gonoz termezeteket ees nilwan wdwarabanhaagi vala menni hogi az olliangonoz hirnek miatta
-wdwarnak	1	nnek . es tiz ezerzer valo zaazezeren . wdwarnak vala ewneki : wgimond azert zent tamas minem
-ween	1	eti megh enenmagaba : mertannia es ygen ween vala :| es mikeppenoluastatik : vgian azon í
 weez	1	 ees een ismeremki egiedembe velem ezwe weezwala edes ethkeketh istennekhazaba iaronk wa
-wegezheth	1	la meg hogi egi pater nosterthczak aleg wegezheth wala el hogi azew lelke kewlsew erzekensegen
-wegeztel	1	egbe ziwebeli igazakath ~merth kith meg wegeztel wala megterek igaz kedik mith teth ~vr w zen
-wegezthé	1	 imach §miglen zenth antalzawath el nem wegezthé wala ime az lelkeszarniasnal hamarabélőlé el
 welekedik	1	atna §hog ez zenth testet elténne § ees welekedikwala ézen ő elmeiebeees gondolwan § eesőnnőn
 welekewdnek	1	 edmeg aztes es az te torkodathtewlczbe welekewdnek wala benehogi ha ez gonozsagot ew tettheewol
 welwnkorzagolhacz	1	ewd wala heitsagodat meg hiwod wala hat welwnkorzagolhacz wala zewrniw halalt sem lacz uala de mar thő
 weraghzik	1	wlczesegebeenes zepsegeben fenlik awagi weraghzik wala annera hogi ew io newe awagi hire minde
 werekedik	1	melegseg czak az melyeben tapot wala es werekedik wala azertmikoron mint halotnak eltemetese z
-weretettel	1	ztettek holoth wram kegies iesus archol weretettelwala niakon  werettettel wala khe ozlophoz k
-werettetel	2	ztetek :holoth wram kegies iesus archol werettetelwala : niakon werettetel wala : ostoroztatol || es iesus archol werettetelwala : niakon werettetel wala : ostoroztatolwala : naddal zent feied 
+werettetel	2	ztetek :holoth wram kegies iesus archol werettetelwala : niakon werettetel wala : ostoroztatol || es iesus archol werettetelwala : niakon werettetel wala : ostoroztatolwala : naddal zent feied
 werettetik	2	zzőkel es egieb allatokal igen kemenien werettetik wala archwl hagiaptatwan meg oli igen kemenj || la ostoroztattalwala nad dal zent feied werettetik wala . es kilembkilemb zerniwseghes kenok mi
-werettettel	1	ies iesus archol weretettelwala niakon  werettettel wala khe ozlophoz khe teztettel wala ostoroz
 werettetyk	1	el , osthoroztatal , naddal zenth feyed werettetyk wala es kylőmb kylemb zerniwsegews kenok mia
 weri	1	ber es nem zolhathwala czak az ő meliet weriwala es az ő zemeith meghnem nithattia wala 
 werik	13	 tewisbel egy koronathees az ew feieben werik vala ez koronanem fa tewisk wala hanem tenge || egiesb az fai tewisknelees nagy faakkal werik wala az ew feiebenhogy az wer archaian ees m || an oh menezőr őnné maghokat az főldthez werik wala es meniben iwőltnek wala es nagi ohaith || ikorgathwan es ez ew zentzaiath erőssen werik wala eesminden niomorwsagokwalminden tizthes || őklőkkeles ighen kemeni wezzőkelerőssen werik wala es ezenkepen mind az ő dragalathosthagi || eztelendőzenth feieth oli igen kemenien werik wala hogi aző zent feienek bőre az ostorokho || k az ő fenessegws orchaiath thenierekel werik wala nemelliek kedegh kezőkmegh fordwlwan ke ||  fordwlwan kezkwreő edesseghws mellieth werikwala nemelliek kedegh őzentseges zemeliere h || ak es the tiztelendő feiedeth az naddal werik wala eerőssen es niak czapasokal esarchwl we || tak eslabbal kezdek rwgodoznia esarchwl werik wala es midethzaka nagi keserwsegheskenzast  || inalanakes az ő dragalatos zent feieben werik wala es aztewisk bee megien walaaz agia wele
 wernek	2	l esarchwl weresőkel thegedeth kemenien wernek wala es őhagiapasokal te zent weredegibe egi ||  nawaliassagomba mikoron tewiskel altal wernek wala  eenvetettemeth meg ielenteem teneked e
-werseember	1	h nem tamadoth nagiobianus baptistanal  werseember wala erezteteth istentwlkinek newe wala ianu
 wes	1	ilien nagitwkelletes ember . es mikepen wes vala nagi imatsagos . es hogi ennek fwlwte m
 weseimvetem	1	e mind eielighhaborgatanak engemeth een weseimvetem wala een elembe een vramathmindenkoron  mert
 weseimvvetem	1	te mind eielighaborgatanak engemeth een weseimvvetem vala een elembe een wramathmindenkoron , mer
@@ -5760,22 +5684,15 @@ wethcz	1	nzolaz wala  ees the aniadnak fiaeellen wethcz wala wezedelmethezeketh 
 wethnek	2	akwala nemelliek az ew labokalkanczalth wethnek wala neemelliek labokkal rwghodoziakwala es  || eket ew latasanak es hallasanak eleiben wethnek wala ez zenth zwznek pokolbeliewrdegek ezen 
 weti	1	ágiawala de ew rwhaiat soha rola leenem weti wala ew rwhaia walagiapiwban czinalt kit wis
 wetkeznek	1	t marton walaigen banatos azokal az kik wetkeznek wala binek miatta mertegi idewben az ewrdegh
-wetőtthenek	1	m hogaz ew niakaban egi nagiwas retezth wetőtthenekwala es az ő zenth kezeit erősen hatthamőghe
-wezen	6	et zol wala etket zokasa zerent keweset wezenwala ew leiani tarsi mikoron őhozaia giwleke || la ew maganakniwgodalomra etket mikoron wezen wala ew zokasa zeerent nem azert wezi wala h || d ew talpaighlan es minden disciplinath wezenwala ew magan mas fel oraiglaneggik discipli || k iozaghabol walamith ew maganak eelnem wezen wala hanem mikorózegenieknek alamisnath ad w || nnak zayahoz kith zenth katerinaaazzoni wezen wala nagi lelki edessegwel merth ew neki ige ||  nemes kwt fwn itatatothtesti etket nem wezen wala kith sokan czodalnak wala yelesewl kik 
+wezen	6	et zol wala etket zokasa zerent keweset wezenwala ew leiani tarsi mikoron őhozaia giwleke || la ew maganakniwgodalomra etket mikoron wezen wala ew zokasa zeerent nem azert wezi wala h || d ew talpaighlan es minden disciplinath wezenwala ew magan mas fel oraiglaneggik discipli || k iozaghabol walamith ew maganak eelnem wezen wala hanem mikorózegenieknek alamisnath ad w || nnak zayahoz kith zenth katerinaaazzoni wezen wala nagi lelki edessegwel merth ew neki ige ||  nemes kwt fwn itatatothtesti etket nem wezen wala kith sokan czodalnak wala yelesewl kik
 wezet	1	 őrdegembert ighen eite merthnilwan eel wezet wala esmind ewrdegneek iar wala azert isten 
 wezeth	1	nmiath megh giogiwlna ember ky myath el wezeth wala ,azerth ez zenth bodogh erömmyath , ker
 wezeúk	1	nimeli dewghet thwrewnkwala isteninkert wezeúkwala es ha en nekewd zerelmedert ezt el thwr
 wezi	6	 wezen wala ew zokasa zeerent nem azert wezi wala hogiew testet gienierkettetneie deehogi || agan mas fel oraiglaneggik disciplinath wezi wala ewmagaerth es bwneinek boczanattiaertma || erth es bwneinek boczanattiaertmasikath wezi wala pwrgatoriwmbeli halottakerth harmadikat || wala merth nem mynden naaponde giakorta wezi wala ez zenthsegeth azerth mikoron egi pispe || mosatekat es meg iwanmaga giomra be nem wezi wala annak wtanna azt mondotta hogi soha ann || alamit raita teznek wala nagibekesegwel wezi wala awagi zenwedi wala es mindenben isteenn
 weznek	2	anies ew vadolasanak miatta sok emberek weznek wala el es wala azvarasban neminemő kowaczfo || ia kik azaz ew ellenseghiegbewl testeth weznek wala ew zemei es fwlei elewt ielennek wala r
-wezthenek	1	atahat az ew binei az leuelrewl mind el wezthenekwala neminemw emberki mikoron peenz fizetesn
 wezti	1	 az bornak izet ew illatiawaal ewzweeel wezti wala es az bornak czakew weressege marad wal
-wezzőkhozraghadoz	1	ent feienek bőre az ostorokhoz awagi az wezzőkhozraghadoz wala az wthan őteth mikent balgathaghemberth
-wezőt	2	ia megh holt wala es megh elewenődek el wezőt wala es megh leletteteek , ez ewangeliom rew || mikepen azazzonallatnak euanak miatta · wezőtuala el ez wylagh : ezőnkepen esmeth azzonia
-wezőth	1	iam megholt wala es megh elewenődeek el wezőth wala es meg leletteteekes kezdenek wigan lak
 wgfeellik	1	gi ingen senki reea sem neezhetne  mert wgfeellik vala mind az egheez cella .minth az feenes n
-wgferteztettel	1	al te zent weredegibe egielwlth wala es wgferteztettel wala megh hogilattatnal zerniwnek lennipoklo
 wghmond	1	 az ő kegyős annia nemhaggya vala hanem wghmondwala meegh eegh keueseemegh haggyatok ennekő
-wgi	2	olna ; kit iol es meeltanveel vala mert wgi vala ; kit ha mondanank hogi ennen cristus l ||  minden naponcomwnikalneiek hogi ki nem wgiwala merth nem mynden naaponde giakorta wezi
 wgimond	2	k tiztaak leeznek tinektók . daniel meg wgimond vala . nabogodonozor kiralnak . o kiralfogad || twan az ew wiawwal az fezwletnek kepeth wgimond wala nezied anniam nezied es lassad mi wrwnk
 wgmond	3	oldalan ezzwnek ew el waltoztatasa wtan wgmond wala ew confessoranak hogyanne ewrem es wiga || e irgalmassagothoz iwtni zent dawid meg wgmond wala mikoron tőredelmezteteem kaialteek wrho || : az ő zenth testenek zepsegebe : kiről wgmonduala ozthan ez zenthapacia : ol igőn zeph az
 wgwel	1	zeebb hog nemmind annak elette  kvth ew wgwel vala  hogi enne eehseghnek es zomehsaghnak m
@@ -5791,8 +5708,6 @@ wigaztallia	2	 megh hitemwolna neked zwz maria kedigh wigaztallia wala iosepheth
 wigaztathnak	1	atnakvala § az zent testh illetuen megh wigaztathnak wala § az chasarokkedeegh enjnje sok chudath
 wigaztatnak	1	kthwlmeg marattanak wala őtetnezwen meg wigaztatnakwala wgian őrdőgnek marasa es keserteti elle
 wigiaz	4	sagra atta einek masod rezeigh zwnetlen wigiaz wala az wtan alom mia meghniomorodwan eifeli || statik daniel apatwrolhogi mind ed zaka wigiaz wala es regel akarwan kewesethalonni az term || wzwe zorittiawala imadsagban mindenkort wigiaz wala mind weternieig weternienek wtanna oli  || etetben giakorta bőitől wala nagy sokat wigiaz wala ees saniarkagiawala az ew testet az pen
-wilagon	2	inden emberth <.>ieween ez wilagra . ez wilagon vala . es ez wilaagh ew miatta lett . es ez  || soit minden emberth iewen ez wilagra ez wilagon vala es ez wilagh ő miatta let es ez wilagh 
-wilagossaghrol	1	vilagossagh de hogi bizonsagothtenne az wilagossaghrol vala bizon vilagossagh ki meg wilagosoit min
 wiseeli	1	elkedesweelzerzet wala be zawarwan wele wiseeli wala esmegh ezen wel eegikeniweket <wysel> o
 wisel	1	welsegnek fwstith es zwbeli giwlesegeth wisel wala ez azzoniallat zentkaterina azzoni elle
 wiseli	1	laba mind egibenragattak wala es az wak wiseli wala ewtet es az benna wtatmwtat wala neki e
@@ -5807,66 +5722,44 @@ wl	5	erdeneieki wolna merth zent ianos kőzel wl wala idwezittenkhez es mikort m
 wlnek	3	aluan a pispők  smínd a kik az aztalnal wlnek vala ioua hagiak  ez feleletőt . s mondahaz  || elda bezedreeen ellenem zolnak vala kik wlnekvala , kapwnaal es en reiam tapsolnak vala k || gen magas fak walanak , az faknak agayn wlnek wala nagy sokmadarak , es ime zolnak wala my
 wnekikerizik	1	gatia vala wketh eesfellegbewl zol vala wnekikerizik wala w hagiasath eesparancholatiath kith ado
 wnia	1	 ewneki isten felewl zolni sohaameg nem wnia wala de mindenkoron kez wala es wigh orchawa
-wnokaia	1	eretes barathsagaban . ki  az chazarnak wnokaiavala . mikoron egi napi napon . kettenmeenne
-wolna	2	tod reezeben :-:z idewben mikoron estwé wolna wala az haioaz tengernek kezepiben es iesws  || tetwen es mikoróaz tengerben el silliet wolna wala kewztwk egi nehezkews azzoniallath ki m
-wolnamasodzer	1	az el wezeth emberi nézetet megh lelthe wolnamasodzer wala az edes cristhwsnak fel meenese wighasa
 wonatthatik	1	izthesseghnekwl kőzőnsegőst mindenektwl wonatthatik wala thetowa rangatwan walakik kedegh ew zen
 wonnia	1	 egikwsded fekete giermek az baratot ki wonnia wala es nemhagia wala allani imadsaghban mer
 wonza	3	g wala ő nekik ioseph kedeg egikkezebol wonza wala az was zeget masikal az meg holt testőt ||  ő zomzegiat gazda hazabelieket a kenra wonza wala kik kewzet ezek miat harman megh fogatt || nath az zereteth hogi meg adnaia de meg wonza wala ewteth ew ezessege hogi aazew zokniaiat
 wonzia	3	atossaghalő kezeiwel zomoruan ő meliere wonzia uala es kit mikorillethetőt wolna ő őleleter || ia kedegh ieswst az ő egietlen egi fiat wonzia wala es őtet akaria wala meg tartani azok ke || igiekezig wala wigtarsasaktwl magat meg wonziawala igen keweeset zol wala etket zokasa zer
 wonziak	1	iek kedegh az ő zentseges haianal fogwa wonziak wala es mikenth alittom az te aldoth wradati
-wr	3	+longinos vítez  zaz vitezők előt iaro  wr uala · hisaurianak tartomaniabol tamaduankv  || rat in nobis dicat nunc israelerth chak wr wala mi velewnk mondia immar izdrael merth c || velewnk mondia immar izdrael merth chak wr vala mi velenkmikoron emberek tamadnanakmi r
 wralkodik	3	aitot vala birodalma alaa . azon idóben wralkodik vala romai papasagban . anacletus ppa  es az ||  meene ghóróg orzagbanhol ott az idóben wralkodik vala . demetórkiral . es nagi eremmel hoziaa || sthwan attianak eelteeben ees . eróssen wralkodik vala . mind egheez somogsagban es zalassagba
 wralkodnak	1	stentül vona azdologh , myerth  rayttok wralkodnak vala az filysteosok , samsonkeress vala okot
 wralkodneek	1	. az idóbenmikoron : maximianus czazaar wralkodneek  vala . egi maga biro wr dioscorus new . fele
 wralliaak	1	n . igassagzerent hoziaiok teerth vona .wralliaak vala azeert zenthlazloth mint koronas<.> kyr
-wrdwg	1	il . mert az aki teged meg zomorita .az wrdwg vala . en kedik vagiok te vrad . es teemeste
 wregiti	1	 . es isteni zentaiandekokal . naponked wregiti vala . es hogi mindezeket halla frater masse
 wrizi	1	em zolhat vala . fraterleo kedigh hiuen wrizi vala wtet . es nagi veztegsegel menere tehet
-wrw	1	 nemmongia vala az zegheniekről de maga wrw vala eerzenievala ees nekik mit adnakvala ab
 wről	1	ttetek volna . egiebek bankoduan czak w wről vala . mikor az wfogoli tarsitol meg fedetek
 wtal	1	a akariak wala kezerittenies kith inkab wtal wala hogi ewzemei be hwnnia es fwlei be dwgw
-wtalatos	1	rwsegewslakozasban wonek helhezteethwen wtalatos wala sokaknal testnek ektelésege bwrnek ew s
 wtallia	3	iesusthnem hizi vala . es ez zent hitet wtalliavala . hogi miwel isteni karomlaas vona .az  || ezzewzi vala . miert hogi az balwanokat wtallia vala es semikeppen oda nemmeegien vala mikor || na azzonkedeeg zent leleknek miatta meg wtalliavala az balwanioknak valo imadasthes mikoron
-wtan	1	us zent keennia halala es menibenmeneti wtan  vala ki az kereztsseeghnekartatlansagaat meg
-wtanna	1	 egi iambor pispeknek tanachchabolannak wtanna vala mi keweset iwtes mikoron . ffeellieb ne
 wtatmwtat	1	es az wak wiseli wala ewtet es az benna wtatmwtat wala neki es ez keppenkwdwlwan sok penzt lel
 wth	1	el ki wid . ki hatra ranthvala ki agion wth vala , o edesartatlan iesus ki labbal rwgodo
-wyonnan	1	tynektek keesertettökre lezé , oly mynt wyonnan vala my törteenendyk , de reezzesülven crist
 wz	1	 w vtolsoiokat meg latthnaiak .mikeppen wz vala egi , ezerth ,, es ketthev ,wzne tiz ez
 wzettetik	1	klos ki ew poklossagaerth midenektwl ki wzettetik wala es czak alegh hogi be fogatatoth wala n
 wzi	1	e mene iesws istennek templomaban es ki wzi uala mind az arwlokat eswewőket az templombő
-wólegheen	1	nak : hiwattateekaz meniekzóben . kiben wólegheen vala azzoniwnk marianak kózel valownokaia : 
-xiiij	1	s wgi irtta meg az zent ewangelistaio . xiiij vala kineel az en parancholatomvagion es tar
 yaar	3	a ezenkeppen vagionproffecya .z neep ky yaar vala .seteetsegben laata nagi iylagossagot e || nmoysesnek , mykoron izrael az pwztaban yaar vala : azertez may napon nyoczwan ewth ezten || ondó : kel ffel .es ottan ffelkele , es yaar vala .vala kedeg tyzen ket eztendes .es nagy
 yaarvala	1	 embőrees fel vewe ő nozo(y)ljaiath ees yaarvala vala kedegh ynnep naphaz napon mondnak vala 
 yacodoznac	1	el ahegedüt vonza vala : es mend njayan yacodoznac vala vr előt : aző hegedüyőckel : es kyntorn
 yar	10	.es kywe hagwan pether az hayoczkabol , yar vala az tengheren  myglen jesushoz mennee .v || ennek .tyzen kylencz cap es be menwen , yar vala jerikoban .es oth vala egy zakeus newö  ||  ember , es ffel veeven hü nozolyayat , yar vala .vala kedegh ynnep azon napon .mondnak  || üteth yewendöre .heeth cap ennek vtanna yar vala jesus galyleaban , mert nem akar vala j || epe napya jerwsalembe , es tel vala .es yar vala jesus salamon templomanak tornaczyaban  || ölneek hütet .jesus es azert ymaran nem yar vala  nylvan az sydoknal .de el meene mas ta || talpay .es ky menwen , labara alla , es yar vala , es be meene hü velök az templombá , y || ala newe , ky annak elette erdeghseghbe yar vala , sok neepeket samariaban el hytethwen  || on megh kereztelködöt vona , fylep vtan yar vala ;lathvan kedegh ollyan nagy czodakat te || labaydra ygazan .az ottan ky meene , es yar vala .az sokassagh azert hogy lattak vona , 
 yarnak	5	ghölee az hü sereghöketh , es mynnyayan yarnak vala azvyznek meelsegheben . mondanak azt la || keth mynd keress kerül , es czakanneera yarnak vala ffel az eghben , mynt ket seng. ffel ke || esusth , hü tanoythwany kezzel , es nem yarnak vala ymaran hew velee .monda azerth jesus az ||  azok , kyk ky ozlottanak vala , tetowa yarnak vala , hyrdethwen ystennek ygheyeet .fylep a ||  harmad reze el veze , kyk az tengheren yarnak vala .mykoron az harmadyk angyal kyrtelt von
 yarz	1	be öwedzed vala teennenmagadat , es oth yarz vala , hol akarod vala ; mykoron kedegh meg 
-yayrus	2	az synagoganak feyedelmy kezzel , kynek yayrus vala newe ,  es mynt lataa hütet , ottan lab || enkezben elöwe yarwla egy ember , kynek yayrus vala newe , es vala az synagoganak feyedelme
 ydeyek	1	an ky yettenek vala , byzonyawal eelegh ydeyek vala meg hattra terny ; mastan kedegh yobbat
-ydeyü	1	om cap joswe azerth ymaran veen esreghy ydeyü vala , es monda ewneky az wr isten: el veenü
 ydwezeyt	1	 , czwffollyak vala mondwan : egyebeket ydwezeyt vala , es ennen magat  nem ydwezeythety ; ha
 ydwezeyth	2	wetyk vala hütet , mondwan : eegyebeket ydwezeyth vala , ennenmagat es ydwezeye , ha yzraelnek ||  megh karomlattathalmondwan mindeneketh ydwezeyth wala önnenmagath masthan honjnem ydwezeyti ,
 ydwezlyk	1	es meg retteneenek , es eleyben kelween ydwezlyk vala hütet .es ottan megh kerdee hüket : myn
-ydwezwlnek	1	s kedegh  sokasoyttya vala azokat , kyk ydwezwlnek vala ennenmagaban .harmad cap peter azert es
-yechik	1	gh azzoniallatoth kinek walakwsded ffia yechik wala neki azazaz kereskewdew embernek zwz ma
-yegye	1	y nap kelettröl , kyn az eelew ystennek yegye vala , es kyaytta nagy ffel zowal az neeg an
 yelenghety	1	löt ymadnaam ewtet , ky ennekem ezeketh yelenghety vala .es monda ennekem : lassad  hogy ne tee
 yelenty	1	kezzölök , kynek agabos vala newe  , ez yelenty vala lelekböl , nagy ehseghnek yewendöre len
-yeles	1	yesülven , hyweenek hü neky ;kyk közzöl yeles vala arriopagyta , nagy dyenes doctor , es d
-yeptee	1	. vala kedegh az egyeress vytez , kynek yeptee vala newe , galaadnak nemzeteeböl. valanak k
 yew	3	azzon azon varosban , es gyakorta hozya yew vala mondwan : allyad megh bozzwmath en elle ||  ky hütet el arwlaa , mert gyakorta oda yew vala jesus hü tanoythwanyval .judas azert my || es ottan ffel kelwen , el meene .es yme yew vala egy zereczen ember , az hatalmas kandya
 yeweenek	1	l lotth es hü velee. esmegh napkelettre yeweenek vala kedegh ahram arannial ezystel eseegyeb 
 yewnek	5	l puzta helyen mwlathny , es nagy sokan yewnek vala hew hozya mynden felöl .kett cap es enn || üneky nem aggya vala ; de az bestyek el yewnek vala , es nyallyak vala hü fekelyt .tertenee || el , merth ottogyan sok vyzök vala ,oda yewnek vala azert  es megh kereztelkednek vala .mer || son kentesben fel ötözteteek hütet , es yewnek vala hü hozya , es mondnak vala : aue rex iu ||  jesusnak neweth .sokan kedegh az hyvök yewnek vala , ky yelenthwen es megh gyonwan hü teet
 yewtök	1	kynyrrel es vyzzel az wtra , mykoron ky yewtökvala egyptombol , de annak felette elened fo
 yewz	1	, ky the neked yelent megh az wton , ky yewz vala , hogy laass , es bel tellyel zent lele
-yffyv	1	ronilla hog ky meeg nouicia valaes jgen yffyv vala · sok jdevt mulatot volna el · ez fele 
-ygaz	2	ataa wr ystent mondwan : byzon ez ember ygaz vala .es mynd az sok nep , kyk oth yelen val || het tekeentet zerent es hallomas zerent ygaz vala , lakozwan azok kezöt , kyk naprol napp
 ygaznaklattatyk	1	em vala kyral izraelben , de kynek mynt ygaznaklattatyk vala , wgy eel vala . amen . ethvagyon az by
 ygenfeel	1	emberről ki mikoroniwtot wolna halalara ygenfeel wala meg keerdek őtethmit feelne monda igi e
-yghe	1	 elsew cap kezdethben vala yghe , es az yghe vala ystennel , es ysten vala yghe .ez kezde
 yghedőskődik	1	ald doctor meghesmerte vala ees ő benne yghedőskődik vala mondwanio ennekőm vram christussallennő
 yiwom	1	te haborgatom vala istennek egihazbanes yiwom vala ewteth  es newekódóm vala . az sidoi tó
 yl	29	 , kyaz izrael neepeet yteely vala , es yl vala egypalma ffa alat rama es beetel közöt  || ak atala , galyleanak nepe ,az neep  ky ylvala setetseghben , lata nag vylagossagot ,  || n napon ky nyomothwan jesus az hazbol , yl vala az tengher mellet , es gywleenek hw hoz || r mellee , es fel menwen az hegyre , ot yl vala .es eleybe yarwlwan az sereghök ; valan || delemnek tornaczayghlan , es be meenwen yl vala az zolgakkal ,  hog lathhattnaa , my le || teghed arczwl ythe ?peter kedyglen kyül yl vala a tornaczban , es eley yarwla egy zolga || yldeenek , ky hyvan hewtet .mert körwle yl vala az sok nep , es mondanak hüneky : yme a ||  yme thymeusnak ffya , vak barthymeus , yl vala az wth felen koldwlwan .ky hog hallotta ||  papy feyedelemnek hü hazayglan , es ot yl vala a zolgakkal , es fytezyg vala a zennel  || ben , hogy kezelghethneenek jericohoz , yl vala egy vak az wth ffelen koldwlvan .es myk ||  , es kerwl ylwen ,  peter es hü keztek yl vala .kyt mykoron egy zolgalo lean megh lato
@@ -5896,27 +5789,17 @@ ymathkozyk	5	el kelwen , kywe meene az puztaban , es ymathkozyk vala .symon kedy
 ymatkoznak	1	k templomaban ,es mynd az sok neep kyül ymatkoznak vala az aldozathnak ydeyn .neky yeleneek aze
 ymatkozniaakar	1	 zwz maria mindenkoronimatkozik wala es ymatkozniaakar wala irasth olwasni es ysthtemben gondolkodn
 ymattattya	1	sew bestyanak , es ez felden lakozokkal ymattattya vala az elsew bestyat , kynek ew halalos seb
-yme	3	wnk es eerdemewnknek oka . es iwtalma : yme vala mi iawnk vagionmind te atalod . es te m || lyczeth , awagy ket  galamb ffyakat .es yme vala eg ember jerwsalemben , kynek newe syme ||  azok kedegh vtanna olalkodnak vala .es yme  vala egy kezwenyes ember hü elettek .es fele
-yndoytottaak	1	t , es kyk ysten ellen tamadwanmorgasra yndoytottaak vala mynd az sokassagoth az pwztaban , hogym
 yndwl	2	ll vala az thoban ydew zerent , es megh yndwl vala az vyz ; es , ky elezer az thoban zalha || er kedegh , lassaban zel tamadwan , fel yndwl vala .mykoron azert be eweztenek vona oly my
 ynekel	1	aggal bevőlees te njelved calardsagokot ynekel vala ülvente attjadfia ellen zolaz vala · es
-ynnepnek	1	 kerezthffan az ynnepnapon , merth nagy ynnepnek vala napya , keereek pylatosth , hogy meg tö
 ynth	1	latot vona a templomban , hü kedeg czak ynth vala hünekyk , es azon nemasaghban marada me
 ynthnek	1	estowa fwthnak wala niha kedigh sereget ynthnek wala es egi seregh mas elewthfwtamasth mwtat
 ynty	2	teb bezeedekkel es byzonsagot teen , es ynty vala hüketh mondwan : ydwezöhetek magatokath || nek malaztyat , nagyon megh eürüle , es ynty vala hüket mynd nyayan hü zywöknek yo zandok
 yntyk	1	sth ; kyk sok tanwsagot tewen hünekyk , yntyk vala , hogy megh maradnanak ystennek malazty
 yr	4	et · es zallanal le · zent moyses esvgy yr vala · bochassad el vram kyt bochatando vagy || enth lelek egi erek isten amenezenkepen yr wala zenthagoston doktor egi leweleben kith  || azerth le hathwan ennen magath , wyawal yr vala ah felden .hogy azert gyakorlatossaggal || aya .annak vtanna esmegh lee haloywan , yr vala az felden .de kedeegh halwan azth , egy
-yris	1	is es sardis kewnek tekeentetykhöz , es yris vala az zeknek kewrüle , hasonlatos smaraghd
-yrwan	3	h nytta vona , az helth talalaa  hol ot yrwan vala : vrnak lelke en rayttam vagyon azert   ||  vele zaz negywen neegy ezeren , kyknek yrwan vala ew newök es ew attyoknak newök ew homlo ||  ew feyeeben sok korona , es az ew newe yrwan vala , kyt senky nem twd , hanem czak ennen 
-yrya	1	 alkolmas helőkőn : nag tistessegel fel yrya vala : esmikepen eh harom neueknec irasat : 
-ysmeretes	2	z mas tanoytvan .az tanoythwan kedyglen ysmeretes vala az feyedelemnek , es bel meene jesussal || kyüle .ky meene azert az tanoythwan  ky ysmeretes vala az feyedelemnek , es megh monda az ayto
+yrya	1	 alkolmas helőkőn : nag tistessegel fel yrya vala : esmikepen eh harom neueknec irasat :
 ysmery	2	a , es hozya veve hw feleseghet .es nem ysmery vala hwtet , myglen zylee hw ffyat , else zy || mban , myglen mas kyral tamada , ky nem ysmery vala joseffet .ez azert körül veve az my nem
 ysmeryk	3	es nem hagy vala hünekyk zolnyok , mert ysmeryk vala hewtet .es yghen reghwel fel kelwen , k || wl , ffelünk a nepektül , mert myndenek ysmeryk vala janosth , hog byzon proffeta vona .fele || hütet yarwá , es dyczerwen wr ystenth . ysmeryk vala kedegh hütet  hogy hü vona , ky az alam
-ysten	3	p , moyses kedegh bemeene az ködbe kybe ysten vala , es  monda wrysten moysesnek : ezeketh || la yghe , es az yghe vala ystennel , es ysten vala yghe .ez kezdettül foghwa vala ystennel || s erdeghekthül megh zahadoythwan , mert ysten vala hü vele .es my byzonsaghy vagywnk mynde
-ystennek	1	 kyketh aldozandaz ,awagy fogadandaz wr ystennek vala mely falwdban es varasodban holott lako
-ystoriayk	1	heth eleegh az ydenekhoswolthaert az wy ystoriaykwala mykor eleek nem leyend : azonnal az wy 
-yteely	1	eebbora vala newe , kyaz izrael neepeet yteely vala , es yl vala egypalma ffa alat rama es 
-ytetteek	1	wemoysesshez az pwztaban , hol oth megh ytetteek vala taborokataz ysten hegye alath : es neky
+yteely	1	eebbora vala newe , kyaz izrael neepeet yteely vala , es yl vala egypalma ffa alat rama es
 yth	1	ky wyed , ky hatra ranth vala ,ky agion yth wala : oh edes artatian iesus ky labbal rwgo
 ythnek	1	yzrael ffyay esmynd körül ottan taborth ythnek vala . wr ystennek paranczolattyazerent keln
 ytyk	2	ysok neepekkel , es izrael feldeen megh ytyk  vala satorokath, es myndden eelny valot el p || wez leegy  sydoknak kyrallya !es arczwl ytyk vala hütet .kywe mene esmegh pylatus hozyayo
@@ -5936,15 +5819,11 @@ yőnec	1	 zengesőket mellec őtőlőc leznec vala ? yőnec vala azertketten-ket
 zaagatiaak	1	nth az kegiok : kik haasnakbelől ualoit zaagatiaak uala : es belőkketh belő- lők kivonnia akari
 zaal	6	 hoziaakinek eeggik kezeeben egi liliom zaalvala langazwan . de meg nem eegwenes az maas || nek kedeeg zent angiala . idewzerent le zaal vala . az toban . es megindwltatik vala az w || arazo iras okat vethy . mert giakorta . zaal vala iesus az ew hazoknaalmikoron vala honna || mint lenne dolga , imekedeegh azonkezbe zaal vala le faraho kiralnak leania hogi megmosod || wbenne . my ydeben azerth eeyel harmath zaal vala aztaborra , velee ezwen menyböl le zaal || hwen  azert jesus móda : nemynemü ember zaal vala le jerwsalemböl jerycoban , es esseek a
 zaalnak	1	zoniallaatoknak lelkők kik az toban ala zaalnak uala meg hasassulnakuala . es oth nagh nehez
-zaazpenzel	1	osa vala nemynemükőlchőnzőnek eggik őth zaazpenzel vala adoos a masyk őtwennek hogh nem volna a
-zabad	1	nel kil azew zolgalattiabol kedeeg kiwe zabadvala meenniet akar .hatod regula zolgalatban
 zabadehagia	1	z ev hazabelieknekevrizetitevl magat ki zabadehagiavala · mendeneknek meeg testek<ne>ben cs · n
 zabadehgia	1	ktevl vgy mond vala ez karoly vitez meg zabadehgia vala zent margyt azzon · cs nem tecchik vala
 zabadeith	1	la hogh hiwolkodewwonal zerelmesth megh zabadeithwala neha diczer wala tegedet mikoron labait
 zabadittia	1	edők apat · de az vristen mindőnből kíh zabadittia vala ·| iőuendő mondasnak lőlket is valiia u
 zabadolthatnak	1	asic vala § uacok latnak walaőrdőngősők zabadolthatnak uala § es menden betegek walamibetegseggel t
-zabados	1	meie , az isteni melseges gondolatokban zabados wala ki ez feldieketh es ez el mwlandokathez
-zabadoz	1	 embert . zent palt kedeeghmieert romai zabadoz vala . niakaath vaghnaak .zent irasbeli doct
 zabadulhatnak	1	az eztendeyg · es senkynek myattamegnem zabadulhatnak vala · es kyaltnakvala az regy zent atyak vr
 zabadulhatonk	1	nyaualiassagonk es binőnk kiből meg nem zabadulhatonk vala ha nem czak a myatky zabad volna mynden
 zabodik	1	na meg igen zernien wereeki annal inkab zabodik wala hogi miokaeert wernee az iffiwkedig sem
@@ -5956,10 +5835,8 @@ zaggagia	1	eri vala evket orchel · nemykoronfoggal zaggagia vala evket · nemik
 zaggat	1	ala .merth mynd lanczot , mynd bekot el zaggat vala , es senky hütet meg nem ehnyhhety vala
 zaggatatol	1	etetel vala . es zamtalan patuarokual . zaggatatol vala . kerlek . ez eleül mondot kenaidert . 
 zaggath	1	al . nekiket temleczel reetteghetween . zaggath vala el azaldot cristus iesusnak zent hitiró
-zaggattac	1	ec es a tővisket kit te zentfeiedből ki zaggattac vala a barson palastbolmegfoztasert es az te
 zaggattatol	1	ees kilemb kilemb zerniwseges kenok mia zaggattatol wala : mind mi idwessegenkeerth :azerth keer
 zaggattattia	1	zesseeghes testeet az vas gherebenekkel zaggattattia vala .annak wtanna nagon meg ostoroztataa . 
-zaia	1	k es wőrős rosanakő zinők ¶ touaba az ő zaia wala nemnagh : de alkolmas : gőnőrősegős : z
 zakad	5	be rekeztek halaknak nag soksagat : meg zakad vala kedegü haloiok es intinek az tarsagnak  || nappalaz zent ymachaag ew zaiabol kinem zakad vala : wgi kenieróghween wr istennek hogi re ||  el kesseredenek raíta | es vgían altal zakadvala ziuek | de míre hogí ember batorsagosba || es íambor pafoncíus attvlíncablan altan zakad vala ioha raita219es annira el fogiatkozot v || iwlanak . merth nihol az hwssa eeshozia zakad wala . ees maradamezeytelen ő zenthsegős ve<
 zakadoz	1	 rekezteenek az haloban , vgy hogy megh zakadoz vala hü haloyok .es ynteenek hü tarssaynak ,
 zakadoznac	1	onzauala · es ebbőlaz en sebeim nagobba zakadoznacvala · es az en kenaím megviulnakvala · es m
@@ -5974,14 +5851,11 @@ zalhat	1	g indwl wala az wiz es walaki előzőr le zalhat wala azwiznek indwlasa
 zali	1	 es esmegle zal wala az patinara esmegh zaliwala az papnak kezere es az pap adia wala ze
 zall	1	znek yndwlattyath .merth wr ystennek le zall vala az thoban ydew zerent , es megh yndwl v
 zalnak	3	ataa . hogi az menniei zentangialok lee zalnak vala . es ffelmennek vala .. es azon keppenh || t zent maria magdalena lakozyk wala ala zalnak wala esewtet az egben fel emelik wala es egi || aranczolattyazerent kelnek vala ffel es zalnak vala megh . hamykoron az homalyos awagy feen
-zama	1	ttan pa 324rpaual megkerezteltethe · es zamavala heth zazembőr germők nekíl · esazzonnja
 zamlalhat	3	tanna nagi sokassagot kit senki meg nem zamlalhat vala . minden nemzetókból chaladokbol es nee || ag seregőth  kíth semmínemú embőrmegnem zamlalhatvala · nolcadbanvagon vettetven az őrők elet || n latek nag seregőt : kit senki meg nem zamlalhat uala : mindőn nemzet kőzől harmad okaert : u
 zamlalhathnak	1	na latek nagy sokassagot , kyt megh nem zamlalhathnak vala , mynden fele nemböl , nyelüböl , nemze
 zamlaltathatik	1	eltan  a nagi tekelletős fraterők kőzze zamlaltathatik uala  oli nagi kemen elettel giőttri valaaz 
 zamlaltathatnak	1	enek mynt egi meg czigazot embernek meg zamlaltathatnak vala akaron az edes iesus tagiaban mindőn ő 
 zamlaltathatny	1	gok levn ielen · hog semmykeppen megnem zamlaltathatny vala · kyknek ev kepek olyatan vala · hog an
-zamok	1	eet embery allathnak .es ew seregheknek zamok vala hwz ezerzer valo tyz ezer .es wgy lataa
-zamri	1	wr istent az tizenkettódikkedeegh kinek zamri vala newe . nagharaghra remewle es monda  ch
 zanth	1	eeysten az hü dolgat heted napon kyketh zanth vala teremteny, es megh aldaa az heted napot
 zapareitia	1	t : meli zerzetevt az vr istennek jogya zapareitia vala ez zent atianak miatta : leueen ev rait
 zaporodik	2	en . wr istennek malazttiabol esmeg meg zaporodik vala kezeeben . az maradeka . azonkeppen mik || en ewt zent eegihazak rakanak oly ighen zaporodik vala az kerezttienseegh .mikoron azert wr ff
