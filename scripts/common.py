@@ -2,7 +2,7 @@
 import os
 
 
-def write(outp, odir, ofname, past_type, first_step=False, lexicon=''):
+def write(outp, odir, ofname, past_type, first_step=False, lexicon=None):
     os.makedirs(odir, exist_ok=True)
     with open(os.path.join(odir, ofname), 'w', encoding='utf-8') as f:
         print('# {}'.format(past_type), file=f)
