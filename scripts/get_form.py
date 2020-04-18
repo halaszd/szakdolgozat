@@ -205,7 +205,7 @@ def main():
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     txt_type, asp, vala_volt = args['past_type']
     outp = process(inp, char_map, asp, vala_volt, args['lexicon'], args['not_in_lexicon'])
-    # c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['not_in_lexicon'], args['lexicon'])
+    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['not_in_lexicon'], args['lexicon'])
 
 
 if __name__ == '__main__':
