@@ -73,7 +73,7 @@ def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
             \s*)""" + pat_vala_volt, re.VERBOSE | re.IGNORECASE)
 
     elif asp.startswith('imp') or asp.startswith('neutr'):
-        pat_past = re.compile(r'([a-záöőüűóúéí]+\s*)' + pat_vala_volt, re.VERBOSE | re.IGNORECASE)
+        pat_past = re.compile(r'([a-záöőüűóúéí]+\s*)' + pat_vala_volt, re.IGNORECASE)
 
     hits = []
     for hit in pat_past.finditer(txt):
@@ -93,9 +93,9 @@ def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
                 hits.append((hit, context))
         elif hit in lexicon:
             hits.append((hit, context))
+
     if exp_mod:
         get_freq_types(hits, pps)
-
     else:
         get_freq_past_by_year(hits, year, len([item for item in txt.split() if item not in puncts]), pps)
 

@@ -1,0 +1,288 @@
+# inform.,neutr.,vala
+1485	0	1	
+1486	0	1	
+1487	0	1	
+1488	0	1	
+1489	0	1	
+1490	0	1	
+1491	0	1	
+1492	1	114	iwth vala
+1493	0	1	
+1494	0	1	
+1495	0	1	
+1496	0	1	
+1497	0	1	
+1498	0	1	
+1499	0	1	
+1500	0	1	
+1501	0	1	
+1502	0	1	
+1503	0	1	
+1504	0	1	
+1505	0	1	
+1506	0	1	
+1507	0	1	
+1508	0	1	
+1509	0	1	
+1510	0	1	
+1511	0	1	
+1512	6	1029	irtham wala,yrthal wala,es wala,kőltel wala,kőldőte wala,kőldő wala
+1513	0	1	
+1514	0	1	
+1515	2	661	elmentem wala,fokata wala
+1516	0	1	
+1517	0	1	
+1518	0	1	
+1519	0	1	
+1520	0	1	
+1521	0	1	
+1522	0	1	
+1523	3	224	erthethem wala,keniergewthem wala,atthak wala
+1524	3	1330	hathad wala,megserzem wala,solth wala
+1525	0	1	
+1526	8	2154	welem wala,therweniewnk wala,eerthetthem wala,kezerithetthem wala,ırtam vala,fogadot vala,meghtistesseitheth vala,kertem wala
+1527	0	1	
+1528	0	1	
+1529	0	1	
+1530	0	1	
+1531	0	1	
+1532	0	1	
+1533	0	1	
+1534	0	1	
+1535	0	1	
+1536	0	1	
+1537	0	1	
+1538	4	1741	meghjrtam wala,jzentem vala,jrtam wala,jrtal wala
+1539	0	1	
+1540	0	1	
+1541	0	1	
+1542	15	1956	üdő vala,kredenczia vala,írta vala,rejáfeleltem vala,jeheték vala,akarom vala,írta vala,elkészétették vala,múlik vala,akar vala,akarok vala,megtarttotam vala,félek vala,hallhatok vala,jrtha wala
+1543	0	1	
+1544	0	1	
+1545	0	1	
+1546	4	713	írtam vala,kildtem vala,izentem vala,izente vala
+1547	3	704	megijedtem vala,hozták vala,khertt wala
+1548	15	3344	elbocsátja vala,kérdi vala,megírtam vala,erettem vala,kildette vala,bizon vala,írtam vala,adhatok vala,kérette vala,kivánta vala,adtam vala,mentem vala,írta vala,emlékezett vala,emlékeztem vala
+1549	7	2057	tudom vala,ember vala,szóltam vala,hatta vala,akarok vala,kenyergettem vala,akarok vala
+1550	21	3725	akar vala,montam vala,lement vala,könyörög vala,hívatta vala,kívánja vala,várom vala,engedi vala,főzik vala,köldettem vala,hattunk vala,küldöttem vala,mondja vala,kírek vala,küldettem vala,könyörgettem vala,írtam vala,írtam vala,köldettem vala,kenyergettem vala,írtam vala
+1551	23	2977	írt vala,költ vala,írja vala,írá vala,köszöni vala,írja vala,tolmácsa vala,költ vala,ültem vala,mentem vala,köldettem vala,írtam vala,írtam vala,könyörgettem vala,írtam vala,köldettem vala,köldett vala,várom vala,írtam vala,írtam vala,meghozta vala,elment vala,meggiogilt vala
+1552	7	2680	mennek vala,akarom vala,félek vala,harangoznak vala,küldött vala,írta vala,emlékeztetem vala
+1553	4	1082	az vala,illetik vala,megkildetem vala,adott vala
+1554	7	2079	írtam vala,érek vala,leszen vala,kelly vala,megérem vala,kéredzettem vala,jett vala
+1555	4	1215	jüttek vala,állétom vala,kévánom vala,láthatom vala
+1556	6	2683	írtam vala,kenyergettem vala,kenyergettem vala,elvégeztem vala,emlékeztem vala,adott vala
+1557	15	2797	várjok vala,írtam vala,hoztak vala,írtam vala,itthon vala,veszett vala,jüttem vala,leszen vala,megyek vala,itthon vala,viszket vala,megjött vala,értettem vala,hitbe vala,attwnk wala
+1558	20	6358	várom vala,mondod vala,felszakasztottam vala,mondod vala,megemlítettem vala,adott vala,tértem vala,akarja vala,mondja vala,tartja vala,írtam vala,perlik vala,felköldtem vala,hatta vala,vettem vala,vettem vala,reménylem vala,hozott vala,hazanal wala,kirt wala
+1559	33	7806	elbúsétották vala,mondta vala,mentem vala,bíztam vala,kértél vala,megizentem vala,kezdtem vala,elhalgattad vala,félek vala,felűltettelek vala,írtunk vala,elvadétottam vala,küldtél vala,elbocsátnak vala,vélem vala,megkészülhet vala,beküldtem vala,kült vala,hattam vala,mondták vala,írtad vala,akarok vala,elbucsuztam vala,mer vala,adták vala,elbocsáttattál vala,adta vala,megírtam vala,jett vala,kinálom vala,kezdőttek vala,tettem wala,yrt wala
+1560	21	4899	írtál vala,leszen vala,megírattam vala,készölök vala,jüttek vala,fogadott vala,megaléltam vala,aláment vala,hívattam vala,elvégeztem vala,irtam vala,megírtam vala,fekszünk vala,félek vala,elfeledtem vala,mondtam vala,mondja vala,kell vala,jó vala,kell vala,mondott vala
+1561	4	2612	ki vala,írtuk vala,kell vala,elment vala
+1562	1	1729	kwldwnk wala
+1563	0	1	
+1564	0	1	
+1565	3	1815	atta wala,t vala,is vala
+1566	0	1	
+1567	2	1606	megleltem vala,meghteer vala
+1568	27	10367	igért vala,írtam vala,kimentem vala,küldött vala,hozott vala,mondja vala,lelt vala,mesterem vala,mondta vala,hozattam vala,akarok vala,elmentem vala,megmondta vala,hallottam vala,jrtam wala,jrt wala,kweldettem wala,jzentem wala,hattam wala,kezdett vala,jrta vala,ldett vala,kewldewtthem wala,theeth wala,jzenthe wala,zolok wala,thwdakozank wala
+1569	19	7726	mondták vala,megkérdem vala,hagyott vala,írok vala,búsétom vala,ugrálik vala,értettem vala,mondta vala,adott vala,igérkeztek vala,írtam vala,megírtam vala,kwldetté wala,attam wala,lthem vala,kerth wala,akarom vala,hett vala,jdejewth wala
+1570	7	2722	akarok wala,hattok vala,jrtam vala,jrtam vala,lthem vala,bezellj wala,agja wala
+1571	3	837	jrtt vala,megjrthok wala,adoth wala
+1572	1	667	ez vala
+1573	1	943	laknak wala
+1574	0	1	
+1575	0	1	
+1576	0	1	
+1577	5	188	felgeriedót vala,dót vala,nk vala,meglehet vala,ania vala
+1578	0	1	
+1579	0	1	
+1580	0	1	
+1581	0	1	
+1582	0	1	
+1583	0	1	
+1584	0	1	
+1585	0	1	
+1586	3	1359	jeőttem uala,weőttem uala,jűttem uala
+1587	0	1	
+1588	4	999	latom uala,dugtam uala,megirtam uala,megmontam uala
+1589	32	8634	uilem uala,megenged uala,eluet uala,ebillem wala,megheskuttunk uala,elkuldom uala,zolgam wala,eluezodom wala,itt uala,indultam vala,mentem uala,meghsuttettem uala,hiuattam uala,elizzattam uala,meghirtam uala,kultem uala,akaram uala,eluntam uala,hituankoznak uala,meghuezem uala,irt uala,irta uala,irtam uala,irth vala,elkwlte vala,nem vala,irtam vala,meghirtam vala,igyrt wala,ilteti wala,megaggya wala,ismerem wala
+1590	17	6882	gjözük uala,irtam vala,meghirtam vala,uigeztunk uala,bekultem uala,mongia uala,keri uala,tanull wala,kewanom wala,lyzen wala,ir wala,megzerzettem wala,zoltam wala,migjen wala,mihaljal vala,ir vala,djferalhattjuk wala
+1591	17	5367	ker vala,ilunk vala,nezok vala,ker vala,meghkeonyebeollt vala,azeleoth vala,meghkezitettem vala,lowa vala,a vala,akartham vala,meghengette vala,kezte uala,kir uala,juttunk uala,giütettem vala,kwltem vala,zollott wala
+1592	5	3249	ambrusné vala,akar uala,vegeztem vala,irt uala,emlekeztem uala
+1593	5	2750	külte uala,esik uala,lóuóldózik uala,meghirtam uala,leend uala
+1594	33	6791	hozaindultam uala,elórültünk uala,gyülementünk uala,hallom uala,ertettük uala,uelek uala,tórók uala,jóttek uala,milj uala,egjkózeletóttük uala,humonnajistuanuala,hattuk uala,simon uala,hogj uala,lobogos uala,lobogojok uala,seregjek uala,üdó uala,keues uala,rakas uala,felrakatta uala,akat uala,tak uala,küldj uala,megirtam uala,irtam uala,mentem uala,meghhattam uala,irtam vala,mentem vala,attam vala,ellarult vala,octava vala
+1595	5	1269	jutottam vala,tanaltam vala,uek vala,raktak vala,varom vala
+1596	1	825	megírta vala
+1597	2	643	hiaz vala,meghleltem vala
+1598	0	1	
+1599	0	1	
+1600	6	1893	mondottam wala,küldeöttem wala,vegeztwnk uala,eluegeztük uala,sirattam uala,akarok vala
+1601	0	1	
+1602	0	1	
+1603	0	1	
+1604	1	1267	hettel uala
+1605	0	1	
+1606	0	1	
+1607	0	1	
+1608	0	1	
+1609	0	1	
+1610	0	1	
+1611	0	1	
+1612	0	1	
+1613	0	1	
+1614	0	1	
+1615	0	1	
+1616	0	1	
+1617	0	1	
+1618	0	1	
+1619	1	643	iöt uala
+1620	0	1	
+1621	0	1	
+1622	1	327	kültem uala
+1623	0	1	
+1624	0	1	
+1625	0	1	
+1626	0	1	
+1627	0	1	
+1628	0	1	
+1629	0	1	
+1630	3	2122	megirtam uala,kiuanom uala,tert uala
+1631	0	1	
+1632	1	4275	irtam wala
+1633	7	10005	állok uala,igert vala,elfeleitettem uala,nem uala,nem uala,iüttem uala,hattam uala
+1634	1	2417	megverte vala
+1635	0	1	
+1636	1	2829	melto vala
+1637	3	2564	jutottam vala,talalt vala,vöttönc vala
+1638	2	3368	kezdet uala,kűldette uala
+1639	4	2458	remenlem uala,bementem uala,beszellik uala,akarom uala
+1640	0	1	
+1641	0	1	
+1642	0	1	
+1643	0	1	
+1644	0	1	
+1645	0	1	
+1646	0	1	
+1647	0	1	
+1648	2	9276	fogattam uala,irtam vala
+1649	0	1	
+1650	0	1	
+1651	4	2636	irt vala,mentünk uala,irta vala,irt uala
+1652	1	2585	kertem uala
+1653	0	1	
+1654	0	1	
+1655	1	2444	akariak vala
+1656	0	1	
+1657	0	1	
+1658	0	1	
+1659	0	1	
+1660	1	1765	e vala
+1661	0	1	
+1662	0	1	
+1663	0	1	
+1664	0	1	
+1665	0	1	
+1666	0	1	
+1667	0	1	
+1668	0	1	
+1669	0	1	
+1670	0	1	
+1671	0	1	
+1672	0	1	
+1673	0	1	
+1674	0	1	
+1675	0	1	
+1676	0	1	
+1677	0	1	
+1678	0	1	
+1679	0	1	
+1680	0	1	
+1681	0	1	
+1682	0	1	
+1683	0	1	
+1684	0	1	
+1685	0	1	
+1686	0	1	
+1687	0	1	
+1688	0	1	
+1689	0	1	
+1690	0	1	
+1691	0	1	
+1692	0	1	
+1693	0	1	
+1694	0	1	
+1695	0	1	
+1696	0	1	
+1697	0	1	
+1698	1	3352	írtam vala
+1699	1	2584	most vala
+1700	1	2455	ott vala
+1701	0	1	
+1702	0	1	
+1703	2	6184	nem vala,rendelte vala
+1704	10	11281	kel vala,tudósítottam vala,szerencsénk vala,nem vala,vártam vala,szántál vala,futamodat vala,irtam vala,akarom vala,ijesztettem vala
+1705	23	29831	szerencséje vala,megindítottam vala,szándékom vala,küldöttem vala,írja vala,jő vala,mentünk vala,káromra vala,levágathatok vala,leszek vala,hazajöttenek vala,akar vala,hátramaradt vala,tegnap vala,comendérozott vala,leszen vala,találok vala,kültem vala,irtam vala,lehet vala,kell vala,nyomult vala,elszöktem vala
+1706	25	41722	elijedtem vala,commendálták vala,írtam vala,írta vala,fordultam vala,írtam vala,megbarátkoznak vala,hozzáfogatok vala,beküldök vala,kezdtem vala,írtam vala,várom vala,odamegyen vala,akarom vala,nem vala,nem vala,tudtam vala,kell vala,emészté vala,is vala,várom vala,írtam vala,mentem vala,feltettem vala,elfordultam vala
+1707	4	5314	kel vala,írtam vala,írt vala,reménségünk vala
+1708	28	22250	zápor vala,írtam vala,kezdte vala,elmerültem vala,megpróbáltattam vala,szaporodot vala,viszahozta vala,megírtam vala,megijedtem vala,meghaladom vala,javallottam vala,kell vala,beszéllek vala,írt vala,ijedtem vala,beszéllek vala,lesz vala,letettem vala,elfordultam vala,indított vala,indultak vala,indítom vala,végeztük vala,mondta vala,megvettem vala,eljöttek vala,begyűjtettem vala,disponáltam vala
+1709	13	17135	mondotta vala,hazafordult vala,vélte vala,említettem vala,elküldtem vala,istván vala,halasztotta vala,tudósíthatom vala,elvégeztem vala,kívántam vala,szárazság vala,esőnk vala,szalad vala
+1710	31	27871	betegedet vala,írtam vala,jöttem vala,felettéb vala,vettem vala,írtam vala,tudósítottam vala,csinál vala,sem vala,írtam vala,szóllot vala,kért vala,megfizetődöt vala,parancsolta vala,jöt vala,kezdettem vala,indultam vala,ítéleti vala,ijedtem vala,tudósítattam vala,küldöttem vala,disponáltam vala,kavallér vala,kerestünk vala,írtam vala,indítottam vala,lesz vala,fordult vala,nem vala,hozta vala,halasztot vala
+1711	12	13937	sem vala,elmerültem vala,bízot vala,küldtem vala,kezdte vala,kezdtek vala,elindulok vala,elindulok vala,nállam vala,is vala,kezdte vala,roszul vala
+1712	10	26584	ma vala,ültet vala,adok vala,comitál vala,lött vala,napon vala,reménlettem vala,biztam vala,elkészítettem vala,resolválta vala
+1713	0	1	
+1714	4	20343	valami vala,irtam vala,igirte vala,kivánnya vala
+1715	5	20443	kételkedünk vala,mondgya vala,leűltette vala,obtinéáltam vala,kénszerget vala
+1716	5	35827	varok vala,irtam vala,küldöttem vala,udvarlottam vala,accludaltam vala
+1717	37	24869	akarjak vala,irtam vala,indultanak vala,processiónk vala,eltakarodott vala,meggyulladottt vala,akarnak vala,szállottak vala,küldött vala,maradtunk vala,megdühödött vala,irtam vala,könyörül vala,tegnap vala,írtam vala,most vala,elfutottak vala,küldtem vala,kell vala,irtam vala,quártélyos vala,bocsátom vala,felfordult vala,jött vala,megírtam vala,megirtam vala,küldtem vala,kivánok vala,commitáltam vala,vitettem vala,lehozatom vala,dirigáltam vala,ertettem vala,informaltam vala,vettem vala,lejöttem vala,lementem vala
+1718	8	12570	feddődik vala,ma vala,itt vala,aláküldhetem vala,adtál vala,adtanak vala,irtam vala,szandékozom vala
+1719	31	17665	érkezik vala,applicáltam vala,kell vala,megirtam vala,tegnap vala,kivántatnak vala,kell vala,könyvben vala,hagytam vala,irtam vala,vehetek vala,akarok vala,akarom vala,akarok vala,jöttem vala,veszed vala,deliberáltam vala,indulok vala,ember vala,máriás vala,nálam vala,irtam vala,hagytam vala,miklós vala,irtam vala,irtam vala,hallyuk vala,feltettem vala,irja vala,irja vala,lakik vala
+1720	18	14142	udvarlom vala,akarom vala,akarok vala,feljöhetnél vala,irtam vala,nálam vala,tétettél vala,rakodtam vala,szerencsénk vala,irtam vala,megírtam vala,resolváltam vala,miként vala,írta vala,szandékkal vala,aperiáltam vala,reménlem vala,siettem vala
+1721	23	20873	előtalálta vala,kitette vala,feleli vala,el vala,menti vala,monta vala,lesz vala,kell vala,elkülted vala,indulok vala,irtad vala,felirtak vala,irtam vala,irok vala,megszomorodott vala,hijával vala,lesz vala,dirigáltam vala,rendeltem vala,irtam vala,tudositottam vala,udvarlottam vala,irtam vala
+1722	42	28964	eddig vala,bemehetek vala,tegnap vala,alkalmatlanságom vala,elmegyek vala,praedicator vala,akartam vala,hagjtam vala,adhatok vala,vetik vala,meghcsinálták vala,fájdalma vala,ijettem vala,akarok vala,jöttek vala,járok vala,lesz vala,fogta vala,disponáltam vala,jovult vala,most vala,kezdettem vala,kijöt vala,belefáradtam vala,mentem vala,szentkeresztiné vala,elláttam vala,cselekedet vala,megirtam vala,maradott vala,megirtam vala,jöttem vala,indult vala,meghirtam vala,bééri vala,meghterheltem vala,mondotta vala,itten vala,mutathatom vala,nem vala,tészem vala,idejőtt vala
+1723	34	28036	biztam vala,tött vala,adtam vala,sztattam vala,bajom vala,végbevittem vala,vitt vala,kezdettem vala,mozdítottam vala,gondoltam vala,megyek vala,felment vala,vett vala,tettem vala,beszéltem vala,lesz vala,megirtam vala,ér vala,fele vala,általküldtem vala,fogok vala,deliberáltam vala,küldöd vala,adtam vala,hagytam vala,deliberáltatott vala,sing vala,irtam vala,reáakadtam vala,küldtem vala,izentem vala,igirte vala,illendő vala,érnek vala
+1724	5	9229	kivánván vala,is vala,nehezebb vala,megparantsolta vala,megparantsolta vala
+1725	0	1	
+1726	0	1	
+1727	1	6744	vehettem vala
+1728	3	6138	mondotta vala,tselekedtem vala,nézem vala
+1729	1	13986	nem vala
+1730	4	15171	lenni vala,novellában vala,novellában vala,készitettem vala
+1731	4	7994	sem vala,írtam vala,hallatott vala,imponáltanak vala
+1732	4	15853	nyavala,volt vala,végzem vala,insinualtam vala
+1733	2	13752	nyomorút vala,kitöltötte vala
+1734	2	14553	megverte vala,mondottam vala
+1735	0	1	
+1736	0	1	
+1737	0	1	
+1738	1	3357	vett vala
+1739	2	9461	kezdett vala,felelt vala
+1740	2	25279	emlékeztem vala,bontogatnak vala
+1741	2	26794	sem vala,indultam vala
+1742	4	28463	nem vala,nem vala,nyomorult vala,nem vala
+1743	0	1	
+1744	3	13455	nedves vala,dagatt vala,rejtet vala
+1745	2	27310	mondgyák vala,jószága vala
+1746	0	1	
+1747	1	7331	eövedzoigh vala
+1748	0	1	
+1749	0	1	
+1750	2	21235	kerte vala,szövetséged vala
+1751	6	27239	nyavajakkal vala,komjaaszszony vala,kiván vala,alatt vala,fekütt vala,szén vala
+1752	0	1	
+1753	2	7388	ki vala,egésseges vala
+1754	3	21280	nekiment vala,alkalmatossággal vala,nehezebben vala
+1755	3	26798	ment vala,fél vala,szoktak vala
+1756	8	28010	nyitott vala,leánkára vala,nyavala,nyavala,orvosolt vala,nyavala,nem vala,kelle vala
+1757	3	5414	itt vala,aszszony vala,nem vala
+1758	1	5634	leanykaja vala
+1759	3	9170	beteges vala,szokta vala,gulyás vala
+1760	0	1	
+1761	0	1	
+1762	1	1644	sebes vala
+1763	0	1	
+1764	0	1	
+1765	0	1	
+1766	0	1	
+1767	0	1	
+1768	0	1	
+1769	0	1	
+1770	0	1	
+1771	0	1	

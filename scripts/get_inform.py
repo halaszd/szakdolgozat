@@ -35,7 +35,7 @@ def get_all_words(inp):
     return all_words
 
 
-def find_past(txt, vala_volt, pps, exp_mod, is_discr, lexicon):
+def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
     """
     :param txt: szöveges bemenet
         A TMK-ról letöltött 4 féle txt: tmk_perf_vala.txt, tmk_perf_volt.txt, tmk_impf_vala.txt, tmk_impf_volt.txt
@@ -61,47 +61,47 @@ def find_past(txt, vala_volt, pps, exp_mod, is_discr, lexicon):
     éveit egy üres listával, hogy könyebb legyen a normalizálás diagramhoz
     """
 
-    pat_ptype = re.compile(r'[vuw]ala\b', re.I) if vala_volt == 'vala' else re.compile(r'[vuwú][oó]l*t+h?\b', re.I)
+    if vala_volt == 'vala':
+        pat_past = re.compile(r'[vuw]ala\b', re.I)
+    else:
+        pat_past = re.compile(r'[vuwú][oó]l*t+h?\b', re.I)
+    if asp.startswith('neutr'):
+        pat_past = re.compile(r'[a-záöőüűóúéí]+\s*' + pat_past.pattern, re.I)
+
     pat_sqr_bracket = re.compile(r'\[\[(.+?)]')
     pat_crl_bracket = re.compile(r'{(.+?)}')
+    pat_to_repl = re.compile(r'[[\]|{}]')
     txt = txt.split('\n')
 
     # TESZTELÉSHEZ
-    # nomatches = []  # hibák kiszűrése, ha esetlen nem talál keresett múlt időt
+    # matches = []  # hibák kiszűrése, ha esetlen nem talál keresett múlt időt
 
     for line in txt:
         line = line.rstrip().split('\t')
         if len(line) == 9:
             year = line[2]
             sent = line[-1]
-            pot_hits = pat_sqr_bracket.findall(sent) + pat_crl_bracket.findall(sent)
+            if not asp.startswith('neutr'):
+                pot_hits = pat_sqr_bracket.findall(sent) + pat_crl_bracket.findall(sent)
+            else:
+                sent = pat_to_repl.sub('', sent)
+                pot_hits = pat_past.findall(sent)
+
             if year != '':
                 for pot_hit in pot_hits:
-                    if pat_ptype.search(pot_hit):
-                        pot_hit = pat_ptype.sub('', pot_hit).split()[0].lower().strip()
-                        # is_discr: a találat akkor kell, ha nincs benne a lexikonban
-                        if is_discr:
-                            if pot_hit not in lexicon
-                        # ha exp_mod, akkor a szó a kulcs és defaultdict(lambda: [0, []])
-                        if exp_mod:
-                            pps[pot_hit][0] += 1
-                            pps[pot_hit][1].append(sent)
-                        # különben az évszám a kulcs és defaultdict(lambda: [0, 0, []])
-                        else:
-                            pps[year][2].append(pot_hit)
-                            pps[year][0] += 1
-
-    # TESZTELÉSHEZ
-    #                 else:  # mikor nem találta a keresett múlt időt
-    #                     nomatches.append(pot_hit)
-    #         else:  # mikor nincs év
-    #             print(line)
-    # for item in sorted(pps.items(), key=lambda item: item[0]):
-    #     print(item[0] + ':', len(item[1]), item[1])
-    # print('\nNOMATCHES LISTA TARTALMA\n' + '\n'.join(nomatches))
-
-    # üres évek generálása
-    # [(év, elemszám, [elemek])]
+                    if asp.startswith('neutr') or pat_past.search(pot_hit):
+                        pts = [pt.strip() for pt in pot_hit.split()]
+                        fpt = pts[0].lower()
+                        # informálisnál ha van lexikon, akkor biztos, hogy diszkriminatívan lesz használva
+                        if fpt not in lexicon:
+                            # ha exp_mod, akkor a szó a kulcs és defaultdict(lambda: [0, []])
+                            if exp_mod:
+                                pps[fpt][0] += 1
+                                pps[fpt][1].append(sent)
+                            # különben az évszám a kulcs és defaultdict(lambda: [0, 0, []])
+                            else:
+                                pps[year][2].append(' '.join(pts).lower())
+                                pps[year][0] += 1
 
 
 def preprocess(txt, char_map):
@@ -111,11 +111,11 @@ def preprocess(txt, char_map):
     return txt
 
 
-def process(inp_1, inp_2, char_map, vala_volt, exp_mod, is_discr, lexicon):
+def process(inp_1, inp_2, char_map, asp, vala_volt, exp_mod, lexicon):
     pps = defaultdict(lambda: [0, []]) if exp_mod else defaultdict(lambda: [0, 0, []])
     for txt in inp_1:
         txt = preprocess(txt, char_map)
-        find_past(txt, vala_volt, pps, exp_mod, is_discr, lexicon)
+        find_past(txt, vala_volt, pps, exp_mod, asp, lexicon)
 
     if exp_mod:
         return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
@@ -144,24 +144,17 @@ def get_args():
     parser.add_argument('-t', '--past_type',
                         help='Which text and past type it is. Separated by column, eg. inform.,perf.,vala',
                         default='# inform.,perf.,vala')
-    parser.add_argument('-x', '--is_discr', help='Using lexicon for discrimination', nargs='?',
-                        type=c.str2bool, const=True, default=False)
 
     args = parser.parse_args()
 
     txt_type, asp, vala_volt = c.get_past_type(args.past_type)
-    lexicon = None
-
+    lexicon = []
     if args.opt_lexicon:
-        lexicon = []
         for p in glob(args.opt_lexicon):
             lexicon += c.get_lexicon(c.read_v2(p))
-    if not lexicon:
-        args.is_discr = False
 
     return {'outdir': args.directory, 'files': args.filepath, 'ofname': args.ofname, 'charmap': args.charmap,
-            'past_type': (txt_type, asp, vala_volt), 'is_discr': args.is_discr, 'lexicon': lexicon,
-            'exp_mod': args.exp_mod, 'corpus': args.corpus}
+            'past_type': (txt_type, asp, vala_volt), 'lexicon': lexicon, 'exp_mod': args.exp_mod, 'corpus': args.corpus}
 
 
 def main():
@@ -170,7 +163,7 @@ def main():
     inp_2 = c.read_v2(args['corpus'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     past_type = args['past_type']
-    outp = process(inp_1, inp_2, char_map, past_type[2], args['exp_mod'], args['is_discr'], args['lexicon'])
+    outp = process(inp_1, inp_2, char_map, past_type[1], past_type[2], args['exp_mod'],  args['lexicon'])
     c.write(outp, args['outdir'], args['ofname'], past_type, args['exp_mod'])
 
 

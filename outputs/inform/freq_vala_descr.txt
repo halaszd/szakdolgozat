@@ -1,0 +1,288 @@
+# inform.,neutr.,vala
+1485	0	1	
+1486	0	1	
+1487	0	1	
+1488	0	1	
+1489	0	1	
+1490	0	1	
+1491	0	1	
+1492	0	1	
+1493	0	1	
+1494	0	1	
+1495	0	1	
+1496	0	1	
+1497	0	1	
+1498	0	1	
+1499	0	1	
+1500	0	1	
+1501	0	1	
+1502	0	1	
+1503	0	1	
+1504	0	1	
+1505	0	1	
+1506	0	1	
+1507	0	1	
+1508	0	1	
+1509	0	1	
+1510	0	1	
+1511	0	1	
+1512	2	1029	es wala,kőldő wala
+1513	0	1	
+1514	0	1	
+1515	1	661	fokata wala
+1516	0	1	
+1517	0	1	
+1518	0	1	
+1519	0	1	
+1520	0	1	
+1521	0	1	
+1522	0	1	
+1523	0	1	
+1524	1	1330	megserzem wala
+1525	0	1	
+1526	3	2154	therweniewnk wala,ırtam vala,meghtistesseitheth vala
+1527	0	1	
+1528	0	1	
+1529	0	1	
+1530	0	1	
+1531	0	1	
+1532	0	1	
+1533	0	1	
+1534	0	1	
+1535	0	1	
+1536	0	1	
+1537	0	1	
+1538	0	1	
+1539	0	1	
+1540	0	1	
+1541	0	1	
+1542	3	1956	üdő vala,kredenczia vala,jeheték vala
+1543	0	1	
+1544	0	1	
+1545	0	1	
+1546	0	1	
+1547	0	1	
+1548	2	3344	erettem vala,bizon vala
+1549	1	2057	ember vala
+1550	0	1	
+1551	2	2977	írá vala,tolmácsa vala
+1552	0	1	
+1553	1	1082	az vala
+1554	0	1	
+1555	0	1	
+1556	0	1	
+1557	3	2797	itthon vala,itthon vala,hitbe vala
+1558	1	6358	hazanal wala
+1559	0	1	
+1560	1	4899	jó vala
+1561	1	2612	ki vala
+1562	0	1	
+1563	0	1	
+1564	0	1	
+1565	2	1815	t vala,is vala
+1566	0	1	
+1567	0	1	
+1568	3	10367	mesterem vala,ldett vala,thwdakozank wala
+1569	2	7726	lthem vala,hett vala
+1570	1	2722	lthem vala
+1571	0	1	
+1572	1	667	ez vala
+1573	0	1	
+1574	0	1	
+1575	0	1	
+1576	0	1	
+1577	3	188	dót vala,nk vala,ania vala
+1578	0	1	
+1579	0	1	
+1580	0	1	
+1581	0	1	
+1582	0	1	
+1583	0	1	
+1584	0	1	
+1585	0	1	
+1586	0	1	
+1587	0	1	
+1588	0	1	
+1589	4	8634	zolgam wala,itt uala,akaram uala,nem vala
+1590	1	6882	mihaljal vala
+1591	4	5367	azeleoth vala,lowa vala,a vala,kir uala
+1592	1	3249	ambrusné vala
+1593	1	2750	leend uala
+1594	17	6791	gyülementünk uala,uelek uala,tórók uala,milj uala,egjkózeletóttük uala,humonnajistuanuala,simon uala,hogj uala,lobogos uala,lobogojok uala,seregjek uala,üdó uala,keues uala,rakas uala,akat uala,tak uala,octava vala
+1595	1	1269	uek vala
+1596	0	1	
+1597	0	1	
+1598	0	1	
+1599	0	1	
+1600	0	1	
+1601	0	1	
+1602	0	1	
+1603	0	1	
+1604	1	1267	hettel uala
+1605	0	1	
+1606	0	1	
+1607	0	1	
+1608	0	1	
+1609	0	1	
+1610	0	1	
+1611	0	1	
+1612	0	1	
+1613	0	1	
+1614	0	1	
+1615	0	1	
+1616	0	1	
+1617	0	1	
+1618	0	1	
+1619	0	1	
+1620	0	1	
+1621	0	1	
+1622	0	1	
+1623	0	1	
+1624	0	1	
+1625	0	1	
+1626	0	1	
+1627	0	1	
+1628	0	1	
+1629	0	1	
+1630	0	1	
+1631	0	1	
+1632	0	1	
+1633	2	10005	nem uala,nem uala
+1634	0	1	
+1635	0	1	
+1636	1	2829	melto vala
+1637	0	1	
+1638	0	1	
+1639	0	1	
+1640	0	1	
+1641	0	1	
+1642	0	1	
+1643	0	1	
+1644	0	1	
+1645	0	1	
+1646	0	1	
+1647	0	1	
+1648	0	1	
+1649	0	1	
+1650	0	1	
+1651	0	1	
+1652	0	1	
+1653	0	1	
+1654	0	1	
+1655	0	1	
+1656	0	1	
+1657	0	1	
+1658	0	1	
+1659	0	1	
+1660	1	1765	e vala
+1661	0	1	
+1662	0	1	
+1663	0	1	
+1664	0	1	
+1665	0	1	
+1666	0	1	
+1667	0	1	
+1668	0	1	
+1669	0	1	
+1670	0	1	
+1671	0	1	
+1672	0	1	
+1673	0	1	
+1674	0	1	
+1675	0	1	
+1676	0	1	
+1677	0	1	
+1678	0	1	
+1679	0	1	
+1680	0	1	
+1681	0	1	
+1682	0	1	
+1683	0	1	
+1684	0	1	
+1685	0	1	
+1686	0	1	
+1687	0	1	
+1688	0	1	
+1689	0	1	
+1690	0	1	
+1691	0	1	
+1692	0	1	
+1693	0	1	
+1694	0	1	
+1695	0	1	
+1696	0	1	
+1697	0	1	
+1698	0	1	
+1699	1	2584	most vala
+1700	1	2455	ott vala
+1701	0	1	
+1702	0	1	
+1703	1	6184	nem vala
+1704	4	11281	szerencsénk vala,nem vala,szántál vala,futamodat vala
+1705	5	29831	szerencséje vala,szándékom vala,jő vala,káromra vala,tegnap vala
+1706	5	41722	hozzáfogatok vala,nem vala,nem vala,emészté vala,is vala
+1707	1	5314	reménségünk vala
+1708	1	22250	zápor vala
+1709	3	17135	istván vala,szárazság vala,esőnk vala
+1710	6	27871	felettéb vala,sem vala,megfizetődöt vala,ítéleti vala,kavallér vala,nem vala
+1711	5	13937	sem vala,bízot vala,nállam vala,is vala,roszul vala
+1712	2	26584	ma vala,napon vala
+1713	0	1	
+1714	1	20343	valami vala
+1715	0	1	
+1716	0	1	
+1717	5	24869	processiónk vala,tegnap vala,most vala,quártélyos vala,lehozatom vala
+1718	2	12570	ma vala,itt vala
+1719	6	17665	tegnap vala,könyvben vala,ember vala,máriás vala,nálam vala,miklós vala
+1720	5	14142	feljöhetnél vala,nálam vala,szerencsénk vala,miként vala,szandékkal vala
+1721	2	20873	el vala,hijával vala
+1722	9	28964	eddig vala,tegnap vala,alkalmatlanságom vala,praedicator vala,fájdalma vala,most vala,szentkeresztiné vala,itten vala,nem vala
+1723	5	28036	sztattam vala,bajom vala,fele vala,sing vala,illendő vala
+1724	3	9229	kivánván vala,is vala,nehezebb vala
+1725	0	1	
+1726	0	1	
+1727	0	1	
+1728	0	1	
+1729	1	13986	nem vala
+1730	3	15171	lenni vala,novellában vala,novellában vala
+1731	1	7994	sem vala
+1732	1	15853	nyavala
+1733	1	13752	nyomorút vala
+1734	0	1	
+1735	0	1	
+1736	0	1	
+1737	0	1	
+1738	0	1	
+1739	0	1	
+1740	0	1	
+1741	1	26794	sem vala
+1742	4	28463	nem vala,nem vala,nyomorult vala,nem vala
+1743	0	1	
+1744	2	13455	nedves vala,dagatt vala
+1745	1	27310	jószága vala
+1746	0	1	
+1747	1	7331	eövedzoigh vala
+1748	0	1	
+1749	0	1	
+1750	1	21235	szövetséged vala
+1751	4	27239	nyavajakkal vala,komjaaszszony vala,alatt vala,szén vala
+1752	0	1	
+1753	2	7388	ki vala,egésseges vala
+1754	2	21280	alkalmatossággal vala,nehezebben vala
+1755	0	1	
+1756	6	28010	leánkára vala,nyavala,nyavala,nyavala,nem vala,kelle vala
+1757	3	5414	itt vala,aszszony vala,nem vala
+1758	1	5634	leanykaja vala
+1759	2	9170	beteges vala,gulyás vala
+1760	0	1	
+1761	0	1	
+1762	1	1644	sebes vala
+1763	0	1	
+1764	0	1	
+1765	0	1	
+1766	0	1	
+1767	0	1	
+1768	0	1	
+1769	0	1	
+1770	0	1	
+1771	0	1	
