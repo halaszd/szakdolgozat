@@ -124,16 +124,10 @@ def get_args():
                         default='# inform.,perf.,vala')
 
     args = parser.parse_args()
-    files = []
-
-    for p in args.filepath:
-        poss_files = glob(p)
-        poss_files = [os.path.abspath(x) for x in poss_files]
-        files += poss_files
 
     txt_type, perf_imp, vala_volt = c.get_past_type(args.past_type)
 
-    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname,
+    return {'outdir': args.directory, 'files': args.filepath, 'ofname': args.ofname,
             'reference': args.reference, 'charmap': args.charmap, 'past_type': (txt_type, perf_imp, vala_volt)}
 
 

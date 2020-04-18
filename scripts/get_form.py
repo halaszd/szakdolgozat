@@ -56,7 +56,7 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
         # pps[year][2] += hits
 
 
-def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step=True):
+def form_past_perf(txt, year, vala_volt, asp, pps, is_discr, lexicon=None):
     stop_affixes = ('sag', 'seg', 'ás', 'és', 'ös' 'ős', 'ós', 'endó', 'endő', 'endo', 'andó', 'andő', 'ando',
                     'ban', 'ben', 'ba', 'be', 'lan', 'len', 'lán', 'lén', 'b', 'bb', 'tól', 'től', 'ból', 'ből',
                     'wa', 'we', 'va', 've', 'ka', 'ke',)
@@ -64,7 +64,7 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
     # todo: ttanak ttenek impnél
     pat_vala_volt = r'([vuw]ala\b)' if vala_volt == "vala" else r'([vuwú][oó]l*t+h?)\b'
 
-    if perf_imp.startswith('perf'):
+    if asp.startswith('perf'):
         pat_past = re.compile(
             r"""
             ([a-záöőüűóúéí]+?(?:t+h?
@@ -75,7 +75,8 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
             [eé]te[ck]|[aá]to[ck]|
             [eéáa][ck])?)
             \s*)""" + pat_vala_volt, re.VERBOSE | re.IGNORECASE)
-    else:
+
+    elif asp.startswith('imp') or asp.startswith('neutr'):
         pat_past = re.compile(r'([a-záöőüűóúéí]+\s*)' + pat_vala_volt, re.VERBOSE | re.IGNORECASE)
 
     hits = []
@@ -91,13 +92,13 @@ def form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon=None, first_step
             continue
         if not lexicon:
             hits.append((hit, context))
-        elif first_step:
+        elif is_discr:
             if hit not in lexicon:
                 hits.append((hit, context))
         elif hit in lexicon:
             hits.append(hit)
 
-    if first_step or not lexicon:
+    if is_discr or not lexicon:
         get_freq_types(hits, pps)
 
     else:
@@ -133,13 +134,13 @@ def preprocess(txt, char_map):
     return txt.lower(), year
 
 
-def process(inp, char_map, perf_imp, vala_volt, lexicon, first_step):
-    pps = defaultdict(lambda: [0, []]) if first_step or not lexicon else defaultdict(lambda: [0, 0, []])
+def process(inp, char_map, asp, vala_volt, is_discr, lexicon):
+    pps = defaultdict(lambda: [0, []]) if is_discr or not lexicon else defaultdict(lambda: [0, 0, []])
     for txt in inp:
         txt, year = preprocess(txt, char_map)
-        form_past_perf(txt, year, vala_volt, perf_imp, pps, lexicon, first_step)
+        form_past_perf(txt, year, vala_volt, asp, pps, lexicon, is_discr)
 
-    if first_step or not lexicon:
+    if is_discr or not lexicon:
         return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
     c.gen_empty_years(sorted(pps.keys(), key=lambda y: y), pps)
@@ -175,39 +176,36 @@ def get_args():
     parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_form_output.txt')
     parser.add_argument('-l', '--def_lexicon', help='Allowing default lexicons',
                         nargs='?', type=str2bool, const=True, default=False)
-    parser.add_argument('-m', '--opt_lexicon', help='Path to lexicon')
+    parser.add_argument('-m', '--opt_lexicon', help='Path to lexicon(s)')
     parser.add_argument('-t', '--past_type',
                         help='Which text and past type it is. Separated by column, eg. INFORM.,PERF.,VALA',
                         default='# INFORM.,PERF.,VALA')
-    parser.add_argument('-x', '--first_step', help='First step: collect the set of declared past', nargs='?',
+    parser.add_argument('-x', '--not_in_lexicon', help='Using lexicon for discrimination', nargs='?',
                         type=str2bool, const=True, default=False)
 
     args = parser.parse_args()
-    files = []
 
-    for p in args.filepath:
-        poss_files = glob(p)
-        poss_files = [os.path.abspath(x) for x in poss_files]
-        files += poss_files
-    txt_type, perf_imp, vala_volt = c.get_past_type(args.past_type)
+    txt_type, asp, vala_volt = c.get_past_type(args.past_type)
 
     lexicon = None
     if args.def_lexicon:
-        lexicon = get_lexicon(c.read_v2(get_path_lexicon(perf_imp, vala_volt)))
+        lexicon = get_lexicon(c.read_v2(get_path_lexicon(asp, vala_volt)))
     elif args.opt_lexicon:
-        lexicon = get_lexicon(c.read_v2(args.opt_lexicon))
+        lexicon = []
+        for p in glob(args.opt_lexicon):
+            lexicon += get_lexicon(c.read_v2(p))
 
-    return {'outdir': args.directory, 'files': files, 'ofname': args.ofname, 'charmap': args.charmap,
-            'past_type': (txt_type, perf_imp, vala_volt), 'first_step': args.first_step, 'lexicon': lexicon}
+    return {'outdir': args.directory, 'files': args.filepath, 'ofname': args.ofname, 'charmap': args.charmap,
+            'past_type': (txt_type, asp, vala_volt), 'not_in_lexicon': args.not_in_lexicon, 'lexicon': lexicon}
 
 
 def main():
     args = get_args()
     inp = c.read_v1(args['files'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
-    txt_type, perf_imp, vala_volt = args['past_type']
-    outp = process(inp, char_map, perf_imp, vala_volt, args['lexicon'], args['first_step'])
-    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['first_step'], args['lexicon'])
+    txt_type, asp, vala_volt = args['past_type']
+    outp = process(inp, char_map, asp, vala_volt, args['lexicon'], args['not_in_lexicon'])
+    # c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['not_in_lexicon'], args['lexicon'])
 
 
 if __name__ == '__main__':

@@ -10,6 +10,9 @@ LINES = {'inform.':
                    'volt': ('yellow', '-')},
               'imp.':
                   {'vala': ('green', '-'),
+                   'volt': ('brown', '-')},
+              'neutr.':
+                  {'vala': ('green', '-'),
                    'volt': ('brown', '-')}},
          'form.':
              {'perf.':
@@ -17,11 +20,15 @@ LINES = {'inform.':
                    'volt': ('yellow', '--')},
               'imp.':
                   {'vala': ('green', '--'),
-                   'volt': ('brown', '--')}}}
+                   'volt': ('brown', '--')},
+              'neutr.':
+                  {'vala': ('green', '-'),
+                   'volt': ('brown', '-')}}}
 
 
 def read(inp):
     for fl in inp:
+        print(fl)
         with open(fl, 'r', encoding='utf-8') as f:
             yield f.read()
 
@@ -81,18 +88,13 @@ def get_args():
     parser.add_argument('-i', '--interval', help='Split timeline rate', nargs='?', default=40, type=int)
 
     args = parser.parse_args()
-    files = []
 
-    for p in args.filepath:
-        poss_files = glob(p)
-        poss_files = [os.path.abspath(x) for x in poss_files]
-        files += poss_files
-
-    return {'files': files, 'interval': args.interval}
+    return {'files': args.filepath, 'interval': args.interval}
 
 
 def main():
     args = get_args()
+
     inp = read(args['files'])
     process(inp, args['interval'])
 
