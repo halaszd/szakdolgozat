@@ -74,8 +74,7 @@ def unify_years(all_ls, start, end):
             while int(ls[j][0]) > end:
                 j -= 1
         new_all_ls.append(new_ls + ls[i:j+1])
-    print(new_all_ls)
-
+    return new_all_ls
 
 def get_start_end(all_ls):
     max_start = int(all_ls[0][1][0])
@@ -113,10 +112,11 @@ def process(inp, interval, is_mixed):
 
     if is_mixed:
         max_start, min_end = get_start_end(all_freq_ls)
-        unify_years(all_freq_ls, max_start, min_end)
+        all_freq_ls = unify_years(all_freq_ls, max_start, min_end)
     for freq_ls in all_freq_ls:
+        past_type = freq_ls.pop(0)
         freq_ls = split_years(freq_ls, interval)
-        get_plot(freq_ls, freq_ls[0], '{} {} + {}'.format(freq_ls[0][0], freq_ls[0][1], freq_ls[0][2]))
+        get_plot(freq_ls, past_type, '{} {} + {}'.format(past_type[0], past_type[1], past_type[2]))
     plt.legend()
     plt.show()
 
