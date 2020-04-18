@@ -3,7 +3,6 @@ from glob import glob
 import re
 from collections import defaultdict
 import argparse
-import os
 import sys
 sys.path.append('../')
 import scripts.common as c

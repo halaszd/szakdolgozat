@@ -1,8 +1,10 @@
 #! /usr/bin/env python3
 import matplotlib.pyplot as plt
-from glob import glob
 import argparse
-import os
+import sys
+sys.path.append('../')
+from scripts.common import str2bool
+
 
 LINES = {'inform.':
              {'perf.':
@@ -33,7 +35,7 @@ def read(inp):
             yield f.read()
 
 
-def split_years(freq_ls, c=1):
+def split_years(freq_ls, is_mixed, c):
     count = 0
     sum_pfreq = 0
     sum_all_freq = 0
@@ -65,7 +67,7 @@ def get_plot(freq_ls, txt_type, line_name):
     plt.plot(years, freq, label=line_name.upper(), color=line_type[0], linestyle=line_type[1])
 
 
-def process(inp, interval):
+def process(inp, interval, is_mixed):
     for i, fl in enumerate(inp):
         freq_ls = []
         fl = fl.split('\n')
@@ -76,7 +78,7 @@ def process(inp, interval):
                 continue
             line = line.split('\t')
             freq_ls.append((line[0], line[1], line[2]))
-        freq_ls = split_years(freq_ls, interval)
+        freq_ls = split_years(freq_ls, is_mixed, interval)
         get_plot(freq_ls, past_type, '{} {} + {}'.format(past_type[0], past_type[1], past_type[2]))
     plt.legend()
     plt.show()
@@ -85,18 +87,20 @@ def process(inp, interval):
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
-    parser.add_argument('-i', '--interval', help='Split timeline rate', nargs='?', default=40, type=int)
+    parser.add_argument('-i', '--interval', help='Split timeline rate', nargs='?', default=50, type=int)
+    parser.add_argument('-m', '--is_mixed', help='If to create plot from inform. and form. text type', nargs='?',
+                        type=str2bool, const=True, default=False)
 
     args = parser.parse_args()
 
-    return {'files': args.filepath, 'interval': args.interval}
+    return {'files': args.filepath, 'interval': args.interval, 'is_mixed': args.is_mixed}
 
 
 def main():
     args = get_args()
 
     inp = read(args['files'])
-    process(inp, args['interval'])
+    process(inp, args['interval'], args['is_mixed'])
 
 
 if __name__ == '__main__':

@@ -4,7 +4,6 @@ from glob import glob
 import re
 from collections import defaultdict
 import argparse
-import os
 import sys
 from string import punctuation as puncts
 sys.path.append('../')
