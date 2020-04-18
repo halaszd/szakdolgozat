@@ -5,6 +5,10 @@ import sys
 sys.path.append('../')
 from scripts.common import str2bool
 
+# TODO: megcsinálni újra az összes diagramot, utána szakdogaírás:
+# form: all, valavolt_descr, valavolt_nondescr
+# inform: all, valavolt_descr, valavolt_nondescr
+# form-inform: perfektum vala+volt, valavolt_descr, valavolt_nondescr, imperfektum vala+volt
 
 LINES = {'inform.':
              {'perf.':
@@ -13,7 +17,10 @@ LINES = {'inform.':
               'imp.':
                   {'vala': ('green', '-'),
                    'volt': ('brown', '-')},
-              'neutr.':
+              'descr.':
+                  {'vala': ('red', '-'),
+                   'volt': ('yellow', '-')},
+              'non descr.':
                   {'vala': ('red', '-'),
                    'volt': ('yellow', '-')}},
          'form.':
@@ -23,9 +30,13 @@ LINES = {'inform.':
               'imp.':
                   {'vala': ('green', '--'),
                    'volt': ('brown', '--')},
-              'neutr.':
-                  {'vala': ('red', '-'),
-                   'volt': ('yellow', '-')}}}
+              'descr.':
+                  {'vala': ('red', '--'),
+                   'volt': ('yellow', '--')},
+              'non descr.':
+                  {'vala': ('red', '--'),
+                   'volt': ('yellow', '--')}
+              }}
 
 
 def read(inp):
