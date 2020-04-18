@@ -30,12 +30,11 @@ LINES = {'inform.':
 
 def read(inp):
     for fl in inp:
-        print(fl)
         with open(fl, 'r', encoding='utf-8') as f:
             yield f.read()
 
 
-def split_years(freq_ls, is_mixed, c):
+def split_years(freq_ls, c):
     count = 0
     sum_pfreq = 0
     sum_all_freq = 0
@@ -60,6 +59,37 @@ def split_years(freq_ls, is_mixed, c):
     return new_freq_ls
 
 
+def unify_years(all_ls, start, end):
+    new_all_ls = []
+    for ls in all_ls:
+        new_ls = [ls.pop(0)]
+        i = 0
+        j = len(ls) - 1
+        if int(ls[0][0]) < start:
+            i += 1
+            while int(ls[i][0]) < start:
+                i += 1
+        if int(ls[j][0]) > end:
+            j -= 1
+            while int(ls[j][0]) > end:
+                j -= 1
+        new_all_ls.append(new_ls + ls[i:j+1])
+    print(new_all_ls)
+
+
+def get_start_end(all_ls):
+    max_start = int(all_ls[0][1][0])
+    min_end = int(all_ls[0][-1][0])
+    for ls in all_ls[1:]:
+        start = int(ls[1][0])
+        end = int(ls[-1][0])
+        if max_start < start:
+            max_start = start
+        if min_end > end:
+            min_end = end
+    return max_start, min_end
+
+
 def get_plot(freq_ls, txt_type, line_name):
     years = [item[0] for item in freq_ls]
     freq = [(float(item[1])/float(item[2]))*100 for item in freq_ls]
@@ -68,18 +98,25 @@ def get_plot(freq_ls, txt_type, line_name):
 
 
 def process(inp, interval, is_mixed):
+    all_freq_ls = []
     for i, fl in enumerate(inp):
-        freq_ls = []
         fl = fl.split('\n')
         past_type = fl.pop(0).replace('# ', '').split(',')
+        freq_ls = [past_type]
         for line in fl:
             line = line.strip()
             if line == '':
                 continue
             line = line.split('\t')
             freq_ls.append((line[0], line[1], line[2]))
-        freq_ls = split_years(freq_ls, is_mixed, interval)
-        get_plot(freq_ls, past_type, '{} {} + {}'.format(past_type[0], past_type[1], past_type[2]))
+        all_freq_ls.append(freq_ls)
+
+    if is_mixed:
+        max_start, min_end = get_start_end(all_freq_ls)
+        unify_years(all_freq_ls, max_start, min_end)
+    for freq_ls in all_freq_ls:
+        freq_ls = split_years(freq_ls, interval)
+        get_plot(freq_ls, freq_ls[0], '{} {} + {}'.format(freq_ls[0][0], freq_ls[0][1], freq_ls[0][2]))
     plt.legend()
     plt.show()
 
