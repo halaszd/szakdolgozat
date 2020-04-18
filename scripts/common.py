@@ -24,10 +24,6 @@ def read_v2(inp):
         return f.read()
 
 
-def get_path_lexicon(lexicons, t, t2):
-    return lexicons[t][t2]
-
-
 def get_lexicon(txt):
     return [line.split('\t')[0].strip() for line in txt.split('\n')]
 

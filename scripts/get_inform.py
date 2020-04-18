@@ -11,11 +11,11 @@ import scripts.common as c
 
 # TODO csak a volt és csak a valát is létre kell hozni
 
-
-LEXICONS = {'perf.': {'vala': '../inputs/inform/lexicons/perf_vala.txt',
-                      'volt': '../inputs/inform/lexicons/perf_volt.txt'},
-            'imp.': {'vala': '../inputs/inform/lexicons/imp_vala.txt',
-                     'volt': '../inputs/inform/lexicons/imp_volt.txt'}}
+#
+# LEXICONS = {'perf.': {'vala': '../inputs/inform/lexicons/perf_vala.txt',
+#                       'volt': '../inputs/inform/lexicons/perf_volt.txt'},
+#             'imp.': {'vala': '../inputs/inform/lexicons/imp_vala.txt',
+#                      'volt': '../inputs/inform/lexicons/imp_volt.txt'}}
 
 
 def get_all_words(inp):
@@ -35,7 +35,7 @@ def get_all_words(inp):
     return all_words
 
 
-def find_past(txt, vala_volt, pps, exp_mod):
+def find_past(txt, vala_volt, pps, exp_mod, is_discr, lexicon):
     """
     :param txt: szöveges bemenet
         A TMK-ról letöltött 4 féle txt: tmk_perf_vala.txt, tmk_perf_volt.txt, tmk_impf_vala.txt, tmk_impf_volt.txt
@@ -78,7 +78,10 @@ def find_past(txt, vala_volt, pps, exp_mod):
             if year != '':
                 for pot_hit in pot_hits:
                     if pat_ptype.search(pot_hit):
-                        pot_hit = pat_ptype.sub('', pot_hit).split()[0].lower()
+                        pot_hit = pat_ptype.sub('', pot_hit).split()[0].lower().strip()
+                        # is_discr: a találat akkor kell, ha nincs benne a lexikonban
+                        if is_discr:
+                            if pot_hit not in lexicon
                         # ha exp_mod, akkor a szó a kulcs és defaultdict(lambda: [0, []])
                         if exp_mod:
                             pps[pot_hit][0] += 1
@@ -108,11 +111,11 @@ def preprocess(txt, char_map):
     return txt
 
 
-def process(inp_1, inp_2, char_map, vala_volt, exp_mod):
+def process(inp_1, inp_2, char_map, vala_volt, exp_mod, is_discr, lexicon):
     pps = defaultdict(lambda: [0, []]) if exp_mod else defaultdict(lambda: [0, 0, []])
     for txt in inp_1:
         txt = preprocess(txt, char_map)
-        find_past(txt, vala_volt, pps, exp_mod)
+        find_past(txt, vala_volt, pps, exp_mod, is_discr, lexicon)
 
     if exp_mod:
         return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
@@ -136,8 +139,6 @@ def get_args():
     parser.add_argument('-e', '--exp_mod', help='Output is not freq. list but a word list with examples',
                         nargs='?', type=c.str2bool, const=True, default=False)
     parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_inf_output.txt')
-    parser.add_argument('-l', '--def_lexicon', help='Allowing default lexicons',
-                        nargs='?', type=c.str2bool, const=True, default=False)
     parser.add_argument('-m', '--opt_lexicon', help='Path to lexicon(s)')
     parser.add_argument('-r', '--corpus', help='Path to file to corpus text', nargs='?', default='../inputs/inform/tmk_all.txt')
     parser.add_argument('-t', '--past_type',
@@ -150,12 +151,13 @@ def get_args():
 
     txt_type, asp, vala_volt = c.get_past_type(args.past_type)
     lexicon = None
-    if args.def_lexicon:
-        lexicon = c.get_lexicon(c.read_v2(c.get_path_lexicon(args.def_lexicon, asp, vala_volt)))
-    elif args.opt_lexicon:
+
+    if args.opt_lexicon:
         lexicon = []
         for p in glob(args.opt_lexicon):
             lexicon += c.get_lexicon(c.read_v2(p))
+    if not lexicon:
+        args.is_discr = False
 
     return {'outdir': args.directory, 'files': args.filepath, 'ofname': args.ofname, 'charmap': args.charmap,
             'past_type': (txt_type, asp, vala_volt), 'is_discr': args.is_discr, 'lexicon': lexicon,
@@ -168,8 +170,7 @@ def main():
     inp_2 = c.read_v2(args['corpus'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     past_type = args['past_type']
-    print(past_type)
-    outp = process(inp_1, inp_2, char_map, past_type[2], args['exp_mod'])
+    outp = process(inp_1, inp_2, char_map, past_type[2], args['exp_mod'], args['is_discr'], args['lexicon'])
     c.write(outp, args['outdir'], args['ofname'], past_type, args['exp_mod'])
 
 

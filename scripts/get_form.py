@@ -21,6 +21,10 @@ LEXICONS = {'perf.': {'vala': '../inputs/form/lexicons/perf_vala.txt',
                      'volt': '../inputs/form/lexicons/imp_volt.txt'}}
 
 
+def get_path_lexicon(t, t2):
+    return LEXICONS[t][t2]
+
+
 def get_freq_types(hits, pps=None):
     if pps is None:
         pps = defaultdict(lambda: [0, []])
@@ -48,7 +52,7 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
         # pps[year][2] += hits
 
 
-def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon=None):
+def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
     stop_affixes = ('sag', 'seg', 'ás', 'és', 'ös' 'ős', 'ós', 'endó', 'endő', 'endo', 'andó', 'andő', 'ando',
                     'ban', 'ben', 'ba', 'be', 'lan', 'len', 'lán', 'lén', 'b', 'bb', 'tól', 'től', 'ból', 'ből',
                     'wa', 'we', 'va', 've', 'ka', 'ke',)
@@ -170,11 +174,13 @@ def get_args():
     txt_type, asp, vala_volt = c.get_past_type(args.past_type)
     lexicon = None
     if args.def_lexicon:
-        lexicon = c.get_lexicon(c.read_v2(c.get_path_lexicon(asp, vala_volt)))
+        lexicon = c.get_lexicon(c.read_v2(get_path_lexicon(asp, vala_volt)))
     elif args.opt_lexicon:
         lexicon = []
         for p in glob(args.opt_lexicon):
             lexicon += c.get_lexicon(c.read_v2(p))
+    if not lexicon:
+        args.is_discr = False
 
     return {'outdir': args.directory, 'files': args.filepath, 'ofname': args.ofname, 'charmap': args.charmap,
             'past_type': (txt_type, asp, vala_volt), 'is_discr': args.is_discr, 'lexicon': lexicon,
