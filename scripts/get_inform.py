@@ -12,6 +12,12 @@ import scripts.common as c
 # TODO csak a volt és csak a valát is létre kell hozni
 
 
+LEXICONS = {'perf.': {'vala': '../inputs/inform/lexicons/perf_vala.txt',
+                      'volt': '../inputs/inform/lexicons/perf_volt.txt'},
+            'imp.': {'vala': '../inputs/inform/lexicons/imp_vala.txt',
+                     'volt': '../inputs/inform/lexicons/imp_volt.txt'}}
+
+
 def get_all_words(inp):
     pat_annot = re.compile(r'[[\]|{}]')
     all_words = defaultdict(lambda: 0)
@@ -29,15 +35,15 @@ def get_all_words(inp):
     return all_words
 
 
-def inform_past_perf(txt, vala_volt, pps):
+def find_past(txt, vala_volt, pps, exp_mod):
     """
-    :param inp: szöveges bemenet
+    :param txt: szöveges bemenet
         A TMK-ról letöltött 4 féle txt: tmk_perf_vala.txt, tmk_perf_volt.txt, tmk_impf_vala.txt, tmk_impf_volt.txt
     :param vala_volt: -tt + valá-t vagy -tt + volt-ot keressen a függvény
+    :param pps: szótár a -tt + vala vagy a -tt + volt alakok számának rögzítésére évszámok szerint
+        {'anydate_1':[past_perf_1, past_perf_2... past_perf_n], 'anydate_n': [...], ...}
     :return: évszámok szerint növekvően rendezet gyakorisági lista [('évszám', gyakoriság), ...]
 
-    pps: szótár a -tt + vala vagy a -tt + volt alakok számának rögzítésére évszámok szerint
-        {'anydate_1':[past_perf_1, past_perf_2... past_perf_n], 'anydate_n': [...], ...}
     pat_ptype: valá-t vagy volt-ot keressen az potenciális keresett összetett múlt időkben (regex)
     pat_sqr_bracket: szögletes zárójelen belüli részt nézi
     pat_crl_bracke: kapcsos zárójelen belüli részt nézi
@@ -55,7 +61,7 @@ def inform_past_perf(txt, vala_volt, pps):
     éveit egy üres listával, hogy könyebb legyen a normalizálás diagramhoz
     """
 
-    pat_ptype = re.compile(r'[vuw]al+a\b', re.I) if vala_volt == 'vala' else re.compile(r'[vuwú][aoó]l*t+h?\b', re.I)
+    pat_ptype = re.compile(r'[vuw]ala\b', re.I) if vala_volt == 'vala' else re.compile(r'[vuwú][oó]l*t+h?\b', re.I)
     pat_sqr_bracket = re.compile(r'\[\[(.+?)]')
     pat_crl_bracket = re.compile(r'{(.+?)}')
     txt = txt.split('\n')
@@ -72,8 +78,15 @@ def inform_past_perf(txt, vala_volt, pps):
             if year != '':
                 for pot_hit in pot_hits:
                     if pat_ptype.search(pot_hit):
-                        pps[year][2].append(pot_hit)
-                        pps[year][0] += 1
+                        pot_hit = pat_ptype.sub('', pot_hit).split()[0].lower()
+                        # ha exp_mod, akkor a szó a kulcs és defaultdict(lambda: [0, []])
+                        if exp_mod:
+                            pps[pot_hit][0] += 1
+                            pps[pot_hit][1].append(sent)
+                        # különben az évszám a kulcs és defaultdict(lambda: [0, 0, []])
+                        else:
+                            pps[year][2].append(pot_hit)
+                            pps[year][0] += 1
 
     # TESZTELÉSHEZ
     #                 else:  # mikor nem találta a keresett múlt időt
@@ -95,11 +108,11 @@ def preprocess(txt, char_map):
     return txt
 
 
-def process(inp_1, inp_2, char_map, vala_volt):
-    pps = defaultdict(lambda: [0, 1, []])
+def process(inp_1, inp_2, char_map, vala_volt, exp_mod):
+    pps = defaultdict(lambda: [0, []]) if exp_mod else defaultdict(lambda: [0, 0, []])
     for txt in inp_1:
         txt = preprocess(txt, char_map)
-        inform_past_perf(txt, vala_volt, pps)
+        find_past(txt, vala_volt, pps, exp_mod)
 
     all_words = get_all_words(inp_2)
     for key in all_words.keys():
@@ -115,31 +128,46 @@ def process(inp_1, inp_2, char_map, vala_volt):
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
-    parser.add_argument('-r', '--reference', help='Path of reference file', nargs='?', default='../inputs/inform/tmk_all.txt')
     parser.add_argument('-c', '--charmap', help='Path to charmap tsv', nargs='?', default='../inputs/init/char_map.txt')
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/inform')
+    parser.add_argument('-e', '--exp_mod', help='Output is not freq. list but a word list with examples',
+                        nargs='?', type=c.str2bool, const=True, default=False)
     parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_inf_output.txt')
+    parser.add_argument('-l', '--def_lexicon', help='Allowing default lexicons',
+                        nargs='?', type=c.str2bool, const=True, default=False)
+    parser.add_argument('-m', '--opt_lexicon', help='Path to lexicon(s)')
+    parser.add_argument('-r', '--corpus', help='Path to file to corpus text', nargs='?', default='../inputs/inform/tmk_all.txt')
     parser.add_argument('-t', '--past_type',
                         help='Which text and past type it is. Separated by column, eg. inform.,perf.,vala',
                         default='# inform.,perf.,vala')
+    parser.add_argument('-x', '--is_discr', help='Using lexicon for discrimination', nargs='?',
+                        type=c.str2bool, const=True, default=False)
 
     args = parser.parse_args()
 
-    txt_type, perf_imp, vala_volt = c.get_past_type(args.past_type)
+    txt_type, asp, vala_volt = c.get_past_type(args.past_type)
+    lexicon = None
+    if args.def_lexicon:
+        lexicon = c.get_lexicon(c.read_v2(c.get_path_lexicon(args.def_lexicon, asp, vala_volt)))
+    elif args.opt_lexicon:
+        lexicon = []
+        for p in glob(args.opt_lexicon):
+            lexicon += c.get_lexicon(c.read_v2(p))
 
-    return {'outdir': args.directory, 'files': args.filepath, 'ofname': args.ofname,
-            'reference': args.reference, 'charmap': args.charmap, 'past_type': (txt_type, perf_imp, vala_volt)}
+    return {'outdir': args.directory, 'files': args.filepath, 'ofname': args.ofname, 'charmap': args.charmap,
+            'past_type': (txt_type, asp, vala_volt), 'is_discr': args.is_discr, 'lexicon': lexicon,
+            'exp_mod': args.exp_mod, 'corpus': args.corpus}
 
 
 def main():
     args = get_args()
     inp_1 = c.read_v1(args['files'])
-    inp_2 = c.read_v2(args['reference'])
+    inp_2 = c.read_v2(args['corpus'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     past_type = args['past_type']
     print(past_type)
-    outp = process(inp_1, inp_2, char_map, past_type[2])
-    c.write(outp, args['outdir'], args['ofname'], past_type)
+    outp = process(inp_1, inp_2, char_map, past_type[2], args['exp_mod'])
+    # c.write(outp, args['outdir'], args['ofname'], past_type)
 
 
 if __name__ == '__main__':

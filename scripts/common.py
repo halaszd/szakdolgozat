@@ -7,7 +7,7 @@ def write(outp, odir, ofname, past_type, exp_mod):
     with open(os.path.join(odir, ofname), 'w', encoding='utf-8') as f:
         print('# {},{},{}'.format(past_type[0], past_type[1], past_type[2]), file=f)
         for item in outp:
-            if past_type[0] == 'form.' and exp_mod:
+            if exp_mod:
                 print('{}\t{}\t{}'.format(item[0], item[1], " || ".join(item[2])), file=f)
             else:
                 print('{}\t{}\t{}\t{}'.format(item[0], item[1], item[2], ','.join(item[3])), file=f)
@@ -22,6 +22,14 @@ def read_v1(inp):
 def read_v2(inp):
     with open(inp, 'r', encoding='utf-8') as f:
         return f.read()
+
+
+def get_path_lexicon(lexicons, t, t2):
+    return lexicons[t][t2]
+
+
+def get_lexicon(txt):
+    return [line.split('\t')[0].strip() for line in txt.split('\n')]
 
 
 def get_char_map(inp):
@@ -50,6 +58,17 @@ def gen_empty_years(years, pps):
     for i in range(start, end+1):
         if str(i) not in pps.keys():
             pps[str(i)] = [0, 1, []]
+
+
+def str2bool(v):
+    if isinstance(v, bool):
+        return v
+    if v.lower() in ('yes', 'true', 't', 'y', '1'):
+        return True
+    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
+        return False
+    else:
+        raise argparse.ArgumentTypeError('Boolean value expected.')
 
 
 def get_past_type(desc):

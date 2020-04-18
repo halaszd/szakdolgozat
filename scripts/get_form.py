@@ -15,18 +15,10 @@ import scripts.common as c
 # TODO csak a volt és csak a valát is létre kell hozni
 
 
-LEXICONS = {'perf.': {'vala': '../inputs/init/form/perf_vala.txt',
-                      'volt': '../inputs/init/form/perf_volt.txt'},
-            'imp.': {'vala': '../inputs/init/form/imp_vala.txt',
-                     'volt': '../inputs/init/form/imp_volt.txt'}}
-
-
-def get_path_lexicon(t, t2):
-    return LEXICONS[t][t2]
-
-
-def get_lexicon(txt):
-    return [line.split('\t')[0].strip() for line in txt.split('\n')]
+LEXICONS = {'perf.': {'vala': '../inputs/form/lexicons/perf_vala.txt',
+                      'volt': '../inputs/form/lexicons/perf_volt.txt'},
+            'imp.': {'vala': '../inputs/form/lexicons/imp_vala.txt',
+                     'volt': '../inputs/form/lexicons/imp_volt.txt'}}
 
 
 def get_freq_types(hits, pps=None):
@@ -56,7 +48,7 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
         # pps[year][2] += hits
 
 
-def form_past_perf(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon=None):
+def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon=None):
     stop_affixes = ('sag', 'seg', 'ás', 'és', 'ös' 'ős', 'ós', 'endó', 'endő', 'endo', 'andó', 'andő', 'ando',
                     'ban', 'ben', 'ba', 'be', 'lan', 'len', 'lán', 'lén', 'b', 'bb', 'tól', 'től', 'ból', 'ből',
                     'wa', 'we', 'va', 've', 'ka', 'ke',)
@@ -137,7 +129,7 @@ def process(inp, char_map, asp, vala_volt, is_discr, exp_mod, lexicon):
     pps = defaultdict(lambda: [0, []]) if exp_mod else defaultdict(lambda: [0, 0, []])
     for txt in inp:
         txt, year = preprocess(txt, char_map)
-        form_past_perf(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon)
+        find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon)
 
     if exp_mod:
         return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
@@ -156,47 +148,36 @@ def process(inp, char_map, asp, vala_volt, is_discr, exp_mod, lexicon):
     # return [(elem[0], elem[1][0], elem[1][2], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
 
-def str2bool(v):
-    if isinstance(v, bool):
-        return v
-    if v.lower() in ('yes', 'true', 't', 'y', '1'):
-        return True
-    elif v.lower() in ('no', 'false', 'f', 'n', '0'):
-        return False
-    else:
-        raise argparse.ArgumentTypeError('Boolean value expected.')
-
-
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
     parser.add_argument('-c', '--charmap', help='Path to charmap tsv', nargs='?', default='../inputs/init/char_map.txt')
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/form')
     parser.add_argument('-e', '--exp_mod', help='Output is not freq. list but a word list with examples',
-                        nargs='?', type=str2bool, const=True, default=False)
+                        nargs='?', type=c.str2bool, const=True, default=False)
     parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_form_output.txt')
     parser.add_argument('-l', '--def_lexicon', help='Allowing default lexicons',
-                        nargs='?', type=str2bool, const=True, default=False)
+                        nargs='?', type=c.str2bool, const=True, default=False)
     parser.add_argument('-m', '--opt_lexicon', help='Path to lexicon(s)')
     parser.add_argument('-t', '--past_type',
                         help='Which text and past type it is. Separated by column, eg. INFORM.,PERF.,VALA',
                         default='# INFORM.,PERF.,VALA')
-    parser.add_argument('-x', '--not_in_lexicon', help='Using lexicon for discrimination', nargs='?',
-                        type=str2bool, const=True, default=False)
+    parser.add_argument('-x', '--is_discr', help='Using lexicon for discrimination', nargs='?',
+                        type=c.str2bool, const=True, default=False)
 
     args = parser.parse_args()
 
     txt_type, asp, vala_volt = c.get_past_type(args.past_type)
     lexicon = None
     if args.def_lexicon:
-        lexicon = get_lexicon(c.read_v2(get_path_lexicon(asp, vala_volt)))
+        lexicon = c.get_lexicon(c.read_v2(c.get_path_lexicon(asp, vala_volt)))
     elif args.opt_lexicon:
         lexicon = []
         for p in glob(args.opt_lexicon):
-            lexicon += get_lexicon(c.read_v2(p))
+            lexicon += c.get_lexicon(c.read_v2(p))
 
     return {'outdir': args.directory, 'files': args.filepath, 'ofname': args.ofname, 'charmap': args.charmap,
-            'past_type': (txt_type, asp, vala_volt), 'not_in_lexicon': args.not_in_lexicon, 'lexicon': lexicon,
+            'past_type': (txt_type, asp, vala_volt), 'is_discr': args.is_discr, 'lexicon': lexicon,
             'exp_mod': args.exp_mod}
 
 
@@ -205,7 +186,7 @@ def main():
     inp = c.read_v1(args['files'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     txt_type, asp, vala_volt = args['past_type']
-    outp = process(inp, char_map, asp, vala_volt, args['not_in_lexicon'], args['exp_mod'], args['lexicon'])
+    outp = process(inp, char_map, asp, vala_volt, args['is_discr'], args['exp_mod'], args['lexicon'])
     c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['exp_mod'])
 
 
