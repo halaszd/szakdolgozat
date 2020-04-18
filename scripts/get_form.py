@@ -56,7 +56,7 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
         # pps[year][2] += hits
 
 
-def form_past_perf(txt, year, vala_volt, asp, pps, is_discr, lexicon=None):
+def form_past_perf(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon=None):
     stop_affixes = ('sag', 'seg', 'ás', 'és', 'ös' 'ős', 'ós', 'endó', 'endő', 'endo', 'andó', 'andő', 'ando',
                     'ban', 'ben', 'ba', 'be', 'lan', 'len', 'lán', 'lén', 'b', 'bb', 'tól', 'től', 'ból', 'ből',
                     'wa', 'we', 'va', 've', 'ka', 'ke',)
@@ -97,8 +97,7 @@ def form_past_perf(txt, year, vala_volt, asp, pps, is_discr, lexicon=None):
                 hits.append((hit, context))
         elif hit in lexicon:
             hits.append((hit, context))
-
-    if (is_discr or not lexicon) and not asp.startswith('neutr'):
+    if exp_mod:
         get_freq_types(hits, pps)
 
     else:
@@ -134,14 +133,13 @@ def preprocess(txt, char_map):
     return txt.lower(), year
 
 
-def process(inp, char_map, asp, vala_volt, is_discr, lexicon):
-    pps = defaultdict(lambda: [0, []]) if (is_discr or not lexicon) and not asp.startswith('neutr') \
-        else defaultdict(lambda: [0, 0, []])
+def process(inp, char_map, asp, vala_volt, is_discr, exp_mod, lexicon):
+    pps = defaultdict(lambda: [0, []]) if exp_mod else defaultdict(lambda: [0, 0, []])
     for txt in inp:
         txt, year = preprocess(txt, char_map)
-        form_past_perf(txt, year, vala_volt, asp, pps, lexicon, is_discr)
+        form_past_perf(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon)
 
-    if (is_discr or not lexicon) and not asp.startswith('neutr'):
+    if exp_mod:
         return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
     c.gen_empty_years(sorted(pps.keys(), key=lambda y: y), pps)
@@ -174,6 +172,8 @@ def get_args():
     parser.add_argument('filepath', help='Path to file', nargs='+')
     parser.add_argument('-c', '--charmap', help='Path to charmap tsv', nargs='?', default='../inputs/init/char_map.txt')
     parser.add_argument('-d', '--directory', help='Path of output file(s)', nargs='?', default='../outputs/form')
+    parser.add_argument('-e', '--exp_mod', help='Output is not freq. list but a word list with examples',
+                        nargs='?', type=str2bool, const=True, default=False)
     parser.add_argument('-f', '--ofname', help='Output filename', nargs='?', default='freq_form_output.txt')
     parser.add_argument('-l', '--def_lexicon', help='Allowing default lexicons',
                         nargs='?', type=str2bool, const=True, default=False)
@@ -187,7 +187,6 @@ def get_args():
     args = parser.parse_args()
 
     txt_type, asp, vala_volt = c.get_past_type(args.past_type)
-
     lexicon = None
     if args.def_lexicon:
         lexicon = get_lexicon(c.read_v2(get_path_lexicon(asp, vala_volt)))
@@ -197,7 +196,8 @@ def get_args():
             lexicon += get_lexicon(c.read_v2(p))
 
     return {'outdir': args.directory, 'files': args.filepath, 'ofname': args.ofname, 'charmap': args.charmap,
-            'past_type': (txt_type, asp, vala_volt), 'not_in_lexicon': args.not_in_lexicon, 'lexicon': lexicon}
+            'past_type': (txt_type, asp, vala_volt), 'not_in_lexicon': args.not_in_lexicon, 'lexicon': lexicon,
+            'exp_mod': args.exp_mod}
 
 
 def main():
@@ -205,8 +205,8 @@ def main():
     inp = c.read_v1(args['files'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     txt_type, asp, vala_volt = args['past_type']
-    outp = process(inp, char_map, asp, vala_volt, args['lexicon'], args['not_in_lexicon'])
-    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['not_in_lexicon'], asp, args['lexicon'])
+    outp = process(inp, char_map, asp, vala_volt, args['not_in_lexicon'], args['exp_mod'], args['lexicon'])
+    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['exp_mod'])
 
 
 if __name__ == '__main__':
