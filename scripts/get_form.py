@@ -96,9 +96,9 @@ def form_past_perf(txt, year, vala_volt, asp, pps, is_discr, lexicon=None):
             if hit not in lexicon:
                 hits.append((hit, context))
         elif hit in lexicon:
-            hits.append(hit)
+            hits.append((hit, context))
 
-    if is_discr or not lexicon:
+    if (is_discr or not lexicon) and not asp.startswith('neutr'):
         get_freq_types(hits, pps)
 
     else:
@@ -135,12 +135,13 @@ def preprocess(txt, char_map):
 
 
 def process(inp, char_map, asp, vala_volt, is_discr, lexicon):
-    pps = defaultdict(lambda: [0, []]) if is_discr or not lexicon else defaultdict(lambda: [0, 0, []])
+    pps = defaultdict(lambda: [0, []]) if (is_discr or not lexicon) and not asp.startswith('neutr') \
+        else defaultdict(lambda: [0, 0, []])
     for txt in inp:
         txt, year = preprocess(txt, char_map)
         form_past_perf(txt, year, vala_volt, asp, pps, lexicon, is_discr)
 
-    if is_discr or not lexicon:
+    if (is_discr or not lexicon) and not asp.startswith('neutr'):
         return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
     c.gen_empty_years(sorted(pps.keys(), key=lambda y: y), pps)
@@ -205,7 +206,7 @@ def main():
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     txt_type, asp, vala_volt = args['past_type']
     outp = process(inp, char_map, asp, vala_volt, args['lexicon'], args['not_in_lexicon'])
-    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['not_in_lexicon'], args['lexicon'])
+    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['not_in_lexicon'], asp, args['lexicon'])
 
 
 if __name__ == '__main__':

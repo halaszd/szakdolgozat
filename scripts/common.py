@@ -2,12 +2,12 @@
 import os
 
 
-def write(outp, odir, ofname, past_type, first_step=False, lexicon=None):
+def write(outp, odir, ofname, past_type, is_discr, asp, lexicon=None):
     os.makedirs(odir, exist_ok=True)
     with open(os.path.join(odir, ofname), 'w', encoding='utf-8') as f:
         print('# {},{},{}'.format(past_type[0], past_type[1], past_type[2]), file=f)
         for item in outp:
-            if past_type[0] == 'form.' and (first_step or not lexicon):
+            if past_type[0] == 'form.' and not asp.startswith('neutr') and (is_discr or not lexicon):
                 print('{}\t{}\t{}'.format(item[0], item[1], " || ".join(item[2])), file=f)
             else:
                 print('{}\t{}\t{}\t{}'.format(item[0], item[1], item[2], ','.join(item[3])), file=f)
