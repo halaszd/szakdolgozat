@@ -114,6 +114,9 @@ def process(inp_1, inp_2, char_map, vala_volt, exp_mod):
         txt = preprocess(txt, char_map)
         find_past(txt, vala_volt, pps, exp_mod)
 
+    if exp_mod:
+        return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
+
     all_words = get_all_words(inp_2)
     for key in all_words.keys():
         if key in pps.keys():
@@ -167,7 +170,7 @@ def main():
     past_type = args['past_type']
     print(past_type)
     outp = process(inp_1, inp_2, char_map, past_type[2], args['exp_mod'])
-    # c.write(outp, args['outdir'], args['ofname'], past_type)
+    c.write(outp, args['outdir'], args['ofname'], past_type, args['exp_mod'])
 
 
 if __name__ == '__main__':
