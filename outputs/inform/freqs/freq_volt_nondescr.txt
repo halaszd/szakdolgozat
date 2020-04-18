@@ -286,6 +286,3 @@
 1769	0	1	
 1770	0	1	
 1771	9	2001	sobráknénak vólt,nézve vólt,ott vólt,olyan vólt,takaródzója vólt,szunyoghálója vólt,késő vólt,őfelőlle vólt,nem vólt
-?	3	0	burka volt,beteg volt,nem volt
-?1692	1	0	nem volt
-?1708	2	0	hír volt,discretio volt

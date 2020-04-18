@@ -12,8 +12,8 @@ LINES = {'inform.':
                   {'vala': ('green', '-'),
                    'volt': ('brown', '-')},
               'neutr.':
-                  {'vala': ('green', '-'),
-                   'volt': ('brown', '-')}},
+                  {'vala': ('red', '-'),
+                   'volt': ('yellow', '-')}},
          'form.':
              {'perf.':
                   {'vala': ('red', '--'),
@@ -22,8 +22,8 @@ LINES = {'inform.':
                   {'vala': ('green', '--'),
                    'volt': ('brown', '--')},
               'neutr.':
-                  {'vala': ('green', '-'),
-                   'volt': ('brown', '-')}}}
+                  {'vala': ('red', '-'),
+                   'volt': ('yellow', '-')}}}
 
 
 def read(inp):
