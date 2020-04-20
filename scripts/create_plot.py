@@ -6,36 +6,38 @@ sys.path.append('../')
 from scripts.common import str2bool
 
 # TODO: megcsinálni újra az összes diagramot, utána szakdogaírás:
-# form: all, valavolt_descr, valavolt_nondescr
-# inform: all, valavolt_descr, valavolt_nondescr
-# form-inform: perfektum vala+volt, valavolt_descr, valavolt_nondescr, imperfektum vala+volt
+# kész: form: all, valavolt_discr, valavolt_nondescr
+# kész: inform: all, valavolt_discr, valavolt_nondiscr
+
+# kész form-inform: perfektum vala+volt, valavolt_descr, valavolt_nondiscr,
+# imperfektum vala+volt
 
 LINES = {'inform.':
              {'perf.':
                   {'vala': ('red', '-'),
-                   'volt': ('yellow', '-')},
+                   'volt': ('blue', '-')},
               'imp.':
                   {'vala': ('green', '-'),
                    'volt': ('brown', '-')},
-              'descr.':
+              'discr.':
                   {'vala': ('red', '-'),
-                   'volt': ('yellow', '-')},
-              'non descr.':
+                   'volt': ('blue', '-')},
+              'non discr.':
                   {'vala': ('red', '-'),
-                   'volt': ('yellow', '-')}},
+                   'volt': ('blue', '-')}},
          'form.':
              {'perf.':
                   {'vala': ('red', '--'),
-                   'volt': ('yellow', '--')},
+                   'volt': ('blue', '--')},
               'imp.':
                   {'vala': ('green', '--'),
                    'volt': ('brown', '--')},
-              'descr.':
+              'discr.':
                   {'vala': ('red', '--'),
-                   'volt': ('yellow', '--')},
-              'non descr.':
+                   'volt': ('blue', '--')},
+              'non discr.':
                   {'vala': ('red', '--'),
-                   'volt': ('yellow', '--')}
+                   'volt': ('blue', '--')}
               }}
 
 
@@ -127,7 +129,8 @@ def process(inp, interval, is_mixed):
     for freq_ls in all_freq_ls:
         past_type = freq_ls.pop(0)
         freq_ls = split_years(freq_ls, interval)
-        get_plot(freq_ls, past_type, '{} {} + {}'.format(past_type[0], past_type[1], past_type[2]))
+        join_with = '{} {} + {}' if 'discr' not in past_type[1].lower() else '{} {} {}'
+        get_plot(freq_ls, past_type, join_with.format(past_type[0], past_type[1], past_type[2]))
     plt.legend()
     plt.show()
 

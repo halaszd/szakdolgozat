@@ -1,4 +1,4 @@
-# inform.,non descr.,volt
+# inform.,non discr.,volt
 1485	0	1	
 1486	0	1	
 1487	0	1	

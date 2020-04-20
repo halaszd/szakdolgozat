@@ -1,4 +1,4 @@
-# form.,non descr.,volt
+# form.,non discr.,volt
 1433	1.12	1602.65	
 1434	1.12	1602.65	
 1435	1.12	1602.65	
