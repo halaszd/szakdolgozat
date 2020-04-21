@@ -64,8 +64,6 @@ def process(inp):
 
 
 def main():
-    # fpath = '../SzovSzerk/'
-    # files = glob(fpath + 'Vfin_apr15.txt')
     fpath = '../betuhu_form_txts/'
     files = glob(fpath + '*.txt')
     inp = read(files)

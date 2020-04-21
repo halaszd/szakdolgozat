@@ -64,7 +64,7 @@ def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
         pat_past = re.compile(r'[vuw]ala\b', re.I)
     else:
         pat_past = re.compile(r'[vuwú][oó]l*t+h?\b', re.I)
-    if asp.startswith('neutr'):
+    if asp.startswith('discr'):
         pat_past = re.compile(r'[a-záöőüűóúéí]+\s*' + pat_past.pattern, re.I)
 
     pat_sqr_bracket = re.compile(r'\[\[(.+?)]')
@@ -72,35 +72,34 @@ def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
     pat_to_repl = re.compile(r'[[\]|{}]')
     txt = txt.split('\n')
 
-    # TESZTELÉSHEZ
-    # matches = []  # hibák kiszűrése, ha esetlen nem talál keresett múlt időt
-
     for line in txt:
         line = line.rstrip().split('\t')
         if len(line) == 9:
             year = line[2]
             sent = line[-1]
-            if not asp.startswith('neutr'):
+            if not asp.startswith('discr'):
                 pot_hits = pat_sqr_bracket.findall(sent) + pat_crl_bracket.findall(sent)
             else:
                 sent = pat_to_repl.sub('', sent)
                 pot_hits = pat_past.findall(sent)
 
-            if year != '':
-                for pot_hit in pot_hits:
-                    if asp.startswith('neutr') or pat_past.search(pot_hit):
-                        pts = [pt.strip() for pt in pot_hit.split()]
-                        fpt = pts[0].lower()
-                        # informálisnál ha van lexikon, akkor biztos, hogy diszkriminatívan lesz használva
-                        if fpt not in lexicon:
-                            # ha exp_mod, akkor a szó a kulcs és defaultdict(lambda: [0, []])
-                            if exp_mod:
-                                pps[fpt][0] += 1
-                                pps[fpt][1].append(sent)
-                            # különben az évszám a kulcs és defaultdict(lambda: [0, 0, []])
-                            else:
-                                pps[year][2].append(' '.join(pts).lower())
-                                pps[year][0] += 1
+            if year == '':
+                continue
+
+            for pot_hit in pot_hits:
+                if asp.startswith('discr') or pat_past.search(pot_hit):
+                    pts = [pt.strip() for pt in pot_hit.split()]
+                    fpt = pts[0].lower()
+                    # informálisnál ha van lexikon, akkor biztos, hogy diszkriminatívan lesz használva
+                    if fpt not in lexicon:
+                        # ha exp_mod, akkor a szó a kulcs és defaultdict(lambda: [0, []])
+                        if exp_mod:
+                            pps[fpt][0] += 1
+                            pps[fpt][1].append(sent)
+                        # különben az évszám a kulcs és defaultdict(lambda: [0, 0, []])
+                        else:
+                            pps[year][2].append(' '.join(pts).lower())
+                            pps[year][0] += 1
 
 
 def preprocess(txt, char_map):

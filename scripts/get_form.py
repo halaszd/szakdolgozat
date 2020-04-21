@@ -9,10 +9,6 @@ from string import punctuation as puncts
 sys.path.append('../')
 import scripts.common as c
 
-# TODO: letölteni az Ómagyar korpusz-t, feldarabolni szóközök mentén -->
-# TODO --> egyenlő a tokenizálással, mert a szavak le vannak választva a központozásról
-# TODO csak a volt és csak a valát is létre kell hozni
-
 
 LEXICONS = {'perf.': {'vala': '../inputs/form/lexicons/perf_vala.txt',
                       'volt': '../inputs/form/lexicons/perf_volt.txt'},
@@ -44,11 +40,9 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
         for i in range(int(years[0]), int(years[1])+1):
             pps[str(i)][0] += len(hits) / interval
             pps[str(i)][1] += doc_length / interval
-            # pps[i][2] += hits
     else:
         pps[year][0] += len(hits)
         pps[year][1] += doc_length
-        # pps[year][2] += hits
 
 
 def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
@@ -56,7 +50,6 @@ def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
                     'ban', 'ben', 'ba', 'be', 'lan', 'len', 'lán', 'lén', 'b', 'bb', 'tól', 'től', 'ból', 'ből',
                     'wa', 'we', 'va', 've', 'ka', 'ke',)
 
-    # todo: ttanak ttenek impnél
     pat_vala_volt = r'([vuw]ala\b)' if vala_volt == "vala" else r'([vuwú][oó]l*t+h?)\b'
 
     if asp.startswith('perf'):
