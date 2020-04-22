@@ -1,0 +1,11 @@
+				15.század	16.század 	17.század	18.század
+				
+Összes szó:		155			132666		122056		940831
+Ø + vala		0			117			7			95
+Ø + volt		0			20			1			1
+-t(t) + vala	1			268			29			238
+-t(t) + volt	0			249			147			796
+!discr. vala	1			428			42			441
+!discr. volt	0			553			409			4058
+discr. vala		0			63			6			110
+discr. volt		0			296			263			3256
