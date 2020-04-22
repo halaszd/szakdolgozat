@@ -48,23 +48,25 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
 def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
     stop_affixes = ('sag', 'seg', 'ás', 'és', 'ös' 'ős', 'ós', 'endó', 'endő', 'endo', 'andó', 'andő', 'ando',
                     'ban', 'ben', 'ba', 'be', 'lan', 'len', 'lán', 'lén', 'b', 'bb', 'tól', 'től', 'ból', 'ből',
-                    'wa', 'we', 'va', 've', 'ka', 'ke',)
+                    'wa', 'we', 'va', 've', 'ka', 'ke')
 
-    pat_vala_volt = r'([vuw]ala\b)' if vala_volt == "vala" else r'([vuwú][oó]l*t+h?)\b'
+    pat_vala_volt = r'([vuw]ala\b)' if vala_volt == "vala" else r'([vuwú][oó]l*t+h?\b)'
 
     if asp.startswith('perf'):
         pat_past = re.compile(
             r"""
-            ([a-záöőüűóúéí]+?(?:t+h?
-            (?:[ea]m|ele[ck]|ala[ck]|
-            él|[ea]d|[áa]l|
-            a|e|
-            [üuöőw]n?[ck]|
-            [eé]te[ck]|[aá]to[ck]|
-            [eéáa][ck])?)
-            \s*)""" + pat_vala_volt, re.VERBOSE | re.IGNORECASE)
+            ([a-záöőüűóúéí]+?(?:t+h?    # Bármi egészen a t + esetleges személyragokig
+            (?:[ea]m|ele[ck]|ala[ck]|   # E/1
+            él|[ea]d|[áa]l|             # E/2
+            a|e|                        # E/3
+            [üuöőw]n?[ck]|              # T/1
+            [eé]te[ck]|[aá]to[ck]|      # T/2
+            [eéáa][ck])?)               # T/3, az eddig tartó rész egy elmenthető egység
+            \s*)"""                     # Utána nullával egyenlő vagy több whitespace
+            + pat_vala_volt,            # a vala vagy volt mintázat inputtól függően
+            re.VERBOSE | re.IGNORECASE)
 
-    elif asp.startswith('imp') or asp.startswith('neutr'):
+    elif asp.startswith('imp') or asp.startswith('discr'):
         pat_past = re.compile(r'([a-záöőüűóúéí]+\s*)' + pat_vala_volt, re.IGNORECASE)
 
     hits = []
@@ -72,10 +74,11 @@ def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
         bad_affix = False
         context = txt[hit.start() - 40:hit.start()] + txt[hit.start():hit.end() + 40]
         hit = hit.group(1).strip()
-        for affix in stop_affixes:
-            if hit.endswith(affix):
-                bad_affix = True
-                break
+        if not is_discr:
+            for affix in stop_affixes:
+                if hit.endswith(affix):
+                    bad_affix = True
+                    break
         if bad_affix:
             continue
         if not lexicon:
