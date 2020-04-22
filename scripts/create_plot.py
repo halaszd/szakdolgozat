@@ -44,6 +44,7 @@ LINES = {'inform.':
 def read(inp):
     for fl in inp:
         with open(fl, 'r', encoding='utf-8') as f:
+            print(fl)
             yield f.read()
 
 

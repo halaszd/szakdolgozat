@@ -84,7 +84,7 @@ def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
                 sent = pat_to_repl.sub('', sent)
                 pot_hits = pat_past.findall(sent)
 
-            if year == '':
+            if year == '' or year.startswith('?'):
                 continue
 
             for pot_hit in pot_hits:
