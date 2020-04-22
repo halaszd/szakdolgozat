@@ -1,3 +1,6 @@
 .idea/
 ignore/
 scripts/__init__.py
+scripts/__pycache__
+usage/
+
