@@ -1,8 +1,6 @@
 .idea/
 ignore/
+scripts/__pycache__
+usage
 scripts/__init__.py
-
-scripts/__pycache__/
-
-usage/
 
