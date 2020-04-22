@@ -1,12 +1,12 @@
 # inform.,non discr.,volt
-1485	0	1	
+1485	0	28	
 1486	0	1	
 1487	0	1	
 1488	0	1	
 1489	0	1	
 1490	0	1	
 1491	0	1	
-1492	0	1	
+1492	0	114	
 1493	0	1	
 1494	0	1	
 1495	0	1	
@@ -16,30 +16,30 @@
 1499	0	1	
 1500	0	1	
 1501	0	1	
-1502	0	1	
+1502	0	43	
 1503	0	1	
 1504	0	1	
-1505	0	1	
+1505	0	14	
 1506	0	1	
 1507	0	1	
 1508	0	1	
 1509	0	1	
-1510	0	1	
+1510	0	239	
 1511	0	1	
 1512	1	1029	zerzetek wolt
 1513	0	1	
 1514	0	1	
 1515	1	661	nem wolt
 1516	0	1	
-1517	0	1	
+1517	0	109	
 1518	0	1	
 1519	0	1	
 1520	0	1	
-1521	0	1	
+1521	0	179	
 1522	0	1	
 1523	4	224	nem wolth,atthak wolth,nem wolth,miath wolth
-1524	0	1	
-1525	0	1	
+1524	0	1330	
+1525	0	36	
 1526	7	2154	kezdetheth wolth,wetthe wolth,a woth,ıoual volt,hagyot volt,nem wolth,bizodalmam wolth
 1527	0	1	
 1528	0	1	
@@ -78,7 +78,7 @@
 1561	8	2612	otthon volt,lefeküdtem volt,mint volt,gondviselőm volt,atyjafiúság volt,ez volt,menthewnk wolt,betegseghe wolt
 1562	2	1729	hozta volt,haromszor volt
 1563	6	1630	attak woth,feletkeztem wolt,zoltam wolt,jrt wolt,aniwal wolt,kethzeör woth
-1564	0	1	
+1564	0	73	
 1565	11	1815	megheghöt wolt,tartoztatta wolt,atta wolt,wallot wolt,bettegh wolt,jwt wolt,ellen wolt,megheghet wolt,nalam volt,kertthe woltt,kwldeth volth
 1566	0	1	
 1567	3	1606	zolgaia wolt,jo volt,vgi volt
@@ -89,9 +89,9 @@
 1572	2	667	csudálkozásom volt,nehézségére volt
 1573	9	943	ot wolt,sem voth,nem wolt,farat voth,fogttak wolt,sem wolt,nem volt,sem wolt,az wolt
 1574	0	1	
-1575	0	1	
+1575	0	241	
 1576	0	1	
-1577	0	1	
+1577	0	188	
 1578	0	1	
 1579	2	651	jtal volt,de volt
 1580	9	1360	nem uolt,egy uolt,nem uolt,nem uolt,nem uolt,is uolt,debretzenben wolt,uiszontagh uolt,küldótt uolt
@@ -101,7 +101,7 @@
 1584	4	453	jwt wolt,dett wolt,jdejütt wolt,egedett wólt
 1585	0	1	
 1586	12	1359	haragia uoltt,nem uoltt,nem uoltt,üdeőkben uoltt,igh uoltt,zenank volt,mert volt,egetnek volt,tagadiak volt,adot volt,tt volt,igy volt
-1587	0	1	
+1587	0	67	
 1588	6	999	is uolt,kűltem uolt,raktad uolt,lettűnk uolt,nem uolt,helie uolt
 1589	46	8634	nem volth,oktanak volth,atiank uolt,ez uolt,nem uolt,bizodalmom uolt,nem uolt,nem uolt,elkuldotth uoltth,elkjrte uolt,meghkjrte uolt,megatta uolt,elejnki uolt,huzoneggjel uolt,akor volt,elment uolth,mentek uolt,ittak uolt,mentek uolt,uizzayouoben uolt,ez uolt,kj uolt,zalat wolt,sem uolt,irtam uolt,jutotth uolt,louan uolt,ueztette uoltth,konnjen uolt,sok uolt,veotte volt,attam uolt,irtam uolt,itdizno uoltth,tizeddizno uolth,kjjutot uoltth,ueth uoltth,nem uolt,mellettunk uolt,egessegem volt,irta volt,nem volt,sem volt,napigh volt,nem volt,beteges wolt
 1590	16	6882	sem uolt,sem uolt,be uolt,erekezdet volt,meghirtam volt,marath volt,kelletj uolt,hagiott uolt,urr uot,ellragatta woltt,ketteő woltt,warmegjekben woltt,bayom woltt,iktatta woltt,egjut wólt,talal wolt
@@ -119,8 +119,8 @@
 1602	0	1	
 1603	0	1	
 1604	9	1267	nem volt,hozták volt,édesatyja volt,oly volt,me uolt,egessegben uolt,uet uolt,tehenkeie uolt,is uolt
-1605	0	1	
-1606	0	1	
+1605	0	422	
+1606	0	48	
 1607	3	619	kezdette volt,eget volt,hozot volt
 1608	1	67	tarsasagokban volt
 1609	0	1	
@@ -134,15 +134,15 @@
 1617	2	397	lattam uolt,nem uolt
 1618	1	100	kultem uolt
 1619	5	643	küldöttem uolt,akor uolt,kibontakoztak uolt,ertettűnk uolt,sem uolt
-1620	0	1	
+1620	0	72	
 1621	3	515	vtunk uolt,louass uolt,nem uolt
 1622	1	327	nem uolt
 1623	0	1	
 1624	0	1	
 1625	2	336	adot uolt,szüksegem uolt
-1626	0	1	
+1626	0	83	
 1627	1	946	a uolt
-1628	0	1	
+1628	0	222	
 1629	1	711	is uolt
 1630	1	2122	nem volt
 1631	17	4414	fazek volt,estendöben uolt,fazek volt,istuanne uolt,foghua uolt,ados uolt,hazban uolt,solgaia uolt,azelleöt volt,megesmerkettem volt,vetettem volt,nem volt,vittem volt,nem volt,emberrel volt,esmeretsegem volt,ez volt
@@ -159,8 +159,8 @@
 1642	1	169	sem volt
 1643	1	521	hadban uolt
 1644	0	1	
-1645	0	1	
-1646	0	1	
+1645	0	677	
+1646	0	821	
 1647	16	4540	kiszitett uolt,betegh uolt,olian uolt,bantassok uolt,uagj uolt,gaboniaia uolt,zoia uolt,maradot uolt,altalmentenek uolt,is uolt,közlegény uolt,nem uolt,izent uolt,teörheteökepen volt,elmentenek volt,mulatom volt
 1648	37	9276	elmarasztották volt,fogva volt,pálné volt,boszorkány volt,pálne volt,tiznek volt,eldagadot volt,fogva volt,nem volt,eőnéki volt,azmint volt,vallott volt,előt vólt,nálok volt,tállián volt,ideie uolt,miklosne uolt,ueszedelme uolt,gaz uolt,meghueztettek uolt,meghueztettek uolt,biraia uolt,uet uolt,az uolt,között uolt,chatara uolt,szorétott uolt,hirdettetet uolt,kertem uolt,eluittem uolt,jona uolt,felluertem uolt,praesidentseghről uolt,geöttenek uolt,az uolt,uegesztünk uolt,viszatertenek volt
 1649	4	3012	meghfogtanak uolt,is uolt,meghirtam uolt,szandekom uolt
@@ -170,36 +170,36 @@
 1653	18	5080	iambor volt,cinált volt,olj uolt,kék uolt,ranssupoczban uolt,harakiok uolt,melett uolt,szegenj uolt,adot uolt,be uolt,köröszt uolt,lipet uolt,fogua uolt,feketj uolt,foghua uolt,felment uolt,ment uolt,uegeztem uolt
 1654	12	4810	fogva volt,ot volt,elveszet volt,holdvilagh volt,nem volt,is volt,meghütötem volt,vilagossag volt,eldagadoszot volt,inquiraltattam uolt,aga uolt,auagy uolt
 1655	5	2444	ala uolt,is uolt,is uolt,szandekok uolt,boszorkan uolt
-1656	0	1	
+1656	0	845	
 1657	1	866	keserü uolt
-1658	0	1	
-1659	0	1	
+1658	0	129	
+1659	0	325	
 1660	4	1765	it volt,nem volt,is volt,fogdtak uolt
-1661	0	1	
+1661	0	137	
 1662	0	1	
 1663	0	1	
 1664	7	1265	is volt,levetközöt uolt,kertek uolt,izben uolt,sem uolt,öszueszolakodot uolt,tetettette uolt
 1665	10	3409	mindaddigh volt,eö volt,ielen volt,teste volt,esztendeigh volt,ezen volt,boszorkanj volt,is volt,hintven volt,is volt
-1666	0	1	
-1667	0	1	
+1666	0	669	
+1667	0	148	
 1668	0	1	
 1669	0	1	
 1670	1	343	certificaltatot volt
-1671	0	1	
+1671	0	330	
 1672	0	1	
 1673	0	1	
 1674	0	1	
 1675	0	1	
-1676	0	1	
+1676	0	625	
 1677	8	1858	nyavaliánk volt,töröt volt,kinban volt,macska volt,szolgáia volt,boriuzatban volt,aszszony volt,ugy volt
 1678	0	1	
-1679	0	1	
+1679	0	1530	
 1680	0	1	
 1681	0	1	
 1682	0	1	
 1683	0	1	
 1684	0	1	
-1685	0	1	
+1685	0	195	
 1686	0	1	
 1687	0	1	
 1688	1	809	nem volt
@@ -207,11 +207,11 @@
 1690	1	910	vak volt
 1691	6	2255	az volt,csiga volt,korában volt,ki volt,nem volt,között volt
 1692	23	5612	ki vólt,nem vólt,kéntelen vólt,ki vólt,tavoly vólt,ben volt,rab vólt,kapitányné vólt,susannáé vólt,is vólt,tavaszt vólt,békanyálforma vólt,annyira volt,annyira volt,nem volt,annyira volt,annyira volt,annyira volt,nem volt,annyira volt,ammint volt,jo volt,akkor volt
-1693	0	1	
+1693	0	378	
 1694	0	1	
 1695	0	1	
-1696	0	1	
-1697	0	1	
+1696	0	356	
+1697	0	56	
 1698	19	3352	írtam volt,úgy volt,elment volt,odavolt,adták volt,ment volt,megbúsult volt,elkísérték volt,itthon volt,küldött volt,nem volt,is volt,megrezzentek volt,elmúlt volt,szép volt,írt volt,írta volt,ment volt,rómába volt
 1699	13	2584	viasszal volt,hozott volt,vette volt,dűltek volt,hajdú volt,emberre volt,adta volt,gyanusághom volt,czimborája volt,elégh volt,nem volt,ott volt,oda volt
 1700	13	2455	beteg vólt,vetették vólt,jelen volt,sohasem volt,jelen vólt,bartané vólt,közül vólt,döfött vólt,jelen volt,házban vólt,jelen volt,azelőtt vólt,gyogyult vólt
@@ -277,12 +277,15 @@
 1760	17	3484	uram volt,lakván volt,nem volt,dorára volt,petsét volt,levele volt,petsét volt,nehéz volt,informaltak volt,vit volt,eszkőze volt,nem volt,ugy volt,borbára volt,borbárának volt,esztendős volt,jesuita volt
 1761	22	6614	sűkeres volt,hintettek volt,irta volt,nem volt,nyert volt,solicitáltam volt,gondgya volt,ember volt,nemesember volt,faradot volt,dologban volt,gombostö volt,időseb volt,kegyeség volt,franciáson volt,állott vólt,nem vólt,nyavalyában vólt,istvánné vólt,ébren vólt,való vólt,harmadéve vólt
 1762	2	1644	roszul voltt,álatt volt
-1763	0	1	
+1763	0	97	
 1764	3	2684	kenőcse volt,ümög volt,pénz vólt
 1765	0	1	
 1766	5	633	oda volt,hol volt,köztük volt,ferjfi volt,szájában vólt
 1767	26	6166	alig volt,ehes volt,elötte volt,bé volt,földben volt,is volt,tselekedet volt,ivott,ként volt,ivott,is volt,alatt volt,való volt,izben volt,sinlődő volt,csordásnéja volt,törsök volt,odatette volt,sem volt,nem volt,macska volt,macska volt,való volt,jánosnénál volt,is volt,sem volt
 1768	0	1	
-1769	0	1	
+1769	0	70	
 1770	0	1	
 1771	9	2001	sobráknénak vólt,nézve vólt,ott vólt,olyan vólt,takaródzója vólt,szunyoghálója vólt,késő vólt,őfelőlle vólt,nem vólt
+?	3	0	burka volt,beteg volt,nem volt
+?1692	1	0	nem volt
+?1708	2	0	hír volt,discretio volt

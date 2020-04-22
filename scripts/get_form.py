@@ -160,7 +160,7 @@ def get_args():
     parser.add_argument('-m', '--opt_lexicon', help='Path to lexicon(s)')
     parser.add_argument('-t', '--past_type',
                         help='Which text and past type it is. Separated by column, eg. INFORM.,PERF.,VALA',
-                        default='# INFORM.,PERF.,VALA')
+                        default='# inform.,perf.,vala')
     parser.add_argument('-x', '--is_discr', help='Using lexicon for discrimination', nargs='?',
                         type=c.str2bool, const=True, default=False)
 

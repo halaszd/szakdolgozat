@@ -1,0 +1,288 @@
+# inform.,imp.,vala
+1485	0	28	
+1486	0	1	
+1487	0	1	
+1488	0	1	
+1489	0	1	
+1490	0	1	
+1491	0	1	
+1492	0	114	
+1493	0	1	
+1494	0	1	
+1495	0	1	
+1496	0	1	
+1497	0	1	
+1498	0	1	
+1499	0	1	
+1500	0	1	
+1501	0	1	
+1502	0	43	
+1503	0	1	
+1504	0	1	
+1505	0	14	
+1506	0	1	
+1507	0	1	
+1508	0	1	
+1509	0	1	
+1510	0	239	
+1511	0	1	
+1512	0	1029	
+1513	0	1	
+1514	0	1	
+1515	0	661	
+1516	0	1	
+1517	0	109	
+1518	0	1	
+1519	0	1	
+1520	0	1	
+1521	0	179	
+1522	0	1	
+1523	0	224	
+1524	1	1330	megserzem| wala ||
+1525	0	36	
+1526	3	2154	welem wala,fogadot vala. ||,kissebeith@ wala|
+1527	0	1	
+1528	0	1	
+1529	0	1	
+1530	0	1	
+1531	0	1	
+1532	0	507	
+1533	0	1	
+1534	0	1	
+1535	0	1	
+1536	0	1	
+1537	0	1	
+1538	0	1741	
+1539	0	1	
+1540	0	1	
+1541	0	1011	
+1542	6	1956	akarom vala,múlik vala, ||,akar vala,akarok vala,félek vala,hallhatok vala
+1543	0	578	
+1544	0	193	
+1545	0	880	
+1546	0	713	
+1547	0	704	
+1548	3	3344	elbocsátja vala,kérdi vala, ||,adhatok vala, ||
+1549	3	2057	tudom vala, ||,akarok vala,akarok vala
+1550	7	3725	akar vala,könyörög vala,kívánja vala, ||,várom vala,engedi vala, ||,főzik vala ||,kírek vala
+1551	3	2977	köszöni vala, ||,írja vala, ||,várom vala
+1552	5	2680	mennek vala. ||,akarom vala,félek vala. ||,harangoznak vala, ||,emlékeztetem vala
+1553	1	1082	illetik vala, ||
+1554	4	2079	érek vala, ||,leszen vala, ||,kelly vala,megérem vala, ||
+1555	3	1215	állétom vala, ||,kévánom vala, ||,láthatom vala. ||
+1556	0	2683	
+1557	4	2797	várjok vala ||,leszen vala, ||,megyek vala, ||,viszket vala, ||
+1558	8	6358	várom vala,mondod vala, ||,mondod vala,akarja vala, ||,mondja vala, ||,tartja vala,perlik vala, ||,reménylem vala
+1559	7	7806	félek vala, ||,elbocsátnak vala,vélem vala; ||,megkészülhet vala, ||,akarok vala,mer vala,kinálom vala, ||
+1560	7	4899	leszen vala, ||,készölök vala ||,fekszünk vala, ||,félek vala,mondja vala,kell vala,kell vala
+1561	1	2612	kell vala
+1562	1	1729	kwldwnk wala ||
+1563	0	1630	
+1564	0	73	
+1565	0	1815	
+1566	0	1	
+1567	1	1606	meghteer vala
+1568	3	10367	mondja vala, ||,akarok vala,zolok wala
+1569	6	7726	megkérdem vala,írok vala,búsétom vala, ||,ugrálik vala, ||,akarom vala ||,veghezme=hett vala
+1570	3	2722	akarok wala,bezellj wala, ||,agja wala
+1571	0	837	
+1572	0	667	
+1573	1	943	laknak wala
+1574	0	1	
+1575	0	241	
+1576	0	1	
+1577	2	188	meglehet vala,keŭania vala ||
+1578	0	1	
+1579	0	651	
+1580	0	1360	
+1581	0	1	
+1582	0	1	
+1583	0	171	
+1584	0	453	
+1585	0	1	
+1586	0	1359	
+1587	0	67	
+1588	1	999	latom uala ||
+1589	10	8634	uilem uala,megenged uala, ||,ebillem wala ||,elkuldom uala ||,eluezodom wala ||,hituankoznak uala ||,meghuezem uala,ilteti wala, ||,megaggya wala,ismerem wala. ||
+1590	10	6882	gjözük uala,mongia uala,keri uala ||,tanull wala, ||,kewanom wala,lyzen wala, ||,ir wala,migjen wala,ir vala,djferalhattjuk wala
+1591	5	5367	ker vala,ilunk vala ||,nezok vala ||,ker vala,!kir uala ||
+1592	1	3249	akar uala
+1593	3	2750	remilljük@ uala ||,esik uala,lóuóldózik uala, ||
+1594	2	6791	hallom uala ||,küldj uala
+1595	1	1269	varom vala ||
+1596	0	825	
+1597	1	643	hiaz vala,
+1598	0	1	
+1599	0	1	
+1600	1	1893	akarok vala
+1601	0	1	
+1602	0	1	
+1603	0	1	
+1604	0	1267	
+1605	0	422	
+1606	0	48	
+1607	0	619	
+1608	0	67	
+1609	0	1	
+1610	0	1	
+1611	0	1	
+1612	0	1	
+1613	0	1	
+1614	0	1	
+1615	0	1	
+1616	0	1	
+1617	0	397	
+1618	0	100	
+1619	0	643	
+1620	0	72	
+1621	0	515	
+1622	0	327	
+1623	0	1	
+1624	0	1	
+1625	0	336	
+1626	0	83	
+1627	0	946	
+1628	0	222	
+1629	0	711	
+1630	1	2122	kiuanom uala ||
+1631	0	4414	
+1632	0	4275	
+1633	1	10005	állok uala
+1634	0	2417	
+1635	0	1169	
+1636	0	2829	
+1637	0	2564	
+1638	0	3368	
+1639	3	2458	remenlem uala,beszellik uala ||,akarom uala
+1640	0	5366	
+1641	0	1714	
+1642	0	169	
+1643	0	521	
+1644	0	1	
+1645	0	677	
+1646	0	821	
+1647	0	4540	
+1648	0	9276	
+1649	0	3012	
+1650	0	3341	
+1651	0	2636	
+1652	0	2585	
+1653	0	5080	
+1654	0	4810	
+1655	1	2444	akariak vala
+1656	0	845	
+1657	0	866	
+1658	0	129	
+1659	0	325	
+1660	0	1765	
+1661	0	137	
+1662	0	1	
+1663	0	1	
+1664	0	1265	
+1665	0	3409	
+1666	0	669	
+1667	0	148	
+1668	0	1	
+1669	0	1	
+1670	0	343	
+1671	0	330	
+1672	0	1	
+1673	0	1	
+1674	0	1	
+1675	0	1	
+1676	0	625	
+1677	0	1858	
+1678	0	1	
+1679	0	1530	
+1680	0	1	
+1681	0	1	
+1682	0	1	
+1683	0	1	
+1684	0	1	
+1685	0	195	
+1686	0	1	
+1687	0	1	
+1688	0	809	
+1689	0	1	
+1690	0	910	
+1691	0	2255	
+1692	0	5612	
+1693	0	378	
+1694	0	1	
+1695	0	1	
+1696	0	356	
+1697	0	56	
+1698	0	3352	
+1699	0	2584	
+1700	0	2455	
+1701	0	1408	
+1702	0	2646	
+1703	0	6184	
+1704	2	11281	kel vala,akarom vala
+1705	9	29831	írja vala,!jő vala,levágathatok vala,leszek vala. ||,akar vala,leszen vala,találok vala,lehet vala,kell vala
+1706	7	41722	megbarátkoznak vala,beküldök vala, ||,várom vala,,odamegyen vala, ||,akarom vala,kell vala, ||,várom vala, ||
+1707	1	5314	kel vala, ||
+1708	6	22250	meghaladom vala. ||,kell vala,beszéllek vala,beszéllek vala,lesz vala, ||,indítom vala, ||
+1709	2	17135	tudósíthatom vala,szalad vala
+1710	2	27871	csinál vala,lesz vala
+1711	2	13937	elindulok vala, ||,elindulok vala. ||
+1712	3	26584	ültet vala,adok vala,comitál vala, ||
+1713	0	6713	
+1714	1	20343	kivánnya vala
+1715	3	20443	kételkedünk vala, ||,mondgya vala,kénszerget vala) ||
+1716	1	35827	varok vala
+1717	6	24869	akarjak vala,akarnak vala,könyörül vala. ||,kell vala,bocsátom vala,kivánok vala
+1718	3	12570	feddődik vala,aláküldhetem vala, ||,szandékozom vala
+1719	14	17665	érkezik vala, ||,kell vala,kivántatnak vala, ||,kell vala,vehetek vala, ||,akarok vala,akarom vala,akarok vala,veszed vala,indulok vala,hallyuk vala ||,irja vala,irja vala ||,lakik vala, ||
+1720	4	14142	udvarlom vala,akarom vala,akarok vala,reménlem vala, ||
+1721	7	20873	feleli vala,menti vala,lesz vala, ||,kell vala,indulok vala,irok vala, ||,lesz vala
+1722	10	28964	bemehetek vala, ||,elmegyek vala, ||,adhatok vala, ||,vetik vala, ||,akarok vala,járok vala, ||,lesz vala,bééri vala, ||,mutathatom vala,tészem vala
+1723	6	28036	megyek vala,lesz vala, ||,ér vala,fogok vala, ||,küldöd vala,érnek vala), ||
+1724	0	9229	
+1725	0	3915	
+1726	0	5819	
+1727	0	6744	
+1728	1	6138	nézem vala, ||
+1729	0	13986	
+1730	0	15171	
+1731	0	7994	
+1732	1	15853	végzem vala
+1733	0	13752	
+1734	0	14553	
+1735	0	2718	
+1736	0	8003	
+1737	0	13244	
+1738	0	3357	
+1739	0	9461	
+1740	1	25279	bontogatnak vala, ||
+1741	0	26794	
+1742	0	28463	
+1743	0	14707	
+1744	0	13455	
+1745	1	27310	mondgyák vala, ||
+1746	0	11457	
+1747	0	7331	
+1748	0	13659	
+1749	0	5121	
+1750	0	21235	
+1751	1	27239	kiván vala
+1752	0	2691	
+1753	0	7388	
+1754	0	21280	
+1755	1	26798	fél vala, ||
+1756	0	28010	
+1757	0	5414	
+1758	0	5634	
+1759	0	9170	
+1760	0	3484	
+1761	0	6614	
+1762	0	1644	
+1763	0	97	
+1764	0	2684	
+1765	0	1	
+1766	0	633	
+1767	0	6166	
+1768	0	1	
+1769	0	70	
+1770	0	1	
+1771	0	2001	

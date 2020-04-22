@@ -1,12 +1,12 @@
 # inform.,perf.,volt
-1485	0	1	
+1485	0	28	
 1486	0	1	
 1487	0	1	
 1488	0	1	
 1489	0	1	
 1490	0	1	
 1491	0	1	
-1492	0	1	
+1492	0	114	
 1493	0	1	
 1494	0	1	
 1495	0	1	
@@ -16,113 +16,113 @@
 1499	0	1	
 1500	0	1	
 1501	0	1	
-1502	0	1	
+1502	0	43	
 1503	0	1	
 1504	0	1	
-1505	0	1	
+1505	0	14	
 1506	0	1	
 1507	0	1	
 1508	0	1	
 1509	0	1	
-1510	0	1	
+1510	0	239	
 1511	0	1	
-1512	1	1029	zerzetek  wolt 
+1512	1	1029	zerzetek wolt
 1513	0	1	
 1514	0	1	
-1515	0	1	
+1515	0	661	
 1516	0	1	
-1517	0	1	
+1517	0	109	
 1518	0	1	
 1519	0	1	
 1520	0	1	
-1521	0	1	
+1521	0	179	
 1522	0	1	
-1523	1	224	atthak  wolth,  ||
-1524	0	1	
-1525	0	1	
-1526	5	2154	Miwelthe@  wolth|  ||,kezdetheth  wolth,  ||,wetthe  wolth| ,atthak@  volth ,hagyot  volt 
+1523	1	224	atthak wolth, ||
+1524	0	1330	
+1525	0	36	
+1526	5	2154	miwelthe@ wolth| ||,kezdetheth wolth, ||,wetthe wolth|,atthak@ volth,hagyot volt
 1527	0	1	
 1528	0	1	
 1529	0	1	
 1530	0	1	
 1531	0	1	
-1532	1	507	ment  volt,  ||
+1532	1	507	ment volt, ||
 1533	0	1	
 1534	0	1	
 1535	0	1	
 1536	0	1	
 1537	0	1	
-1538	0	1	
+1538	0	1741	
 1539	0	1	
 1540	0	1	
-1541	1	1011	vettem  volt 
-1542	0	1	
-1543	4	578	kildett  volt ,feledett  volt ,keszentem  volt ,emlékezett  volt,  ||
-1544	1	193	küldtem  volt.  ||
-1545	0	1	
-1546	1	713	indultak  volt 
-1547	1	704	telt  volt 
-1548	23	3344	hallották  volt,  ||,kilték volt ,megkérdette volt ,elveszett volt ,ment  volt  ||,írt  volt,  ||,kildett  volt ,kildett  volt ,elfeledtem  volt ,vettette  volt,  ||,megkegyelmezett volt ,esett  volt ,köldött  volt,  ||,kildött volt ,kírette volt,  ||,beadta  volt ,szólt  volt ,írt  volt  ||,megirtam  volt ,költem  volt  ||,köldött  volt ,igírt  volt , Írt  volt 
-1549	5	2057	hozott  volt ,ment  volt ,kihozta  volt,  ||,ment  volt  ||,zolakozoth  wolth, 
-1550	9	3725	víttak  volt,  ||,írtam  volt,  ||,írtam volt ,elfeledtem  volt ,írt  volt ,megengedte  volt,  ||,adtak  volt ,elfeledte  volt ,köldett  volt 
-1551	5	2977	küldtél  volt ,küldtél  volt,  ||,akar  volt ,meghozták  volt,  ||,parancsolt  volt,  ||
-1552	5	2680	értetted  volt ,szólott  volt ,írt  volt, ,kihagytam  volt,  ||,Jrtak  volt.  ||
-1553	0	1	
-1554	2	2079	küldte  volt ,emlékezett  volt 
-1555	0	1	
-1556	3	2683	mentek  volt ,adtam  volt ,adtam  volt 
-1557	6	2797	hagytam  volt.  ||,megértetted  volt ,harakudt  volt,  ||,tetszett  volt  ||,boszonkodott volt ,elwette  wolth 
-1558	18	6358	hozzászaladt  volt ||,lekoppasztotta volt,  ||,sértette volt ,költ  volt,  ||,írtál  volt ,írt  volt,  ||,kildtem  volt,  ||,vettem  volt,  ||,kildtem  volt.  ||,írt  volt , !Elyfeledkeztem  volt ,tettem  wolt ,elfelettem wolt,  ||,Erteté  wolth ,wehetteth, wolth,  ||,Emlekzett  Volth ,elifeletthem  walth ,meghattom  walth 
-1559	20	7806	írtam  volt ,megbetegedött  volt.  ||,találkoztam  volt,  ||,megvertítök  volt ,megmondta  volt ,küldtem  volt ,megizentem  volt ,hagyott volt ,hoztak  volt , Köldött  volt ,elfeledtem  volt ,küldtem  volt ,megadták volt.  ||,fogták  volt ,kért  volt ,találta  volt  ||,adot  wolt ,menth wolt,  ||,megarwltanak  wolth,  ||,megwette  wolt 
-1560	8	4899	adta  volt,  ||,megintéztök  volt,  ||,gyültek  volt , Megértettem  volt,  ||,hozott  volt ,elfeledtem  volt,  ||,elfeledkeztem  volt ,veszett  volt,  ||
-1561	2	2612	lefeküdtem  volt ,Menthewnk  wolt 
-1562	1	1729	hozta  volt.  ||
-1563	4	1630	attak  woth ,feletkeztem  wolt , zoltam wolt ,Jrt wolt 
-1564	0	1	
-1565	6	1815	tartoztatta  wolt ,atta  wolt  ||,wallot wolt,  ||,Jwt  wolt ,kertthe  woltt ,kwldeth  volth 
+1541	1	1011	vettem volt
+1542	0	1956	
+1543	4	578	kildett volt,feledett volt,keszentem volt,emlékezett volt, ||
+1544	1	193	küldtem volt. ||
+1545	0	880	
+1546	1	713	indultak volt
+1547	1	704	telt volt
+1548	23	3344	hallották volt, ||,kilték volt,megkérdette volt,elveszett volt,ment volt ||,írt volt, ||,kildett volt,kildett volt,elfeledtem volt,vettette volt, ||,megkegyelmezett volt,esett volt,köldött volt, ||,kildött volt,kírette volt, ||,beadta volt,szólt volt,írt volt ||,megirtam volt,költem volt ||,köldött volt,igírt volt,írt volt
+1549	5	2057	hozott volt,ment volt,kihozta volt, ||,ment volt ||,zolakozoth wolth,
+1550	9	3725	víttak volt, ||,írtam volt, ||,írtam volt,elfeledtem volt,írt volt,megengedte volt, ||,adtak volt,elfeledte volt,köldett volt
+1551	5	2977	küldtél volt,küldtél volt, ||,akar volt,meghozták volt, ||,parancsolt volt, ||
+1552	5	2680	értetted volt,szólott volt,írt volt,,kihagytam volt, ||,jrtak volt. ||
+1553	0	1082	
+1554	2	2079	küldte volt,emlékezett volt
+1555	0	1215	
+1556	3	2683	mentek volt,adtam volt,adtam volt
+1557	6	2797	hagytam volt. ||,megértetted volt,harakudt volt, ||,tetszett volt ||,boszonkodott volt,elwette wolth
+1558	16	6358	hozzászaladt volt ||,lekoppasztotta volt, ||,sértette volt,költ volt, ||,írtál volt,írt volt, ||,kildtem volt, ||,vettem volt, ||,kildtem volt. ||,írt volt,!elyfeledkeztem volt,tettem wolt,elfelettem wolt, ||,erteté wolth,wehetteth, wolth, ||,emlekzett volth
+1559	20	7806	írtam volt,megbetegedött volt. ||,találkoztam volt, ||,megvertítök volt,megmondta volt,küldtem volt,megizentem volt,hagyott volt,hoztak volt,köldött volt,elfeledtem volt,küldtem volt,megadták volt. ||,fogták volt,kért volt,találta volt ||,adot wolt,menth wolt, ||,megarwltanak wolth, ||,megwette wolt
+1560	8	4899	adta volt, ||,megintéztök volt, ||,gyültek volt,megértettem volt, ||,hozott volt,elfeledtem volt, ||,elfeledkeztem volt,veszett volt, ||
+1561	2	2612	lefeküdtem volt,menthewnk wolt
+1562	1	1729	hozta volt. ||
+1563	4	1630	attak woth,feletkeztem wolt,zoltam wolt,jrt wolt
+1564	0	73	
+1565	6	1815	tartoztatta wolt,atta wolt ||,wallot wolt, ||,jwt wolt,kertthe woltt,kwldeth volth
 1566	0	1	
-1567	0	1	
-1568	24	10367	öszvegyőtette  volt ,megígérte  volt ,feledték  volt,  ||,idekildette  volt ,hozott  volt ,küldett  volt,  ||,feledték volt ,igért  volt ,adott  volt ,ízent  volt  ||,parancsolt  volt ,jütt  volt.  ||,kwldet  wolt, ||,kellet  wolt ,Monthattak wolt,  ||,Ese̊th  Volt ,MeghVe̊te  Volth ,meghVette  Volth.  ||,Jartam  Volth ,Jwtth  wolth ,walaztottak  wolt,  ||,ment  wolth,  ||,wegeztem  volt ,megJzenthe  volth 
-1569	9	7726	hoztak  volt ,kẅldett  volt,  ||,kweldett  volt  ||,felJegzettek  wolth  ||,elkẅltek  volt ,Vegezett  volt  ||,adott  volt ,hiwathott  volt ,hittak  volt,  ||
-1570	4	2722	ellwegeztek  wolth , kerthem  volt ,thamattak  volt ||,vagdaltak volt  ||
-1571	0	1	
-1572	0	1	
-1573	1	943	fogttak  wolt 
+1567	0	1606	
+1568	24	10367	öszvegyőtette volt,megígérte volt,feledték volt, ||,idekildette volt,hozott volt,küldett volt, ||,feledték volt,igért volt,adott volt,ízent volt ||,parancsolt volt,jütt volt. ||,kwldet wolt, ||,kellet wolt,monthattak wolt, ||,ese̊th volt,meghve̊te volth,meghvette volth. ||,jartam volth,jwtth wolth,walaztottak wolt, ||,ment wolth, ||,wegeztem volt,megjzenthe volth
+1569	9	7726	hoztak volt,kẅldett volt, ||,kweldett volt ||,feljegzettek wolth ||,elkẅltek volt,vegezett volt ||,adott volt,hiwathott volt,hittak volt, ||
+1570	4	2722	ellwegeztek wolth,kerthem volt,thamattak volt ||,vagdaltak volt ||
+1571	0	837	
+1572	0	667	
+1573	1	943	fogttak wolt
 1574	0	1	
-1575	0	1	
+1575	0	241	
 1576	0	1	
-1577	0	1	
+1577	0	188	
 1578	0	1	
-1579	1	651	Jtal  volt 
-1580	1	1360	küldótt  uolt 
+1579	1	651	jtal volt
+1580	1	1360	küldótt uolt
 1581	0	1	
 1582	0	1	
-1583	2	171	tött  volt ,ment  volt 
-1584	4	453	Jwt  wolt  ||,kedett wolt ,JdeJütt  wolt ,egedett wólt 
+1583	2	171	tött volt,ment volt
+1584	4	453	jwt wolt ||,kedett wolt,jdejütt wolt,egedett wólt
 1585	0	1	
-1586	2	1359	adot  volt ,küldŏtt  volt  ||
-1587	0	1	
-1588	3	999	 kűltem  uolt,  ||,raktad  uolt ,lettűnk  uolt,  ||
-1589	19	8634	oktanak  volth ,elkuldotth  uoltth· ,elkjrte  uolt ,meghkjrte  uolt ,megatta uolt,  ||,elment  uolth  ||,mentek  uolt ,Ittak uolt,  ||,mentek uolt ,zalat  wolt ,Irtam  uolt ,Jutotth  uolt.  ||,ueztette  uoltth ,veotte  volt ,attam  uolt  ||,Irtam  uolt ,kjjutot  uoltth.  ||,ueth uoltth,  ||, Irta  volt 
-1590	6	6882	!erekezdet  volt ,meghirtam  volt ,marath  volt ,hagiott  uolt ,ellragatta  woltt  ||,iktatta  woltt 
-1591	14	5367	marath  volt  ||,hoztak  volt ,kizittettem  volt ,kültem  vollt , engette  volt ,meghfogta  volt ,vallottam  volt.  ||,kellet  volt ,kwldeot  volt ,veott  volt ,verte  volt ,foghta  volt  ||,Patkolta  woltt ,nyrazta woltt  ||
-1592	6	3249	fogott  volt,  ||,maratt  woltt ,megnehezült  uolt.  ||,hattam uolt ,jóhetet  úolt  ||,tóte  volt 
-1593	4	2750	irkezet  uolt ,eset  uolt,  ||,meghserót uolt,  ||,hozthak  vollt  ||
-1594	12	6791	elfelejtettem  uolt ,gjülekeßtek  uolt ,jutott  uolt ,uetettik  uolt,  ||,irt  uolt ,raktak  volt,  ||,zallott  volt ,meghfogtam  volt  ||,vettem volt ,attam  volt ,ellkeltŏtte  volt ,Elvetette  volt·  ||
-1595	2	1269	Ajanlattam  volt ,hatta  volt,  ||
-1596	1	825	talalta  uolth.  ||
-1597	3	643	chynalt  volt ,wegezet  volt ,meghalkut  vot 
+1586	2	1359	adot volt,küldŏtt volt ||
+1587	0	67	
+1588	3	999	kűltem uolt, ||,raktad uolt,lettűnk uolt, ||
+1589	19	8634	oktanak volth,elkuldotth uoltth·,elkjrte uolt,meghkjrte uolt,megatta uolt, ||,elment uolth ||,mentek uolt,ittak uolt, ||,mentek uolt,zalat wolt,irtam uolt,jutotth uolt. ||,ueztette uoltth,veotte volt,attam uolt ||,irtam uolt,kjjutot uoltth. ||,ueth uoltth, ||,irta volt
+1590	6	6882	!erekezdet volt,meghirtam volt,marath volt,hagiott uolt,ellragatta woltt ||,iktatta woltt
+1591	14	5367	marath volt ||,hoztak volt,kizittettem volt,kültem vollt,engette volt,meghfogta volt,vallottam volt. ||,kellet volt,kwldeot volt,veott volt,verte volt,foghta volt ||,patkolta woltt,nyrazta woltt ||
+1592	6	3249	fogott volt, ||,maratt woltt,megnehezült uolt. ||,hattam uolt,jóhetet úolt ||,tóte volt
+1593	4	2750	irkezet uolt,eset uolt, ||,meghserót uolt, ||,hozthak vollt ||
+1594	12	6791	elfelejtettem uolt,gjülekeßtek uolt,jutott uolt,uetettik uolt, ||,irt uolt,raktak volt, ||,zallott volt,meghfogtam volt ||,vettem volt,attam volt,ellkeltŏtte volt,elvetette volt· ||
+1595	2	1269	ajanlattam volt,hatta volt, ||
+1596	1	825	talalta uolth. ||
+1597	3	643	chynalt volt,wegezet volt,meghalkut vot
 1598	0	1	
 1599	0	1	
-1600	2	1893	elkültem  volt ,adot  volt,  ||
+1600	2	1893	elkültem volt,adot volt, ||
 1601	0	1	
 1602	0	1	
 1603	0	1	
-1604	2	1267	hozták  volt ,uet  uolt 
-1605	0	1	
-1606	0	1	
-1607	3	619	kezdette  volt ,eget  volt,  ||,hozot  volt.  ||
-1608	0	1	
+1604	2	1267	hozták volt,uet uolt
+1605	0	422	
+1606	0	48	
+1607	3	619	kezdette volt,eget volt, ||,hozot volt. ||
+1608	0	67	
 1609	0	1	
 1610	0	1	
 1611	0	1	
@@ -131,158 +131,158 @@
 1614	0	1	
 1615	0	1	
 1616	0	1	
-1617	1	397	lattam  uolt 
-1618	1	100	kultem  uolt,  ||
-1619	3	643	küldöttem  uolt; ,kibontakoztak  uolt;  ||,ertettűnk  uolt  ||
-1620	0	1	
-1621	0	1	
-1622	0	1	
+1617	1	397	lattam uolt
+1618	1	100	kultem uolt, ||
+1619	3	643	küldöttem uolt;,kibontakoztak uolt; ||,ertettűnk uolt ||
+1620	0	72	
+1621	0	515	
+1622	0	327	
 1623	0	1	
 1624	0	1	
-1625	1	336	adot  uolt 
-1626	0	1	
-1627	0	1	
-1628	0	1	
-1629	0	1	
-1630	0	1	
-1631	3	4414	megesmerkettem  volt ,vetettem  volt, ||, Vittem  volt 
-1632	4	4275	iárt  uolt,  ||,meghengedet  uolt ,\!mertéltvolt,engette  uolt 
-1633	17	10005	hirdettek  volt ,engettek volt ,irtam  uólt ,meghirtam  uolt,  ||,meghhatta  voltt ,commendalt  uolt ,%uolt.,lefekűttel  uolt,  ||,alámentem  uolt ,csináltattam  uolt,  ||,idekűldőttem  uolt ,hoztak  uolt ,uoniatot  uolt ,rendelte  uolt ,irta  uolt,  ||,alament  uolt,  ||,uitte  uolt 
-1634	6	2417	izentem  uolt,  ||,Latogatot  uolt ,adta  uolt ,meghemberletted  uolt ,nevelte  volt ,megtanulta  volt,  ||
-1635	0	1	
-1636	4	2829	betértem  uolt ,attak  uolt ,hattam  uolt;  ||,latot  volt 
-1637	8	2564	szoktam  volt,  ||,jutot volt.  ||,adta  volt ,ajanlotta  volt ,rendeltem  volt ,providealt  volt ,talaltam  volt ,vöttem  volt 
-1638	9	3368	odauitte  uolt ,odauit  uolt ,irtam  uolt ,jeőt  uolt.  ||, irtam  uolt ,ment  uolt,  ||,mentem  uolt,  ||,igirtth  uolt,  ||,tudositottam  volt 
-1639	3	2458	hattam  uolt ,bejüttek  uolt ,ütettek uolt,  ||
-1640	11	5366	küldött  uolt  ||,röndölt  volt ,Ertetem  volt ,meghchinaltata  volt,  ||,felliöttek  Uolt ,meghbodultak  uolt ,Irtam  volt ,uett  uolt ,irtunk  uolt  ||,hoztak uolt ,kűltem  uolt 
-1641	1	1714	jutt  voltt,  ||
-1642	0	1	
-1643	0	1	
+1625	1	336	adot uolt
+1626	0	83	
+1627	0	946	
+1628	0	222	
+1629	0	711	
+1630	0	2122	
+1631	3	4414	megesmerkettem volt,vetettem volt, ||,vittem volt
+1632	4	4275	iárt uolt, ||,meghengedet uolt,\!mertéltvolt,engette uolt
+1633	17	10005	hirdettek volt,engettek volt,irtam uólt,meghirtam uolt, ||,meghhatta voltt,commendalt uolt,%uolt.,lefekűttel uolt, ||,alámentem uolt,csináltattam uolt, ||,idekűldőttem uolt,hoztak uolt,uoniatot uolt,rendelte uolt,irta uolt, ||,alament uolt, ||,uitte uolt
+1634	6	2417	izentem uolt, ||,latogatot uolt,adta uolt,meghemberletted uolt,nevelte volt,megtanulta volt, ||
+1635	0	1169	
+1636	4	2829	betértem uolt,attak uolt,hattam uolt; ||,latot volt
+1637	8	2564	szoktam volt, ||,jutot volt. ||,adta volt,ajanlotta volt,rendeltem volt,providealt volt,talaltam volt,vöttem volt
+1638	9	3368	odauitte uolt,odauit uolt,irtam uolt,jeőt uolt. ||,irtam uolt,ment uolt, ||,mentem uolt, ||,igirtth uolt, ||,tudositottam volt
+1639	3	2458	hattam uolt,bejüttek uolt,ütettek uolt, ||
+1640	11	5366	küldött uolt ||,röndölt volt,ertetem volt,meghchinaltata volt, ||,felliöttek uolt,meghbodultak uolt,irtam volt,uett uolt,irtunk uolt ||,hoztak uolt,kűltem uolt
+1641	1	1714	jutt voltt, ||
+1642	0	169	
+1643	0	521	
 1644	0	1	
-1645	0	1	
-1646	0	1	
-1647	5	4540	kiszitett  uolt,  ||,maradot  uolt,  ||,altalmentenek  uolt ,izent  uolt ,elmentenek  volt,  ||
-1648	14	9276	elmarasztották  volt,  ||,eldagadot  volt,  ||,vallott  volt ,meghueztettek  uolt.  ||,meghueztettek  uolt,  ||,uet  uolt ,szorétott  uolt ,hirdettetet  uolt,  ||,kertem  uolt ,eluittem  uolt, ,felluertem  uolt ,geöttenek  uolt ,uegesztünk  uolt ,viszatertenek  volt 
-1649	2	3012	meghfogtanak  uolt,  ||,meghirtam  uolt,  ||
-1650	5	3341	meghirtam  uolt ,iüt  uolt ,atták  uolt,  ||,mentenek  uolt  ||,irtunk  uolt 
-1651	5	2636	meghirta  uolt,  ||,meghtalalt  uolt ,ayanlottam uolt ,iüt  uolt ,meghparancholtam  uolt 
-1652	4	2585	ment  uolt ,uegeztem  uolt,  ||,irtam  volt ,meghparancholta  volt 
-1653	6	5080	 cinált  volt ,adot  uolt ,lipet  uolt,  ||,felment  uolt ,ment  uolt ,uegeztem  uolt 
-1654	4	4810	elveszet  volt ,meghütötem  volt  ||,eldagadoszot  volt ,inquiraltattam  uolt 
-1655	0	1	
-1656	0	1	
-1657	0	1	
-1658	0	1	
-1659	0	1	
-1660	1	1765	fogdtak  uolt 
-1661	0	1	
+1645	0	677	
+1646	0	821	
+1647	5	4540	kiszitett uolt, ||,maradot uolt, ||,altalmentenek uolt,izent uolt,elmentenek volt, ||
+1648	14	9276	elmarasztották volt, ||,eldagadot volt, ||,vallott volt,meghueztettek uolt. ||,meghueztettek uolt, ||,uet uolt,szorétott uolt,hirdettetet uolt, ||,kertem uolt,eluittem uolt,,felluertem uolt,geöttenek uolt,uegesztünk uolt,viszatertenek volt
+1649	2	3012	meghfogtanak uolt, ||,meghirtam uolt, ||
+1650	5	3341	meghirtam uolt,iüt uolt,atták uolt, ||,mentenek uolt ||,irtunk uolt
+1651	5	2636	meghirta uolt, ||,meghtalalt uolt,ayanlottam uolt,iüt uolt,meghparancholtam uolt
+1652	4	2585	ment uolt,uegeztem uolt, ||,irtam volt,meghparancholta volt
+1653	6	5080	cinált volt,adot uolt,lipet uolt, ||,felment uolt,ment uolt,uegeztem uolt
+1654	4	4810	elveszet volt,meghütötem volt ||,eldagadoszot volt,inquiraltattam uolt
+1655	0	2444	
+1656	0	845	
+1657	0	866	
+1658	0	129	
+1659	0	325	
+1660	1	1765	fogdtak uolt
+1661	0	137	
 1662	0	1	
 1663	0	1	
-1664	4	1265	levetközöt  uolt ,kertek  uolt ,öszueszolakodot  uolt,  ||,tetettette  uolt 
-1665	0	1	
-1666	0	1	
-1667	0	1	
+1664	4	1265	levetközöt uolt,kertek uolt,öszueszolakodot uolt, ||,tetettette uolt
+1665	0	3409	
+1666	0	669	
+1667	0	148	
 1668	0	1	
 1669	0	1	
-1670	1	343	certificaltatot  volt,  ||
-1671	0	1	
+1670	1	343	certificaltatot volt, ||
+1671	0	330	
 1672	0	1	
 1673	0	1	
 1674	0	1	
 1675	0	1	
-1676	0	1	
-1677	1	1858	töröt  volt 
+1676	0	625	
+1677	1	1858	töröt volt
 1678	0	1	
-1679	0	1	
+1679	0	1530	
 1680	0	1	
 1681	0	1	
 1682	0	1	
 1683	0	1	
 1684	0	1	
-1685	0	1	
+1685	0	195	
 1686	0	1	
 1687	0	1	
-1688	0	1	
+1688	0	809	
 1689	0	1	
-1690	0	1	
-1691	0	1	
-1692	0	1	
-1693	0	1	
+1690	0	910	
+1691	0	2255	
+1692	0	5612	
+1693	0	378	
 1694	0	1	
 1695	0	1	
-1696	0	1	
-1697	0	1	
-1698	12	3352	írtam  volt , elment  volt,  ||,adták  volt, ||,ment  volt ,megbúsult  volt, ||,elkísérték  volt,  ||,küldött  volt,  ||,megrezzentek  volt ,elmúlt volt,  ||,írt  volt ,írta  volt ,ment volt,  ||
-1699	4	2584	hozott  volt.  ||,vette  volt ,dűltek  volt ,adta  volt 
-1700	3	2455	vetették  vólt ,döfött  vólt ,gyogyult  vólt,  ||
-1701	1	1408	citáltatot  vólt  ||
-1702	1	2646	küldötte  volt 
-1703	5	6184	küldték  volt ,bementek  volt, ,ment  volt.  ||,estenek  volt.  ||,Törvényköztek  volt,  ||
-1704	28	11281	vit  volt ,szerzet  volt ,kaszáltatot  volt ,mentek  volt.  ||,küldtem  volt.  ||,feljöt  volt,  ||,ment  volt.  ||,háborgatta  volt,  ||,érkezet  volt ,ment  volt ,lehozot  volt  ||,kitöltek  volt,  ||,fellázasztotta  volt,  ||,küldöttem  volt ,adtam  volt ,hajtott  volt ,felverték volt ,bementek  volt ,vettem  volt,  ||,írt volt,  ||,rekedt  volt ,írta  volt ,elküldöttem volt,  ||,irtam  volt ,ajándékozott  volt,  ||,irtam  volt ,küldöttem volt.  ||,reáütött  volt,  ||
-1705	75	29831	igírt  volt ,szállot  volt ,írtam  volt ,írtam  volt,  ||,elfelejtettem  volt,  ||,hozot  volt,  ||,elküldöttem  vót ,jöt  volt ,adtam  volt ,írtam  volt ,írtam  volt?  ||,írta  volt ,írtam  volt, ,szálítattam  volt ,kérte  volt ,tettem  volt ,mondot  volt ,vettem  volt, ||,írtam  volt, ||,kért  volt , megtanítottam  volt,  ||,küldtem  volt ,hozták  volt.  ||,feltettem  volt.  ||,kívántam  volt,  ||,ígért  volt ,írtam  volt ,befizették  volt,  ||,felkérték  volt ,eset  volt ,írtam  volt ,elküldtem  volt.  ||,idejöt  volt,  ||,ment  volt.  ||,értettem  volt ,lehozot  volt,  ||, írtam  volt ,tudakozta  volt ,kezdte volt , elengedte  volt,  ||,megírtam  volt,  ||,írta  volt ,bíztam  volt.  ||,írtam  volt ,vett  volt ,megáztatták  volt,  ||,vettem  volt,  ||, Ígírtem  volt ,írtam  volt,  ||,megkívántatta  volt ,nyertenek  volt,  ||,hagyta  volt,  ||,maradt  volt,  ||,expediáltam  volt,  ||,irtam  volt,  ||,töttem  volt,  ||,odaküldött  volt ,hagytanak  volt ,irtam  volt ,lehozott  volt,  ||,irtam  volt,  ||,hagytam  volt ,elhitt  volt.  ||,irtam  volt ,felejteted  volt,  ||,eszkettettem  volt ,irtam  volt ,eszet  volt ,küldöttem  volt ,vet  volt ,irt  volt ,küldöt  volt ,czináltanak  volt  ||,állitották volt ,hatták  volt  ||
-1706	133	41722	futottam  volt,  ||,ösmerkedett volt ,tölt  volt ,írtam  volt,  ||,írta  volt ,öszeromlot  volt ,ment  volt ,hajtatot  volt ,írtam  volt ,elküldtem  volt , Elrendeltem  volt , eltörte  volt ,csináltak volt.  ||,mondta  volt ,vettem  volt , Ráírtam  volt ,írtam  volt ,küldtem  volt,  ||,kiadtak  volt ,elküldtem  volt.  ||,találtam  volt ,írtam  volt ,elküldtem  volt, ,meghadta  volt ,hánták  volt ,írtam  volt.  ||,bementem  volt ,ideküldte  volt ,parancsoltam  volt,  ||,írtam  volt,  ||,írta  volt ,írta  volt ,kéredzet  volt ,hattam  volt ,tet  volt ,írta  volt.  ||,bevitték  volt ,elfutot  volt ,megírtam  volt.  ||,adot  volt ,meghattam  volt,  ||,loptak  volt ,írt  volt ,hattam  volt ,megitták  volt,  ||,küldtem  volt.  ||,bíztam  volt , Írtam  volt ,írta  volt ,írtam  volt,  ||,emlegettem  volt ,kértem  volt ,írta  volt ,beküldöt  volt,  ||,szokot  volt ,ment  volt,  ||,hattam  volt ,írta  volt.  ||,küldöt  volt,  ||,írtam  volt ,írt  volt,  ||,elhattam  volt, ||,maradt  volt ,hallottam  volt,  ||,kértem  volt,  ||,megdagadozott  volt  ||,vettem  volt.  ||, írtam  volt,  ||,indultanak  volt ,mondta  volt,  ||,megirtam  volt,  ||,adott  volt ,ígérte  volt,  ||,küldötte  volt.  ||,küldtem  volt.  ||,adtam  volt ,küldtél  volt, ,adott  volt,  ||,jöttenek  volt ,adtam  volt ,parancsoltam  volt.  ||,irtam  volt.  ||,kötötte  volt. ||,irtam  volt ,irtam  volt,  ||,adtam  volt ,küldöttem  volt,  ||,töttem  volt ,megirtam  volt,  ||, Irtam  volt,  ||,megháborítot  volt,  ||,meglázzadtak  volt,  ||,írta  volt.  ||, meghattam  volt,  ||,vette  volt ,küldöt  volt ,adtam  volt ,megfosztotta  volt,  ||,hadtam  volt ,bélyegezték  volt.  ||,gondoltam  volt,  ||,küldöt  volt ,vette  volt ,írt  volt ,hozta  volt ,széjjelosztot  volt ,elküldött  volt ,hoztak  volt,  ||,küldtem  volt ,ráesmért volt ,elküldtem  volt ,adot  volt, ,küldöt  volt.  ||,felvitette  volt ,vitték  volt ,lehozot  volt,  ||,írta  volt ,tettem  volt ,elvet  volt ,megnéztem  volt ,egybegyűjtöt  volt,  ||,írta  volt ,adtuk  volt ,írt  volt , megírtam volt:  ||,végbevitte  volt ,otthadtam  volt ,akadt  volt ,ráütöt  volt,  ||,írtam  volt,  ||,adot  volt.  ||,ajánlotta  volt ,küldték  volt.  ||
-1707	12	5314	értettem  volt ,megázott  volt.  ||,biztatot  volt ,vitték  volt ,vittek  volt ,adtam  volt.  ||,vette  volt ,írt  volt ,adtak  volt. ||,ígértetet  volt.  ||,felvette  volt ,beszéltem volt 
-1708	53	22250	resolváltam  volt ,nyertek  volt,  ||,értettem  volt ,kezdet  volt.  ||,mondot  volt,  ||,felvit  volt,  ||,abbanhattam  volt ,küldtem  volt,  ||,adtam  volt ,vette  volt ,küldtünk  volt,  ||,szántam  volt,  ||,ígírtem volt ,rendelt  volt.  ||,küldöttem  volt ,hordták  volt. ||,írattam  volt ,hattam  volt,  ||,végeztettem  volt ,írt  volt ,írattam  volt ,maradtak  volt.  ||, Írtam  volt ,írt  volt ,elvitték  volt ,írtam  volt ,elküldtem  volt ,hoztam  volt.  ||,hallottam  volt ,írtak  volt ,küldettek  volt.  ||,írtam  volt ,írtam  volt,  ||,küldtem  volt ,írtam  volt,  ||,elküldtem  volt ,elfelejtet  volt ,hoztak  volt ,küldtem volt ,írtam  volt. ||,írtam  volt,  ||, írtam  volt , elandalodtunk  volt,  ||,vágták  volt.  ||,elvállaltuk  volt.  ||,írt  volt ,írt  volt.  ||,írt  volt.  ||,értettem  volt.  ||,írtam  volt ,írtam  volt,  ||,hadta  volt ,kértem  volt 
-1709	22	17135	tetettem  volt ,írtam  volt ,megfagyott  volt.  ||,írtam  volt ,kezdet  volt ,küldöttem  volt. ||,írtam  volt.  ||,írtam  volt ,említettem  volt,  ||,találták volt ,mondta  volt,  ||,megírtam  volt, ,bánt volt ,írtam  volt ,romlottak  volt ,parancsoltam  volt,  ||,írta  volt ,hajtot  volt ,adtam  volt ,hatot  volt ,adot  volt ,elküldötte  volt 
-1710	67	27871	halasztottam  volt.  ||,kértem  volt ,hattam  volt, ,dugták  volt.  ||,idejöt  volt ,ment  volt.  ||,vettem  volt.  ||,kerestettem  volt ,beszéltük  volt,  ||, elhittem  volt,  ||,felvet  volt ,írtam  volt.  ||,írtam  volt ,hajtottak  volt ,írtam  volt,  ||,megküldtem  volt.  ||,tet  volt ,adot  volt ,elmaradtak  volt,  ||,bíztam  volt ,ijedt  volt ,küldtem  volt ,hattam  volt,  ||,meghattam  volt,  ||,kezdet  volt ,küldtek  volt ,hozot  volt,  ||,hattam  volt ,lekéredzet  volt ,csináltatta  volt ,kiosztottam  volt ,vit  volt ,mondot  volt ,beküldtem  volt,  ||,mondotta  volt ,megadták volt, ||,küldtem  volt ,viszacseréltem  volt.  ||,írattam  volt ,bíztam  volt,  ||,jöt  volt ,lement  volt,  ||,adtam  volt, ,idehívattam  volt ,hajtottak  volt.  ||,értettem  volt ,adot  volt ,írtam  volt ,írtam  volt ,izentem  volt ,raktam  volt ,küldtem  volt ,küldtem  volt,  ||,írtam  volt ,odaküldöttem  volt,  ||,felejtettem  volt ,megsántult  volt.  ||,jelentettem  volt.  ||,kértek  volt,  ||,megunták  volt ,hatta  volt ,küldetet  volt, ||,írtam  volt ,írt  volt ,küldtem  volt ,hagyot  volt ,bízta  volt 
-1711	13	13937	!feszabtunk  volt ,adtam  volt.  ||,ráfogtam  volt ,vet  volt ,adot  volt ,felejtettem  volt,  ||,hattam  volt ,rakták  volt ,meghvesztette  vólt ,elvesztettem  volt ,állattunk  volt ,írtam  volt ,meghatta  volt 
-1712	11	26584	irtad  volt ,irtam  volt,  ||,irtam  volt,  ||,jelentettem  volt ,letöttem  volt ,elvégezted  volt ,adta  volt,  ||,megirtam  volt.  ||,készitettek  volt  ||,irtam  volt ,töttem  volt  ||
-1713	7	6713	fogtam  volt ,projectizaltam  volt ,elfelejtettem  volt,  ||,küldettem  volt ,biztam volt ,küldettem  volt ,letőttem  volt 
-1714	14	20343	!tültetettem  volt, ||,ellvettem  volt  ||,vetette  volt ,ellveszet  volt,  ||,megromlot  volt,  ||,szolgált  vólt,  ||,általvitte  vólt ,bétöröt  volt  ||,elveszet  volt,  ||,lemöntem  volt ,emlekeztünk  volt ,irta  volt ,bocsátottam  volt ,hadta  volt;  ||
-1715	20	20443	megcsipte  vóltt,  ||,assecuralt  volt ,igértem  volt,  ||, elfelejtettem  volt ,láttam  volt, , Irtam  volt ,tudositottam volt,  ||,megirtam  volt ,dirigáltam  volt;  ||,proclamaltattam  volt, ,hagytam  volt ,irtam  volt ,szollottam  volt, ,szollottam  volt.  ||,hagytam  volt ,igirte  volt ,vöttem  volt,  ||,reponaltam volt@ ,szerzett  vólt  ||,elszomorodtam  vólt,  ||
-1716	32	35827	ment  volt  ||,megromlott  vólt,  ||,betekergette  vólt ,kiállottam  vólt ||,megfenyegedte  vólt ,megromlott  volt ,alkalmasztatta  vólt ,szokta volt ,megharagudt  volt ||,főszte  vólt ,kihajtották  vólt  ||,hozott  vólt,  ||, maradott  vólt ,jött  vólt ,megfogták  vólt,  ||,megszoritotta  vólt ,elkérte  vólt ,adott  volt,  ||,irtunk  vólt ,megirtunk  volt,  ||,beeresztette  volt ,mondta  volt,  ||,irtam  volt ,irtam  volt ,referaltam volt ,idejőt  volt.  ||,töttem  volt , odamentem  vólt)  ||,elfelejtettem  vólt  ||,tentalta  volt ,ment  volt ,irtam  volt  ||
-1717	31	24869	reavetettünk  volt ,felkötöttek volt  ||, megkönnyebbultem  volt , hosztam  volt ,megverte  volt , odajött  volt ,jöttünk  volt  ||,megveszet  volt,  ||,lelte  volt.  ||,elhozta  vólt ,estek  volt ,visszajöttek  volt ,jöttek  volt,  ||,kitanultam  volt  ||,elvitt  volt ,elment  volt ,szabadították  volt ,elvitt  volt)  ||,írt  volt,  ||,irtam  volt , dirigalta  volt ,concidált  vólt, ,vettem  vólt ,irta  volt ,irtam  volt ,informalt volt.  ||,hallotta  volt ,akadott volt ,convocalta  volt , jött  volt ,költöttek  volt  ||
-1718	12	12570	hazaiöttek  volt  ||,gondoltam  volt ,kért  volt ,megirtam  volt,  ||,kiboritotta  volt,  ||,adta  volt  ||,appendaltak  volt  ||,lopot  volt ,mondotta  volt)  ||,meghholt  volt ,jöttem  volt ,mentem  volt  ||
-1719	16	17665	 kifelejtödöt  volt ,abbanhagyta  volt,  ||,szántam  volt,  ||,csináltattad  volt.  ||,töltötte  volt ,bíztam  volt ,tétetett  volt ,percipiáltam  vólt;  ||,gondoltam  vólt,  ||,conspiraltanak  volt@ ,küldőtt  volt ,instaltam  volt.  ||,vőttem  volt,  ||,irtam  volt,  ||,biztatott volt  ||,biztuk  volt;  ||
-1720	9	14142	igértem  volt ,indított  volt ,resolválta  volt ,feltétettem  volt,  ||,maradtak  volt.  ||, megírtam  volt ,szedette  volt ,kimentem  volt ,kezdödött  vólt  ||
-1721	24	20873	dagadott  volt,  ||,kivettik  volt,  ||,elveszet vólt,  ||,gyütt  volt ,megrázta  volt ,gyont  volt ,megfenyegette  volt ,irtam  volt ,irtam  volt.  ||,calculáltak  volt ,irtam  volt ,halt  volt,  ||,irtam  volt ,megirtam  volt , Irtam  volt ,kertem volt ,irtam  volt  ||,kűldőttem  vólt ,meglátogattam  volt ,küldöt  volt ,hagytam  volt ,tett  vólt ,esett vólt ,confundalódtam vólt.  ||
-1722	27	28964	megnyomta  vólt,  ||,kezdet  volt ,igérte  volt,  ||,indultunk  volt.  ||,elkészitettem  volt ,comittáltam  volt ,kezdet  volt ,eröltetet  volt ,resolváltam  volt ,aláérkezet  volt ,njert  volt ,irtam  volt,  ||,kültem  volt,  ||,mondta  volt,  ||,meghirtam  volt ,meghmondottam  volt,  ||, Irtam  volt ,mondot  volt,  ||,vettem  volt ,vetetödöt  volt, ||,feltöttem  volt,  ||,csináltatot  volt ,irtam  volt , Kűldőttem  volt ,irtam  volt ,elmentek  vólt.  ||,hozatta  volt 
-1723	18	28036	békélet  volt ,idézte volt ,kértem  vólt ,esett  vólt,  ||,cselekedett  vólt ,tólta  vólt ,felvette  volt,  ||,hagyták  volt.  ||,parancsoltam  volt ,hagytam  volt,  ||,ideérkeztem  volt,  ||,hordattam  volt,  ||,küldtek  volt ,hagytam  volt.  ||,igért  volt ,irtam  volt , irtam  volt,  ||,tamadott  volt 
-1724	4	9229	vitték  volt ,csinaltam  volt  ||,köllöt  volt,  ||,bizatott  volt,  ||
-1725	9	3915	fogatatot  volt ,hozot  volt ,lehozott  vólt ,fogatot  volt ,!fogtatot  volt ,fogtatot  volt ,fogtatta  volt ,fogtatot  volt ,igirt  volt 
-1726	2	5819	hált  vólt  ||,felgyogúltam  vólt 
-1727	3	6744	kitekerték  volt ,tartották  vólt ,rendelt  vólt 
-1728	4	6138	haragúttam  vólt ,rontatott  vólt, ,haraguttam  volt ,dagatt  vólt 
-1729	9	13986	adott  volt ,kezdette  vólt ,féretekerték  vólt,  ||,megfenyegette  vólt,  ||,vesztette volt ,támadott  volt ,ideérkezett  volt ,praetendalta  volt,  ||,találtam  volt 
-1730	9	15171	kiküldette  vóltt.  ||,jadzott  vóltt  ||,ásta  vóltt;  ||,kezdettem  volt ,megfogták  volt ,adott  vólt, , Irtam  volt ,kértem volt  ||,gyűlt  volt 
-1731	7	7994	expedialtam  volt ,dirigáltam  volt ,estek  vólt ,megnyomta  volt;  ||,öletett  vólt  ||,írt vólt ,irt volt 
-1732	11	15853	elragatatott  volt  ||,megfenyegette  volt ,elragatták  volt,  ||,janakodot  volt.  ||,elragatták  volt.  ||,elragatták  volt  ||,elragatták  volt,  ||,praescribalt  volt ,akartam  volt ,igértem  volt , dirigaltam  volt 
-1733	8	13752	rontotam  volt ,meghrontotta  volt, ,kirt  volt ,kinálta  volt ,küldött volt)  ||,let  vólt ,elsivalkodot  vólt,  ||,tétetett  vólt 
-1734	3	14553	megnyargaltak  vólt.  ||,szokot  vólt,  ||,eldugtam  vólt.  ||
-1735	0	1	
-1736	3	8003	 felhuszta  vólt ,cselekedet  volt ,visgálta  volt,  ||
-1737	3	13244	meghrontotta  volt  ||,csinálták  vólt,  ||,hazament  vólt  ||
-1738	0	1	
-1739	1	9461	meghaludt  vólt,  ||
-1740	7	25279	megháborodott  vólt.  ||,adott  vólt ,megnyomorodott  vólt,  ||,alutt  volt ,aluttak  volt ,jutott volt ,kérte  volt 
-1741	5	26794	félrehuzattatott  vólt,  ||,elment  vólt ,megnyomorodott  vólt  ||,kűldöttem  vólt,  ||,vitte vólt 
-1742	12	28463	elveszet  volt ,kiment  volt ,hordottak  volt, ,cselekedte  volt,  ||,kigyöttek  volt,  ||,elladott  volt ,kirt  volt ,kirt  volt ,meghiedet  volt ,ment  volt ,kitekerték  volt,  ||,öszverontották  vólt:  ||
-1743	4	14707	vett  volt ,vett  volt ,fatealta  volt ,fatealt  volt 
-1744	0	1	
-1745	2	27310	vitt  volt ,dagat  volt,  ||
-1746	0	1	
-1747	0	1	
-1748	0	1	
-1749	0	1	
-1750	3	21235	megPirongatta  vólt ,aratot  volt,  ||,elment  volt 
-1751	5	27239	kiment  volt  ||,fekütt  volt,  ||,mondotta  volt  ||,megromlott  volt  ||,beszelt  volt 
-1752	0	1	
-1753	0	1	
-1754	5	21280	kért  vólt ,bégyogyúlt  volt@ ,sértette  vólt ,hozott vólt ,vallot  vólt  ||
-1755	24	26798	laktam  vólt ,megnehezteltem  vólt ,okoztak  volt,  ||,lakott  volt,  ||,kérettetett  volt ,rakodott  volt ,kérte  volt ,fekütt  volt,  ||,akattak  volt ,szerette  volt,  ||,küldött  volt ,kért  volt,  ||,atta volt,  ||,marattak  volt,  ||,kért volt ,odaajánlotta  volt,  ||,ellvitte volt  ||,ajánlotta  volt,  ||,találta volt ,ellment volt,  ||,elalutt  volt,  ||,kérte  volt,  ||,futamodot  vólt,  ||,alutt  vólt,  ||
-1756	6	28010	dagadozott  vólt;  ||,oszvevesztek  vólt ||,nyomta  volt ,elhatta  vólt  ||,mondotta vólt,  ||,megitatta  vólt,  ||
-1757	3	5414	vett  vólt ,költsönadott  vólt ,leesett  vólt,  ||
-1758	2	5634	vittem  vólt ,öszvevesztek  vólt 
-1759	1	9170	küldett  vólt, ||
-1760	2	3484	informaltak  volt.  ||,vit  volt 
-1761	5	6614	hintettek  volt ,irta  volt ,nyert  volt ,solicitáltam  volt ,állott  vólt,  ||
-1762	0	1	
-1763	0	1	
-1764	0	1	
+1696	0	356	
+1697	0	56	
+1698	12	3352	írtam volt,elment volt, ||,adták volt, ||,ment volt,megbúsult volt, ||,elkísérték volt, ||,küldött volt, ||,megrezzentek volt,elmúlt volt, ||,írt volt,írta volt,ment volt, ||
+1699	4	2584	hozott volt. ||,vette volt,dűltek volt,adta volt
+1700	3	2455	vetették vólt,döfött vólt,gyogyult vólt, ||
+1701	1	1408	citáltatot vólt ||
+1702	1	2646	küldötte volt
+1703	5	6184	küldték volt,bementek volt,,ment volt. ||,estenek volt. ||,törvényköztek volt, ||
+1704	28	11281	vit volt,szerzet volt,kaszáltatot volt,mentek volt. ||,küldtem volt. ||,feljöt volt, ||,ment volt. ||,háborgatta volt, ||,érkezet volt,ment volt,lehozot volt ||,kitöltek volt, ||,fellázasztotta volt, ||,küldöttem volt,adtam volt,hajtott volt,felverték volt,bementek volt,vettem volt, ||,írt volt, ||,rekedt volt,írta volt,elküldöttem volt, ||,irtam volt,ajándékozott volt, ||,irtam volt,küldöttem volt. ||,reáütött volt, ||
+1705	75	29831	igírt volt,szállot volt,írtam volt,írtam volt, ||,elfelejtettem volt, ||,hozot volt, ||,elküldöttem vót,jöt volt,adtam volt,írtam volt,írtam volt? ||,írta volt,írtam volt,,szálítattam volt,kérte volt,tettem volt,mondot volt,vettem volt, ||,írtam volt, ||,kért volt,megtanítottam volt, ||,küldtem volt,hozták volt. ||,feltettem volt. ||,kívántam volt, ||,ígért volt,írtam volt,befizették volt, ||,felkérték volt,eset volt,írtam volt,elküldtem volt. ||,idejöt volt, ||,ment volt. ||,értettem volt,lehozot volt, ||,írtam volt,tudakozta volt,kezdte volt,elengedte volt, ||,megírtam volt, ||,írta volt,bíztam volt. ||,írtam volt,vett volt,megáztatták volt, ||,vettem volt, ||,ígírtem volt,írtam volt, ||,megkívántatta volt,nyertenek volt, ||,hagyta volt, ||,maradt volt, ||,expediáltam volt, ||,irtam volt, ||,töttem volt, ||,odaküldött volt,hagytanak volt,irtam volt,lehozott volt, ||,irtam volt, ||,hagytam volt,elhitt volt. ||,irtam volt,felejteted volt, ||,eszkettettem volt,irtam volt,eszet volt,küldöttem volt,vet volt,irt volt,küldöt volt,czináltanak volt ||,állitották volt,hatták volt ||
+1706	133	41722	futottam volt, ||,ösmerkedett volt,tölt volt,írtam volt, ||,írta volt,öszeromlot volt,ment volt,hajtatot volt,írtam volt,elküldtem volt,elrendeltem volt,eltörte volt,csináltak volt. ||,mondta volt,vettem volt,ráírtam volt,írtam volt,küldtem volt, ||,kiadtak volt,elküldtem volt. ||,találtam volt,írtam volt,elküldtem volt,,meghadta volt,hánták volt,írtam volt. ||,bementem volt,ideküldte volt,parancsoltam volt, ||,írtam volt, ||,írta volt,írta volt,kéredzet volt,hattam volt,tet volt,írta volt. ||,bevitték volt,elfutot volt,megírtam volt. ||,adot volt,meghattam volt, ||,loptak volt,írt volt,hattam volt,megitták volt, ||,küldtem volt. ||,bíztam volt,írtam volt,írta volt,írtam volt, ||,emlegettem volt,kértem volt,írta volt,beküldöt volt, ||,szokot volt,ment volt, ||,hattam volt,írta volt. ||,küldöt volt, ||,írtam volt,írt volt, ||,elhattam volt, ||,maradt volt,hallottam volt, ||,kértem volt, ||,megdagadozott volt ||,vettem volt. ||,írtam volt, ||,indultanak volt,mondta volt, ||,megirtam volt, ||,adott volt,ígérte volt, ||,küldötte volt. ||,küldtem volt. ||,adtam volt,küldtél volt,,adott volt, ||,jöttenek volt,adtam volt,parancsoltam volt. ||,irtam volt. ||,kötötte volt. ||,irtam volt,irtam volt, ||,adtam volt,küldöttem volt, ||,töttem volt,megirtam volt, ||,irtam volt, ||,megháborítot volt, ||,meglázzadtak volt, ||,írta volt. ||,meghattam volt, ||,vette volt,küldöt volt,adtam volt,megfosztotta volt, ||,hadtam volt,bélyegezték volt. ||,gondoltam volt, ||,küldöt volt,vette volt,írt volt,hozta volt,széjjelosztot volt,elküldött volt,hoztak volt, ||,küldtem volt,ráesmért volt,elküldtem volt,adot volt,,küldöt volt. ||,felvitette volt,vitték volt,lehozot volt, ||,írta volt,tettem volt,elvet volt,megnéztem volt,egybegyűjtöt volt, ||,írta volt,adtuk volt,írt volt,megírtam volt: ||,végbevitte volt,otthadtam volt,akadt volt,ráütöt volt, ||,írtam volt, ||,adot volt. ||,ajánlotta volt,küldték volt. ||
+1707	12	5314	értettem volt,megázott volt. ||,biztatot volt,vitték volt,vittek volt,adtam volt. ||,vette volt,írt volt,adtak volt. ||,ígértetet volt. ||,felvette volt,beszéltem volt
+1708	53	22250	resolváltam volt,nyertek volt, ||,értettem volt,kezdet volt. ||,mondot volt, ||,felvit volt, ||,abbanhattam volt,küldtem volt, ||,adtam volt,vette volt,küldtünk volt, ||,szántam volt, ||,ígírtem volt,rendelt volt. ||,küldöttem volt,hordták volt. ||,írattam volt,hattam volt, ||,végeztettem volt,írt volt,írattam volt,maradtak volt. ||,írtam volt,írt volt,elvitték volt,írtam volt,elküldtem volt,hoztam volt. ||,hallottam volt,írtak volt,küldettek volt. ||,írtam volt,írtam volt, ||,küldtem volt,írtam volt, ||,elküldtem volt,elfelejtet volt,hoztak volt,küldtem volt,írtam volt. ||,írtam volt, ||,írtam volt,elandalodtunk volt, ||,vágták volt. ||,elvállaltuk volt. ||,írt volt,írt volt. ||,írt volt. ||,értettem volt. ||,írtam volt,írtam volt, ||,hadta volt,kértem volt
+1709	22	17135	tetettem volt,írtam volt,megfagyott volt. ||,írtam volt,kezdet volt,küldöttem volt. ||,írtam volt. ||,írtam volt,említettem volt, ||,találták volt,mondta volt, ||,megírtam volt,,bánt volt,írtam volt,romlottak volt,parancsoltam volt, ||,írta volt,hajtot volt,adtam volt,hatot volt,adot volt,elküldötte volt
+1710	67	27871	halasztottam volt. ||,kértem volt,hattam volt,,dugták volt. ||,idejöt volt,ment volt. ||,vettem volt. ||,kerestettem volt,beszéltük volt, ||,elhittem volt, ||,felvet volt,írtam volt. ||,írtam volt,hajtottak volt,írtam volt, ||,megküldtem volt. ||,tet volt,adot volt,elmaradtak volt, ||,bíztam volt,ijedt volt,küldtem volt,hattam volt, ||,meghattam volt, ||,kezdet volt,küldtek volt,hozot volt, ||,hattam volt,lekéredzet volt,csináltatta volt,kiosztottam volt,vit volt,mondot volt,beküldtem volt, ||,mondotta volt,megadták volt, ||,küldtem volt,viszacseréltem volt. ||,írattam volt,bíztam volt, ||,jöt volt,lement volt, ||,adtam volt,,idehívattam volt,hajtottak volt. ||,értettem volt,adot volt,írtam volt,írtam volt,izentem volt,raktam volt,küldtem volt,küldtem volt, ||,írtam volt,odaküldöttem volt, ||,felejtettem volt,megsántult volt. ||,jelentettem volt. ||,kértek volt, ||,megunták volt,hatta volt,küldetet volt, ||,írtam volt,írt volt,küldtem volt,hagyot volt,bízta volt
+1711	13	13937	!feszabtunk volt,adtam volt. ||,ráfogtam volt,vet volt,adot volt,felejtettem volt, ||,hattam volt,rakták volt,meghvesztette vólt,elvesztettem volt,állattunk volt,írtam volt,meghatta volt
+1712	11	26584	irtad volt,irtam volt, ||,irtam volt, ||,jelentettem volt,letöttem volt,elvégezted volt,adta volt, ||,megirtam volt. ||,készitettek volt ||,irtam volt,töttem volt ||
+1713	7	6713	fogtam volt,projectizaltam volt,elfelejtettem volt, ||,küldettem volt,biztam volt,küldettem volt,letőttem volt
+1714	14	20343	!tültetettem volt, ||,ellvettem volt ||,vetette volt,ellveszet volt, ||,megromlot volt, ||,szolgált vólt, ||,általvitte vólt,bétöröt volt ||,elveszet volt, ||,lemöntem volt,emlekeztünk volt,irta volt,bocsátottam volt,hadta volt; ||
+1715	20	20443	megcsipte vóltt, ||,assecuralt volt,igértem volt, ||,elfelejtettem volt,láttam volt,,irtam volt,tudositottam volt, ||,megirtam volt,dirigáltam volt; ||,proclamaltattam volt,,hagytam volt,irtam volt,szollottam volt,,szollottam volt. ||,hagytam volt,igirte volt,vöttem volt, ||,reponaltam volt@,szerzett vólt ||,elszomorodtam vólt, ||
+1716	32	35827	ment volt ||,megromlott vólt, ||,betekergette vólt,kiállottam vólt ||,megfenyegedte vólt,megromlott volt,alkalmasztatta vólt,szokta volt,megharagudt volt ||,főszte vólt,kihajtották vólt ||,hozott vólt, ||,maradott vólt,jött vólt,megfogták vólt, ||,megszoritotta vólt,elkérte vólt,adott volt, ||,irtunk vólt,megirtunk volt, ||,beeresztette volt,mondta volt, ||,irtam volt,irtam volt,referaltam volt,idejőt volt. ||,töttem volt,odamentem vólt) ||,elfelejtettem vólt ||,tentalta volt,ment volt,irtam volt ||
+1717	31	24869	reavetettünk volt,felkötöttek volt ||,megkönnyebbultem volt,hosztam volt,megverte volt,odajött volt,jöttünk volt ||,megveszet volt, ||,lelte volt. ||,elhozta vólt,estek volt,visszajöttek volt,jöttek volt, ||,kitanultam volt ||,elvitt volt,elment volt,szabadították volt,elvitt volt) ||,írt volt, ||,irtam volt,dirigalta volt,concidált vólt,,vettem vólt,irta volt,irtam volt,informalt volt. ||,hallotta volt,akadott volt,convocalta volt,jött volt,költöttek volt ||
+1718	12	12570	hazaiöttek volt ||,gondoltam volt,kért volt,megirtam volt, ||,kiboritotta volt, ||,adta volt ||,appendaltak volt ||,lopot volt,mondotta volt) ||,meghholt volt,jöttem volt,mentem volt ||
+1719	16	17665	kifelejtödöt volt,abbanhagyta volt, ||,szántam volt, ||,csináltattad volt. ||,töltötte volt,bíztam volt,tétetett volt,percipiáltam vólt; ||,gondoltam vólt, ||,conspiraltanak volt@,küldőtt volt,instaltam volt. ||,vőttem volt, ||,irtam volt, ||,biztatott volt ||,biztuk volt; ||
+1720	9	14142	igértem volt,indított volt,resolválta volt,feltétettem volt, ||,maradtak volt. ||,megírtam volt,szedette volt,kimentem volt,kezdödött vólt ||
+1721	24	20873	dagadott volt, ||,kivettik volt, ||,elveszet vólt, ||,gyütt volt,megrázta volt,gyont volt,megfenyegette volt,irtam volt,irtam volt. ||,calculáltak volt,irtam volt,halt volt, ||,irtam volt,megirtam volt,irtam volt,kertem volt,irtam volt ||,kűldőttem vólt,meglátogattam volt,küldöt volt,hagytam volt,tett vólt,esett vólt,confundalódtam vólt. ||
+1722	27	28964	megnyomta vólt, ||,kezdet volt,igérte volt, ||,indultunk volt. ||,elkészitettem volt,comittáltam volt,kezdet volt,eröltetet volt,resolváltam volt,aláérkezet volt,njert volt,irtam volt, ||,kültem volt, ||,mondta volt, ||,meghirtam volt,meghmondottam volt, ||,irtam volt,mondot volt, ||,vettem volt,vetetödöt volt, ||,feltöttem volt, ||,csináltatot volt,irtam volt,kűldőttem volt,irtam volt,elmentek vólt. ||,hozatta volt
+1723	18	28036	békélet volt,idézte volt,kértem vólt,esett vólt, ||,cselekedett vólt,tólta vólt,felvette volt, ||,hagyták volt. ||,parancsoltam volt,hagytam volt, ||,ideérkeztem volt, ||,hordattam volt, ||,küldtek volt,hagytam volt. ||,igért volt,irtam volt,irtam volt, ||,tamadott volt
+1724	4	9229	vitték volt,csinaltam volt ||,köllöt volt, ||,bizatott volt, ||
+1725	9	3915	fogatatot volt,hozot volt,lehozott vólt,fogatot volt,!fogtatot volt,fogtatot volt,fogtatta volt,fogtatot volt,igirt volt
+1726	2	5819	hált vólt ||,felgyogúltam vólt
+1727	3	6744	kitekerték volt,tartották vólt,rendelt vólt
+1728	4	6138	haragúttam vólt,rontatott vólt,,haraguttam volt,dagatt vólt
+1729	9	13986	adott volt,kezdette vólt,féretekerték vólt, ||,megfenyegette vólt, ||,vesztette volt,támadott volt,ideérkezett volt,praetendalta volt, ||,találtam volt
+1730	9	15171	kiküldette vóltt. ||,jadzott vóltt ||,ásta vóltt; ||,kezdettem volt,megfogták volt,adott vólt,,irtam volt,kértem volt ||,gyűlt volt
+1731	7	7994	expedialtam volt,dirigáltam volt,estek vólt,megnyomta volt; ||,öletett vólt ||,írt vólt,irt volt
+1732	11	15853	elragatatott volt ||,megfenyegette volt,elragatták volt, ||,janakodot volt. ||,elragatták volt. ||,elragatták volt ||,elragatták volt, ||,praescribalt volt,akartam volt,igértem volt,dirigaltam volt
+1733	8	13752	rontotam volt,meghrontotta volt,,kirt volt,kinálta volt,küldött volt) ||,let vólt,elsivalkodot vólt, ||,tétetett vólt
+1734	3	14553	megnyargaltak vólt. ||,szokot vólt, ||,eldugtam vólt. ||
+1735	0	2718	
+1736	3	8003	felhuszta vólt,cselekedet volt,visgálta volt, ||
+1737	3	13244	meghrontotta volt ||,csinálták vólt, ||,hazament vólt ||
+1738	0	3357	
+1739	1	9461	meghaludt vólt, ||
+1740	7	25279	megháborodott vólt. ||,adott vólt,megnyomorodott vólt, ||,alutt volt,aluttak volt,jutott volt,kérte volt
+1741	5	26794	félrehuzattatott vólt, ||,elment vólt,megnyomorodott vólt ||,kűldöttem vólt, ||,vitte vólt
+1742	12	28463	elveszet volt,kiment volt,hordottak volt,,cselekedte volt, ||,kigyöttek volt, ||,elladott volt,kirt volt,kirt volt,meghiedet volt,ment volt,kitekerték volt, ||,öszverontották vólt: ||
+1743	4	14707	vett volt,vett volt,fatealta volt,fatealt volt
+1744	0	13455	
+1745	2	27310	vitt volt,dagat volt, ||
+1746	0	11457	
+1747	0	7331	
+1748	0	13659	
+1749	0	5121	
+1750	3	21235	megpirongatta vólt,aratot volt, ||,elment volt
+1751	5	27239	kiment volt ||,fekütt volt, ||,mondotta volt ||,megromlott volt ||,beszelt volt
+1752	0	2691	
+1753	0	7388	
+1754	5	21280	kért vólt,bégyogyúlt volt@,sértette vólt,hozott vólt,vallot vólt ||
+1755	24	26798	laktam vólt,megnehezteltem vólt,okoztak volt, ||,lakott volt, ||,kérettetett volt,rakodott volt,kérte volt,fekütt volt, ||,akattak volt,szerette volt, ||,küldött volt,kért volt, ||,atta volt, ||,marattak volt, ||,kért volt,odaajánlotta volt, ||,ellvitte volt ||,ajánlotta volt, ||,találta volt,ellment volt, ||,elalutt volt, ||,kérte volt, ||,futamodot vólt, ||,alutt vólt, ||
+1756	6	28010	dagadozott vólt; ||,oszvevesztek vólt ||,nyomta volt,elhatta vólt ||,mondotta vólt, ||,megitatta vólt, ||
+1757	3	5414	vett vólt,költsönadott vólt,leesett vólt, ||
+1758	2	5634	vittem vólt,öszvevesztek vólt
+1759	1	9170	küldett vólt, ||
+1760	2	3484	informaltak volt. ||,vit volt
+1761	5	6614	hintettek volt,irta volt,nyert volt,solicitáltam volt,állott vólt, ||
+1762	0	1644	
+1763	0	97	
+1764	0	2684	
 1765	0	1	
-1766	0	1	
-1767	0	1	
+1766	0	633	
+1767	0	6166	
 1768	0	1	
-1769	0	1	
+1769	0	70	
 1770	0	1	
-1771	0	1	
+1771	0	2001	

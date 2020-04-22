@@ -64,7 +64,7 @@ def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
         pat_past = re.compile(r'[vuw]ala\b', re.I)
     else:
         pat_past = re.compile(r'[vuwú][oó]l*t+h?\b', re.I)
-    if asp.startswith('discr'):
+    if asp.strip() == '':
         pat_past = re.compile(r'[a-záöőüűóúéí]+\s*' + pat_past.pattern, re.I)
 
     pat_sqr_bracket = re.compile(r'\[\[(.+?)]')
@@ -77,8 +77,9 @@ def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
         if len(line) == 9:
             year = line[2]
             sent = line[-1]
-            if not asp.startswith('discr'):
+            if asp.strip() != '':
                 pot_hits = pat_sqr_bracket.findall(sent) + pat_crl_bracket.findall(sent)
+                # print(pot_hits)
             else:
                 sent = pat_to_repl.sub('', sent)
                 pot_hits = pat_past.findall(sent)
@@ -87,8 +88,10 @@ def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
                 continue
 
             for pot_hit in pot_hits:
-                if asp.startswith('discr') or pat_past.search(pot_hit):
+                # ha nincs aspektus, akkor biztos jó a találat (csak volt/vala), különben létigére keres
+                if asp.strip() == '' or pat_past.search(pot_hit):
                     pts = [pt.strip() for pt in pot_hit.split()]
+                    # print(pts)
                     fpt = pts[0].lower()
                     # informálisnál ha van lexikon, akkor biztos, hogy diszkriminatívan lesz használva
                     if fpt not in lexicon:
@@ -120,8 +123,7 @@ def process(inp_1, inp_2, char_map, asp, vala_volt, exp_mod, lexicon):
 
     all_words = get_all_words(inp_2)
     for key in all_words.keys():
-        if key in pps.keys():
-            pps[key][1] = all_words[key]
+        pps[key][1] = all_words[key]
     c.gen_empty_years(sorted(all_words.keys(), key=lambda year: year), pps)
 
     # for item, value in pps.items():
@@ -140,7 +142,8 @@ def get_args():
     parser.add_argument('-m', '--opt_lexicon', help='Path to lexicon(s)')
     parser.add_argument('-r', '--corpus', help='Path to file to corpus text', nargs='?', default='../inputs/inform/tmk_all.txt')
     parser.add_argument('-t', '--past_type',
-                        help='Which text and past type it is. Separated by column, eg. inform.,perf.,vala',
+                        help="""Which text and past type it is. Three value separated by column,
+                             All values must be filled, eg. inform.,perf.,vala """,
                         default='# inform.,perf.,vala')
 
     args = parser.parse_args()
@@ -151,8 +154,9 @@ def get_args():
         for p in glob(args.opt_lexicon):
             lexicon += c.get_lexicon(c.read_v2(p))
 
-    return {'outdir': args.directory, 'files': args.filepath, 'ofname': args.ofname, 'charmap': args.charmap,
-            'past_type': (txt_type, asp, vala_volt), 'lexicon': lexicon, 'exp_mod': args.exp_mod, 'corpus': args.corpus}
+    return {'outdir': args.directory, 'files': args.filepath, 'ofname': args.ofname,
+            'charmap': args.charmap, 'past_type': [txt_type, asp, vala_volt], 'lexicon': lexicon,
+            'exp_mod': args.exp_mod, 'corpus': args.corpus}
 
 
 def main():
@@ -161,7 +165,12 @@ def main():
     inp_2 = c.read_v2(args['corpus'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
     past_type = args['past_type']
-    outp = process(inp_1, inp_2, char_map, past_type[1], past_type[2], args['exp_mod'],  args['lexicon'])
+    outp = process(inp_1, inp_2, char_map, past_type[1], past_type[2], args['exp_mod'], args['lexicon'])
+    if past_type[1].strip() == '':
+        if args['lexicon']:
+            past_type[1] = 'discr.'
+        else:
+            past_type[1] = 'non discr.'
     c.write(outp, args['outdir'], args['ofname'], past_type, args['exp_mod'])
 
 
