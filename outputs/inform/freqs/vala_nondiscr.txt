@@ -174,7 +174,7 @@
 1657	0	866	
 1658	0	129	
 1659	0	325	
-1660	1	1765	e vala
+1660	2	1765	mondok vala,e vala
 1661	0	137	
 1662	0	1	
 1663	0	1	
@@ -237,7 +237,7 @@
 1720	18	14142	udvarlom vala,akarom vala,akarok vala,feljöhetnél vala,irtam vala,nálam vala,tétettél vala,rakodtam vala,szerencsénk vala,irtam vala,megírtam vala,resolváltam vala,miként vala,írta vala,szandékkal vala,aperiáltam vala,reménlem vala,siettem vala
 1721	23	20873	előtalálta vala,kitette vala,feleli vala,el vala,menti vala,monta vala,lesz vala,kell vala,elkülted vala,indulok vala,irtad vala,felirtak vala,irtam vala,irok vala,megszomorodott vala,hijával vala,lesz vala,dirigáltam vala,rendeltem vala,irtam vala,tudositottam vala,udvarlottam vala,irtam vala
 1722	42	28964	eddig vala,bemehetek vala,tegnap vala,alkalmatlanságom vala,elmegyek vala,praedicator vala,akartam vala,hagjtam vala,adhatok vala,vetik vala,meghcsinálták vala,fájdalma vala,ijettem vala,akarok vala,jöttek vala,járok vala,lesz vala,fogta vala,disponáltam vala,jovult vala,most vala,kezdettem vala,kijöt vala,belefáradtam vala,mentem vala,szentkeresztiné vala,elláttam vala,cselekedet vala,megirtam vala,maradott vala,megirtam vala,jöttem vala,indult vala,meghirtam vala,bééri vala,meghterheltem vala,mondotta vala,itten vala,mutathatom vala,nem vala,tészem vala,idejőtt vala
-1723	34	28036	biztam vala,tött vala,adtam vala,sztattam vala,bajom vala,végbevittem vala,vitt vala,kezdettem vala,mozdítottam vala,gondoltam vala,megyek vala,felment vala,vett vala,tettem vala,beszéltem vala,lesz vala,megirtam vala,ér vala,fele vala,általküldtem vala,fogok vala,deliberáltam vala,küldöd vala,adtam vala,hagytam vala,deliberáltatott vala,sing vala,irtam vala,reáakadtam vala,küldtem vala,izentem vala,igirte vala,illendő vala,érnek vala
+1723	34	28036	biztam vala,tött vala,adtam vala,hasztattam vala,bajom vala,végbevittem vala,vitt vala,kezdettem vala,mozdítottam vala,gondoltam vala,megyek vala,felment vala,vett vala,tettem vala,beszéltem vala,lesz vala,megirtam vala,ér vala,fele vala,általküldtem vala,fogok vala,deliberáltam vala,küldöd vala,adtam vala,hagytam vala,deliberáltatott vala,sing vala,irtam vala,reáakadtam vala,küldtem vala,izentem vala,igirte vala,illendő vala,érnek vala
 1724	5	9229	kivánván vala,is vala,nehezebb vala,megparantsolta vala,megparantsolta vala
 1725	0	3915	
 1726	0	5819	
@@ -268,7 +268,7 @@
 1751	6	27239	nyavajakkal vala,komjaaszszony vala,kiván vala,alatt vala,fekütt vala,szén vala
 1752	0	2691	
 1753	2	7388	ki vala,egésseges vala
-1754	3	21280	nekiment vala,alkalmatossággal vala,nehezebben vala
+1754	4	21280	nekiment vala,alkalmatossággal vala,eva vala,nehezebben vala
 1755	3	26798	ment vala,fél vala,szoktak vala
 1756	8	28010	nyitott vala,leánkára vala,nyavala,nyavala,orvosolt vala,nyavala,nem vala,kelle vala
 1757	3	5414	itt vala,aszszony vala,nem vala

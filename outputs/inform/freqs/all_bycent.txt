@@ -5,7 +5,7 @@
 Ø + volt		0			20			1			1
 -t(t) + vala	1			268			29			238
 -t(t) + volt	0			249			147			796
-!discr. vala	1			428			42			441
-!discr. volt	0			553			409			4058
-discr. vala		0			63			6			110
-discr. volt		0			296			263			3256
+!discr. vala	1			428			43			442
+!discr. volt	0			554			411			4087
+discr. vala		0			56			7			109
+discr. volt		0			292			264			3281

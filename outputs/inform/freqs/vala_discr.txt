@@ -29,7 +29,7 @@
 1512	2	1029	es wala,kőldő wala
 1513	0	1	
 1514	0	1	
-1515	1	661	fokata wala
+1515	0	661	
 1516	0	1	
 1517	0	109	
 1518	0	1	
@@ -38,9 +38,9 @@
 1521	0	179	
 1522	0	1	
 1523	0	224	
-1524	1	1330	megserzem wala
+1524	0	1330	
 1525	0	36	
-1526	3	2154	therweniewnk wala,ırtam vala,meghtistesseitheth vala
+1526	2	2154	therweniewnk wala,ırtam vala
 1527	0	1	
 1528	0	1	
 1529	0	1	
@@ -62,7 +62,7 @@
 1545	0	880	
 1546	0	713	
 1547	0	704	
-1548	2	3344	erettem vala,bizon vala
+1548	1	3344	bizon vala
 1549	1	2057	ember vala
 1550	0	3725	
 1551	2	2977	írá vala,tolmácsa vala
@@ -105,10 +105,10 @@
 1588	0	999	
 1589	4	8634	zolgam wala,itt uala,akaram uala,nem vala
 1590	1	6882	mihaljal vala
-1591	4	5367	azeleoth vala,lowa vala,a vala,kir uala
+1591	3	5367	azeleoth vala,lowa vala,a vala
 1592	1	3249	ambrusné vala
 1593	1	2750	leend uala
-1594	17	6791	gyülementünk uala,uelek uala,tórók uala,milj uala,egjkózeletóttük uala,humonnajistuanuala,simon uala,hogj uala,lobogos uala,lobogojok uala,seregjek uala,üdó uala,keues uala,rakas uala,akat uala,tak uala,octava vala
+1594	15	6791	uelek uala,tórók uala,milj uala,humonnajistuanuala,simon uala,hogj uala,lobogos uala,lobogojok uala,seregjek uala,üdó uala,keues uala,rakas uala,akat uala,tak uala,octava vala
 1595	1	1269	uek vala
 1596	0	825	
 1597	0	643	
@@ -174,7 +174,7 @@
 1657	0	866	
 1658	0	129	
 1659	0	325	
-1660	1	1765	e vala
+1660	2	1765	mondok vala,e vala
 1661	0	137	
 1662	0	1	
 1663	0	1	
@@ -219,7 +219,7 @@
 1702	0	2646	
 1703	1	6184	nem vala
 1704	4	11281	szerencsénk vala,nem vala,szántál vala,futamodat vala
-1705	5	29831	szerencséje vala,szándékom vala,jő vala,káromra vala,tegnap vala
+1705	4	29831	szerencséje vala,szándékom vala,káromra vala,tegnap vala
 1706	5	41722	hozzáfogatok vala,nem vala,nem vala,emészté vala,is vala
 1707	1	5314	reménségünk vala
 1708	1	22250	zápor vala
@@ -237,7 +237,7 @@
 1720	5	14142	feljöhetnél vala,nálam vala,szerencsénk vala,miként vala,szandékkal vala
 1721	2	20873	el vala,hijával vala
 1722	9	28964	eddig vala,tegnap vala,alkalmatlanságom vala,praedicator vala,fájdalma vala,most vala,szentkeresztiné vala,itten vala,nem vala
-1723	5	28036	sztattam vala,bajom vala,fele vala,sing vala,illendő vala
+1723	4	28036	bajom vala,fele vala,sing vala,illendő vala
 1724	3	9229	kivánván vala,is vala,nehezebb vala
 1725	0	3915	
 1726	0	5819	
@@ -268,7 +268,7 @@
 1751	4	27239	nyavajakkal vala,komjaaszszony vala,alatt vala,szén vala
 1752	0	2691	
 1753	2	7388	ki vala,egésseges vala
-1754	2	21280	alkalmatossággal vala,nehezebben vala
+1754	3	21280	alkalmatossággal vala,eva vala,nehezebben vala
 1755	0	26798	
 1756	6	28010	leánkára vala,nyavala,nyavala,nyavala,nem vala,kelle vala
 1757	3	5414	itt vala,aszszony vala,nem vala
