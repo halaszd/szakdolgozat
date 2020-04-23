@@ -65,8 +65,7 @@ def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
             \s*)"""                     # Utána nullával egyenlő vagy több whitespace
             + pat_vala_volt,            # a vala vagy volt mintázat inputtól függően
             re.VERBOSE | re.IGNORECASE)
-
-    elif asp.startswith('imp') or asp.startswith('discr'):
+    elif asp.startswith('imp') or asp.strip() == '':
         pat_past = re.compile(r'([a-záöőüűóúéí]+\s*)' + pat_vala_volt, re.IGNORECASE)
 
     hits = []
@@ -74,7 +73,7 @@ def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
         bad_affix = False
         context = txt[hit.start() - 40:hit.start()] + txt[hit.start():hit.end() + 40]
         hit = hit.group(1).strip()
-        if not is_discr:
+        if asp.startswith('imp') or asp.startswith('perf'):
             for affix in stop_affixes:
                 if hit.endswith(affix):
                     bad_affix = True
@@ -159,7 +158,8 @@ def get_args():
                         nargs='?', type=c.str2bool, const=True, default=False)
     parser.add_argument('-m', '--opt_lexicon', help='Path to lexicon(s)')
     parser.add_argument('-t', '--past_type',
-                        help='Which text and past type it is. Separated by column, eg. INFORM.,PERF.,VALA',
+                        help="""Which text and past type it is. Three value separated by column,
+                                 All values must be filled, eg. inform.,perf.,vala """,
                         default='# inform.,perf.,vala')
     parser.add_argument('-x', '--is_discr', help='Using lexicon for discrimination', nargs='?',
                         type=c.str2bool, const=True, default=False)
@@ -178,7 +178,7 @@ def get_args():
         args.is_discr = False
 
     return {'outdir': args.directory, 'files': args.filepath, 'ofname': args.ofname, 'charmap': args.charmap,
-            'past_type': (txt_type, asp, vala_volt), 'is_discr': args.is_discr, 'lexicon': lexicon,
+            'past_type': [txt_type, asp, vala_volt], 'is_discr': args.is_discr, 'lexicon': lexicon,
             'exp_mod': args.exp_mod}
 
 
@@ -186,9 +186,14 @@ def main():
     args = get_args()
     inp = c.read_v1(args['files'])
     char_map = c.get_char_map(c.read_v2(args['charmap']))
-    txt_type, asp, vala_volt = args['past_type']
-    outp = process(inp, char_map, asp, vala_volt, args['is_discr'], args['exp_mod'], args['lexicon'])
-    c.write(outp, args['outdir'], args['ofname'], args['past_type'], args['exp_mod'])
+    past_type = args['past_type']
+    outp = process(inp, char_map, past_type[1], past_type[2], args['is_discr'], args['exp_mod'], args['lexicon'])
+    if past_type[1].strip() == '':
+        if args['is_discr']:
+            past_type[1] = 'discr.'
+        else:
+            past_type[1] = 'non discr.'
+    c.write(outp, args['outdir'], args['ofname'], past_type, args['exp_mod'])
 
 
 if __name__ == '__main__':
