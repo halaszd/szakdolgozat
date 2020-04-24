@@ -69,7 +69,7 @@ def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
 
     pat_sqr_bracket = re.compile(r'\[\[(.+?)]')
     pat_crl_bracket = re.compile(r'{(.+?)}')
-    pat_to_repl = re.compile(r'[[\]|{}!?.,;%\\]')
+    pat_to_repl = re.compile(r'[[\]|{}!?.,;%\\@̊]')
     txt = txt.split('\n')
 
     for line in txt:
@@ -92,7 +92,7 @@ def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
                 if asp.strip() == '' or pat_past.search(pot_hit):
                     pts = [pt.strip() for pt in pot_hit.split()]
                     # print(pts)
-                    fpt = pat_to_repl.sub('', pts[0].lower().strip())
+                    fpt = pat_to_repl.sub('', pts[0].lower()).strip()
                     # informálisnál ha van lexikon, akkor biztos, hogy diszkriminatívan lesz használva
                     if fpt not in lexicon:
                         # ha exp_mod, akkor a szó a kulcs és defaultdict(lambda: [0, []])
@@ -101,7 +101,7 @@ def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
                             pps[fpt][1].append(sent)
                         # különben az évszám a kulcs és defaultdict(lambda: [0, 0, []])
                         else:
-                            pps[year][2].append(' '.join(pts).lower())
+                            pps[year][2].append(' '.join(pts))
                             pps[year][0] += 1
 
 
