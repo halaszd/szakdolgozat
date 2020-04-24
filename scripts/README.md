@@ -1,3 +1,5 @@
+# Szakdolgozathoz használt szkriptek
+
 ##Informális szövegek feldolgozása: get_inform.py
 
 **Perfektum + volt szótár létrehozása:**
