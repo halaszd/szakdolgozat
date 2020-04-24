@@ -1,6 +1,6 @@
 # Szakdolgozathoz használt szkriptek
 
-##Informális szövegek feldolgozása: get_inform.py
+## Informális szövegek feldolgozása: get_inform.py
 
 **Perfektum + volt szótár létrehozása:**
 `python get_inform.py ../inputs/inform/tmk_perf_volt.txt -d ../inputs/inform/lexicons -f perf_volt.txt -e -t inform.,perf.,volt`
@@ -39,6 +39,6 @@
 `python get_inform.py ../inputs/inform/tmk_imp_vala.txt -d ../outputs/inform/freqs -f imp_vala.txt -t inform,imp,vala`
 
 
-##formális szövegek feldolgozása: get_form.py
+## formális szövegek feldolgozása: get_form.py
 
 
