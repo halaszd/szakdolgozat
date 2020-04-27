@@ -5,13 +5,7 @@ import sys
 sys.path.append('../')
 from scripts.common import str2bool
 
-# TODO: megcsinálni újra az összes diagramot, utána szakdogaírás:
-# kész: form: all, valavolt_discr, valavolt_nondescr
-# kész: inform: all, valavolt_discr, valavolt_nondiscr
-
-# kész form-inform: perfektum vala+volt, valavolt_descr, valavolt_nondiscr,
-# imperfektum vala+volt
-
+# Irányvonalak színének és alakjának beállításai a múlt idő fajtája szerint
 LINES = {'inform.':
              {'perf.':
                   {'vala': ('red', '-'),
@@ -49,6 +43,13 @@ def read(inp):
 
 
 def split_years(freq_ls, c):
+    """
+    A beállított éves bontás szerint rendezi újra az adatokat
+
+    :param freq_ls: Frekvencia lista
+    :param c: Bontás mértéke
+    :return: Egy meghatározott bontás által újra felépített tuple lista
+    """
     count = 0
     sum_pfreq = 0
     sum_all_freq = 0
@@ -60,7 +61,6 @@ def split_years(freq_ls, c):
         count += 1
         if count == c:
             if first:
-                # felételezem, hogy a használatanem volt kevesebb az első x évben, mint később
                 new_freq_ls.append(('{}-{}'.format(freq_ls[0][0], year), sum_pfreq, sum_all_freq))
                 first = False
             else:
@@ -74,6 +74,15 @@ def split_years(freq_ls, c):
 
 
 def unify_years(all_ls, start, end):
+    """
+    Az eltérő időintervallummal rendelkező frekvencia listák egységesítése a feladata.
+    Csak akkor hívódik meg, ha előre jelezzük -m argumentummal, hogy eltérő a dokumentumok kezdeti és utolsó éve
+
+    :param all_ls: Az összes fajta múlt idő listája
+    :param start: Az összes dokumentum kezdő éve közüli maximum érték
+    :param end: Az összes dokumentum utolsó éve közüli minimum érték
+    :return: A kezdő és utolsó év közötti frekvenciák dokumentumonként
+    """
     new_all_ls = []
     for ls in all_ls:
         new_ls = [ls.pop(0)]
@@ -90,7 +99,17 @@ def unify_years(all_ls, start, end):
         new_all_ls.append(new_ls + ls[i:j+1])
     return new_all_ls
 
+
 def get_start_end(all_ls):
+    """
+    Meghatározza az összes bemeneti dokumentum egységesített kezdeti és utolsó évét.
+    Csak akkor hívódik meg, ha előre jelezzük -m argumentummal, hogy eltérő a dokumentumok kezdeti és utolsó éve
+
+    :param all_ls: Az összes fajta múlt idő listája
+    max_start: Az összes kezdeti év maximuma lesz a végső értéke
+    min_end: Az összes utolsó év minimuma lesz a végső értéke
+    :return: max_start, min_end
+    """
     max_start = int(all_ls[0][1][0])
     min_end = int(all_ls[0][-1][0])
     for ls in all_ls[1:]:
@@ -103,14 +122,28 @@ def get_start_end(all_ls):
     return max_start, min_end
 
 
-def get_plot(freq_ls, txt_type, line_name):
+def get_plot(freq_ls, past_type, line_name):
+    """
+    A diagramhoz hozzáad egy frekvencia listából létrehozott irányvonalat
+
+    :param freq_ls: az egyik múlt idő fajtához tartozó frekvencia lista
+    :param past_type: A múlt idő fajtája, ez alapján lesz meghatározva a diagram vonalának színe, alakja
+    :param line_name: A vonal neve
+    """
     years = [item[0] for item in freq_ls]
     freq = [(float(item[1])/float(item[2]))*100 for item in freq_ls]
-    line_type = LINES[txt_type[0]][txt_type[1]][txt_type[2]]
+    line_type = LINES[past_type[0]][past_type[1]][past_type[2]]
     plt.plot(years, freq, label=line_name.upper(), color=line_type[0], linestyle=line_type[1])
 
 
 def process(inp, interval, is_mixed):
+    """
+    Feladata a bemenet(ek) alapján létrehozni egy diagramot
+
+    :param inp: Generátor, a frekvencia listákkal (szövegesen)
+    :param interval: Milyen éves bontásban reprezentálja a statisztikákat
+    :param is_mixed: Eltérőek-e a dokumentumok kezdeti és utolsó évei?
+    """
     all_freq_ls = []
     for i, fl in enumerate(inp):
         fl = fl.split('\n')

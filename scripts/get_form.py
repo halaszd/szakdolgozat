@@ -9,7 +9,7 @@ from string import punctuation as puncts
 sys.path.append('../')
 import scripts.common as c
 
-
+# A lexikonok elérési útvonala
 LEXICONS = {'perf.': {'vala': '../inputs/form/lexicons/perf_vala.txt',
                       'volt': '../inputs/form/lexicons/perf_volt.txt'},
             'imp.': {'vala': '../inputs/form/lexicons/imp_vala.txt',
@@ -17,10 +17,23 @@ LEXICONS = {'perf.': {'vala': '../inputs/form/lexicons/perf_vala.txt',
 
 
 def get_path_lexicon(t, t2):
+    """
+
+    :param t: Aspektus
+    :param t2: Vala/volt
+    :return: A lexikon elérési útvonala
+    """
     return LEXICONS[t][t2]
 
 
 def get_freq_types(hits, pps=None):
+    """
+    Visszaadja a találati szótárat, freqvenciával és a találati alakokkal együtt
+
+    :param hits: A találatokat rögzítő lista tuple-öket tartalmazva
+    :param pps: A szótár, amit feltölt a függvény: defaultdict(lambda: [0, []])
+    :return: Találati szótár
+    """
     if pps is None:
         pps = defaultdict(lambda: [0, []])
     for hit, examp in hits:
@@ -31,6 +44,15 @@ def get_freq_types(hits, pps=None):
 
 
 def get_freq_past_by_year(hits, year, doc_length, pps=None):
+    """
+    Visszaadja a találati szótárat évek szerint csoportosított frekveciákkal
+
+    :param hits: A találatokat rögzítő lista tuple-öket tartalmazva
+    :param pps: A szótár, amit feltölt a függvény: {lambda: [0, 0, []]}
+    :param year: A viszgált dokumentum datálása
+    :param doc_length: A viszgált dokumentum hossza
+    :return:
+    """
     if pps is None:
         pps = {lambda: [0, 0, []]}
 
@@ -46,13 +68,29 @@ def get_freq_past_by_year(hits, year, doc_length, pps=None):
 
 
 def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
+    """
+    A keresett múlt idő fajta megtalálásáért felelős függvény.
+
+    :param txt: A bemeneti szöveg
+    :param year: A dokumentum datálása
+    :param vala_volt: Vala/volt típust keressen
+    :param asp: A múlt idő aspektusa
+    :param pps: A szótár, amit feltölt a függvény
+    :param is_discr: Ha True, akkor a találatnak nem szabad benne lennie a már meglévő szótárban
+    :param exp_mod: Ha True, akkor szótárat hoz létre
+    :param lexicon: A bemeneti lexikon
+    :return: Az eredményekkel feltöltött gyakorisági/példa szótár
+    """
+    # Azok a végződések, amelyek nem kapcsolódnak igékhez
     stop_affixes = ('sag', 'seg', 'ás', 'és', 'ös' 'ős', 'ós', 'endó', 'endő', 'endo', 'andó', 'andő', 'ando',
                     'ban', 'ben', 'ba', 'be', 'lan', 'len', 'lán', 'lén', 'b', 'bb', 'tól', 'től', 'ból', 'ből',
                     'wa', 'we', 'va', 've', 'ka', 'ke')
 
+    # A regex második egységét definiálja, vala vagy volt-ra keressen rá
     pat_vala_volt = r'([vuw]ala\b)' if vala_volt == "vala" else r'([vuwú][oó]l*t+h?\b)'
 
     if asp.startswith('perf'):
+        # Ha perfektum a múlt idő aspektusa, akkor -t(t)(személyrag) + vala/volt-ra keres rá
         pat_past = re.compile(
             r"""
             ([a-záöőüűóúéí]+?(?:t+h?    # Bármi egészen a t + esetleges személyragokig
@@ -66,6 +104,8 @@ def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
             + pat_vala_volt,            # a vala vagy volt mintázat inputtól függően
             re.VERBOSE | re.IGNORECASE)
     elif asp.startswith('imp') or asp.strip() == '':
+        # Ha imperfektum a múlt idő aspektusa, vagy kitöltetlen (sima volt/vala keresése esetén)
+        # akkor bármilyen szó + vala/volt-ra keres rá
         pat_past = re.compile(r'([a-záöőüűóúéí]+\s*)' + pat_vala_volt, re.IGNORECASE)
 
     hits = []
@@ -74,6 +114,7 @@ def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
         context = txt[hit.start() - 40:hit.start()] + txt[hit.start():hit.end() + 40]
         hit = hit.group(1).strip()
         if asp.startswith('imp') or asp.startswith('perf'):
+            # Csak akkor nézi a kizáró végződések litáját, ha nem sima vala/volt-ra kell keresnie
             for affix in stop_affixes:
                 if hit.endswith(affix):
                     bad_affix = True
@@ -95,6 +136,13 @@ def find_past(txt, year, vala_volt, asp, pps, is_discr, exp_mod, lexicon):
 
 
 def preprocess(txt, char_map):
+    """
+    A szöveg feldolgozása előtti egységesítése a függvény feladata
+
+    :param txt: Bemeneti szöveg
+    :param char_map: Karakterek szótára. Soronként karakterek (TSV): mit -> mire
+    :return: Egységesített szöveg
+    """
     pat_bracket = re.compile(r'({.*?})|(\[.*?])|/', re.MULTILINE)
     repls = [('-@@', ''), ('@@-', ''), ('== ==', ' '), ('-\n-', ''), ('-\n', ''),  ('\n-', ''), ('\n', ''), ('\'', '')]
     year = source = None
@@ -124,6 +172,16 @@ def preprocess(txt, char_map):
 
 
 def process(inp, char_map, asp, vala_volt, is_discr, exp_mod, lexicon):
+    """
+
+    :param inp: A dokumentum, amiből ki kell nyerni a múlt időket
+    :param char_map: A karakterek szótára, soronként mit->mire alakban
+    :param asp: A múlt idő aspektusa
+    :param vala_volt: Volt/vala fajta összetételt keressen?
+    :param is_discr: Ha True, akkor az az alak fog kelleni, ami nincs benne a lexikonban
+    :param exp_mod: Lexikont létrehozása, ha True
+    :param lexicon: Lexikon szavai egy listában
+    """
     pps = defaultdict(lambda: [0, []]) if exp_mod else defaultdict(lambda: [0, 0, []])
     for txt in inp:
         txt, year = preprocess(txt, char_map)
@@ -132,6 +190,7 @@ def process(inp, char_map, asp, vala_volt, is_discr, exp_mod, lexicon):
     if exp_mod:
         return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
+    # Üres évek generálása, ahol nem volt találat
     c.gen_empty_years(sorted(pps.keys(), key=lambda y: y), pps)
 
     return [(elem[0], '{:.2f}'.format(elem[1][0]), '{:.2f}'.format(elem[1][1]), elem[1][2])

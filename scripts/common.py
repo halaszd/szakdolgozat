@@ -1,5 +1,6 @@
 #! /usr/bin/env python3
 import os
+import argparse
 
 
 def write(outp, odir, ofname, past_type, exp_mod):
@@ -25,6 +26,11 @@ def read_v2(inp):
 
 
 def get_lexicon(txt):
+    """
+
+    :param txt: Bemeneti lexikon, a sorok (TSV) nulladik helyén a szóval
+    :return: A lexikon szavai egy listában
+    """
     return [line.split('\t')[0].strip() for line in txt.split('\n')]
 
 
@@ -68,6 +74,11 @@ def str2bool(v):
 
 
 def get_past_type(desc):
+    """
+
+    :param desc: a múlt idő leírása vesszőkkel elválasztva
+    :return: a múlt idő meghatározása tuple-ben: 0=inform,form; 1=aspektus; 2=vala/volt
+    """
     desc = desc.lower().split(',')
     return desc[0], desc[1], desc[2]
 

@@ -35,12 +35,17 @@ def get_all_words(inp):
 
 
 def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
+
     """
     :param txt: szöveges bemenet
         A TMK-ról letöltött 4 féle txt: tmk_perf_vala.txt, tmk_perf_volt.txt, tmk_impf_vala.txt, tmk_impf_volt.txt
     :param vala_volt: -tt + valá-t vagy -tt + volt-ot keressen a függvény
     :param pps: szótár a -tt + vala vagy a -tt + volt alakok számának rögzítésére évszámok szerint
         {'anydate_1':[past_perf_1, past_perf_2... past_perf_n], 'anydate_n': [...], ...}
+
+    :param exp_mod: Ha True, akkor lexikont hoz létre
+    :param asp: A múlt idő aspektusa: imp(erfektum). vagy perf(ektum).
+    :param lexicon: A lexikon elérési útvonala
     :return: évszámok szerint növekvően rendezet gyakorisági lista [('évszám', gyakoriság), ...]
 
     pat_ptype: valá-t vagy volt-ot keressen az potenciális keresett összetett múlt időkben (regex)
@@ -79,7 +84,6 @@ def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
             sent = line[-1]
             if asp.strip() != '':
                 pot_hits = pat_sqr_bracket.findall(sent) + pat_crl_bracket.findall(sent)
-                # print(pot_hits)
             else:
                 sent = pat_to_repl.sub('', sent)
                 pot_hits = pat_past.findall(sent)
@@ -91,7 +95,6 @@ def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
                 # ha nincs aspektus, akkor biztos jó a találat (csak volt/vala), különben létigére keres
                 if asp.strip() == '' or pat_past.search(pot_hit):
                     pts = [pt.strip() for pt in pot_hit.split()]
-                    # print(pts)
                     fpt = pat_to_repl.sub('', pts[0].lower()).strip()
                     # informálisnál ha van lexikon, akkor biztos, hogy diszkriminatívan lesz használva
                     if fpt not in lexicon:
@@ -106,6 +109,13 @@ def find_past(txt, vala_volt, pps, exp_mod, asp, lexicon):
 
 
 def preprocess(txt, char_map):
+    """
+    A szöveg feldolgozása előtti egységesítése a függvény feladata
+
+    :param txt: Bemeneti szöveg
+    :param char_map: Karakterek szótára. Soronként karakterek (TSV): mit -> mire
+    :return: Egységesített szöveg
+    """
     for orig, norm in char_map:
         txt = txt.replace(orig, norm)
     txt = txt.replace('\xa0', '')
@@ -113,6 +123,17 @@ def preprocess(txt, char_map):
 
 
 def process(inp_1, inp_2, char_map, asp, vala_volt, exp_mod, lexicon):
+    """
+
+    :param inp_1: A dokumentum, amiből ki kell nyerni a múlt időket
+    :param inp_2: A dokumentum, ami tartalmazza az összes szót
+    :param char_map: A karakterek szótára, soronként mit->mire alakban
+    :param asp: A múlt idő aspektusa
+    :param vala_volt: Volt/vala fajta összetételt keressen?
+    :param exp_mod: Lexikont létrehozása, ha True
+    :param lexicon: Lexikon szavai egy listában
+    """
+
     pps = defaultdict(lambda: [0, []]) if exp_mod else defaultdict(lambda: [0, 0, []])
     for txt in inp_1:
         txt = preprocess(txt, char_map)
@@ -122,8 +143,11 @@ def process(inp_1, inp_2, char_map, asp, vala_volt, exp_mod, lexicon):
         return [(elem[0], elem[1][0], elem[1][1]) for elem in sorted(pps.items(), key=lambda item: item[0])]
 
     all_words = get_all_words(inp_2)
+    # Az összes szó számának hozzáadása évenként
     for key in all_words.keys():
         pps[key][1] = all_words[key]
+
+    # Üres évek generálása, ahol nem volt találat
     c.gen_empty_years(sorted(all_words.keys(), key=lambda year: year), pps)
 
     # for item, value in pps.items():
