@@ -206,6 +206,10 @@ def process(inp, char_map, asp, vala_volt, is_discr, exp_mod, lexicon):
 
 
 def get_args():
+    """
+    Argumentumok összegyűjtése
+    """
+
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
     parser.add_argument('-c', '--charmap', help='Path to charmap tsv', nargs='?', default='../inputs/init/char_map.txt')

@@ -170,6 +170,10 @@ def process(inp, interval, is_mixed):
 
 
 def get_args():
+    """
+    Argumentumok összegyűjtése
+    """
+
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
     parser.add_argument('-i', '--interval', help='Split timeline rate', nargs='?', default=50, type=int)

@@ -63,6 +63,11 @@ def gen_empty_years(years, pps):
 
 
 def str2bool(v):
+    """
+    Eldönti, hogy az argumentum Igaz, vagy Hamis értéket képvisel
+
+    :param v: argumentum értéke
+    """
     if isinstance(v, bool):
         return v
     if v.lower() in ('yes', 'true', 't', 'y', '1'):

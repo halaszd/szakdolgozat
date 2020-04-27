@@ -18,6 +18,12 @@ import scripts.common as c
 
 
 def get_all_words(inp):
+    """
+    Összegyűjti az összes szót évenként
+
+    :param inp: Szöveges bemenet
+    :return: Egy szótár, egy évhez hozzárendelt összes szóval
+    """
     pat_annot = re.compile(r'[[\]|{}]')
     all_words = defaultdict(lambda: 0)
     for line in inp.split('\n')[1:]:
@@ -156,6 +162,10 @@ def process(inp_1, inp_2, char_map, asp, vala_volt, exp_mod, lexicon):
 
 
 def get_args():
+    """
+    Argumentumok összegyűjtése
+    """
+
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', help='Path to file', nargs='+')
     parser.add_argument('-c', '--charmap', help='Path to charmap tsv', nargs='?', default='../inputs/init/char_map.txt')
