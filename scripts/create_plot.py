@@ -6,7 +6,46 @@ sys.path.append('../')
 from scripts.common import str2bool
 
 # Irányvonalak színének és alakjának beállításai a múlt idő fajtája szerint
-LINES = {'inform.':
+
+"""
+('solid', 'solid'),      # Same as (0, ()) or '-'
+('dotted', 'dotted'),    # Same as (0, (1, 1)) or ':'
+('dashed', 'dashed'),    # Same as '--'
+('dashdot', 'dashdot')]  # Same as '-.'
+"""
+
+# TODO: argumentumként lehessen megadni, hogy a LINES a LINES_DIAKR VAGY A LINES_SZAKD szótárral legyen egyenlő,
+#  tehát, hogy milyen vonaltípusokat hozzon létre a program.
+
+LINES_DIAKR = {'inform.':
+             {'perf.':
+                  {'vala': ('black', '-'),
+                   'volt': ('black', '--')},
+              'imp.':
+                  {'vala': ('black', ':'),
+                   'volt': ('black', '-.')},
+              'discr.':
+                  {'vala': ('black', '-'),
+                   'volt': ('black', '--')},
+              'non discr.':
+                  {'vala': ('black', '-'),
+                   'volt': ('black', '--')}},
+         'form.':
+             {'perf.':
+                  {'vala': ('gray', '-'),
+                   'volt': ('gray', '--')},
+              'imp.':
+                  {'vala': ('gray', ':'),
+                   'volt': ('gray', '-.')},
+              'discr.':
+                  {'vala': ('gray', '-'),
+                   'volt': ('gray', '--')},
+              'non discr.':
+                  {'vala': ('gray', '-'),
+                   'volt': ('gray', '--')}
+              }}
+
+LINES_SZAKD = {'inform.':
              {'perf.':
                   {'vala': ('red', '-'),
                    'volt': ('blue', '-')},
@@ -33,6 +72,8 @@ LINES = {'inform.':
                   {'vala': ('red', '--'),
                    'volt': ('blue', '--')}
               }}
+
+LINES = LINES_SZAKD
 
 
 def read(inp):

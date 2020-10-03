@@ -87,7 +87,7 @@
 **Használata:** `python3 <bemeneti útvonalak> -i <éves bontás> -m <eltérő kezdeti és/vagy utolsó évszámok>`
 
 **Informális perfektum/imperfektum + vala/volt**
-`python3 create_plot.py ../outputs/inform/freqs/_v*.txt -i 50`
+`python3 create_plot.py ../outputs/inform/freqs/*_v*.txt -i 50`
 
 **Informális puszta vala/volt**
 `python3 create_plot.py ../outputs/inform/freqs/*_discr.txt -i 50`
@@ -97,7 +97,7 @@
 
 
 **Formális perfektum/imperfektum + vala/volt**
-`python3 create_plot.py ../outputs/form/freqs/_v*.txt -i 50`
+`python3 create_plot.py ../outputs/form/freqs/*_v*.txt -i 50`
 
 **Formális puszta vala/volt**
 `python3 create_plot.py ../outputs/form/freqs/*_discr.txt -i 50`
